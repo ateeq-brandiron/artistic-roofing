@@ -1,87 +1,75 @@
-import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Share2, Camera, PlayCircle } from 'lucide-react';
-
 export default function Footer() {
   return (
-    <footer style={{ background: '#111827', color: 'rgba(255,255,255,0.7)', fontFamily: 'Inter, sans-serif' }}>
-      {/* Main footer */}
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '5rem 2rem 3rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '3rem' }}>
+    <footer style={{
+      background: '#ffffff',
+      padding: '75px 75px 25px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 10,
+    }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 26, maxWidth: 1290, width: '100%', margin: '0 auto' }}>
 
-          {/* Brand */}
-          <div>
-            <div style={{ marginBottom: '1.25rem' }}>
-              <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 24, fontWeight: 700, color: '#C8922A', lineHeight: 1 }}>ARTISTIC</div>
-              <div style={{ fontFamily: 'Playfair Display, Georgia, serif', fontSize: 24, fontWeight: 400, color: 'white', lineHeight: 1.2, letterSpacing: '0.05em' }}>ROOFING</div>
-            </div>
-            <p style={{ fontSize: '0.9rem', lineHeight: 1.7, maxWidth: 260 }}>
-              Premium roofing craftsmanship protecting your home and family. Serving the community with integrity since 2005.
-            </p>
-            <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.5rem' }}>
-              {[Share2, Camera, PlayCircle].map((Icon, i) => (
-                <a key={i} href="#" style={{ width: 36, height: 36, background: 'rgba(255,255,255,0.08)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.7)', transition: 'background 0.2s' }}>
-                  <Icon size={16} />
-                </a>
-              ))}
+        {/* Top row: logo + nav list */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 32 }}>
+          {/* Logo & tagline */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 30 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 30 }}>
+              <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ width: 276, height: 109, objectFit: 'contain' }} />
+              <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 24, lineHeight: '28.8px', color: 'var(--color-3)' }}>
+                QUALITY YOU CAN TRUST.
+              </p>
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 style={{ fontFamily: 'Inter', fontSize: '0.8125rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'white', marginBottom: '1.25rem' }}>Quick Links</h4>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-              {[['Home', '/'], ['About Us', '/about'], ['Services', '/services'], ['Our Process', '/process'], ['Testimonials', '/testimonials'], ['Contact', '/contact']].map(([label, path]) => (
-                <li key={path}>
-                  <Link to={path} style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none', fontSize: '0.9rem', transition: 'color 0.2s' }}>
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Nav list from figma (list.svg image) */}
+          <img src="/img/list.svg" alt="Navigation links" style={{ width: 306, objectFit: 'contain' }} />
+        </div>
 
-          {/* Services */}
-          <div>
-            <h4 style={{ fontFamily: 'Inter', fontSize: '0.8125rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'white', marginBottom: '1.25rem' }}>Services</h4>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-              {['Roof Installation', 'Roof Replacement', 'Roof Repair', 'Storm Damage Repair', 'Gutter Services', 'Skylight Installation'].map(s => (
-                <li key={s}>
-                  <span style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.9rem' }}>{s}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Divider */}
+        <img src="/img/line-12-1.svg" alt="" style={{ width: '100%', height: 3, objectFit: 'cover' }} />
 
-          {/* Contact */}
-          <div>
-            <h4 style={{ fontFamily: 'Inter', fontSize: '0.8125rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'white', marginBottom: '1.25rem' }}>Contact Us</h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <a href="tel:+15551234567" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'rgba(255,255,255,0.65)', textDecoration: 'none', fontSize: '0.9rem' }}>
-                <Phone size={16} style={{ flexShrink: 0, marginTop: 2, color: '#C8922A' }} />
-                (555) 123-4567
-              </a>
-              <a href="mailto:info@artisticroofing.com" style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: 'rgba(255,255,255,0.65)', textDecoration: 'none', fontSize: '0.9rem' }}>
-                <Mail size={16} style={{ flexShrink: 0, marginTop: 2, color: '#C8922A' }} />
-                info@artisticroofing.com
-              </a>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', fontSize: '0.9rem' }}>
-                <MapPin size={16} style={{ flexShrink: 0, marginTop: 2, color: '#C8922A' }} />
-                <span>123 Roofing Lane<br />San Antonio, TX 78201</span>
+        {/* Middle row: nav links + location/email */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 24 }}>
+          {/* Nav links */}
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 25, flexWrap: 'wrap' }}>
+            {['Home', 'About us', 'Gallery', 'Services', 'Contact us'].map((link, i, arr) => (
+              <div key={link} style={{ display: 'inline-flex', alignItems: 'center', gap: 25 }}>
+                <a href={`#${link.toLowerCase().replace(' ', '-')}`} style={{
+                  fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 16,
+                  color: '#000', textAlign: 'center',
+                }}>{link}</a>
+                {i < arr.length - 1 && (
+                  <img src="/img/line-15.svg" alt="" style={{ width: 1, height: 16 }} />
+                )}
               </div>
+            ))}
+          </div>
+
+          {/* Location + email */}
+          <div style={{ display: 'inline-flex', alignItems: 'flex-start', justifyContent: 'flex-end', gap: 41 }}>
+            {/* Location */}
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+              <img src="/img/vector-4.svg" alt="" style={{ width: 12, height: 13 }} />
+              <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 13, letterSpacing: '0.035em', color: 'var(--blue)' }}>SIERRA VISTA, AZ</span>
+            </div>
+            {/* Email */}
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10 }}>
+              <img src="/img/vector-5.svg" alt="" style={{ width: 21.5, height: 18.5 }} />
+              <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 18, lineHeight: '25.2px', color: 'var(--color-2)' }}>
+                info@artisticroofing.com
+              </span>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Bottom bar */}
-      <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', padding: '1.5rem 2rem' }}>
-        <div style={{ maxWidth: 1280, margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-          <p style={{ fontSize: '0.8125rem' }}>© 2025 Artistic Roofing. All rights reserved.</p>
-          <div style={{ display: 'flex', gap: '1.5rem' }}>
-            {['Privacy Policy', 'Terms of Service', 'License Info'].map(t => (
-              <a key={t} href="#" style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.8125rem', textDecoration: 'none' }}>{t}</a>
-            ))}
-          </div>
+        {/* Divider */}
+        <img src="/img/line-12-1.svg" alt="" style={{ width: '100%', height: 3, objectFit: 'cover' }} />
+
+        {/* Copyright */}
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 18, lineHeight: '25.2px', color: 'var(--color-2)' }}>
+            © 2025 Artistic Roofing. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

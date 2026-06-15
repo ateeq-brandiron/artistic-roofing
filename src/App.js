@@ -1,27 +1,30 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ScrollBar from './components/ScrollBar';
+import About from './components/About';
+import Services from './components/Services';
+import WhyUs from './components/WhyUs';
+import Certifications from './components/Certifications';
+import Testimonials from './components/Testimonials';
+import CallToAction from './components/CallToAction';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Process from './pages/Process';
-import Services from './pages/Services';
-import Testimonials from './pages/Testimonials';
-import Contact from './pages/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div style={{ background: '#fdfeff', overflowX: 'hidden' }}>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/process" element={<Process />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Hero />
+      <ScrollBar />
+      <About />
+      <Services />
+      <WhyUs />
+      <Certifications />
+      <Testimonials />
+      <CallToAction />
+      <FAQ />
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 }
 
