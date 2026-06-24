@@ -3,30 +3,17 @@ export default function Hero() {
     <section id="hero" style={{
       position: 'relative',
       width: '100%',
-      minHeight: '100vh',
-      backgroundImage: 'url(/img/frame-2147223464.png)',
+      minHeight: 819,
+      backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/frame-2147223464.png)',
       backgroundSize: 'cover',
       backgroundPosition: '50% 50%',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
+      justifyContent: 'flex-end',
       overflow: 'hidden',
     }}>
-      {/* Dark overlay */}
-      <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.45)' }} />
 
-      {/* Background pattern */}
-      <img src="/img/pattern.svg" alt="" style={{
-        position: 'absolute',
-        top: 'calc(50% - 3351px)',
-        left: 'calc(50% - 718px)',
-        width: 1436,
-        height: 6701,
-        pointerEvents: 'none',
-        opacity: 0.15,
-      }} />
-
-      <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '140px 76px 60px' }}>
+      <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px) 72px' }}>
         {/* Row: headline + right col */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
           {/* Headline */}

@@ -11,35 +11,22 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { pathname } = useLocation();
-
-  const isHome = pathname === '/';
-
-  useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 10);
-    window.addEventListener('scroll', fn);
-    return () => window.removeEventListener('scroll', fn);
-  }, []);
 
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
 
-  const solidBg = scrolled || !isHome;
-
   return (
     <header style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000,
-      transition: 'background 0.3s, box-shadow 0.3s',
-      background: solidBg ? 'rgba(255,255,255,0.98)' : 'transparent',
-      boxShadow: solidBg ? '0 2px 16px rgba(0,0,0,0.08)' : 'none',
+      background: '#F9FDFF',
+      boxShadow: '0 2px 16px rgba(0,0,0,0.06)',
     }}>
       <div style={{
         maxWidth: 1440, margin: '0 auto',
-        padding: '0 clamp(20px, 5vw, 76px)',
-        height: 80,
+        padding: '19px clamp(20px,3vw,43px) 15px clamp(20px,3.5vw,50px)',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         gap: 24,
       }}>
@@ -49,7 +36,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: 'clamp(12px, 2vw, 28px)' }} className="desktop-nav">
+        <nav style={{ display: 'flex', alignItems: 'center', gap: 40 }} className="desktop-nav">
           {navLinks.map(link => {
             const active = pathname === link.path;
             return (
@@ -57,12 +44,9 @@ export default function Navbar() {
                 fontFamily: 'Outfit, sans-serif',
                 fontWeight: active ? 600 : 400,
                 fontSize: 15,
-                color: solidBg
-                  ? (active ? 'var(--blue)' : 'var(--color-3)')
-                  : (active ? '#fff' : 'rgba(255,255,255,0.88)'),
-                borderBottom: active ? `2px solid ${solidBg ? 'var(--blue)' : '#fff'}` : '2px solid transparent',
-                paddingBottom: 2,
-                transition: 'color 0.2s',
+                color: active ? '#000' : 'var(--color-3)',
+                borderBottom: active ? '2px solid #000' : '2px solid transparent',
+                paddingBottom: 3,
                 whiteSpace: 'nowrap',
               }}>
                 {link.label}
@@ -71,20 +55,21 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* CTA */}
+        {/* CTA – outlined style */}
         <Link to="/contact" className="desktop-nav" style={{
           display: 'inline-flex', alignItems: 'center', gap: 10,
-          padding: '10px 18px',
-          background: 'var(--blue)',
+          padding: '10px 20px',
+          background: 'transparent',
+          border: '1.5px solid #000',
           borderRadius: 8,
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 600, fontSize: 14,
-          color: '#fff',
+          color: '#000',
           whiteSpace: 'nowrap',
           flexShrink: 0,
         }}>
           Contact Us
-          <img src="/img/call-made-2.svg" alt="" style={{ width: 12, height: 12 }} />
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1v7" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </Link>
 
         {/* Hamburger */}

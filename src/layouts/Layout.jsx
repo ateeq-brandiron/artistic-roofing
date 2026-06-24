@@ -13,7 +13,7 @@ export default function Layout() {
   return (
     <>
       <Navbar />
-      <main>
+      <main style={{ paddingTop: 80 }}>
         <Outlet />
       </main>
       <Footer />
