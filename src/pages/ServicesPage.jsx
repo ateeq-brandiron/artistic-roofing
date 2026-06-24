@@ -11,14 +11,6 @@ function SectionLabel({ text }) {
   );
 }
 
-function Check() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-      <circle cx="10" cy="10" r="10" fill="var(--blue)" opacity="0.12" />
-      <path d="M6 10l3 3 5-5" stroke="var(--blue)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 const commercial = [
   {
