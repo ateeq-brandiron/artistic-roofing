@@ -82,8 +82,7 @@ export default function Navbar() {
           {[0, 1, 2].map(i => (
             <span key={i} style={{
               display: 'block', width: 22, height: 2, borderRadius: 2,
-              background: solidBg ? '#245079' : 'white',
-              transition: 'background 0.2s',
+              background: '#245079',
             }} />
           ))}
         </button>
