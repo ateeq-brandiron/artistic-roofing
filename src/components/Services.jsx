@@ -7,7 +7,7 @@ function SectionLabel({ text }) {
       padding: 9, background: '#ffffff',
       borderRadius: 27, boxShadow: '0px 1.82px 1.82px rgba(0,0,0,0.05)',
     }}>
-      <img src="/img/Icon.svg" alt="" style={{ width: 14.55, height: 14.55 }} />
+      <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
       <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 12.7, letterSpacing: '0.035em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
     </div>
   );

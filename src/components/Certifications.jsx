@@ -26,7 +26,7 @@ export default function Certifications() {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
         {/* Label */}
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-          <img src="/img/certs/Icon.svg" alt="" style={{ width: 16, height: 16 }} />
+          <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
           <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', color: 'var(--blue)' }}>CERTIFICATIONS</span>
         </div>
 
