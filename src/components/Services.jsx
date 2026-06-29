@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 function SectionLabel({ text }) {
   return (
     <div style={{
-      display: 'inline-flex', alignItems: 'center', gap: 9,
-      padding: 9, background: '#ffffff',
-      borderRadius: 27, boxShadow: '0px 1.82px 1.82px rgba(0,0,0,0.05)',
+      display: 'inline-flex', alignItems: 'center', gap: 8,
+      padding: '7px 16px', background: '#fff',
+      borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
     }}>
       <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
-      <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 12.7, letterSpacing: '0.035em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
+      <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
     </div>
   );
 }

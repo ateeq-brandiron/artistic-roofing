@@ -16,11 +16,9 @@ export default function About() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: 28, maxWidth: 622, flex: '1 1 340px' }}>
 
         {/* Label */}
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-          <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 18, height: 18 }} />
-          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', color: 'var(--blue)' }}>
-            EST. OVER 10 YEARS
-          </span>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
+          <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>EST. OVER 10 YEARS</span>
         </div>
 
         {/* Heading */}

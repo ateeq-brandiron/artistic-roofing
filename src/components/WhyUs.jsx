@@ -27,9 +27,10 @@ export default function WhyUs() {
         {/* Label */}
         <div style={{
           display: 'inline-flex', alignItems: 'center', gap: 8,
-          padding: '7px 14px',
+          padding: '7px 16px',
           background: '#fff',
           borderRadius: 100,
+          boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
           alignSelf: 'flex-start',
         }}>
           <img src="/img/why-us/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
