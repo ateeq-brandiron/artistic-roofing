@@ -71,16 +71,24 @@ export default function About() {
         </div>
       </div>
 
-      {/* Right column – photo + badges below */}
-      <div style={{ flex: '1 1 300px', maxWidth: 587, display: 'flex', flexDirection: 'column', gap: 16 }}>
+      {/* Right column – light-blue card wrapping photo + badges */}
+      <div style={{
+        flex: '1 1 300px', maxWidth: 587,
+        background: 'var(--shape-fill)',
+        border: '1px solid var(--shape-stroke)',
+        borderRadius: 20,
+        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
+      }}>
         <img
           src="/img/source_2.png"
           alt="Roofing professionals at work"
-          style={{ width: '100%', height: 460, objectFit: 'cover', display: 'block', borderRadius: 20 }}
+          style={{ width: '100%', height: 460, objectFit: 'cover', display: 'block' }}
         />
 
-        {/* Badge row */}
-        <div style={{ display: 'flex', gap: 12 }}>
+        {/* Badge row inside the card */}
+        <div style={{ display: 'flex', gap: 12, padding: '16px' }}>
           {[
             { icon: '/img/Vector.svg', title: 'TRI CERTIFIED', sub: 'Tile Installer' },
             { icon: '/img/Vector-1.svg', title: 'POLYGLASS', sub: 'Trained Pros' },
