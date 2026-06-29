@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
 const certs = [
-  { icon: '/img/certs/Vector.svg',   name: 'TRI Certified' },
+  { icon: '/img/certs/Vector-2.svg', name: 'TRI Certified' },
   { icon: '/img/certs/Vector-1.svg', name: 'BBB Accredited' },
-  { icon: '/img/certs/Vector-2.svg', name: 'Polyglass\nTrained' },
+  { icon: '/img/certs/Vector.svg',   name: 'Polyglass\nTrained' },
 ];
 
 export default function Certifications() {
