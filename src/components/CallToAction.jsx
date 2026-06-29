@@ -1,77 +1,86 @@
+import { Link } from 'react-router-dom';
+
 export default function CallToAction() {
   return (
-    <section id="contact" style={{
+    <section style={{
       width: '100%',
-      padding: '75px 100px',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
+      background: '#fff',
+      padding: 'clamp(48px,6vw,75px) clamp(24px,5vw,75px)',
+      boxSizing: 'border-box',
     }}>
       <div style={{
+        position: 'relative',
         width: '100%',
         maxWidth: 1290,
-        borderRadius: 10,
+        margin: '0 auto',
+        borderRadius: 20,
         overflow: 'hidden',
-        backgroundImage: 'url(/img/box.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: '50% 50%',
-        padding: 100,
+        minHeight: 460,
         display: 'flex',
-        justifyContent: 'center',
         alignItems: 'center',
+        justifyContent: 'center',
       }}>
-        {/* Dark overlay for legibility */}
-        <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center' }}>
-          <div style={{
-            position: 'absolute', inset: -100,
-            background: 'rgba(0,0,0,0.5)',
-          }} />
-          <div style={{
-            position: 'relative',
-            maxWidth: 856,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 20,
-            textAlign: 'center',
-          }}>
-            <h2 style={{
-              fontFamily: 'Playfair Display, serif',
-              fontWeight: 900,
-              fontSize: 'clamp(32px, 4vw, 48px)',
-              lineHeight: '57.6px',
-              color: '#ffffff',
-              whiteSpace: 'wrap',
-            }}>
-              Your Roof, Our Commitment
-            </h2>
-            <p style={{
-              fontFamily: 'Outfit, sans-serif',
-              fontWeight: 500,
-              fontSize: 22,
-              lineHeight: '33px',
-              color: '#ffffff',
-              textAlign: 'center',
-            }}>
-              If you need reliable roofing or gutter services in Sierra Vista or nearby Cochise County communities, trust the team at Artistic Roofing. Our goal is simple: to provide professional service, lasting workmanship, and open communication from start to finish.
-            </p>
+        {/* Background image */}
+        <img
+          src="/img/Box.png"
+          alt=""
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+        />
 
-            <button
-              onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-              style={{
-                display: 'inline-flex', alignItems: 'center', gap: 20,
-                padding: '15px 20px',
-                background: 'var(--blue)',
-                borderRadius: 10,
-                boxShadow: 'inset 0 4px 4px rgba(255,255,255,0.1), inset 4px 0 4px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(255,255,255,0.1), inset -4px 0 4px rgba(255,255,255,0.1)',
-                fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 18,
-                color: '#fff', letterSpacing: '0.05em', cursor: 'pointer',
-              }}>
-              Talk With a Roofing Expert Today
-              <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
-            </button>
-          </div>
+        {/* Dark overlay */}
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.52)' }} />
+
+        {/* Content */}
+        <div style={{
+          position: 'relative',
+          maxWidth: 860,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 24,
+          textAlign: 'center',
+          padding: '60px 40px',
+        }}>
+          <h2 style={{
+            fontFamily: 'Playfair Display, serif',
+            fontWeight: 900,
+            fontSize: 'clamp(32px,5vw,56px)',
+            lineHeight: 1.2,
+            color: '#fff',
+            margin: 0,
+          }}>
+            Your Roof, Our Commitment
+          </h2>
+
+          <p style={{
+            fontFamily: 'Outfit, sans-serif',
+            fontWeight: 400,
+            fontSize: 'clamp(16px,2vw,20px)',
+            lineHeight: '1.6',
+            color: '#fff',
+            margin: 0,
+            maxWidth: 740,
+          }}>
+            If you need reliable roofing or gutter services in Sierra Vista or nearby Cochise County communities, trust the team at <strong>Artistic Roofing</strong>. Our goal is simple: to provide professional service, lasting workmanship, and open communication from start to finish.
+          </p>
+
+          <Link to="/contact" style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 14,
+            padding: '15px 28px',
+            background: 'var(--blue)',
+            borderRadius: 10,
+            fontFamily: 'Outfit, sans-serif',
+            fontWeight: 600,
+            fontSize: 17,
+            color: '#fff',
+            letterSpacing: '0.02em',
+            marginTop: 4,
+          }}>
+            Talk With a Roofing Expert Today
+            <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
+          </Link>
         </div>
       </div>
     </section>
