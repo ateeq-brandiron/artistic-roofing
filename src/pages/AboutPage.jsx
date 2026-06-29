@@ -103,34 +103,39 @@ export default function AboutPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 420,
+        minHeight: 819,
         backgroundImage: 'url(/img/frame-2147223464.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 40%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-end',
-        paddingTop: 120,
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+        padding: '0 clamp(20px,5vw,76px)',
+        gap: 233,
+        boxSizing: 'border-box',
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.55)' }} />
-        <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '0 clamp(20px,5vw,76px) 56px' }}>
-          {/* Breadcrumb */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-            <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
-            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
-            <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>ABOUT US</span>
-          </div>
-          <h1 style={{
-            fontFamily: 'Playfair Display, serif',
-            fontWeight: 900,
-            fontSize: 'clamp(32px, 5vw, 56px)',
-            lineHeight: 1.15,
-            color: '#fff',
-            maxWidth: 640,
-          }}>
-            About Artistic Roofing – Roofing Contractors in Sierra Vista AZ
-          </h1>
+
+        {/* Breadcrumb */}
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 8 }}>
+          <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
+          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
+          <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>ABOUT US</span>
         </div>
+
+        <h1 style={{
+          position: 'relative',
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 900,
+          fontSize: 'clamp(40px, 5.5vw, 72px)',
+          lineHeight: 1.1,
+          color: '#fff',
+          maxWidth: 700,
+          margin: 0,
+        }}>
+          About Artistic Roofing – Roofing Contractors in Sierra Vista AZ
+        </h1>
       </section>
 
       {/* ── Ticker ── */}
