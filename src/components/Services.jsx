@@ -41,6 +41,32 @@ const services = [
   },
 ];
 
+function ServiceCard({ s }) {
+  return (
+    <div style={{
+      width: 403, minHeight: 411,
+      borderRadius: 10,
+      backgroundImage: `url(${s.bg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: '50% 50%',
+      display: 'flex', flexDirection: 'column',
+      justifyContent: 'flex-end',
+      padding: '30px 17px',
+      flexShrink: 0,
+    }}>
+      <div style={{
+        background: 'rgba(253,254,255,0.95)',
+        borderRadius: 10,
+        padding: 15,
+        display: 'flex', flexDirection: 'column', gap: 11,
+      }}>
+        <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 18, lineHeight: '21.6px', color: '#000' }}>{s.title}</h3>
+        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 14, lineHeight: '16.8px', color: 'var(--color-3)' }}>{s.desc}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function Services() {
   return (
     <section id="services" style={{ padding: '50px 75px 75px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 50 }}>
@@ -56,31 +82,16 @@ export default function Services() {
         </h2>
       </div>
 
-      {/* Cards grid */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, justifyContent: 'center', width: '100%', maxWidth: 1290 }}>
-        {services.map((s, i) => (
-          <div key={i} style={{
-            width: 403, minHeight: 411,
-            borderRadius: 10,
-            backgroundImage: `url(${s.bg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: '50% 50%',
-            display: 'flex', flexDirection: 'column',
-            justifyContent: 'flex-end',
-            padding: '30px 17px',
-            flexShrink: 0,
-          }}>
-            <div style={{
-              background: 'rgba(253,254,255,0.95)',
-              borderRadius: 10,
-              padding: 15,
-              display: 'flex', flexDirection: 'column', gap: 11,
-            }}>
-              <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 18, lineHeight: '21.6px', color: '#000' }}>{s.title}</h3>
-              <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 14, lineHeight: '16.8px', color: 'var(--color-3)' }}>{s.desc}</p>
-            </div>
-          </div>
-        ))}
+      {/* Cards grid – row 1: 3 cards, row 2: 2 cards centered */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 40, width: '100%', maxWidth: 1290 }}>
+        {/* Row 1 */}
+        <div style={{ display: 'flex', gap: 40, justifyContent: 'center' }}>
+          {services.slice(0, 3).map((s, i) => <ServiceCard key={i} s={s} />)}
+        </div>
+        {/* Row 2 */}
+        <div style={{ display: 'flex', gap: 40, justifyContent: 'center' }}>
+          {services.slice(3).map((s, i) => <ServiceCard key={i} s={s} />)}
+        </div>
       </div>
 
       {/* CTA */}
