@@ -2,19 +2,21 @@ import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
 /* ── Shared label pill ── */
-function SectionLabel({ text }) {
+function SectionLabel({ text, center }) {
   return (
-    <div style={{
-      display: 'inline-flex', alignItems: 'center', gap: 8,
-      padding: '6px 12px',
-      background: 'var(--shape-fill)',
-      border: '1px solid var(--shape-stroke)',
-      borderRadius: 100,
-    }}>
-      <img src="/img/vector-stroke-5.svg" alt="" style={{ width: 13, height: 13 }} />
-      <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>
-        {text}
-      </span>
+    <div style={{ display: 'flex', justifyContent: center ? 'center' : 'flex-start' }}>
+      <div style={{
+        display: 'inline-flex', alignItems: 'center', gap: 8,
+        padding: '7px 16px',
+        background: '#fff',
+        borderRadius: 100,
+        boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
+      }}>
+        <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+        <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>
+          {text}
+        </span>
+      </div>
     </div>
   );
 }
@@ -227,7 +229,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
           {/* Header */}
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
-            <SectionLabel text="CORE VALUES" />
+            <SectionLabel text="CORE VALUES" center />
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
               fontSize: 'clamp(28px,4vw,44px)', lineHeight: 1.2,
