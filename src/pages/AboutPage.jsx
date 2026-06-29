@@ -108,7 +108,7 @@ export default function AboutPage() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-end',
-        paddingTop: 80,
+        paddingTop: 120,
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.55)' }} />
         <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '0 clamp(20px,5vw,76px) 56px' }}>

@@ -61,7 +61,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section style={{ position: 'relative', minHeight: 400, backgroundImage: 'url(/img/background.png)', backgroundSize: 'cover', backgroundPosition: '50% 40%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingTop: 80 }}>
+      <section style={{ position: 'relative', minHeight: 400, backgroundImage: 'url(/img/background.png)', backgroundSize: 'cover', backgroundPosition: '50% 40%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingTop: 120 }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.55)' }} />
         <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '0 clamp(20px,5vw,76px) 56px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>

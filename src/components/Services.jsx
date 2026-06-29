@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function SectionLabel({ text }) {
   return (
     <div style={{
@@ -82,20 +84,18 @@ export default function Services() {
       </div>
 
       {/* CTA */}
-      <button
-        onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-        style={{
+      <Link to="/contact" style={{
           display: 'inline-flex', alignItems: 'center', gap: 20,
           padding: '15px 20px',
           background: 'var(--blue)',
           borderRadius: 10,
           boxShadow: 'inset 0 4px 4px rgba(255,255,255,0.1), inset 4px 0 4px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(255,255,255,0.1), inset -4px 0 4px rgba(255,255,255,0.1)',
           fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 18,
-          color: '#fff', letterSpacing: '0.05em', cursor: 'pointer',
+          color: '#fff', letterSpacing: '0.05em',
         }}>
         Get a Roofing or Gutter Quote
         <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
-      </button>
+      </Link>
     </section>
   );
 }

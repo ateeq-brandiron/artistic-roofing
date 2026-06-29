@@ -73,7 +73,7 @@ export default function Testimonials() {
           boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
         }}>
           <img src="/img/testimonials/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
-          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>TESTEMONIALS</span>
+          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>TESTIMONIALS</span>
         </div>
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
