@@ -37,7 +37,7 @@ export default function VideoSection() {
           <>
             {/* Thumbnail */}
             <img
-              src="/img/rectangle-8.png"
+              src="/img/Frame 2147223472 (1).png"
               alt="Company Overview Video"
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
             />
