@@ -15,27 +15,27 @@ function SectionLabel({ text }) {
 
 const services = [
   {
-    bg: '/img/Frame 2147223409.png',
+    bg: '/img/Frame%202147223409.png',
     title: 'New Construction Roofing',
     desc: 'Our roofing team partners with builders, homeowners, and businesses to install high-quality systems for new construction projects. We offer a range of materials, including tile, shingle, metal, and low-slope roofing, applying manufacturer-approved methods to ensure strength and longevity.',
   },
   {
-    bg: '/img/Frame 2147223415.png',
+    bg: '/img/Frame%202147223415.png',
     title: 'Roof Replacement',
     desc: 'We provide both residential and light commercial roof replacement using materials suited for Arizona\'s climate. From asphalt shingles to concrete tile, every roof is installed with close attention to underlayment integrity, ventilation, and professional finishing.',
   },
   {
-    bg: '/img/Frame 2147223416.png',
+    bg: '/img/Frame%202147223416.png',
     title: 'Roof Repairs and Preventive Maintenance',
     desc: 'Our technicians address leaks, wind-blown shingles, and wear from aging materials or heavy rain. We recommend roof inspections every 3 to 4 years and annual checkups for roofs older than 15 years. Regular maintenance helps identify small issues early and extends the life of your roofing system.',
   },
   {
-    bg: '/img/Frame 2147223417.png',
+    bg: '/img/Frame%202147223417.png',
     title: 'Roof Coatings and Restoration',
     desc: 'For low-slope or flat roofs, Artistic Roofing offers Polyglass-certified coatings designed to extend roof life and improve performance. This affordable maintenance service is recommended every 3 to 5 years to help maintain waterproofing, energy efficiency, and overall durability in Arizona\'s climate.',
   },
   {
-    bg: '/img/Frame 2147223418.png',
+    bg: '/img/Frame%202147223418.png',
     title: 'Gutter Installation and Maintenance',
     desc: 'Our seamless 5" and 6" gutter systems are custom-fabricated on-site and installed to assist with effective water control around your property. We use durable materials and precise slope alignment to help manage rainfall and minimize pooling or overflow. Available in multiple color options.',
   },
