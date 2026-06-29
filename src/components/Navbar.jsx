@@ -20,10 +20,8 @@ export default function Navbar() {
 
   return (
     <header style={{
-      position: 'fixed', top: 19, left: 50, right: 43, zIndex: 1000,
-      transform: 'translateZ(0)',
+      position: 'sticky', top: 0, zIndex: 1000,
       background: '#F9FDFF',
-      borderRadius: 10,
       boxShadow: '0 4px 24px rgba(0,0,0,0.08)',
     }}>
       <div style={{
