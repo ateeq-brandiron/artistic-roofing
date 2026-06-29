@@ -1,53 +1,118 @@
-function SectionLabel({ text }) {
-  return (
-    <div style={{
-      display: 'inline-flex', alignItems: 'center', gap: 9,
-      padding: 9, background: '#ffffff',
-      borderRadius: 27, boxShadow: '0px 1.82px 1.82px rgba(0,0,0,0.05)',
-    }}>
-      <img src="/img/vector-stroke-5.svg" alt="" style={{ width: 14.55, height: 14.55 }} />
-      <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 12.7, letterSpacing: '0.035em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
-    </div>
-  );
-}
+import { Link } from 'react-router-dom';
 
 const certs = [
-  { logo: '/img/tri-certified.svg', name: 'TRI Certified' },
-  { logo: '/img/osha-certified.svg', name: 'OSHA Certified' },
-  { logo: '/img/polyglass.svg', name: 'Polyglass' },
+  { icon: '/img/certs/Vector.svg',   name: 'TRI Certified' },
+  { icon: '/img/certs/Vector-1.svg', name: 'BBB Accredited' },
+  { icon: '/img/certs/Vector-2.svg', name: 'Polyglass\nTrained' },
 ];
 
 export default function Certifications() {
   return (
     <section style={{
       width: '100%',
-      background: 'var(--shape-stroke)',
-      padding: '75px 100px',
+      background: '#fff',
+      padding: 'clamp(60px,8vw,100px) clamp(24px,5vw,100px)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      gap: 30,
+      gap: 60,
+      boxSizing: 'border-box',
     }}>
+
       {/* Header */}
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, width: '100%', maxWidth: 1290 }}>
-        <SectionLabel text="CERTIFICATIONS" />
-        <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(32px, 4vw, 48px)', lineHeight: 1.2, textAlign: 'center', color: '#000' }}>
-          Certified & Trusted
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
+        {/* Label */}
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+          <img src="/img/certs/Icon.svg" alt="" style={{ width: 16, height: 16 }} />
+          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', color: 'var(--blue)' }}>CERTIFICATIONS</span>
+        </div>
+
+        {/* Heading */}
+        <h2 style={{
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 900,
+          fontSize: 'clamp(32px,5vw,60px)',
+          lineHeight: 1.15,
+          color: '#000',
+          textAlign: 'center',
+          margin: 0,
+          maxWidth: 700,
+        }}>
+          Certifications and Professional Standards
         </h2>
-        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 300, fontSize: 20, lineHeight: '24px', textAlign: 'center', color: 'var(--color-3)', maxWidth: 717 }}>
-          Artistic Roofing maintains certifications and professional memberships that reflect our commitment to safety, quality, and craftsmanship.
-        </p>
       </div>
 
-      {/* Logos */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 'clamp(40px, 10vw, 151px)', flexWrap: 'wrap', padding: '50px 0', width: '100%' }}>
+      {/* Cert circles */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'center',
+        gap: 'clamp(40px,8vw,120px)',
+        flexWrap: 'wrap',
+        width: '100%',
+      }}>
         {certs.map((c, i) => (
-          <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 30, width: 206 }}>
-            <img src={c.logo} alt={c.name} style={{ width: 152.65, height: 152.65, objectFit: 'contain' }} />
-            <span style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 24, lineHeight: '28.8px', textAlign: 'center', color: '#000' }}>{c.name}</span>
+          <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28 }}>
+            {/* Outer dashed ring */}
+            <div style={{
+              width: 200,
+              height: 200,
+              borderRadius: '50%',
+              border: '1.5px dashed var(--shape-stroke)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}>
+              {/* Inner filled circle */}
+              <div style={{
+                width: 160,
+                height: 160,
+                borderRadius: '50%',
+                background: 'var(--shape-fill)',
+                border: '1px solid var(--shape-stroke)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                <img src={c.icon} alt={c.name} style={{ width: 72, height: 72, objectFit: 'contain' }} />
+              </div>
+            </div>
+
+            {/* Label */}
+            <span style={{
+              fontFamily: 'Playfair Display, serif',
+              fontWeight: 700,
+              fontSize: 24,
+              lineHeight: 1.3,
+              textAlign: 'center',
+              color: '#000',
+              whiteSpace: 'pre-line',
+            }}>
+              {c.name}
+            </span>
           </div>
         ))}
       </div>
+
+      {/* CTA */}
+      <Link to="/about" style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: 12,
+        padding: '16px 32px',
+        background: 'var(--blue)',
+        borderRadius: 10,
+        fontFamily: 'Outfit, sans-serif',
+        fontWeight: 600,
+        fontSize: 17,
+        color: '#fff',
+        letterSpacing: '0.02em',
+      }}>
+        View All Certifications
+        <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
+      </Link>
+
     </section>
   );
 }
