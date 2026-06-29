@@ -104,7 +104,7 @@ export default function AboutPage() {
         position: 'relative',
         width: '100%',
         minHeight: 819,
-        backgroundImage: 'url(/img/frame-2147223464.png)',
+        backgroundImage: 'url(/img/Frame%202147223464%20(2).png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 40%',
         display: 'flex',
