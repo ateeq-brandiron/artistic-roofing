@@ -5,7 +5,7 @@ function SectionLabel({ text }) {
       padding: 9, background: '#ffffff',
       borderRadius: 27, boxShadow: '0px 1.82px 1.82px rgba(0,0,0,0.05)',
     }}>
-      <img src="/img/vector-stroke-5.svg" alt="" style={{ width: 14.55, height: 14.55 }} />
+      <img src="/img/Icon.svg" alt="" style={{ width: 14.55, height: 14.55 }} />
       <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 12.7, letterSpacing: '0.035em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
     </div>
   );
@@ -13,27 +13,27 @@ function SectionLabel({ text }) {
 
 const services = [
   {
-    bg: '/img/frame-2147223409.png',
+    bg: '/img/Frame 2147223409.png',
     title: 'New Construction Roofing',
     desc: 'Our roofing team partners with builders, homeowners, and businesses to install high-quality systems for new construction projects. We offer a range of materials, including tile, shingle, metal, and low-slope roofing, applying manufacturer-approved methods to ensure strength and longevity.',
   },
   {
-    bg: '/img/frame-2147223415.png',
+    bg: '/img/Frame 2147223415.png',
     title: 'Roof Replacement',
     desc: 'We provide both residential and light commercial roof replacement using materials suited for Arizona\'s climate. From asphalt shingles to concrete tile, every roof is installed with close attention to underlayment integrity, ventilation, and professional finishing.',
   },
   {
-    bg: '/img/frame-2147223416.png',
+    bg: '/img/Frame 2147223416.png',
     title: 'Roof Repairs and Preventive Maintenance',
     desc: 'Our technicians address leaks, wind-blown shingles, and wear from aging materials or heavy rain. We recommend roof inspections every 3 to 4 years and annual checkups for roofs older than 15 years. Regular maintenance helps identify small issues early and extends the life of your roofing system.',
   },
   {
-    bg: '/img/frame-2147223417.png',
+    bg: '/img/Frame 2147223417.png',
     title: 'Roof Coatings and Restoration',
     desc: 'For low-slope or flat roofs, Artistic Roofing offers Polyglass-certified coatings designed to extend roof life and improve performance. This affordable maintenance service is recommended every 3 to 5 years to help maintain waterproofing, energy efficiency, and overall durability in Arizona\'s climate.',
   },
   {
-    bg: '/img/frame-2147223418.png',
+    bg: '/img/Frame 2147223418.png',
     title: 'Gutter Installation and Maintenance',
     desc: 'Our seamless 5" and 6" gutter systems are custom-fabricated on-site and installed to assist with effective water control around your property. We use durable materials and precise slope alignment to help manage rainfall and minimize pooling or overflow. Available in multiple color options.',
   },
