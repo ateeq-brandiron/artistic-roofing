@@ -53,17 +53,9 @@ export default function Certifications() {
       }}>
         {certs.map((c, i) => (
           <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28 }}>
-            {/* Outer dashed ring */}
-            <div style={{
-              width: 200,
-              height: 200,
-              borderRadius: '50%',
-              border: '1.5px dashed var(--shape-stroke)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexShrink: 0,
-            }}>
+            {/* Outer dashed ring using Ellipse SVG */}
+            <div style={{ position: 'relative', width: 200, height: 200, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/img/certs/Ellipse%209.svg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
               {/* Inner filled circle */}
               <div style={{
                 width: 160,
@@ -74,8 +66,9 @@ export default function Certifications() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                position: 'relative',
               }}>
-                <img src={c.icon} alt={c.name} style={{ width: 72, height: 72, objectFit: 'contain' }} />
+                <img src={c.icon} alt={c.name} style={{ width: 80, height: 80, objectFit: 'contain' }} />
               </div>
             </div>
 
