@@ -50,13 +50,12 @@ export default function VideoSection() {
           position: 'absolute',
           top: '50%', left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: 80, height: 80,
-          borderRadius: '50%',
-          background: 'rgba(0,0,0,0.55)',
+          width: 90, height: 62,
+          borderRadius: 14,
+          background: '#FF0000',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          border: '2.5px solid rgba(255,255,255,0.85)',
         }}>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
             <path d="M8 5.14v14l11-7-11-7z" fill="#fff" />
           </svg>
         </div>
