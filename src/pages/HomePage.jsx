@@ -1,5 +1,6 @@
 import Hero from '../components/Hero';
 import ScrollBar from '../components/ScrollBar';
+import VideoSection from '../components/VideoSection';
 import About from '../components/About';
 import Services from '../components/Services';
 import WhyUs from '../components/WhyUs';
@@ -13,6 +14,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ScrollBar />
+      <VideoSection />
       <About />
       <Services />
       <WhyUs />
