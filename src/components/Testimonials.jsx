@@ -4,14 +4,14 @@ const allReviews = [
   {
     stars: 5,
     text: 'Artistic Roofing did a fantastic job on our replacement roof. Professional, fast, and detail-oriented',
-    photo: '/img/testimonials/source/57f0ffb0289abd7a4ed15a1f27a837ab2507dc33.jpg',
+    photo: '/img/testimonials/source/0bf4306e31fb53c1da8c053abfe25cf657432806.jpg',
     name: 'Sarah M.',
     location: 'SIERRA VISTA',
   },
   {
     stars: 5,
     text: 'Best roofing company in Cochise County. Honest, reliable, and skilled',
-    photo: '/img/testimonials/source/0bf4306e31fb53c1da8c053abfe25cf657432806.jpg',
+    photo: '/img/testimonials/source/57f0ffb0289abd7a4ed15a1f27a837ab2507dc33.jpg',
     name: 'Tom S',
     location: 'HOUSING ARTS',
   },
