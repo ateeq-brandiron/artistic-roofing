@@ -1,138 +1,126 @@
-function SectionLabel({ text }) {
-  return (
-    <div style={{
-      display: 'inline-flex', alignItems: 'center', gap: 9,
-      padding: 9,
-      background: '#ffffff',
-      borderRadius: 27,
-      boxShadow: '0px 1.82px 1.82px rgba(0,0,0,0.05)',
-    }}>
-      <img src="/img/vector-stroke-5.svg" alt="" style={{ width: 14.55, height: 14.55 }} />
-      <span style={{
-        fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 12.7,
-        letterSpacing: '0.035em', lineHeight: '21.8px',
-        color: 'var(--blue)', whiteSpace: 'nowrap',
-      }}>{text}</span>
-    </div>
-  );
-}
-
 export default function About() {
   return (
     <section id="about-us" style={{
       width: '100%',
-      background: 'rgba(255,255,255,0.10)',
+      background: '#fff',
       padding: '75px',
       display: 'flex',
       alignItems: 'flex-start',
       justifyContent: 'space-between',
       gap: 48,
       flexWrap: 'wrap',
+      boxSizing: 'border-box',
     }}>
+
       {/* Left column */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 30, maxWidth: 622, flex: '1 1 340px' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-          <SectionLabel text="EST. OVER 10 YEARS" />
-          <h2 style={{
-            fontFamily: 'Playfair Display, serif', fontWeight: 900,
-            fontSize: 'clamp(32px, 4vw, 48px)', lineHeight: 1.2,
-            color: 'transparent',
-            background: 'none',
-          }}>
-            <span style={{ color: '#000000' }}>Experienced Roofing Professionals in </span>
-            <span style={{ color: 'var(--blue)' }}>Sierra Vista AZ</span>
-          </h2>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, maxWidth: 622, flex: '1 1 340px' }}>
+
+        {/* Label */}
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+          <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 18, height: 18 }} />
+          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', color: 'var(--blue)' }}>
+            EST. OVER 10 YEARS
+          </span>
         </div>
 
-        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '24px', color: 'var(--color-3)' }}>
-          <span style={{ color: '#464646' }}>For more than a decade, </span>
+        {/* Heading */}
+        <h2 style={{
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 900,
+          fontSize: 'clamp(32px,4vw,48px)',
+          lineHeight: 1.2,
+          color: '#000',
+          margin: 0,
+        }}>
+          Experienced Roofing Professionals in{' '}
+          <span style={{ color: 'var(--blue)' }}>Sierra Vista AZ</span>
+        </h2>
+
+        {/* Para 1 */}
+        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '28px', color: 'var(--color-3)', margin: 0 }}>
+          For more than a decade,{' '}
           <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Artistic Roofing</span>
-          <span style={{ color: '#464646' }}> has served Sierra Vista and Cochise County with dependable roofing and gutter services. We are licensed, bonded, and insured, and our long-term team members complete every job with precision and care.</span>
+          {' '}has served Sierra Vista and Cochise County with dependable roofing and gutter services. We are licensed, bonded, and insured, and our long-term team members complete every job with precision and care.
         </p>
 
-        <p style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '24px', color: 'var(--color-3)' }}>
-          <span style={{ color: '#464646' }}>As </span>
-          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>TRI Certified</span>
-          <span style={{ color: '#464646' }}> tile installers, we work with concrete tile from leading manufacturers such as </span>
+        {/* Para 2 */}
+        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '28px', color: 'var(--color-3)', margin: 0 }}>
+          As{' '}
+          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>TRI Certified tile installers</span>
+          , we work with concrete tile from leading manufacturers such as{' '}
           <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Westlake</span>
-          <span style={{ color: '#464646' }}> and </span>
-          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Eagle Roofing Products. </span>
-          <span style={{ color: '#464646' }}>For asphalt shingle systems, we install materials from </span>
+          {' '}and{' '}
+          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Eagle Roofing Products.</span>
+          {' '}For asphalt shingle systems, we install materials from{' '}
           <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Tamko, Owens Corning, and GAF</span>
-          <span style={{ color: '#464646' }}>, trusted names known for quality and weather resistance suited to Arizona's climate.</span>
+          , trusted names known for quality and weather resistance suited to Arizona's climate.
         </p>
 
-        {/* Ellipse + OSHA card row */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
-          <div style={{
-            width: 178, height: 178, flexShrink: 0,
-            borderRadius: 221, border: '1px solid #d1eeff', overflow: 'hidden',
-          }}>
-            <img src="/img/ellipse-5.png" alt="Team" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </div>
-
-          <div style={{
-            flex: 1, minHeight: 147,
-            background: 'var(--shape-fill)',
-            border: '1px solid var(--shape-stroke)',
-            borderRadius: 10,
-            padding: '25px 20px',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
-            <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '24px', color: 'var(--color-3)' }}>
-              <span style={{ fontWeight: 600, color: 'var(--blue)' }}>OSHA certification</span>
-              <span style={{ color: '#464646' }}> and </span>
-              <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Polyglass training </span>
-              <span style={{ color: '#464646' }}>guarantee every project meets high standards for quality, safety, and long-term performance.</span>
-            </p>
-          </div>
+        {/* Blue info box */}
+        <div style={{
+          background: 'var(--shape-fill)',
+          border: '1px solid var(--shape-stroke)',
+          borderRadius: 12,
+          padding: '20px 24px',
+        }}>
+          <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '28px', color: 'var(--color-3)', margin: 0 }}>
+            Our commitment to safety includes{' '}
+            <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Polyglass roof coating training,</span>
+            {' '}giving customers confidence that every project follows established standards for quality, safety, and long-term performance.
+          </p>
         </div>
       </div>
 
-      {/* Right column — background image + certification badges */}
-      <div style={{ position: 'relative', width: 587, minHeight: 636, flexShrink: 0, flex: '1 1 300px', maxWidth: 587 }}>
+      {/* Right column */}
+      <div style={{ flex: '1 1 300px', maxWidth: 587, display: 'flex', flexDirection: 'column', gap: 0 }}>
         <div style={{
-          width: '100%', height: 636,
-          borderRadius: 30,
-          border: '1px solid #d1eeff',
-          backgroundImage: 'url(/img/background.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: '50% 50%',
-          position: 'relative',
+          width: '100%',
+          borderRadius: 20,
           overflow: 'hidden',
+          position: 'relative',
+          background: 'var(--shape-fill)',
+          border: '1px solid var(--shape-stroke)',
         }}>
-          {/* Badges overlay at bottom */}
+          {/* Roofer photo */}
+          <img
+            src="/img/source_2.png"
+            alt="Roofing professionals at work"
+            style={{ width: '100%', height: 500, objectFit: 'cover', display: 'block' }}
+          />
+
+          {/* Badges row */}
           <div style={{
-            position: 'absolute', bottom: 21, left: 21, right: 21,
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-            gap: 8,
+            display: 'flex',
+            gap: 12,
+            padding: '16px',
+            background: 'var(--shape-fill)',
           }}>
             {[
-              { icon: '/img/vector.svg', title: 'TRI CERTIFIED', sub: 'Tile Installer' },
-              { icon: '/img/vector-1.svg', title: 'OSHA CERTIFIED', sub: 'Safety Standards' },
-              { icon: '/img/vector-2.svg', title: 'POLYGLASS', sub: 'Trained Pros' },
+              { icon: '/img/Vector.svg', title: 'TRI CERTIFIED', sub: 'Tile Installer' },
+              { icon: '/img/Vector-1.svg', title: 'POLYGLASS', sub: 'Trained Pros' },
             ].map((b, i) => (
               <div key={i} style={{
                 flex: 1,
-                background: '#ffffff',
+                background: '#fff',
                 borderRadius: 10,
-                border: '0.79px solid #a3cde4',
-                boxShadow: '1.59px 1.59px 3.17px rgba(0,0,0,0.10)',
-                padding: '12.69px 14px',
-                display: 'flex', alignItems: 'center', gap: 8,
+                border: '1px solid var(--shape-stroke)',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+                padding: '14px 16px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 12,
               }}>
-                <div style={{ width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <img src={b.icon} alt="" style={{ width: 28, height: 28, objectFit: 'contain' }} />
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-                  <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 11, color: '#000', lineHeight: 1.2 }}>{b.title}</div>
-                  <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 10, color: 'var(--color-3)', lineHeight: 1.2 }}>{b.sub}</div>
+                <img src={b.icon} alt="" style={{ width: 36, height: 36, objectFit: 'contain', flexShrink: 0 }} />
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <span style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 13, color: '#000', letterSpacing: '0.04em' }}>{b.title}</span>
+                  <span style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 12, color: 'var(--color-3)' }}>{b.sub}</span>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
+
     </section>
   );
 }
