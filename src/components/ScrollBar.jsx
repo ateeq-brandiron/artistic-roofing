@@ -16,7 +16,7 @@ export default function ScrollBar() {
     if (!track) return;
     let pos = 0;
     let raf;
-    const speed = 0.5;
+    const speed = 1.5;
     const step = () => {
       pos -= speed;
       if (pos <= -track.scrollWidth / 2) pos = 0;
