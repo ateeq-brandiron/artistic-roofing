@@ -45,17 +45,21 @@ export default function VideoSection() {
         {/* Top-right info icon */}
         <img src="/img/ico-info.svg" alt="" style={{ position: 'absolute', top: 16, right: 20, width: 28, height: 28 }} />
 
-        {/* Centre play button */}
-        <img
-          src="/img/ico-play.svg"
-          alt="Play"
-          style={{
-            position: 'absolute',
-            top: '50%', left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: 80, height: 80,
-          }}
-        />
+        {/* Centre play button – YouTube style */}
+        <div style={{
+          position: 'absolute',
+          top: '50%', left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: 80, height: 80,
+          borderRadius: '50%',
+          background: 'rgba(0,0,0,0.55)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          border: '2.5px solid rgba(255,255,255,0.85)',
+        }}>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M8 5.14v14l11-7-11-7z" fill="#fff" />
+          </svg>
+        </div>
 
         {/* Bottom gradient */}
         <div style={{
