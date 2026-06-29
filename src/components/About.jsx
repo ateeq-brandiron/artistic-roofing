@@ -56,48 +56,27 @@ export default function About() {
           , trusted names known for quality and weather resistance suited to Arizona's climate.
         </p>
 
-        {/* Blue info box */}
+        {/* Blue info box with badges */}
         <div style={{
           background: 'var(--shape-fill)',
           border: '1px solid var(--shape-stroke)',
           borderRadius: 12,
           padding: '20px 24px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 16,
         }}>
           <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '28px', color: 'var(--color-3)', margin: 0 }}>
             Our commitment to safety includes{' '}
             <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Polyglass roof coating training,</span>
             {' '}giving customers confidence that every project follows established standards for quality, safety, and long-term performance.
           </p>
-        </div>
-      </div>
 
-      {/* Right column */}
-      <div style={{ flex: '1 1 300px', maxWidth: 587, display: 'flex', flexDirection: 'column', gap: 0 }}>
-        <div style={{
-          width: '100%',
-          borderRadius: 20,
-          overflow: 'hidden',
-          position: 'relative',
-          background: 'var(--shape-fill)',
-          border: '1px solid var(--shape-stroke)',
-        }}>
-          {/* Roofer photo */}
-          <img
-            src="/img/source_2.png"
-            alt="Roofing professionals at work"
-            style={{ width: '100%', height: 500, objectFit: 'cover', display: 'block' }}
-          />
-
-          {/* Badges row */}
-          <div style={{
-            display: 'flex',
-            gap: 12,
-            padding: '16px',
-            background: 'var(--shape-fill)',
-          }}>
+          {/* Badge row */}
+          <div style={{ display: 'flex', gap: 12 }}>
             {[
               { icon: '/img/Vector.svg', title: 'TRI CERTIFIED', sub: 'Tile Installer' },
-              { icon: '/img/Vector-1.svg', title: 'POLYGLASS', sub: 'Trained Pros' },
+              { icon: '/img/Vector-1.svg', title: 'POLYGLASS', sub: 'Trained Pro' },
             ].map((b, i) => (
               <div key={i} style={{
                 flex: 1,
@@ -105,7 +84,7 @@ export default function About() {
                 borderRadius: 10,
                 border: '1px solid var(--shape-stroke)',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
-                padding: '14px 16px',
+                padding: '12px 16px',
                 display: 'flex',
                 alignItems: 'center',
                 gap: 12,
@@ -119,6 +98,15 @@ export default function About() {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Right column – photo only */}
+      <div style={{ flex: '1 1 300px', maxWidth: 587 }}>
+        <img
+          src="/img/source_2.png"
+          alt="Roofing professionals at work"
+          style={{ width: '100%', height: 500, objectFit: 'cover', display: 'block', borderRadius: 20 }}
+        />
       </div>
 
     </section>
