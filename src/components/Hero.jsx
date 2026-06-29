@@ -14,24 +14,34 @@ export default function Hero() {
     }}>
 
       <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px) 72px' }}>
-        {/* Row: headline + right col */}
-        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
-          {/* Left – Headline */}
-          <h1 style={{
-            fontFamily: 'Playfair Display, serif',
-            fontWeight: 900,
-            fontSize: 60,
-            lineHeight: '120%',
-            color: '#fff',
-            width: 628,
-            maxWidth: '100%',
-            margin: 0,
-          }}>
-            Artistic Roofing: Roofing Company in Sierra Vista, AZ.
-          </h1>
+        {/* Row: left col + right col */}
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
+          {/* Left – Headline + tagline */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, width: 628, maxWidth: '100%' }}>
+            <h1 style={{
+              fontFamily: 'Playfair Display, serif',
+              fontWeight: 900,
+              fontSize: 60,
+              lineHeight: '120%',
+              color: '#fff',
+              margin: 0,
+            }}>
+              Artistic Roofing: Roofing Company in Sierra Vista, AZ.
+            </h1>
+            <p style={{
+              fontFamily: 'Outfit, sans-serif',
+              fontWeight: 500,
+              fontSize: 20,
+              lineHeight: '120%',
+              color: '#fff',
+              margin: 0,
+            }}>
+              We're on top of what matters most.
+            </p>
+          </div>
 
           {/* Right – paragraph + CTA */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 30, flex: 1, minWidth: 280, maxWidth: 560, alignSelf: 'stretch', justifyContent: 'flex-end' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 30, flex: 1, minWidth: 280, maxWidth: 560 }}>
             <p style={{
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 500,
