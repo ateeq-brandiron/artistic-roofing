@@ -10,7 +10,10 @@ export default function Certifications() {
   return (
     <section style={{
       width: '100%',
-      background: '#fff',
+      background: 'var(--shape-fill)',
+      backgroundImage: 'url(/img/pattern.svg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
       padding: 'clamp(60px,8vw,100px) clamp(24px,5vw,100px)',
       display: 'flex',
       flexDirection: 'column',
