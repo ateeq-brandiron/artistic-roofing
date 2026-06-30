@@ -162,12 +162,12 @@ export default function ProcessPage() {
                     justifyContent: 'center',
                   }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" style={{ position: 'absolute', inset: 0 }}>
-                      <circle cx="28" cy="28" r="28" fill="#D1EFFF" />
+                      <circle cx="28" cy="28" r="28" fill={i === 0 ? '#0080C6' : '#D1EFFF'} />
                     </svg>
                     <span style={{
                       position: 'relative',
                       fontFamily: 'Outfit', fontWeight: 700, fontSize: 18,
-                      color: '#0080C6', lineHeight: 1,
+                      color: i === 0 ? '#fff' : '#0080C6', lineHeight: 1,
                     }}>{step.num}</span>
                   </div>
 
