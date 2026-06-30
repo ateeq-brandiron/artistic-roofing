@@ -131,7 +131,7 @@ export default function ProcessPage() {
               width="2" height="693" viewBox="0 0 2 693" fill="none"
               style={{ position: 'absolute', left: 245, top: 28, zIndex: 0, pointerEvents: 'none' }}
             >
-              <path d="M1 0V693" stroke="#0080C6" strokeWidth="2" strokeDasharray="10 0" />
+              <path d="M1 0V693" stroke="#0080C6" strokeWidth="2" strokeDasharray="8 8" />
             </svg>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 48 }}>
