@@ -177,7 +177,7 @@ export default function ServicesPage() {
         position: 'relative',
         width: '100%',
         minHeight: 560,
-        backgroundImage: 'url(/img/Background.png)',
+        backgroundImage: 'url(/img/source_IQC.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 40%',
         display: 'flex',
