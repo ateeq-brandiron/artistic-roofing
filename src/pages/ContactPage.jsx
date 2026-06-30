@@ -40,14 +40,21 @@ export default function ContactPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 56,
+          fontSize: 60,
           lineHeight: '120%',
           color: '#fff',
-          margin: 0,
+          margin: '0 0 16px',
           maxWidth: 620,
         }}>
           Contact Artistic Roofing Systems in Sierra Vista AZ
         </h1>
+        <p style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 20, lineHeight: '120%', color: '#fff', margin: '0 0 28px' }}>
+          We're ready to help — reach out for a free estimate today.
+        </p>
+        <a href="tel:5204586781" style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 16, padding: '15px 24px', background: '#fff', borderRadius: 10, fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 17, color: '#1e1e1e', textDecoration: 'none', whiteSpace: 'nowrap' }}>
+          Call 520-458-6781
+          <img src="/img/call-made-2.svg" alt="" style={{ width: 14, height: 14 }} />
+        </a>
       </section>
 
       {/* ── Ticker ── */}
