@@ -419,36 +419,49 @@ export default function AboutPage() {
       </section>
 
       {/* ── Service Commitment CTA ── */}
-      <section style={{
-        position: 'relative',
-        backgroundImage: 'url(/img/box.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: '50% 50%',
-        padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px)',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-      }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.58)' }} />
-        <div style={{ position: 'relative', maxWidth: 760, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
-          <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(28px,4vw,48px)', lineHeight: 1.2, color: '#fff' }}>
-            Our Service Commitment
-          </h2>
-          <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 'clamp(16px,2vw,20px)', lineHeight: '1.75', color: 'rgba(255,255,255,0.88)' }}>
-            Every project, large or small, is managed with care, clear communication, and respect for your property. We are licensed, bonded, and insured for your peace of mind. We stand behind our work long after the job is complete. Our promise is simple: treat every customer like a neighbor and deliver roofing solutions that stand the test of time.
-          </p>
-          <Link to="/contact" style={{
-            display: 'inline-flex', alignItems: 'center', gap: 12,
-            padding: '14px 28px',
-            background: 'var(--blue)',
-            borderRadius: 10,
-            boxShadow: 'inset 0 4px 4px rgba(255,255,255,0.1)',
-            fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
-            color: '#fff', letterSpacing: '0.03em',
-          }}>
-            Request a Quote
-            <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
-          </Link>
-        </div>
-      </section>
+      <div style={{ padding: '0 75px 75px', boxSizing: 'border-box' }}>
+        <section style={{
+          position: 'relative',
+          backgroundImage: 'url(/img/source_20191114_091038.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: '50% 40%',
+          borderRadius: 20,
+          overflow: 'hidden',
+          padding: '75px 100px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          boxSizing: 'border-box',
+        }}>
+          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.52)' }} />
+          <div style={{ position: 'relative', maxWidth: 900, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28 }}>
+            <h2 style={{
+              fontFamily: 'Playfair Display, serif', fontWeight: 900,
+              fontSize: 52, lineHeight: '120%', color: '#fff', margin: 0,
+            }}>
+              Our Service Commitment
+            </h2>
+            <p style={{
+              fontFamily: 'Outfit', fontWeight: 400, fontSize: 20,
+              lineHeight: '160%', color: '#fff', margin: 0,
+            }}>
+              Every project, large or small, is managed with care, clear communication, and respect for your property. We are licensed, bonded, and insured for your peace of mind. We stand behind our work long after the job is complete. Our promise is simple: treat every customer like a neighbor and deliver roofing solutions that stand the test of time.
+            </p>
+            <Link to="/contact" style={{
+              display: 'inline-flex', alignItems: 'center', gap: 12,
+              padding: '16px 32px',
+              background: 'var(--blue)',
+              borderRadius: 10,
+              fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
+              color: '#fff', letterSpacing: '0.02em',
+            }}>
+              Request a Quote
+              <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
+            </Link>
+          </div>
+        </section>
+      </div>
     </>
   );
 }
