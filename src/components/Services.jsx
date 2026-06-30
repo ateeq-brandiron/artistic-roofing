@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 function SectionLabel({ text }) {
@@ -42,26 +43,57 @@ const services = [
 ];
 
 function ServiceCard({ s }) {
+  const [hovered, setHovered] = React.useState(false);
   return (
-    <div style={{
-      width: 403, minHeight: 411,
-      borderRadius: 10,
-      backgroundImage: `url(${s.bg})`,
-      backgroundSize: 'cover',
-      backgroundPosition: '50% 50%',
-      display: 'flex', flexDirection: 'column',
-      justifyContent: 'flex-end',
-      padding: '30px 17px',
-      flexShrink: 0,
-    }}>
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        width: 403, minHeight: 411,
+        borderRadius: 10,
+        overflow: 'hidden',
+        display: 'flex', flexDirection: 'column',
+        justifyContent: 'flex-end',
+        flexShrink: 0,
+        position: 'relative',
+        transform: hovered ? 'translateY(-6px)' : 'translateY(0)',
+        boxShadow: hovered ? '0 24px 56px rgba(0,0,0,0.18)' : '0 4px 16px rgba(0,0,0,0.08)',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        cursor: 'default',
+      }}
+    >
+      {/* Background image with zoom */}
       <div style={{
-        background: 'rgba(253,254,255,0.95)',
+        position: 'absolute', inset: 0,
+        backgroundImage: `url(${s.bg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 50%',
+        transform: hovered ? 'scale(1.06)' : 'scale(1)',
+        transition: 'transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+      }} />
+
+      {/* Content card */}
+      <div style={{
+        position: 'relative',
+        margin: '0 17px 17px',
+        background: hovered ? 'rgba(0,128,198,0.97)' : 'rgba(253,254,255,0.95)',
         borderRadius: 10,
         padding: 15,
         display: 'flex', flexDirection: 'column', gap: 11,
+        transition: 'background 0.3s ease',
       }}>
-        <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 18, lineHeight: '21.6px', color: '#000' }}>{s.title}</h3>
-        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 14, lineHeight: '16.8px', color: 'var(--color-3)' }}>{s.desc}</p>
+        <h3 style={{
+          fontFamily: 'Playfair Display, serif', fontWeight: 700,
+          fontSize: 18, lineHeight: '21.6px',
+          color: hovered ? '#fff' : '#000',
+          transition: 'color 0.3s ease',
+        }}>{s.title}</h3>
+        <p style={{
+          fontFamily: 'Outfit, sans-serif', fontWeight: 400,
+          fontSize: 14, lineHeight: '16.8px',
+          color: hovered ? 'rgba(255,255,255,0.88)' : 'var(--color-3)',
+          transition: 'color 0.3s ease',
+        }}>{s.desc}</p>
       </div>
     </div>
   );
@@ -82,28 +114,25 @@ export default function Services() {
         </h2>
       </div>
 
-      {/* Cards grid – row 1: 3 cards, row 2: 2 cards centered */}
+      {/* Cards */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 40, width: '100%', maxWidth: 1290 }}>
-        {/* Row 1 */}
         <div style={{ display: 'flex', gap: 40, justifyContent: 'center' }}>
           {services.slice(0, 3).map((s, i) => <ServiceCard key={i} s={s} />)}
         </div>
-        {/* Row 2 */}
         <div style={{ display: 'flex', gap: 40, justifyContent: 'center' }}>
           {services.slice(3).map((s, i) => <ServiceCard key={i} s={s} />)}
         </div>
       </div>
 
       {/* CTA */}
-      <Link to="/contact" style={{
-          display: 'inline-flex', alignItems: 'center', gap: 20,
-          padding: '15px 20px',
-          background: 'var(--blue)',
-          borderRadius: 10,
-          boxShadow: 'inset 0 4px 4px rgba(255,255,255,0.1), inset 4px 0 4px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(255,255,255,0.1), inset -4px 0 4px rgba(255,255,255,0.1)',
-          fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 18,
-          color: '#fff', letterSpacing: '0.05em',
-        }}>
+      <Link to="/contact" className="btn-blue" style={{
+        display: 'inline-flex', alignItems: 'center', gap: 20,
+        padding: '15px 20px',
+        background: 'var(--blue)',
+        borderRadius: 10,
+        fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 18,
+        color: '#fff', letterSpacing: '0.05em',
+      }}>
         Get a Roofing or Gutter Quote
         <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
       </Link>

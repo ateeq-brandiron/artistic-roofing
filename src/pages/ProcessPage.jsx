@@ -228,7 +228,7 @@ export default function ProcessPage() {
           }}>
             At Artistic Roofing, we believe in doing the job right the first time. Whether it's a small roof repair, a complete roof installation, or seamless gutters to protect your home, our licensed, bonded, and insured team delivers results you can count on.
           </p>
-          <Link to="/contact" style={{
+          <Link to="/contact" className="btn-blue" style={{
             display: 'inline-flex', alignItems: 'center', gap: 12,
             padding: '16px 32px',
             background: 'var(--blue)',

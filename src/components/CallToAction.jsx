@@ -64,7 +64,7 @@ export default function CallToAction() {
             If you need reliable roofing or gutter services in Sierra Vista or nearby Cochise County communities, trust the team at <strong>Artistic Roofing</strong>. Our goal is simple: to provide professional service, lasting workmanship, and open communication from start to finish.
           </p>
 
-          <Link to="/contact" style={{
+          <Link to="/contact" className="btn-blue" style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: 14,

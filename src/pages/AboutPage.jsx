@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
@@ -21,20 +22,29 @@ const certifications = [
 
 /* ── Core Value Card ── */
 function CoreValueCard({ icon, title, desc }) {
+  const [hovered, setHovered] = React.useState(false);
   return (
-    <div style={{
-      display: 'flex',
-      width: 316,
-      padding: '30px 0',
-      flexDirection: 'column',
-      alignItems: 'center',
-      gap: 30,
-      flexShrink: 0,
-      borderRadius: 10,
-      border: '2px solid #D1EFFF',
-      background: '#E8F8FF',
-      boxSizing: 'border-box',
-    }}>
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        display: 'flex',
+        width: 316,
+        padding: '30px 0',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 30,
+        flexShrink: 0,
+        borderRadius: 10,
+        border: hovered ? '2px solid var(--blue)' : '2px solid #D1EFFF',
+        background: hovered ? '#fff' : '#E8F8FF',
+        boxSizing: 'border-box',
+        transform: hovered ? 'translateY(-6px)' : 'translateY(0)',
+        boxShadow: hovered ? '0 20px 48px rgba(0,128,198,0.15)' : 'none',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease',
+        cursor: 'default',
+      }}
+    >
       {/* Dashed ring + inner circle + icon */}
       <div style={{ position: 'relative', width: 134, height: 134, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
         <img src="/img/core-values/Ellipse 9.svg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
@@ -42,14 +52,20 @@ function CoreValueCard({ icon, title, desc }) {
           width: 104,
           height: 104,
           borderRadius: '50%',
-          background: 'var(--shape-fill)',
+          background: hovered ? 'var(--blue)' : 'var(--shape-fill)',
           border: '1px solid var(--shape-stroke)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           position: 'relative',
+          transition: 'background 0.3s ease',
         }}>
-          <img src={icon} alt={title} style={{ width: 52, height: 52, objectFit: 'contain' }} />
+          <img src={icon} alt={title} style={{
+            width: 52, height: 52, objectFit: 'contain',
+            filter: hovered ? 'brightness(0) invert(1)' : 'none',
+            transform: hovered ? 'scale(1.12)' : 'scale(1)',
+            transition: 'transform 0.3s ease, filter 0.3s ease',
+          }} />
         </div>
       </div>
 
@@ -58,8 +74,9 @@ function CoreValueCard({ icon, title, desc }) {
         fontWeight: 700,
         fontSize: 22,
         lineHeight: 1.2,
-        color: '#000',
+        color: hovered ? 'var(--blue)' : '#000',
         margin: 0,
+        transition: 'color 0.3s ease',
       }}>{title}</h3>
 
       <p style={{
@@ -416,7 +433,7 @@ export default function AboutPage() {
             }}>
               Every project, large or small, is managed with care, clear communication, and respect for your property. We are licensed, bonded, and insured for your peace of mind. We stand behind our work long after the job is complete. Our promise is simple: treat every customer like a neighbor and deliver roofing solutions that stand the test of time.
             </p>
-            <Link to="/contact" style={{
+            <Link to="/contact" className="btn-blue" style={{
               display: 'inline-flex', alignItems: 'center', gap: 12,
               padding: '16px 32px',
               background: 'var(--blue)',

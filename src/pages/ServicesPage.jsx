@@ -87,6 +87,86 @@ const faqs = [
   { q: 'Why choose Artistic Roofing for roofing services in Sierra Vista AZ?', a: 'Artistic Roofing Systems has served Sierra Vista and Cochise County for over a decade. We are licensed, bonded, insured, TRI Certified, OSHA trained, and Polyglass certified. Our long-term team members are locals who take pride in serving their community with honest, dependable workmanship.' },
 ];
 
+function CommercialCard({ s }) {
+  const [h, setH] = useState(false);
+  return (
+    <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
+      style={{ borderRadius: 12, overflow: 'hidden', border: '1px solid var(--shape-stroke)',
+        boxShadow: h ? '0 24px 56px rgba(0,0,0,0.13)' : '0 4px 16px rgba(0,0,0,0.06)',
+        transform: h ? 'translateY(-6px)' : 'none',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease', cursor: 'default' }}>
+      <div style={{ height: 240, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%',
+        transform: h ? 'scale(1.04)' : 'scale(1)', transition: 'transform 0.55s ease' }} />
+      <div style={{ padding: '24px 24px 28px' }}>
+        <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 22, color: h ? 'var(--blue)' : '#000', margin: '0 0 10px', transition: 'color 0.3s ease' }}>{s.title}</h3>
+        <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>{s.desc}</p>
+      </div>
+    </div>
+  );
+}
+
+function ResidentialCard({ s }) {
+  const [h, setH] = useState(false);
+  return (
+    <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
+      style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${h ? 'var(--blue)' : 'var(--shape-stroke)'}`, background: '#fff',
+        boxShadow: h ? '0 20px 48px rgba(0,128,198,0.12)' : '0 4px 16px rgba(0,0,0,0.05)',
+        transform: h ? 'translateY(-5px)' : 'none',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease', cursor: 'default' }}>
+      <div style={{ height: 180, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%',
+        transform: h ? 'scale(1.05)' : 'scale(1)', transition: 'transform 0.55s ease' }} />
+      <div style={{ padding: '20px 20px 24px' }}>
+        <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 20, color: h ? 'var(--blue)' : '#000', margin: '0 0 8px', transition: 'color 0.3s ease' }}>{s.title}</h3>
+        <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>{s.desc}</p>
+      </div>
+    </div>
+  );
+}
+
+function GutterFeatureCard({ f }) {
+  const [h, setH] = useState(false);
+  return (
+    <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
+      style={{ background: h ? 'rgba(0,128,198,0.25)' : 'rgba(255,255,255,0.07)',
+        border: `1px solid ${h ? 'var(--blue)' : 'rgba(255,255,255,0.12)'}`,
+        borderRadius: 12, padding: '28px 20px',
+        display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 12,
+        transform: h ? 'translateY(-4px)' : 'none',
+        transition: 'background 0.3s ease, border-color 0.3s ease, transform 0.3s ease', cursor: 'default' }}>
+      <div style={{ width: 60, height: 60, background: h ? 'var(--blue)' : 'var(--shape-fill)', borderRadius: '50%',
+        display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+        transform: h ? 'scale(1.1)' : 'scale(1)', transition: 'background 0.3s ease, transform 0.3s ease' }}>
+        {f.icon}
+      </div>
+      <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff' }}>{f.title}</div>
+      <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.65)', lineHeight: '1.5' }}>{f.desc}</div>
+    </div>
+  );
+}
+
+function CredentialCard({ c }) {
+  const [h, setH] = useState(false);
+  return (
+    <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
+      style={{ background: h ? 'var(--blue)' : 'var(--shape-fill)',
+        border: `1px solid ${h ? 'var(--blue)' : 'var(--shape-stroke)'}`,
+        borderRadius: 16, padding: '36px 20px',
+        display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 14,
+        transform: h ? 'translateY(-5px)' : 'none',
+        boxShadow: h ? '0 20px 48px rgba(0,128,198,0.22)' : 'none',
+        transition: 'background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease', cursor: 'default' }}>
+      <div style={{ width: 72, height: 72, background: h ? 'rgba(255,255,255,0.18)' : '#fff',
+        borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
+        border: '1.5px solid var(--shape-stroke)', flexShrink: 0,
+        transform: h ? 'scale(1.1)' : 'scale(1)', transition: 'background 0.3s ease, transform 0.3s ease' }}>
+        {c.icon}
+      </div>
+      <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 18, color: h ? '#fff' : '#000', transition: 'color 0.3s ease' }}>{c.title}</div>
+      <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: h ? 'rgba(255,255,255,0.85)' : 'var(--color-3)', lineHeight: '1.5', transition: 'color 0.3s ease' }}>{c.sub}</div>
+    </div>
+  );
+}
+
 export default function ServicesPage() {
   const [openFaq, setOpenFaq] = useState(0);
 
@@ -160,15 +240,7 @@ export default function ServicesPage() {
             </h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px,1fr))', gap: 28 }}>
-            {commercial.map((s, i) => (
-              <div key={i} style={{ borderRadius: 12, overflow: 'hidden', border: '1px solid var(--shape-stroke)', boxShadow: '0 4px 16px rgba(0,0,0,0.06)' }}>
-                <div style={{ height: 240, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%' }} />
-                <div style={{ padding: '24px 24px 28px' }}>
-                  <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 22, color: '#000', margin: '0 0 10px' }}>{s.title}</h3>
-                  <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>{s.desc}</p>
-                </div>
-              </div>
-            ))}
+            {commercial.map((s, i) => <CommercialCard key={i} s={s} />)}
           </div>
         </div>
       </section>
@@ -186,15 +258,7 @@ export default function ServicesPage() {
             </h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
-            {residential.map((s, i) => (
-              <div key={i} style={{ borderRadius: 12, overflow: 'hidden', border: '1px solid var(--shape-stroke)', background: '#fff', boxShadow: '0 4px 16px rgba(0,0,0,0.05)' }}>
-                <div style={{ height: 180, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%' }} />
-                <div style={{ padding: '20px 20px 24px' }}>
-                  <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 20, color: '#000', margin: '0 0 8px' }}>{s.title}</h3>
-                  <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>{s.desc}</p>
-                </div>
-              </div>
-            ))}
+            {residential.map((s, i) => <ResidentialCard key={i} s={s} />)}
           </div>
         </div>
       </section>
@@ -218,22 +282,7 @@ export default function ServicesPage() {
 
           {/* Right — 2×2 feature grid */}
           <div style={{ flex: '1 1 320px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-            {gutterFeatures.map((f, i) => (
-              <div key={i} style={{
-                background: 'rgba(255,255,255,0.07)',
-                border: '1px solid rgba(255,255,255,0.12)',
-                borderRadius: 12,
-                padding: '28px 20px',
-                display: 'flex', flexDirection: 'column', alignItems: 'center',
-                textAlign: 'center', gap: 12,
-              }}>
-                <div style={{ width: 60, height: 60, background: 'var(--shape-fill)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  {f.icon}
-                </div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff' }}>{f.title}</div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.65)', lineHeight: '1.5' }}>{f.desc}</div>
-              </div>
-            ))}
+            {gutterFeatures.map((f, i) => <GutterFeatureCard key={i} f={f} />)}
           </div>
         </div>
       </section>
@@ -251,21 +300,7 @@ export default function ServicesPage() {
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
-            {credentials.map((c, i) => (
-              <div key={i} style={{
-                background: 'var(--shape-fill)',
-                border: '1px solid var(--shape-stroke)',
-                borderRadius: 16, padding: '36px 20px',
-                display: 'flex', flexDirection: 'column', alignItems: 'center',
-                textAlign: 'center', gap: 14,
-              }}>
-                <div style={{ width: 72, height: 72, background: '#fff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1.5px solid var(--shape-stroke)', boxShadow: '0 4px 12px rgba(0,128,198,0.08)', flexShrink: 0 }}>
-                  {c.icon}
-                </div>
-                <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 18, color: '#000' }}>{c.title}</div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: 'var(--color-3)', lineHeight: '1.5' }}>{c.sub}</div>
-              </div>
-            ))}
+            {credentials.map((c, i) => <CredentialCard key={i} c={c} />)}
           </div>
         </div>
       </section>
@@ -291,7 +326,7 @@ export default function ServicesPage() {
           <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'rgba(255,255,255,0.9)', maxWidth: 700, margin: 0 }}>
             From roofs and gutters to patios and exterior carpentry, Artistic delivers dependable results across Sierra Vista and Cochise County. Our licensed professionals bring honesty, precision, and attention to detail to every job.
           </p>
-          <Link to="/contact" style={{
+          <Link to="/contact" className="btn-blue" style={{
             display: 'inline-flex', alignItems: 'center', gap: 12,
             padding: '16px 32px', background: 'var(--blue)', borderRadius: 10,
             fontFamily: 'Outfit', fontWeight: 600, fontSize: 17, color: '#fff',

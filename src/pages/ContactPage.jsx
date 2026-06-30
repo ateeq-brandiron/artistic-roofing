@@ -116,7 +116,7 @@ export default function ContactPage() {
 
         {/* Buttons */}
         <div style={{ display: 'flex', gap: 16 }}>
-          <a href="tel:5204586781" style={{
+          <a href="tel:5204586781" className="btn-dark" style={{
             display: 'inline-flex', alignItems: 'center', gap: 10,
             padding: '14px 28px',
             background: '#fff',
@@ -127,7 +127,7 @@ export default function ContactPage() {
             Call Us Today
             <img src="/img/contact/Icon-2.svg" alt="" style={{ width: 14, height: 11 }} />
           </a>
-          <a href="#estimate-form" style={{
+          <a href="#estimate-form" className="btn-blue" style={{
             display: 'inline-flex', alignItems: 'center', gap: 10,
             padding: '14px 28px',
             background: 'var(--blue)',
@@ -270,6 +270,7 @@ export default function ContactPage() {
 
             {/* Directions button */}
             <a
+              className="btn-blue"
               href="https://maps.google.com/?q=5563+S+Santa+Elena+Ave+Sierra+Vista+AZ+85650"
               target="_blank"
               rel="noopener noreferrer"
@@ -376,6 +377,7 @@ export default function ContactPage() {
             />
             <button
               type="submit"
+              className="btn-blue"
               style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
                 padding: '16px 28px',
