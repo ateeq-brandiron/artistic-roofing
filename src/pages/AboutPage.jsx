@@ -101,7 +101,7 @@ export default function AboutPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 819,
+        minHeight: 560,
         backgroundImage: 'url(/img/Frame%202147223464%20%282%29.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 40%',
@@ -109,15 +109,15 @@ export default function AboutPage() {
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 clamp(20px,5vw,76px) 64px',
+        padding: '0 76px 64px',
         boxSizing: 'border-box',
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.48)' }} />
 
         {/* Breadcrumb */}
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 20, alignSelf: 'stretch', marginBottom: 8 }}>
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
           <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
-          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
+          <img src="/img/testimonials/caret-right.svg" alt="" style={{ width: 8, height: 13 }} />
           <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>ABOUT US</span>
         </div>
 
@@ -125,13 +125,13 @@ export default function AboutPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 60,
+          fontSize: 56,
           lineHeight: '120%',
           color: '#fff',
           margin: 0,
-          whiteSpace: 'pre-line',
+          maxWidth: 700,
         }}>
-          {'About Artistic Roofing –\nRoofing Contractors in\nSierra Vista AZ'}
+          About Artistic Roofing – Roofing Contractors in Sierra Vista AZ
         </h1>
       </section>
 

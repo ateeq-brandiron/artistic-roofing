@@ -191,7 +191,7 @@ export default function ServicesPage() {
 
         <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
           <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
-          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
+          <img src="/img/contact/caret-right.svg" alt="" style={{ width: 8, height: 13 }} />
           <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>SERVICES</span>
         </div>
 
