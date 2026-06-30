@@ -51,7 +51,7 @@ export default function Layout() {
   }, [pathname]);
 
   return (
-    <>
+    <div style={{ overflowX: 'hidden', maxWidth: '100vw', position: 'relative' }}>
       <Navbar />
 
       <main key={pathname} className="page-enter">
@@ -80,6 +80,6 @@ export default function Layout() {
           </svg>
         </button>
       )}
-    </>
+    </div>
   );
 }
