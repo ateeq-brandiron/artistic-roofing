@@ -2,50 +2,82 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
-function SectionLabel({ text }) {
+/* ── Standard white label pill ── */
+function Pill({ text }) {
   return (
-    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 12px', background: 'var(--shape-fill)', border: '1px solid var(--shape-stroke)', borderRadius: 100 }}>
-      <img src="/img/vector-stroke-5.svg" alt="" style={{ width: 13, height: 13 }} />
-      <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
+    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
+      <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+      <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
     </div>
   );
 }
 
-
 const commercial = [
   {
-    img: '/img/frame-2147223416.png',
+    img: '/img/Frame%202147223416.png',
     title: 'Commercial Roof Repairs',
     desc: 'We deliver prompt, reliable repair services for businesses facing storm damage, wear, or leaks. Our experienced team quickly addresses problem areas to protect your property and minimize disruption.',
   },
   {
-    img: '/img/frame-2147223417.png',
+    img: '/img/Frame%202147223417.png',
     title: 'Commercial Roof Installation',
     desc: 'Our clients bring years of experience with metal roofing systems and low-slope applications, including modified bitumen, helping ensure your commercial property stays well protected with materials suited to Arizona conditions.',
   },
 ];
 
 const residential = [
-  { img: '/img/frame-2147223409.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
-  { img: '/img/frame-2147223415.png', title: 'Re-roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
-  { img: '/img/frame-2147223416.png', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
-  { img: '/img/frame-2147223417.png', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an aging roof, our team installs durable systems using trusted manufacturers including Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
-  { img: '/img/frame-2147223418.png', title: 'Roof Inspections', desc: 'Our experienced team provides thorough roof inspections to assess condition, identify wear or damage, and provide clear, actionable solutions to extend your roof\'s performance.' },
-  { img: '/img/frame-2147223409.png', title: 'Roof Coatings & Restoration', desc: 'We provide Polyglass-certified coatings and repair systems for low-slope roofs, supporting long-term waterproofing, energy efficiency, and performance in Arizona\'s climate.' },
+  { img: '/img/Frame%202147223409.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
+  { img: '/img/Frame%202147223415.png', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
+  { img: '/img/Frame%202147223416.png', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
+  { img: '/img/Frame%202147223417.png', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an aging roof, our team installs durable systems using trusted manufacturers including Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
+  { img: '/img/Frame%202147223418.png', title: 'Roof Inspections', desc: 'Our experienced team provides thorough roof inspections to assess condition, identify wear or damage, and provide clear, actionable solutions to extend your roof\'s performance.' },
+  { img: '/img/Frame%202147223409.png', title: 'Roof Coatings & Restoration', desc: 'We provide Polyglass-certified coatings and repair systems for low-slope roofs, supporting long-term waterproofing, energy efficiency, and performance in Arizona\'s climate.' },
 ];
 
 const gutterFeatures = [
-  { icon: '📐', title: 'Custom Fit', desc: 'Fabricated on-site to match your roofline precisely.' },
-  { icon: '💧', title: 'Manage Water Flow', desc: 'Proper slope alignment to direct water away from your foundation.' },
-  { icon: '🎨', title: 'Multiple Colors', desc: 'Available in a wide range of colors to complement your home.' },
-  { icon: '🏭', title: 'On-Site Fab', desc: 'Seamless gutters made fresh at your property for a perfect fit.' },
+  {
+    icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 8h20M4 14h14M4 20h8" stroke="#0080C6" strokeWidth="2" strokeLinecap="round"/><rect x="18" y="13" width="6" height="8" rx="1" stroke="#0080C6" strokeWidth="1.5"/></svg>,
+    title: 'Custom Fit',
+    desc: 'Fabricated on-site to match your roofline precisely.',
+  },
+  {
+    icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4c0 0-7 7-7 13a7 7 0 0014 0C21 11 14 4 14 4z" stroke="#0080C6" strokeWidth="1.8" fill="rgba(0,128,198,0.08)"/><path d="M10 18c0 2.2 1.8 4 4 4" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    title: 'Manage Water Flow',
+    desc: 'Proper slope alignment to direct water away from your foundation.',
+  },
+  {
+    icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="10" cy="10" r="4" stroke="#0080C6" strokeWidth="1.8"/><circle cx="20" cy="10" r="4" stroke="#0080C6" strokeWidth="1.8"/><circle cx="10" cy="20" r="4" stroke="#0080C6" strokeWidth="1.8"/><circle cx="20" cy="20" r="4" stroke="#0080C6" strokeWidth="1.8"/></svg>,
+    title: 'Multiple Colors',
+    desc: 'Available in a wide range of colors to complement your home.',
+  },
+  {
+    icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="10" width="20" height="14" rx="2" stroke="#0080C6" strokeWidth="1.8"/><path d="M8 10V8a6 6 0 0112 0v2" stroke="#0080C6" strokeWidth="1.8" strokeLinecap="round"/><circle cx="14" cy="17" r="2" fill="#0080C6"/></svg>,
+    title: 'On-Site Fab',
+    desc: 'Seamless gutters made fresh at your property for a perfect fit.',
+  },
 ];
 
 const credentials = [
-  { title: 'Fully Licensed', sub: 'AZTRB11-A12', icon: '🛡️' },
-  { title: 'Bonded & Insured', sub: 'Complete Protection', icon: '📋' },
-  { title: 'ARCA Member', sub: 'Arizona Roofing Contractors Association', icon: '🏛️' },
-  { title: 'BBB Accredited', sub: 'A+ Rating', icon: '⭐' },
+  {
+    icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 3l10 4v8c0 6-10 12-10 12S6 21 6 15V7l10-4z" stroke="#0080C6" strokeWidth="1.8" fill="rgba(0,128,198,0.08)"/><path d="M11 16l3 3 7-7" stroke="#0080C6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+    title: 'Fully Licensed',
+    sub: 'AZTRB11-A12',
+  },
+  {
+    icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="5" y="7" width="22" height="18" rx="2" stroke="#0080C6" strokeWidth="1.8"/><path d="M5 13h22" stroke="#0080C6" strokeWidth="1.8"/><path d="M10 19h6M10 23h4" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    title: 'Bonded & Insured',
+    sub: 'Complete Protection',
+  },
+  {
+    icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l3 6 6.5 1-4.7 4.6 1.1 6.4L16 19l-5.9 3 1.1-6.4L6.5 11l6.5-1z" stroke="#0080C6" strokeWidth="1.8" fill="rgba(0,128,198,0.08)"/><circle cx="16" cy="27" r="2" fill="#0080C6"/><path d="M16 22v3" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    title: 'ARCA Member',
+    sub: 'Arizona Roofing Contractors Association',
+  },
+  {
+    icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="14" r="9" stroke="#0080C6" strokeWidth="1.8"/><path d="M12 14l3 3 5-5" stroke="#0080C6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M10 25l1.5-2M22 25l-1.5-2" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    title: 'BBB Accredited',
+    sub: 'A+ Rating',
+  },
 ];
 
 const faqs = [
@@ -60,26 +92,53 @@ export default function ServicesPage() {
 
   return (
     <>
-      {/* Hero */}
-      <section style={{ position: 'relative', minHeight: 400, backgroundImage: 'url(/img/background.png)', backgroundSize: 'cover', backgroundPosition: '50% 40%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.55)' }} />
-        <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '0 clamp(20px,5vw,76px) 56px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-            <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
-            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
-            <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>SERVICES</span>
-          </div>
-          <h1 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(30px,5vw,56px)', lineHeight: 1.15, color: '#fff', maxWidth: 580 }}>
-            Roofing Services in Sierra Vista AZ
-          </h1>
+      {/* ── Hero ── */}
+      <section style={{
+        position: 'relative',
+        width: '100%',
+        minHeight: 560,
+        backgroundImage: 'url(/img/Background.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 40%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        alignItems: 'flex-start',
+        padding: '0 76px 64px',
+        boxSizing: 'border-box',
+      }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.48)' }} />
+
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+          <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
+          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
+          <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>SERVICES</span>
         </div>
+
+        <h1 style={{
+          position: 'relative',
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 900,
+          fontSize: 56,
+          lineHeight: '120%',
+          color: '#fff',
+          margin: 0,
+          maxWidth: 580,
+        }}>
+          Roofing Services in Sierra Vista AZ
+        </h1>
       </section>
 
+      {/* ── Ticker ── */}
       <ScrollBar />
 
-      {/* Intro */}
-      <section style={{ background: 'var(--shape-fill)', padding: 'clamp(36px,5vw,64px) clamp(20px,5vw,76px)' }}>
-        <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 'clamp(15px,2vw,18px)', lineHeight: '1.75', color: 'var(--color-3)', maxWidth: 900, margin: '0 auto' }}>
+      {/* ── Intro ── */}
+      <section style={{ background: 'var(--shape-fill)', padding: '60px 76px', boxSizing: 'border-box' }}>
+        <p style={{
+          fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
+          lineHeight: '160%', color: 'var(--color-3)',
+          textAlign: 'center', maxWidth: 900, margin: '0 auto',
+        }}>
           At{' '}
           <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Artistic Roofing</span>
           , we provide complete roofing and gutter solutions for homeowners and light commercial properties in{' '}
@@ -88,23 +147,25 @@ export default function ServicesPage() {
         </p>
       </section>
 
-      {/* Commercial */}
-      <section style={{ background: '#fff', padding: 'clamp(48px,6vw,80px) clamp(20px,5vw,76px)' }}>
+      {/* ── Commercial Roofing Services ── */}
+      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
-          <div style={{ marginBottom: 40 }}>
-            <SectionLabel text="SERVICES" />
-            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(26px,4vw,40px)', lineHeight: 1.2, marginTop: 14, color: '#000' }}>
-              Commercial Roofing{' '}
-              <span style={{ color: 'var(--blue)', fontStyle: 'italic' }}>Services</span>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 48 }}>
+            <Pill text="SERVICES" />
+            <h2 style={{
+              fontFamily: 'Playfair Display, serif', fontWeight: 900,
+              fontSize: 48, lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
+            }}>
+              Commercial Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
             </h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px,1fr))', gap: 28 }}>
             {commercial.map((s, i) => (
               <div key={i} style={{ borderRadius: 12, overflow: 'hidden', border: '1px solid var(--shape-stroke)', boxShadow: '0 4px 16px rgba(0,0,0,0.06)' }}>
-                <div style={{ height: 220, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%' }} />
+                <div style={{ height: 240, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%' }} />
                 <div style={{ padding: '24px 24px 28px' }}>
-                  <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 22, color: '#000', marginBottom: 10 }}>{s.title}</h3>
-                  <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, lineHeight: '1.7', color: 'var(--color-3)' }}>{s.desc}</p>
+                  <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 22, color: '#000', margin: '0 0 10px' }}>{s.title}</h3>
+                  <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -112,23 +173,25 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Residential */}
-      <section style={{ background: 'var(--shape-fill)', padding: 'clamp(48px,6vw,80px) clamp(20px,5vw,76px)' }}>
+      {/* ── Residential Roofing Services ── */}
+      <section style={{ background: 'var(--shape-fill)', padding: '75px 76px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
-          <div style={{ marginBottom: 40 }}>
-            <SectionLabel text="SERVICES" />
-            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(26px,4vw,40px)', lineHeight: 1.2, marginTop: 14, color: '#000' }}>
-              Residential Roofing{' '}
-              <span style={{ color: 'var(--blue)', fontStyle: 'italic' }}>Services</span>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 48 }}>
+            <Pill text="SERVICES" />
+            <h2 style={{
+              fontFamily: 'Playfair Display, serif', fontWeight: 900,
+              fontSize: 48, lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
+            }}>
+              Residential Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
             </h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px,1fr))', gap: 24 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
             {residential.map((s, i) => (
               <div key={i} style={{ borderRadius: 12, overflow: 'hidden', border: '1px solid var(--shape-stroke)', background: '#fff', boxShadow: '0 4px 16px rgba(0,0,0,0.05)' }}>
                 <div style={{ height: 180, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%' }} />
                 <div style={{ padding: '20px 20px 24px' }}>
-                  <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 19, color: '#000', marginBottom: 8 }}>{s.title}</h3>
-                  <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, lineHeight: '1.7', color: 'var(--color-3)' }}>{s.desc}</p>
+                  <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 20, color: '#000', margin: '0 0 8px' }}>{s.title}</h3>
+                  <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -136,101 +199,144 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Gutter Installation — dark section */}
-      <section style={{ background: '#3a3a3a', padding: 'clamp(48px,6vw,80px) clamp(20px,5vw,76px)' }}>
-        <div style={{ maxWidth: 1290, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px,1fr))', gap: 48, alignItems: 'center' }}>
-          {/* Left text */}
-          <div>
-            <SectionLabel text="GUTTERS" />
-            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(26px,4vw,40px)', lineHeight: 1.2, color: '#fff', marginTop: 16, marginBottom: 20 }}>
+      {/* ── Gutter Installation ── */}
+      <section style={{ background: '#3a3a3a', padding: '75px 76px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+          {/* Left */}
+          <div style={{ flex: '1 1 320px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+            <Pill text="GUTTERS" />
+            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 48, lineHeight: '120%', color: '#fff', margin: 0 }}>
               Gutter Installation
             </h2>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '1.75', color: 'rgba(255,255,255,0.78)', marginBottom: 12 }}>
+            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'rgba(255,255,255,0.75)', margin: 0 }}>
               Our seamless 5" and 6" gutter systems fit to your property and home location site for precise installation. Gutters assist with water flow and drainage from your roof, reducing overflow around your home or business.
             </p>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '1.75', color: 'rgba(255,255,255,0.78)' }}>
+            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'rgba(255,255,255,0.75)', margin: 0 }}>
               Available in multiple colors and styles, our gutters are both functional and visually complementary to your roofline.
             </p>
           </div>
 
           {/* Right — 2×2 feature grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+          <div style={{ flex: '1 1 320px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
             {gutterFeatures.map((f, i) => (
-              <div key={i} style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 12, padding: '24px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 10 }}>
-                <div style={{ width: 52, height: 52, background: 'var(--shape-fill)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>
+              <div key={i} style={{
+                background: 'rgba(255,255,255,0.07)',
+                border: '1px solid rgba(255,255,255,0.12)',
+                borderRadius: 12,
+                padding: '28px 20px',
+                display: 'flex', flexDirection: 'column', alignItems: 'center',
+                textAlign: 'center', gap: 12,
+              }}>
+                <div style={{ width: 60, height: 60, background: 'var(--shape-fill)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                   {f.icon}
                 </div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 15, color: '#fff' }}>{f.title}</div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.65)', lineHeight: '1.5' }}>{f.desc}</div>
+                <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff' }}>{f.title}</div>
+                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.65)', lineHeight: '1.5' }}>{f.desc}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Trust & Credentials */}
-      <section style={{ background: '#fff', padding: 'clamp(48px,6vw,80px) clamp(20px,5vw,76px)' }}>
+      {/* ── Trust & Credentials ── */}
+      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
-          <div style={{ marginBottom: 40 }}>
-            <SectionLabel text="TRUST" />
-            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(26px,4vw,40px)', lineHeight: 1.2, marginTop: 14, color: '#000' }}>
-              Trust &{' '}
-              <span style={{ color: 'var(--blue)', fontStyle: 'italic' }}>Credentials</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 48 }}>
+            <Pill text="TRUST" />
+            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 48, lineHeight: '120%', color: '#000', margin: 0 }}>
+              Trust & <span style={{ color: 'var(--blue)' }}>Credentials</span>
             </h2>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '1.7', color: 'var(--color-3)', maxWidth: 760, marginTop: 12 }}>
-              Artistic Roofing Systems LLC is fully licensed, bonded, and insured. We are a proud member of the Arizona Roofing Contractors Association (ARCA), accredited by the Better Business Bureau, and active within the Sierra Vista Chamber of Commerce. Each project reflects our dedication to craftsmanship, integrity, and customer satisfaction.
+            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'var(--color-3)', maxWidth: 760, margin: 0 }}>
+              Artistic Roofing Systems LLC is fully licensed (AZTRB45-A12), bonded, and insured. We are a proud member of the Arizona Roofing Contractors Association (ARCA), accredited by the Better Business Bureau, and active within the Sierra Vista Chamber of Commerce. Each project reflects our dedication to craftsmanship, integrity, and customer satisfaction.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px,1fr))', gap: 20 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
             {credentials.map((c, i) => (
-              <div key={i} style={{ background: 'var(--shape-fill)', border: '1px solid var(--shape-stroke)', borderRadius: 16, padding: '32px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 14 }}>
-                <div style={{ width: 64, height: 64, background: '#fff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 26, border: '1.5px solid var(--shape-stroke)', boxShadow: '0 4px 12px rgba(0,128,198,0.08)' }}>
+              <div key={i} style={{
+                background: 'var(--shape-fill)',
+                border: '1px solid var(--shape-stroke)',
+                borderRadius: 16, padding: '36px 20px',
+                display: 'flex', flexDirection: 'column', alignItems: 'center',
+                textAlign: 'center', gap: 14,
+              }}>
+                <div style={{ width: 72, height: 72, background: '#fff', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1.5px solid var(--shape-stroke)', boxShadow: '0 4px 12px rgba(0,128,198,0.08)', flexShrink: 0 }}>
                   {c.icon}
                 </div>
                 <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 18, color: '#000' }}>{c.title}</div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'var(--color-3)', lineHeight: '1.5' }}>{c.sub}</div>
+                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: 'var(--color-3)', lineHeight: '1.5' }}>{c.sub}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ position: 'relative', backgroundImage: 'url(/img/frame-2147223464.png)', backgroundSize: 'cover', backgroundPosition: '50% 60%', padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.60)' }} />
-        <div style={{ position: 'relative', maxWidth: 740, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
-          <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(26px,4vw,46px)', lineHeight: 1.2, color: '#fff' }}>
+      {/* ── CTA ── */}
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 75px 75px', boxSizing: 'border-box' }}>
+        <section style={{
+          display: 'flex',
+          width: 1290,
+          padding: '80px 100px',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: 24,
+          borderRadius: 10,
+          background: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/source_20191114_091038.jpg) lightgray 50% / cover no-repeat`,
+          boxSizing: 'border-box',
+          textAlign: 'center',
+        }}>
+          <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 48, lineHeight: '120%', color: '#fff', margin: 0 }}>
             Ready to Protect Your Property?
           </h2>
-          <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 'clamp(15px,2vw,19px)', lineHeight: '1.75', color: 'rgba(255,255,255,0.88)' }}>
+          <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'rgba(255,255,255,0.9)', maxWidth: 700, margin: 0 }}>
             From roofs and gutters to patios and exterior carpentry, Artistic delivers dependable results across Sierra Vista and Cochise County. Our licensed professionals bring honesty, precision, and attention to detail to every job.
           </p>
-          <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '14px 28px', background: 'var(--blue)', borderRadius: 10, fontFamily: 'Outfit', fontWeight: 600, fontSize: 17, color: '#fff' }}>
+          <Link to="/contact" style={{
+            display: 'inline-flex', alignItems: 'center', gap: 12,
+            padding: '16px 32px', background: 'var(--blue)', borderRadius: 10,
+            fontFamily: 'Outfit', fontWeight: 600, fontSize: 17, color: '#fff',
+            letterSpacing: '0.02em', marginTop: 8,
+          }}>
             Request Your Free Roofing Estimate
             <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
           </Link>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      {/* FAQ */}
-      <section style={{ background: '#fff', padding: 'clamp(48px,6vw,80px) clamp(20px,5vw,76px)' }}>
-        <div style={{ maxWidth: 1290, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px,1fr))', gap: 48, alignItems: 'start' }}>
-          <div>
-            <SectionLabel text="FAQ" />
-            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(26px,4vw,40px)', lineHeight: 1.2, color: '#000', marginTop: 16 }}>
+      {/* ── FAQ ── */}
+      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+          {/* Left */}
+          <div style={{ flex: '0 0 340px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+            <Pill text="FAQ" />
+            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 40, lineHeight: '120%', color: '#000', margin: 0 }}>
               Frequently Asked Questions About Roofing and Gutters
             </h2>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+
+          {/* Right — accordion */}
+          <div style={{ flex: 1, minWidth: 280, display: 'flex', flexDirection: 'column', gap: 12 }}>
             {faqs.map((faq, i) => {
               const isOpen = openFaq === i;
               return (
-                <div key={i} onClick={() => setOpenFaq(isOpen ? -1 : i)} style={{ background: isOpen ? 'var(--shape-stroke)' : 'var(--shape-fill)', border: '1px solid var(--neutral-100)', borderRadius: 8, padding: '20px 24px', cursor: 'pointer' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
-                    <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 500, fontSize: 'clamp(16px,2vw,20px)', lineHeight: '1.4', color: 'var(--neutral-900)', flex: 1 }}>{faq.q}</h3>
-                    <img src={isOpen ? '/img/heroicons-solid-minus.svg' : '/img/heroicons-solid-plus-2.svg'} alt="" style={{ width: 22, height: 22, flexShrink: 0 }} />
+                <div key={i} onClick={() => setOpenFaq(isOpen ? -1 : i)} style={{
+                  background: 'var(--shape-fill)', borderRadius: 12,
+                  padding: '24px 28px', cursor: 'pointer',
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16 }}>
+                    <h3 style={{
+                      fontFamily: 'Playfair Display, serif', fontWeight: isOpen ? 700 : 400,
+                      fontSize: 20, lineHeight: '135%', color: '#000', margin: 0, flex: 1,
+                    }}>{faq.q}</h3>
+                    <span style={{ fontSize: 28, color: 'var(--color-3)', lineHeight: 1, flexShrink: 0, marginTop: 2, userSelect: 'none' }}>
+                      {isOpen ? '−' : '+'}
+                    </span>
                   </div>
-                  {isOpen && <p style={{ marginTop: 16, fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '1.7', color: 'var(--neutral-600)' }}>{faq.a}</p>}
+                  {isOpen && (
+                    <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '170%', color: 'var(--color-3)', margin: '16px 0 0' }}>
+                      {faq.a}
+                    </p>
+                  )}
                 </div>
               );
             })}
