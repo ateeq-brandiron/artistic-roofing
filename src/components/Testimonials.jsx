@@ -156,50 +156,64 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Bottom nav bar */}
+        {/* Left arrow */}
+        <button
+          onClick={() => setPage(p => Math.max(0, p - 1))}
+          style={{
+            position: 'absolute', left: 16, bottom: 16,
+            width: 40, height: 40, borderRadius: '50%',
+            background: 'rgba(0,0,0,0.55)',
+            border: 'none', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            opacity: page === 0 ? 0.45 : 1,
+            transition: 'opacity 0.2s',
+            flexShrink: 0,
+          }}
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18l-6-6 6-6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+
+        {/* Dots */}
         <div style={{
-          position: 'absolute', bottom: 0, left: 0, right: 0,
-          height: 64,
-          background: 'rgba(0,0,0,0.18)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: 24,
+          position: 'absolute', bottom: 24, left: 0, right: 0,
+          display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8,
+          pointerEvents: 'none',
         }}>
-          {/* Left arrow */}
-          <button
-            onClick={() => setPage(p => Math.max(0, p - 1))}
-            style={{ background: 'transparent', border: 'none', cursor: 'pointer', padding: 8, opacity: page === 0 ? 0.4 : 1 }}
-          >
-            <img src="/img/testimonials/chevron-down.svg" alt="Previous" style={{ width: 24, height: 24, transform: 'rotate(90deg)', filter: 'brightness(0) invert(1)' }} />
-          </button>
-
-          {/* Dots */}
-          <div style={{ display: 'flex', gap: 10 }}>
-            {Array.from({ length: totalPages }).map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setPage(i)}
-                style={{
-                  width: 10, height: 10,
-                  borderRadius: '50%',
-                  background: i === page ? '#fff' : 'rgba(255,255,255,0.4)',
-                  border: 'none',
-                  padding: 0,
-                  cursor: 'pointer',
-                }}
-              />
-            ))}
-          </div>
-
-          {/* Right arrow */}
-          <button
-            onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
-            style={{ background: 'transparent', border: 'none', cursor: 'pointer', padding: 8, opacity: page === totalPages - 1 ? 0.4 : 1 }}
-          >
-            <img src="/img/testimonials/chevron-down-1.svg" alt="Next" style={{ width: 24, height: 24, transform: 'rotate(-90deg)', filter: 'brightness(0) invert(1)' }} />
-          </button>
+          {Array.from({ length: totalPages }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setPage(i)}
+              style={{
+                width: 10, height: 10,
+                borderRadius: '50%',
+                background: i === page ? '#fff' : 'rgba(255,255,255,0.45)',
+                border: 'none', padding: 0, cursor: 'pointer',
+                pointerEvents: 'all',
+              }}
+            />
+          ))}
         </div>
+
+        {/* Right arrow */}
+        <button
+          onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
+          style={{
+            position: 'absolute', right: 16, bottom: 16,
+            width: 40, height: 40, borderRadius: '50%',
+            background: 'rgba(0,0,0,0.55)',
+            border: 'none', cursor: 'pointer',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            opacity: page === totalPages - 1 ? 0.45 : 1,
+            transition: 'opacity 0.2s',
+            flexShrink: 0,
+          }}
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18l6-6-6-6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
       </div>
 
     </section>
