@@ -1,28 +1,10 @@
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
-function SectionLabel({ text }) {
-  return (
-    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 12px', background: 'var(--shape-fill)', border: '1px solid var(--shape-stroke)', borderRadius: 100 }}>
-      <img src="/img/vector-stroke-5.svg" alt="" style={{ width: 13, height: 13 }} />
-      <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
-    </div>
-  );
-}
-
-function Check() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-      <circle cx="10" cy="10" r="10" fill="var(--blue)" opacity="0.12" />
-      <path d="M6 10l3 3 5-5" stroke="var(--blue)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
 const steps = [
   {
     num: '01',
-    img: '/img/frame-2147223409.png',
+    img: '/img/process/Rectangle%20227.png',
     title: 'Step 1 – Consultation & Inspection',
     items: [
       'In-person visit to assess your roof, gutters, or structures',
@@ -32,7 +14,7 @@ const steps = [
   },
   {
     num: '02',
-    img: '/img/frame-2147223415.png',
+    img: '/img/process/Rectangle%20227-1.png',
     title: 'Step 2 – Detailed Proposal',
     items: [
       'Clear, written estimate outlining the scope of work and materials',
@@ -42,7 +24,7 @@ const steps = [
   },
   {
     num: '03',
-    img: '/img/frame-2147223416.png',
+    img: '/img/process/Rectangle%20227-2.png',
     title: 'Step 3 – Project Kickoff',
     items: [
       'On-time arrival of our skilled, experienced crew',
@@ -52,7 +34,7 @@ const steps = [
   },
   {
     num: '04',
-    img: '/img/frame-2147223417.png',
+    img: '/img/process/Rectangle%20227-3.png',
     title: 'Step 4 – Quality Assurance & Walkthrough',
     items: [
       'Final inspection to ensure all standards are met',
@@ -64,99 +46,202 @@ const steps = [
 export default function ProcessPage() {
   return (
     <>
-      {/* Hero */}
-      <section style={{ position: 'relative', minHeight: 400, backgroundImage: 'url(/img/frame-2147223464.png)', backgroundSize: 'cover', backgroundPosition: '50% 30%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.52)' }} />
-        <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: '0 clamp(20px,5vw,76px) 56px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-            <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
-            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
-            <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>PROCESS</span>
-          </div>
-          <h1 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(30px,5vw,56px)', lineHeight: 1.15, color: '#fff', maxWidth: 620 }}>
-            What to Expect During Your Installation Process
-          </h1>
+      {/* ── Hero ── */}
+      <section style={{
+        position: 'relative',
+        width: '100%',
+        minHeight: 560,
+        backgroundImage: 'url(/img/process/Frame%202147223464.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 40%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        alignItems: 'flex-start',
+        padding: '0 76px 64px',
+        boxSizing: 'border-box',
+      }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.48)' }} />
+
+        {/* Breadcrumb */}
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+          <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
+          <img src="/img/process/icons/caret-right.svg" alt="" style={{ width: 8, height: 13 }} />
+          <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>PROCESS</span>
         </div>
+
+        <h1 style={{
+          position: 'relative',
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 900,
+          fontSize: 56,
+          lineHeight: '120%',
+          color: '#fff',
+          margin: 0,
+          maxWidth: 620,
+        }}>
+          What to Expect During Your Installation Process
+        </h1>
       </section>
 
+      {/* ── Ticker ── */}
       <ScrollBar />
 
-      {/* Intro */}
-      <section style={{ background: 'var(--shape-fill)', padding: 'clamp(40px,5vw,72px) clamp(20px,5vw,76px)' }}>
-        <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 'clamp(16px,2vw,19px)', lineHeight: '1.7', color: 'var(--color-3)', textAlign: 'center', maxWidth: 820, margin: '0 auto' }}>
+      {/* ── Intro ── */}
+      <section style={{
+        background: 'var(--shape-fill)',
+        padding: '60px 76px',
+        boxSizing: 'border-box',
+      }}>
+        <p style={{
+          fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
+          lineHeight: '160%', color: 'var(--color-3)',
+          textAlign: 'center', maxWidth: 820, margin: '0 auto',
+        }}>
           Thank you for considering{' '}
           <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Artistic Roofing</span>
           . Our installation process is designed to make every project—whether a new roof, seamless gutter system, or custom patio cover—straightforward and stress-free. From the first inspection to the final walkthrough, we keep you informed, on schedule, and confident your property is in expert hands.
         </p>
       </section>
 
-      {/* Step-by-Step */}
-      <section style={{ background: '#fff', padding: 'clamp(48px,6vw,88px) clamp(20px,5vw,76px)' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+      {/* ── Step-by-Step Process ── */}
+      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: 1290, margin: '0 auto' }}>
+
           {/* Header */}
-          <div style={{ textAlign: 'center', marginBottom: 64 }}>
-            <SectionLabel text="PROCESS" />
-            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(28px,4vw,44px)', lineHeight: 1.2, marginTop: 16, color: '#000' }}>
-              Our Step-by-Step{' '}
-              <span style={{ color: 'var(--blue)', fontStyle: 'italic' }}>Process</span>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 64 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
+              <img src="/img/process/icons/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>PROCESS</span>
+            </div>
+            <h2 style={{
+              fontFamily: 'Playfair Display, serif', fontWeight: 900,
+              fontSize: 48, lineHeight: '120%',
+              color: '#000', margin: 0, textAlign: 'center',
+            }}>
+              Our Step-by-Step <span style={{ color: 'var(--blue)' }}>Process</span>
             </h2>
           </div>
 
           {/* Timeline */}
-          <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', gap: 0 }}>
-            {/* Dashed vertical line */}
-            <div style={{ position: 'absolute', left: 'clamp(90px,14vw,175px)', top: 40, bottom: 40, width: 2, borderLeft: '2.5px dashed #d1eeff', zIndex: 0 }} />
+          <div style={{ position: 'relative' }}>
+            {/* Dashed vertical connector line through number circles */}
+            <div style={{
+              position: 'absolute',
+              left: 188,
+              top: 28,
+              bottom: 28,
+              width: 2,
+              borderLeft: '2px dashed #D1EFFF',
+              zIndex: 0,
+            }} />
 
-            {steps.map((step, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 0, marginBottom: i < steps.length - 1 ? 48 : 0, position: 'relative' }}>
-                {/* Photo */}
-                <div style={{ width: 'clamp(80px,12vw,160px)', height: 'clamp(80px,12vw,160px)', flexShrink: 0, borderRadius: 12, overflow: 'hidden' }}>
-                  <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 48 }}>
+              {steps.map((step, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 0 }}>
 
-                {/* Number circle */}
-                <div style={{ position: 'relative', zIndex: 1, flexShrink: 0, width: 'clamp(32px,5vw,56px)', display: 'flex', justifyContent: 'center', marginTop: 'clamp(24px,3vw,48px)' }}>
-                  <div style={{ width: 'clamp(32px,4vw,48px)', height: 'clamp(32px,4vw,48px)', background: 'var(--blue)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px solid #fff', boxShadow: '0 0 0 2px var(--blue)' }}>
-                    <span style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 'clamp(11px,1.5vw,16px)', color: '#fff' }}>{step.num}</span>
+                  {/* Step image */}
+                  <div style={{
+                    width: 162,
+                    height: 162,
+                    flexShrink: 0,
+                    borderRadius: 12,
+                    overflow: 'hidden',
+                  }}>
+                    <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   </div>
-                </div>
 
-                {/* Content */}
-                <div style={{ flex: 1, paddingTop: 'clamp(16px,2vw,32px)', paddingLeft: 'clamp(12px,2vw,28px)' }}>
-                  <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 'clamp(18px,2.5vw,26px)', color: '#000', marginBottom: 16, lineHeight: 1.3 }}>
-                    {step.title}
-                  </h3>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                    {step.items.map((item, j) => (
-                      <div key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                        <Check />
-                        <span style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 'clamp(14px,1.5vw,17px)', color: 'var(--color-3)', lineHeight: '1.5' }}>{item}</span>
-                      </div>
-                    ))}
+                  {/* Number circle */}
+                  <div style={{
+                    position: 'relative',
+                    zIndex: 1,
+                    flexShrink: 0,
+                    width: 56,
+                    height: 56,
+                    margin: '53px 24px 0',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}>
+                    <img src="/img/process/icons/Ellipse 1221-1.svg" alt="" style={{ position: 'absolute', inset: 0, width: 56, height: 56 }} />
+                    <span style={{
+                      position: 'relative',
+                      fontFamily: 'Outfit', fontWeight: 700, fontSize: 18,
+                      color: '#fff', lineHeight: 1,
+                    }}>{step.num}</span>
                   </div>
+
+                  {/* Content */}
+                  <div style={{ flex: 1, paddingTop: 40, paddingLeft: 24 }}>
+                    <h3 style={{
+                      fontFamily: 'Playfair Display, serif', fontWeight: 700,
+                      fontSize: 26, lineHeight: '120%', color: '#000',
+                      margin: '0 0 20px',
+                    }}>
+                      {step.title}
+                    </h3>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+                      {step.items.map((item, j) => (
+                        <div key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+                          <img src="/img/process/icons/Vector-2.svg" alt="" style={{ width: 18, height: 18, flexShrink: 0, marginTop: 2 }} />
+                          <span style={{
+                            fontFamily: 'Outfit', fontWeight: 400, fontSize: 17,
+                            lineHeight: '150%', color: 'var(--color-3)',
+                          }}>{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ position: 'relative', backgroundImage: 'url(/img/box.png)', backgroundSize: 'cover', backgroundPosition: '50% 50%', padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.60)' }} />
-        <div style={{ position: 'relative', maxWidth: 740, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
-          <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(26px,4vw,46px)', lineHeight: 1.2, color: '#fff' }}>
+      {/* ── CTA ── */}
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 75px 75px', boxSizing: 'border-box' }}>
+        <section style={{
+          display: 'flex',
+          width: 1290,
+          padding: '80px 100px',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: 24,
+          borderRadius: 10,
+          background: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/process/DJI_0068.jpg) lightgray 50% / cover no-repeat`,
+          boxSizing: 'border-box',
+          textAlign: 'center',
+        }}>
+          <h2 style={{
+            fontFamily: 'Playfair Display, serif', fontWeight: 900,
+            fontSize: 48, lineHeight: '120%', color: '#fff', margin: 0,
+          }}>
             Building Trust With Every Project
           </h2>
-          <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 'clamp(15px,2vw,19px)', lineHeight: '1.75', color: 'rgba(255,255,255,0.88)' }}>
+          <p style={{
+            fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
+            lineHeight: '160%', color: 'rgba(255,255,255,0.9)',
+            maxWidth: 740, margin: 0,
+          }}>
             At Artistic Roofing, we believe in doing the job right the first time. Whether it's a small roof repair, a complete roof installation, or seamless gutters to protect your home, our licensed, bonded, and insured team delivers results you can count on.
           </p>
-          <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '14px 28px', background: 'var(--blue)', borderRadius: 10, fontFamily: 'Outfit', fontWeight: 600, fontSize: 17, color: '#fff', letterSpacing: '0.03em' }}>
+          <Link to="/contact" style={{
+            display: 'inline-flex', alignItems: 'center', gap: 12,
+            padding: '16px 32px',
+            background: 'var(--blue)',
+            borderRadius: 10,
+            fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
+            color: '#fff', letterSpacing: '0.02em',
+            marginTop: 8,
+          }}>
             Request Your Roofing and Gutter Quote
-            <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
+            <img src="/img/process/icons/Icon-4.svg" alt="" style={{ width: 16, height: 14 }} />
           </Link>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 }
