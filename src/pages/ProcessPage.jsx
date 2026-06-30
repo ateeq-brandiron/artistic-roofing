@@ -125,16 +125,14 @@ export default function ProcessPage() {
 
           {/* Timeline */}
           <div style={{ maxWidth: 900, width: '100%', margin: '0 auto', position: 'relative' }}>
-            {/* Dashed vertical connector line through number circles */}
-            <div style={{
-              position: 'absolute',
-              left: 246,
-              top: 89,
-              bottom: 89,
-              width: 2,
-              borderLeft: '2px dashed #D1EFFF',
-              zIndex: 0,
-            }} />
+            {/* Vertical connector line through number circles */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="2" height="693" viewBox="0 0 2 693" fill="none"
+              style={{ position: 'absolute', left: 245, top: 89, zIndex: 0, pointerEvents: 'none' }}
+            >
+              <path d="M1 0V693" stroke="#0080C6" strokeWidth="2" strokeDasharray="10 0" />
+            </svg>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 48 }}>
               {steps.map((step, i) => (
