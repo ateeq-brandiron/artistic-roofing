@@ -129,7 +129,7 @@ export default function ProcessPage() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2" height="693" viewBox="0 0 2 693" fill="none"
-              style={{ position: 'absolute', left: 245, top: 89, zIndex: 0, pointerEvents: 'none' }}
+              style={{ position: 'absolute', left: 245, top: 28, zIndex: 0, pointerEvents: 'none' }}
             >
               <path d="M1 0V693" stroke="#0080C6" strokeWidth="2" strokeDasharray="10 0" />
             </svg>
@@ -156,7 +156,7 @@ export default function ProcessPage() {
                     flexShrink: 0,
                     width: 56,
                     height: 56,
-                    margin: '61px 0 0',
+                    margin: 0,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -170,7 +170,7 @@ export default function ProcessPage() {
                   </div>
 
                   {/* Content */}
-                  <div style={{ flex: 1, paddingTop: 40, paddingLeft: 0 }}>
+                  <div style={{ flex: 1, paddingTop: 0, paddingLeft: 0 }}>
                     <h3 style={{
                       fontFamily: 'Playfair Display, serif', fontWeight: 700,
                       fontSize: 26, lineHeight: '120%', color: '#000',
