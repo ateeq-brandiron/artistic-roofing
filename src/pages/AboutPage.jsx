@@ -172,37 +172,42 @@ export default function AboutPage() {
               background: `url(/img/about/20260507_103206.jpg) lightgray 50% / cover no-repeat`,
             }} />
 
-            {/* Left Image (foreground — house, absolute bottom-right) */}
+            {/* Left Image (foreground — house, absolute bottom-right) + badge */}
             <div style={{
               width: 390,
               height: 411,
               position: 'absolute',
               right: 0,
               bottom: 0,
-              borderRadius: 30,
-              border: '12px solid var(--shape-stroke)',
-              background: `url(/img/about/Cardillo.jpg) lightgray 50% / cover no-repeat`,
-              boxShadow: '0 10px 25px 0 rgba(0,0,0,0.07)',
-            }} />
-
-            {/* Counter / Trust badge */}
-            <div style={{
-              display: 'flex',
-              padding: 25,
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              gap: 10,
-              position: 'absolute',
-              left: 107,
-              bottom: 45.846,
-              borderRadius: 23.846,
-              background: '#000',
             }}>
-              <img src="/img/about/Vector.svg" alt="" style={{ width: 40, height: 40 }} />
-              <div style={{ textAlign: 'center' }}>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 14, color: '#fff', whiteSpace: 'nowrap' }}>Trust and Quality</div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.7)', whiteSpace: 'nowrap' }}>Service you can count on</div>
+              <div style={{
+                width: '100%',
+                height: '100%',
+                borderRadius: 30,
+                border: '12px solid var(--shape-stroke)',
+                background: `url(/img/about/Cardillo.jpg) lightgray 50% / cover no-repeat`,
+                boxShadow: '0 10px 25px 0 rgba(0,0,0,0.07)',
+              }} />
+
+              {/* Counter / Trust badge — positioned at the left seam of the two photos */}
+              <div style={{
+                display: 'flex',
+                padding: 25,
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                gap: 10,
+                position: 'absolute',
+                left: -80,
+                bottom: 46,
+                borderRadius: 23.846,
+                background: '#000',
+              }}>
+                <img src="/img/about/Vector.svg" alt="" style={{ width: 40, height: 40 }} />
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 14, color: '#fff', whiteSpace: 'nowrap' }}>Trust and Quality</div>
+                  <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.7)', whiteSpace: 'nowrap' }}>Service you can count on</div>
+                </div>
               </div>
             </div>
           </div>
