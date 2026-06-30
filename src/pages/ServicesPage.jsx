@@ -176,18 +176,18 @@ export default function ServicesPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 560,
-        backgroundImage: 'url(/img/source_IQC.jpg)',
+        minHeight: 819,
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/source_IQC.jpg)',
         backgroundSize: 'cover',
-        backgroundPosition: '50% 40%',
+        backgroundPosition: '50% 50%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 76px 64px',
+        padding: '0 76px 72px',
         boxSizing: 'border-box',
+        overflow: 'hidden',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.48)' }} />
 
         <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
           <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>

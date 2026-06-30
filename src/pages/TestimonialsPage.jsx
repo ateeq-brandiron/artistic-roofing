@@ -134,18 +134,18 @@ export default function TestimonialsPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 560,
-        backgroundImage: 'url(/img/testimonials/Frame%202147223464.png)',
+        minHeight: 819,
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/testimonials/Frame%202147223464.png)',
         backgroundSize: 'cover',
-        backgroundPosition: '50% 40%',
+        backgroundPosition: '50% 50%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 76px 64px',
+        padding: '0 76px 72px',
         boxSizing: 'border-box',
+        overflow: 'hidden',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.48)' }} />
 
         {/* Breadcrumb */}
         <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
