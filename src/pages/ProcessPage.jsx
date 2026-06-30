@@ -124,7 +124,7 @@ export default function ProcessPage() {
           </div>
 
           {/* Timeline */}
-          <div style={{ position: 'relative' }}>
+          <div style={{ maxWidth: 900, width: '100%', margin: '0 auto', position: 'relative' }}>
             {/* Dashed vertical connector line through number circles */}
             <div style={{
               position: 'absolute',
@@ -136,9 +136,9 @@ export default function ProcessPage() {
               zIndex: 0,
             }} />
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 48, alignItems: 'center' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 48 }}>
               {steps.map((step, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 40, width: '100%', maxWidth: 900 }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 40, width: '100%' }}>
 
                   {/* Step image */}
                   <div style={{
