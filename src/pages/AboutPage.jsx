@@ -271,7 +271,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Core Values ── */}
-      <section style={{ background: '#fff', padding: 'clamp(48px,6vw,88px) clamp(20px,5vw,76px)', boxSizing: 'border-box' }}>
+      <section style={{ background: '#fff', padding: '50px 75px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
 
           {/* Header */}
@@ -299,16 +299,9 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Row 1 — 3 cards */}
-          <div style={{ display: 'flex', gap: 100, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 100 }}>
-            {coreValues.slice(0, 3).map(({ icon, title, desc }, i) => (
-              <CoreValueCard key={i} icon={icon} title={title} desc={desc} />
-            ))}
-          </div>
-
-          {/* Row 2 — 2 cards centered */}
+          {/* All 5 cards — flex-wrap centers 2-card second row automatically */}
           <div style={{ display: 'flex', gap: 100, justifyContent: 'center', flexWrap: 'wrap' }}>
-            {coreValues.slice(3).map(({ icon, title, desc }, i) => (
+            {coreValues.map(({ icon, title, desc }, i) => (
               <CoreValueCard key={i} icon={icon} title={title} desc={desc} />
             ))}
           </div>
