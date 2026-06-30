@@ -128,7 +128,7 @@ export default function ProcessPage() {
             {/* Dashed vertical connector line through number circles */}
             <div style={{
               position: 'absolute',
-              left: 230,
+              left: 246,
               top: 89,
               bottom: 89,
               width: 2,
@@ -138,7 +138,7 @@ export default function ProcessPage() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 48, alignItems: 'center' }}>
               {steps.map((step, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 0, width: '100%', maxWidth: 900 }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 40, width: '100%', maxWidth: 900 }}>
 
                   {/* Step image */}
                   <div style={{
@@ -158,7 +158,7 @@ export default function ProcessPage() {
                     flexShrink: 0,
                     width: 56,
                     height: 56,
-                    margin: '61px 24px 0',
+                    margin: '61px 0 0',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -172,7 +172,7 @@ export default function ProcessPage() {
                   </div>
 
                   {/* Content */}
-                  <div style={{ flex: 1, paddingTop: 40, paddingLeft: 24 }}>
+                  <div style={{ flex: 1, paddingTop: 40, paddingLeft: 0 }}>
                     <h3 style={{
                       fontFamily: 'Playfair Display, serif', fontWeight: 700,
                       fontSize: 26, lineHeight: '120%', color: '#000',
