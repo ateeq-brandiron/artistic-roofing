@@ -30,7 +30,7 @@ function CoreValueCard({ icon, title, desc }) {
       style={{
         display: 'flex',
         width: 316,
-        padding: '30px 0',
+        padding: '30px 24px',
         flexDirection: 'column',
         alignItems: 'center',
         gap: 30,
