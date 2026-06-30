@@ -14,7 +14,7 @@ const steps = [
   },
   {
     num: '02',
-    img: '/img/process/Rectangle%20227-1.png',
+    img: '/img/process/Rectangle%20227-2.png',
     title: 'Step 2 – Detailed Proposal',
     items: [
       'Clear, written estimate outlining the scope of work and materials',
@@ -24,7 +24,7 @@ const steps = [
   },
   {
     num: '03',
-    img: '/img/process/Rectangle%20227-2.png',
+    img: '/img/process/Rectangle%20227-1.png',
     title: 'Step 3 – Project Kickoff',
     items: [
       'On-time arrival of our skilled, experienced crew',
