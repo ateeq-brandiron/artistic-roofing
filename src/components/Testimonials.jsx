@@ -167,7 +167,7 @@ export default function Testimonials() {
             opacity: page === 0 ? 0.4 : 1, transition: 'opacity 0.2s',
           }}
         >
-          <img src="/img/testimonials/chevron-down.svg" alt="Previous" style={{ width: 22, height: 22, transform: 'rotate(90deg)', filter: 'brightness(0) invert(1)' }} />
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </button>
 
         {/* Right arrow */}
@@ -181,7 +181,7 @@ export default function Testimonials() {
             opacity: page === totalPages - 1 ? 0.4 : 1, transition: 'opacity 0.2s',
           }}
         >
-          <img src="/img/testimonials/chevron-down-1.svg" alt="Next" style={{ width: 22, height: 22, transform: 'rotate(-90deg)', filter: 'brightness(0) invert(1)' }} />
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </button>
 
         {/* Dots */}
