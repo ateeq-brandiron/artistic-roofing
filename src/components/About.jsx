@@ -8,7 +8,6 @@ export default function About() {
       alignItems: 'flex-start',
       justifyContent: 'space-between',
       gap: 48,
-      flexWrap: 'wrap',
       boxSizing: 'border-box',
     }}>
 
