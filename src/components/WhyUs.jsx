@@ -11,8 +11,13 @@ export default function WhyUs() {
   return (
     <section style={{
       background: '#3a3a3a',
+      width: '100%',
+      boxSizing: 'border-box',
+    }}>
+    <div style={{
       display: 'flex',
-      width: 1440,
+      maxWidth: 1440,
+      margin: '0 auto',
       padding: 75,
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -86,6 +91,7 @@ export default function WhyUs() {
         ))}
       </div>
 
+    </div>
     </section>
   );
 }

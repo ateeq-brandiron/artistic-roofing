@@ -78,7 +78,7 @@ export default function About() {
       {/* Right column – image card with badges at bottom */}
       <div style={{
         flexShrink: 0,
-        width: 587,
+        width: 'min(587px, 100%)',
         height: 644,
         padding: '535px 21px 32px 21px',
         display: 'flex',

@@ -28,12 +28,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Outfit', Helvetica, sans-serif;
   background-color: #fdfeff;
   color: var(--color-3);
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 a {
