@@ -84,9 +84,10 @@ function CoreValueCard({ icon, title, desc }) {
       <p style={{
         fontFamily: 'Outfit',
         fontWeight: 400,
-        fontSize: 16,
-        lineHeight: '1.65',
-        color: 'var(--color-3)',
+        fontSize: 18,
+        lineHeight: '120%',
+        color: '#464646',
+        textAlign: 'center',
         margin: 0,
       }}>{desc}</p>
     </div>
