@@ -128,9 +128,9 @@ export default function ProcessPage() {
             {/* Dashed vertical connector line through number circles */}
             <div style={{
               position: 'absolute',
-              left: 188,
-              top: 28,
-              bottom: 28,
+              left: 214,
+              top: 81,
+              bottom: 81,
               width: 2,
               borderLeft: '2px dashed #D1EFFF',
               zIndex: 0,
