@@ -64,13 +64,13 @@ export default function Footer() {
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 32, flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <img src="/img/footer/Vector.svg" alt="" style={{ width: 14, height: 14 }} />
+              <img src="/img/footer/Vector-1.svg" alt="" style={{ width: 20, height: 16 }} />
               <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', color: 'var(--blue)' }}>
                 SIERRA VISTA, AZ
               </span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <img src="/img/footer/Vector-1.svg" alt="" style={{ width: 20, height: 16 }} />
+              <img src="/img/footer/Vector.svg" alt="" style={{ width: 14, height: 14 }} />
               <a href="mailto:artisticroofing11@gmail.com" className="footer-link" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'var(--color-2)' }}>
                 artisticroofing11@gmail.com
               </a>
