@@ -10,14 +10,13 @@ const features = [
 export default function WhyUs() {
   return (
     <section style={{
-      width: '100%',
       background: '#3a3a3a',
-      padding: '75px clamp(24px,5vw,75px)',
       display: 'flex',
-      alignItems: 'center',
+      width: 1440,
+      padding: 75,
       justifyContent: 'space-between',
+      alignItems: 'center',
       gap: 48,
-      flexWrap: 'wrap',
       boxSizing: 'border-box',
     }}>
 
