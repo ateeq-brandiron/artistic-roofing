@@ -105,8 +105,8 @@ export default function ProcessPage() {
       </section>
 
       {/* ── Step-by-Step Process ── */}
-      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
-        <div style={{ maxWidth: 1290, margin: '0 auto' }}>
+      <section style={{ background: '#fff', display: 'flex', padding: 75, flexDirection: 'column', alignItems: 'center', gap: 50, boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: 1290, width: '100%' }}>
 
           {/* Header */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 64 }}>
