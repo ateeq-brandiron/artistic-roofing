@@ -51,3 +51,188 @@ button {
   background: none;
   font-family: inherit;
 }
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f0f8ff; }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+::selection { background: var(--shape-fill); color: var(--blue); }
+
+/* ─── Page Transition ─── */
+.page-enter {
+  animation: pageFadeIn 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Scroll Reveal ─── */
+.sr-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.72s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.72s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.sr-section.sr-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Blue button hover ─── */
+.btn-blue {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
+  will-change: transform;
+}
+.btn-blue:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 28px rgba(0,128,198,0.38) !important;
+  filter: brightness(1.07);
+}
+.btn-blue:active { transform: translateY(0) !important; }
+
+/* ─── Dark outline button hover ─── */
+.btn-dark {
+  transition: background 0.22s ease, color 0.22s ease,
+              transform 0.22s ease, box-shadow 0.22s ease !important;
+  will-change: transform;
+}
+.btn-dark:hover {
+  background: #000 !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18) !important;
+}
+.btn-dark:hover svg path { stroke: #fff !important; }
+
+/* ─── Card hover elevation ─── */
+.card-hover {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  will-change: transform;
+}
+.card-hover:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 24px 56px rgba(0,0,0,0.12) !important;
+}
+
+/* ─── Image zoom ─── */
+.img-zoom { overflow: hidden !important; }
+.img-zoom img {
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  will-change: transform;
+}
+.img-zoom:hover img { transform: scale(1.05) !important; }
+
+/* ─── Nav link – centred animated underline ─── */
+.nav-link {
+  position: relative !important;
+  transition: color 0.2s ease !important;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 50%; right: 50%;
+  height: 2px;
+  background: var(--blue);
+  border-radius: 1px;
+  transition: left 0.25s ease, right 0.25s ease;
+}
+.nav-link:hover { color: var(--blue) !important; }
+.nav-link:hover::after,
+.nav-link.nav-active::after { left: 0; right: 0; }
+.nav-link.nav-active { color: #000 !important; font-weight: 600; }
+
+/* ─── Navbar CTA button ─── */
+.nav-cta {
+  transition: background 0.22s ease, color 0.22s ease,
+              border-color 0.22s ease, box-shadow 0.22s ease,
+              transform 0.22s ease !important;
+}
+.nav-cta:hover {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2) !important;
+  transform: translateY(-1px) !important;
+}
+.nav-cta:hover svg path { stroke: #fff !important; }
+
+/* ─── Logo hover ─── */
+.logo-hover {
+  transition: transform 0.25s ease, opacity 0.25s ease !important;
+  display: inline-flex !important;
+}
+.logo-hover:hover { transform: scale(1.04) !important; }
+
+/* ─── Social icon hover ─── */
+.social-icon {
+  transition: transform 0.22s ease, box-shadow 0.22s ease,
+              background 0.22s ease !important;
+}
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.1) !important;
+  box-shadow: 0 6px 18px rgba(0,128,198,0.25) !important;
+  background: var(--blue) !important;
+}
+.social-icon:hover img { filter: brightness(0) invert(1); }
+
+/* ─── Footer link hover ─── */
+.footer-link {
+  transition: color 0.2s ease !important;
+}
+.footer-link:hover { color: var(--blue) !important; }
+
+/* ─── Back-to-top button ─── */
+.back-to-top {
+  animation: backTopIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+.back-to-top:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 28px rgba(0,128,198,0.45) !important;
+}
+@keyframes backTopIn {
+  from { opacity: 0; transform: scale(0.6) translateY(12px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ─── Scroll progress bar ─── */
+.scroll-progress {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue) 0%, #00c6ff 100%);
+  border-radius: 0 2px 2px 0;
+  transition: width 0.08s linear;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ─── Pulse animation ─── */
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(0,128,198,0.45); }
+  70%  { box-shadow: 0 0 0 12px rgba(0,128,198,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,128,198,0); }
+}
+.pulse { animation: pulse-ring 2.5s ease-in-out infinite; }
+
+/* ─── Float animation ─── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-7px); }
+}
+.float { animation: float 3.5s ease-in-out infinite; }
+
+/* ─── Stagger delay helpers ─── */
+.d1 { transition-delay: 0.10s !important; }
+.d2 { transition-delay: 0.20s !important; }
+.d3 { transition-delay: 0.30s !important; }
+.d4 { transition-delay: 0.40s !important; }
+.d5 { transition-delay: 0.50s !important; }
+
+/* ─── Responsive: hide desktop nav ─── */
+@media (max-width: 960px) {
+  .desktop-nav { display: none !important; }
+  .mobile-btn  { display: flex !important; }
+}
