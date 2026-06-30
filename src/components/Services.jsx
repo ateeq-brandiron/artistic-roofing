@@ -105,12 +105,21 @@ export default function Services() {
       {/* Header */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, width: '100%', maxWidth: 1290 }}>
         <SectionLabel text="SERVICES" />
-        <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(32px, 4vw, 48px)', lineHeight: 1.2, textAlign: 'center', color: 'transparent' }}>
-          <span style={{ color: '#000' }}>Comprehensive </span>
+        <h2 style={{
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 900,
+          fontSize: 48,
+          lineHeight: '120%',
+          textAlign: 'center',
+          color: '#000',
+          width: 608,
+          margin: 0,
+        }}>
+          Comprehensive{' '}
           <span style={{ color: 'var(--blue)' }}>Roofing</span>
-          <span style={{ color: '#000' }}> and </span>
+          {' '}and{' '}
           <span style={{ color: 'var(--blue)' }}>Gutter</span>
-          <span style={{ color: '#000' }}> Services</span>
+          {' '}Services
         </h2>
       </div>
 
