@@ -311,71 +311,110 @@ export default function AboutPage() {
       </section>
 
       {/* ── Certifications & Memberships ── */}
-      <section style={{ background: 'var(--shape-fill)', padding: 'clamp(48px,6vw,88px) clamp(20px,5vw,76px)' }}>
+      <section style={{ background: '#fff', padding: '75px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
-          {/* Header */}
-          <div style={{ marginBottom: 48 }}>
-            <SectionLabel text="CERTIFICATIONS" />
+
+          {/* Header — centered */}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 60 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
+              <img src="/img/certs-section/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>CERTIFICATIONS</span>
+            </div>
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 'clamp(28px,4vw,44px)', lineHeight: 1.2,
-              marginTop: 16, color: '#000',
+              fontSize: 48, lineHeight: '120%',
+              color: '#000', margin: 0, textAlign: 'center',
             }}>
-              <span style={{ color: 'var(--blue)', fontStyle: 'italic' }}>Certifications</span> and Memberships
+              <span style={{ color: 'var(--blue)' }}>Certifications</span> and Memberships
             </h2>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '1.65', color: 'var(--color-3)', maxWidth: 640, marginTop: 12 }}>
+            <p style={{
+              fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
+              lineHeight: '120%', color: 'var(--color-3)',
+              textAlign: 'center', maxWidth: 680, margin: 0,
+            }}>
               Artistic Roofing Systems LLC maintains certifications and professional memberships that reflect our commitment to safety, training, and trusted service standards.
             </p>
           </div>
 
-          {/* Two-column */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px,1fr))', gap: 40, alignItems: 'start' }}>
-            {/* Left — blue card */}
+          {/* Two-column layout */}
+          <div style={{ display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+
+            {/* Left — card with background image */}
             <div style={{
-              background: 'var(--blue)',
-              borderRadius: 16,
-              padding: '40px 32px',
-              display: 'flex', flexDirection: 'column', alignItems: 'center',
-              textAlign: 'center', gap: 24,
+              flex: '0 0 590px',
+              position: 'relative',
+              borderRadius: 20,
+              overflow: 'hidden',
+              background: 'var(--shape-fill)',
+              minHeight: 440,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 24,
+              padding: '48px 40px',
+              textAlign: 'center',
+              boxSizing: 'border-box',
             }}>
-              {/* Star icon */}
-              <div style={{ width: 80, height: 80, background: 'rgba(255,255,255,0.15)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <path d="M20 6l3.5 8 8.5 1.2-6.2 6 1.5 8.8L20 26l-7.3 4 1.5-8.8-6.2-6 8.5-1.2z" fill="rgba(255,255,255,0.9)" />
-                </svg>
-              </div>
-              <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 28, color: '#fff' }}>Certified Excellence</h3>
-              <p style={{ fontFamily: 'Outfit', fontWeight: 300, fontSize: 16, lineHeight: '1.6', color: 'rgba(255,255,255,0.85)' }}>
-                We partner with industry leaders to bring you the best materials and practices.
-              </p>
-              {/* Partner logos / name tags */}
-              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'center' }}>
-                {['Tamko', 'Owens Corning', 'GAF'].map(brand => (
-                  <span key={brand} style={{
-                    background: 'rgba(255,255,255,0.18)',
-                    border: '1px solid rgba(255,255,255,0.3)',
-                    borderRadius: 6,
-                    padding: '6px 14px',
-                    fontFamily: 'Outfit', fontWeight: 600, fontSize: 13,
-                    color: '#fff', letterSpacing: '0.04em',
-                  }}>{brand}</span>
-                ))}
+              {/* Background image with overlay */}
+              <div style={{
+                position: 'absolute', inset: 0,
+                backgroundImage: 'url(/img/source_IQC.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: '50% 50%',
+                opacity: 0.18,
+              }} />
+              <div style={{ position: 'absolute', inset: 0, background: 'var(--shape-fill)', opacity: 0.6 }} />
+
+              {/* Content above overlay */}
+              <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 24 }}>
+                <img src="/img/certs-section/Vector-1.svg" alt="Award" style={{ width: 80, height: 80, objectFit: 'contain' }} />
+                <h3 style={{
+                  fontFamily: 'Playfair Display, serif', fontWeight: 900,
+                  fontSize: 32, lineHeight: '120%', color: '#000', margin: 0,
+                }}>Certified Excellence</h3>
+                <p style={{
+                  fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
+                  lineHeight: '120%', color: 'var(--color-3)', margin: 0, maxWidth: 400,
+                }}>
+                  We partner with industry leaders to bring you the best materials and practices.
+                </p>
+                {/* Pills */}
+                <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
+                  {['Tamko', 'Owens Corning', 'GAF'].map(brand => (
+                    <span key={brand} style={{
+                      background: '#fff',
+                      border: '1.5px solid var(--shape-stroke)',
+                      borderRadius: 8,
+                      padding: '8px 20px',
+                      fontFamily: 'Outfit', fontWeight: 500, fontSize: 15,
+                      color: 'var(--blue)',
+                    }}>{brand}</span>
+                  ))}
+                </div>
               </div>
             </div>
 
             {/* Right — checklist */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+            <div style={{ flex: 1, minWidth: 280, display: 'flex', flexDirection: 'column', gap: 32 }}>
               {certifications.map((c, i) => (
-                <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
-                  <Check />
-                  <div>
-                    <div style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 17, color: '#000', lineHeight: 1.3 }}>{c.text}</div>
-                    <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: 'var(--color-3)', marginTop: 4, lineHeight: '1.5' }}>{c.sub}</div>
+                <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+                  <img src="/img/certs-section/Vector.svg" alt="" style={{ width: 26, height: 26, flexShrink: 0, marginTop: 2 }} />
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                    <div style={{
+                      fontFamily: 'Playfair Display, serif', fontWeight: 700,
+                      fontSize: 22, lineHeight: '120%', color: '#000',
+                    }}>{c.text}</div>
+                    <div style={{
+                      fontFamily: 'Outfit', fontWeight: 400,
+                      fontSize: 16, lineHeight: '120%', color: 'var(--color-3)',
+                    }}>{c.sub}</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+
         </div>
       </section>
 
