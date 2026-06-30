@@ -106,7 +106,7 @@ export default function ProcessPage() {
 
       {/* ── Step-by-Step Process ── */}
       <section style={{ background: '#fff', display: 'flex', padding: 75, flexDirection: 'column', alignItems: 'center', gap: 50, boxSizing: 'border-box' }}>
-        <div style={{ maxWidth: 1290, width: '100%' }}>
+        <div style={{ maxWidth: 1290, width: '100%', margin: '0 auto' }}>
 
           {/* Header */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 64 }}>
@@ -136,9 +136,9 @@ export default function ProcessPage() {
               zIndex: 0,
             }} />
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 48 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 48, alignItems: 'center' }}>
               {steps.map((step, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 0 }}>
+                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 0, width: '100%', maxWidth: 900 }}>
 
                   {/* Step image */}
                   <div style={{
