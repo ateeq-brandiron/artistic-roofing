@@ -82,13 +82,9 @@ export default function ProcessPage() {
         }}>
           What to Expect During Your Installation Process
         </h1>
-        <p style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 20, lineHeight: '120%', color: '#fff', margin: '0 0 28px' }}>
+        <p style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 20, lineHeight: '120%', color: '#fff', margin: 0 }}>
           Simple, transparent, and stress-free from start to finish.
         </p>
-        <Link to="/contact" style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap: 16, padding: '15px 24px', background: '#fff', borderRadius: 10, fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 17, color: '#1e1e1e', textDecoration: 'none', whiteSpace: 'nowrap' }}>
-          Start Your Project Today
-          <img src="/img/call-made-2.svg" alt="" style={{ width: 14, height: 14 }} />
-        </Link>
       </section>
 
       {/* ── Ticker ── */}
