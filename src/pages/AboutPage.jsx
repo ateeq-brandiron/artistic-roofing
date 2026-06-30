@@ -127,15 +127,13 @@ export default function AboutPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(48px, 6.5vw, 88px)',
-          lineHeight: 1.05,
+          fontSize: 'clamp(40px, 5vw, 72px)',
+          lineHeight: 1.1,
           color: '#fff',
-          maxWidth: 700,
           margin: 0,
+          whiteSpace: 'pre-line',
         }}>
-          About Artistic Roofing –{' '}<br />
-          Roofing Contractors in{' '}<br />
-          Sierra Vista AZ
+          {'About Artistic Roofing –\nRoofing Contractors in\nSierra Vista AZ'}
         </h1>
       </section>
 
