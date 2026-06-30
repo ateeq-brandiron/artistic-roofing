@@ -25,43 +25,50 @@ export default function About() {
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(32px,4vw,48px)',
-          lineHeight: 1.2,
+          fontSize: 48,
+          lineHeight: '120%',
           color: '#000',
           margin: 0,
+          alignSelf: 'stretch',
         }}>
           Experienced Roofing Professionals in{' '}
           <span style={{ color: 'var(--blue)' }}>Sierra Vista AZ</span>
         </h2>
 
         {/* Para 1 */}
-        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '28px', color: 'var(--color-3)', margin: 0 }}>
+        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0, alignSelf: 'stretch' }}>
           For more than a decade,{' '}
-          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Artistic Roofing</span>
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Artistic Roofing</span>
           {' '}has served Sierra Vista and Cochise County with dependable roofing and gutter services. We are licensed, bonded, and insured, and our long-term team members complete every job with precision and care.
         </p>
 
         {/* Para 2 */}
-        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '28px', color: 'var(--color-3)', margin: 0 }}>
+        <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0, alignSelf: 'stretch' }}>
           As{' '}
-          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>TRI Certified tile installers</span>
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>TRI Certified tile installers</span>
           , we work with concrete tile from leading manufacturers such as{' '}
-          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Westlake</span>
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Westlake</span>
           {' '}and{' '}
-          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Eagle Roofing Products.</span>
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Eagle Roofing Products.</span>
           {' '}For asphalt shingle systems, we install materials from{' '}
-          <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Tamko, Owens Corning, and GAF</span>
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Tamko, Owens Corning, and GAF</span>
           , trusted names known for quality and weather resistance suited to Arizona's climate.
         </p>
 
-        {/* Blue info box – text only */}
+        {/* Blue info box */}
         <div style={{
-          background: 'var(--shape-fill)',
+          display: 'flex',
+          width: 623,
+          padding: '11px 0',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: 10,
+          borderRadius: 10,
           border: '1px solid var(--shape-stroke)',
-          borderRadius: 12,
-          padding: '20px 24px',
+          background: 'var(--shape-fill)',
+          boxSizing: 'border-box',
         }}>
-          <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '28px', color: 'var(--color-3)', margin: 0 }}>
+          <p style={{ width: 560, flexShrink: 0, fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0 }}>
             Our commitment to safety includes{' '}
             <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Polyglass roof coating training,</span>
             {' '}giving customers confidence that every project follows established standards for quality, safety, and long-term performance.
