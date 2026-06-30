@@ -419,23 +419,19 @@ export default function AboutPage() {
       </section>
 
       {/* ── Service Commitment CTA ── */}
-      <div style={{ padding: '0 75px 75px', boxSizing: 'border-box' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 75px 75px', boxSizing: 'border-box' }}>
         <section style={{
-          position: 'relative',
-          backgroundImage: 'url(/img/source_20191114_091038.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: '50% 40%',
-          borderRadius: 20,
-          overflow: 'hidden',
-          padding: '75px 100px',
           display: 'flex',
-          flexDirection: 'column',
+          width: 1290,
+          padding: 100,
           justifyContent: 'center',
           alignItems: 'center',
+          gap: 10,
+          borderRadius: 10,
+          background: `linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 100%), url(/img/source_20191114_091038.jpg) lightgray 50% / cover no-repeat`,
           boxSizing: 'border-box',
         }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.52)' }} />
-          <div style={{ position: 'relative', maxWidth: 900, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28 }}>
+          <div style={{ maxWidth: 900, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28 }}>
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
               fontSize: 52, lineHeight: '120%', color: '#fff', margin: 0,
