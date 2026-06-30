@@ -76,6 +76,7 @@ function CoreValueCard({ icon, title, desc }) {
         lineHeight: 1.2,
         color: hovered ? 'var(--blue)' : '#000',
         margin: 0,
+        textAlign: 'center',
         transition: 'color 0.3s ease',
       }}>{title}</h3>
 
