@@ -109,15 +109,15 @@ export default function AboutPage() {
         backgroundPosition: '50% 40%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 clamp(20px,5vw,76px)',
+        padding: '0 clamp(20px,5vw,76px) 64px',
         boxSizing: 'border-box',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.55)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.48)' }} />
 
         {/* Breadcrumb */}
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 8, marginBottom: 233 }}>
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
           <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
           <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
           <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>ABOUT US</span>
