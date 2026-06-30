@@ -160,53 +160,49 @@ export default function AboutPage() {
           gap: 'clamp(32px,5vw,80px)',
           flexWrap: 'wrap',
         }}>
-          {/* Left — overlapping images */}
+          {/* Left column — overlapping images */}
           <div style={{ position: 'relative', display: 'flex', height: 487, paddingRight: 200, flexDirection: 'column', alignItems: 'flex-start', flex: '1 0 0' }}>
-            {/* Background image (roofer) */}
-            <img
-              src="/img/about/20260507_103206.jpg"
-              alt="Roofing work"
-              style={{
-                width: '78%',
-                aspectRatio: '3/4',
-                objectFit: 'cover',
-                borderRadius: 20,
-                display: 'block',
-              }}
-            />
-            {/* Foreground image (house) — offset bottom-right */}
+
+            {/* Right Image (main/background — roofer photo) */}
             <div style={{
+              height: 441,
+              flexShrink: 0,
+              alignSelf: 'stretch',
+              borderRadius: 30,
+              background: `url(/img/about/20260507_103206.jpg) lightgray 50% / cover no-repeat`,
+            }} />
+
+            {/* Left Image (foreground — house, absolute bottom-right) */}
+            <div style={{
+              width: 390,
+              height: 411,
               position: 'absolute',
-              bottom: 0,
               right: 0,
-              width: '62%',
-              aspectRatio: '4/3',
-              borderRadius: 20,
-              overflow: 'hidden',
-              border: '4px solid var(--shape-fill)',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.12)',
-            }}>
-              <img
-                src="/img/about/Cardillo.jpg"
-                alt="Completed roofing project"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-            </div>
-            {/* Trust badge */}
+              bottom: 0,
+              borderRadius: 30,
+              border: '12px solid var(--shape-stroke)',
+              background: `url(/img/about/Cardillo.jpg) lightgray 50% / cover no-repeat`,
+              boxShadow: '0 10px 25px 0 rgba(0,0,0,0.07)',
+            }} />
+
+            {/* Counter / Trust badge */}
             <div style={{
+              display: 'flex',
+              padding: 25,
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: 10,
               position: 'absolute',
-              bottom: 32,
-              left: 12,
-              background: 'rgba(20,20,20,0.88)',
-              borderRadius: 12,
-              padding: '14px 18px',
-              display: 'flex', alignItems: 'center', gap: 12,
-              backdropFilter: 'blur(4px)',
+              left: 107,
+              bottom: 45.846,
+              borderRadius: 23.846,
+              background: '#000',
             }}>
-              <img src="/img/about/Vector.svg" alt="" style={{ width: 36, height: 36, flexShrink: 0 }} />
-              <div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 14, color: '#fff' }}>Trust and Quality</div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.7)' }}>Service you can count on</div>
+              <img src="/img/about/Vector.svg" alt="" style={{ width: 40, height: 40 }} />
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 14, color: '#fff', whiteSpace: 'nowrap' }}>Trust and Quality</div>
+                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.7)', whiteSpace: 'nowrap' }}>Service you can count on</div>
               </div>
             </div>
           </div>
