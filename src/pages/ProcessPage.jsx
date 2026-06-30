@@ -128,9 +128,9 @@ export default function ProcessPage() {
             {/* Dashed vertical connector line through number circles */}
             <div style={{
               position: 'absolute',
-              left: 214,
-              top: 81,
-              bottom: 81,
+              left: 230,
+              top: 89,
+              bottom: 89,
               width: 2,
               borderLeft: '2px dashed #D1EFFF',
               zIndex: 0,
@@ -142,8 +142,8 @@ export default function ProcessPage() {
 
                   {/* Step image */}
                   <div style={{
-                    width: 162,
-                    height: 162,
+                    width: 178,
+                    height: 178,
                     flexShrink: 0,
                     borderRadius: 12,
                     overflow: 'hidden',
@@ -158,7 +158,7 @@ export default function ProcessPage() {
                     flexShrink: 0,
                     width: 56,
                     height: 56,
-                    margin: '53px 24px 0',
+                    margin: '61px 24px 0',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
