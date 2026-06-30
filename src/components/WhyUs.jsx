@@ -41,10 +41,11 @@ export default function WhyUs() {
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(32px,4vw,52px)',
-          lineHeight: 1.15,
+          fontSize: 48,
+          lineHeight: '120%',
           color: '#fff',
           margin: 0,
+          alignSelf: 'stretch',
         }}>
           Why Homeowners Choose Artistic Roofing
         </h2>
@@ -54,9 +55,10 @@ export default function WhyUs() {
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 300,
           fontSize: 20,
-          lineHeight: '28px',
+          lineHeight: '120%',
           color: '#fff',
           margin: 0,
+          alignSelf: 'stretch',
         }}>
           We're on top of what matters most.<br />
           It is our promise to every customer to deliver dependable roofing and gutter solutions with honesty and precision.
