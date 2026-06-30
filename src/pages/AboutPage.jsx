@@ -208,19 +208,50 @@ export default function AboutPage() {
           </div>
 
           {/* Right — text */}
-          <div style={{ flex: 1, minWidth: 280, display: 'flex', flexDirection: 'column', gap: 24 }}>
-            <SectionLabel text="OUR STORY" />
+          <div style={{
+            display: 'flex',
+            height: 487,
+            padding: '60px 0',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            gap: 30,
+            flex: '1 0 0',
+            boxSizing: 'border-box',
+          }}>
+            {/* Label pill */}
+            <div style={{
+              display: 'inline-flex',
+              padding: 9.091,
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: 9.091,
+              borderRadius: 27.273,
+              background: '#fff',
+              boxShadow: '0 1.818px 1.818px 0 rgba(0,0,0,0.05)',
+            }}>
+              <img src="/img/about/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>OUR STORY</span>
+            </div>
+
+            {/* Heading */}
             <h2 style={{
-              fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 'clamp(32px,3.5vw,48px)', lineHeight: 1.15, color: '#000', margin: 0,
+              alignSelf: 'stretch',
+              fontFamily: 'Playfair Display, serif',
+              fontWeight: 900,
+              fontSize: 48,
+              lineHeight: '120%',
+              color: '#000',
+              margin: 0,
             }}>
               Our Story and Roots in{' '}
               <span style={{ color: 'var(--blue)' }}>Sierra Vista AZ</span>
             </h2>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '1.7', color: 'var(--color-3)', margin: 0 }}>
+
+            {/* Paragraphs — gap 30px handled by parent gap */}
+            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0 }}>
               Founded with a mission to deliver honest, high-quality roofing, Artistic Roofing Systems has grown alongside the Sierra Vista community we call home. Many of our experienced team members live right here in Cochise County, and their dedication shows in every project.
             </p>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '1.7', color: 'var(--color-3)', margin: 0 }}>
+            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0 }}>
               Our crews do more than build and repair roofs. They build trust with neighbors, families, and local businesses through consistent workmanship and dependable service.
             </p>
           </div>
