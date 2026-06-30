@@ -161,7 +161,7 @@ export default function AboutPage() {
           flexWrap: 'wrap',
         }}>
           {/* Left — overlapping images */}
-          <div style={{ position: 'relative', flex: '0 0 auto', width: 'clamp(300px,42%,560px)', minHeight: 520 }}>
+          <div style={{ position: 'relative', display: 'flex', height: 487, paddingRight: 200, flexDirection: 'column', alignItems: 'flex-start', flex: '1 0 0' }}>
             {/* Background image (roofer) */}
             <img
               src="/img/about/20260507_103206.jpg"
