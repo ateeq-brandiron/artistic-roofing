@@ -87,7 +87,11 @@ export default function About() {
         alignItems: 'center',
         borderRadius: 30,
         border: '1px solid #D1EFFF',
-        background: 'url(/img/source_2.png) lightgray -84.5px -73.973px / 128.79% 89.151% no-repeat, #E8F8FF',
+        backgroundImage: 'url(/img/source_2.png)',
+        backgroundPosition: '-84.5px -73.973px',
+        backgroundSize: '128.79% 89.151%',
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#E8F8FF',
         boxSizing: 'border-box',
       }}>
         {/* Badge row */}
