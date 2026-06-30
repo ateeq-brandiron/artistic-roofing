@@ -139,9 +139,9 @@ export default function AboutPage() {
       <ScrollBar />
 
       {/* ── Intro paragraph ── */}
-      <section style={{ background: 'var(--shape-fill)', padding: 'clamp(40px,5vw,72px) clamp(20px,5vw,76px)' }}>
+      <section style={{ background: 'var(--shape-fill)', padding: '60px 76px', boxSizing: 'border-box' }}>
         <p style={{
-          fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 'clamp(16px,2vw,20px)',
+          fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 18,
           lineHeight: '1.65', color: 'var(--color-3)', textAlign: 'center',
           maxWidth: 820, margin: '0 auto',
         }}>
@@ -224,13 +224,12 @@ export default function AboutPage() {
             {/* Label pill */}
             <div style={{
               display: 'inline-flex',
-              padding: 9.091,
-              justifyContent: 'center',
+              padding: '7px 16px',
               alignItems: 'center',
-              gap: 9.091,
-              borderRadius: 27.273,
+              gap: 8,
+              borderRadius: 100,
               background: '#fff',
-              boxShadow: '0 1.818px 1.818px 0 rgba(0,0,0,0.05)',
+              boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
             }}>
               <img src="/img/about/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>OUR STORY</span>
@@ -262,7 +261,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Core Values ── */}
-      <section style={{ background: '#fff', padding: '50px 75px', boxSizing: 'border-box' }}>
+      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
 
           {/* Header */}

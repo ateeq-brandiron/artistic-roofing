@@ -56,7 +56,7 @@ export default function ContactPage() {
       {/* ── Intro ── */}
       <section style={{
         background: 'var(--shape-fill)',
-        padding: '48px 76px',
+        padding: '60px 76px',
         boxSizing: 'border-box',
         textAlign: 'center',
       }}>
@@ -157,7 +157,7 @@ export default function ContactPage() {
             <div style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
               padding: '7px 16px', background: '#fff', borderRadius: 100,
-              boxShadow: '0 2px 6px rgba(0,0,0,0.06)', marginBottom: 20,
+              boxShadow: '0 2px 6px rgba(0,0,0,0.06)', marginBottom: 16,
             }}>
               <img src="/img/contact/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>TIMINGS</span>
@@ -237,7 +237,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right – address */}
-          <div style={{ flex: '1 1 340px', minWidth: 280, display: 'flex', flexDirection: 'column', gap: 20 }}>
+          <div style={{ flex: '1 1 340px', minWidth: 280, display: 'flex', flexDirection: 'column', gap: 16 }}>
             {/* LOCATION pill */}
             <div style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,

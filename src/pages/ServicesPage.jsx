@@ -92,7 +92,7 @@ function CommercialCard({ s }) {
   return (
     <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
       style={{ borderRadius: 12, overflow: 'hidden', border: '1px solid var(--shape-stroke)',
-        boxShadow: h ? '0 24px 56px rgba(0,0,0,0.13)' : '0 4px 16px rgba(0,0,0,0.06)',
+        boxShadow: h ? '0 20px 48px rgba(0,128,198,0.12)' : '0 4px 16px rgba(0,0,0,0.06)',
         transform: h ? 'translateY(-6px)' : 'none',
         transition: 'transform 0.3s ease, box-shadow 0.3s ease', cursor: 'default' }}>
       <div style={{ height: 240, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%',
@@ -111,7 +111,7 @@ function ResidentialCard({ s }) {
     <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
       style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${h ? 'var(--blue)' : 'var(--shape-stroke)'}`, background: '#fff',
         boxShadow: h ? '0 20px 48px rgba(0,128,198,0.12)' : '0 4px 16px rgba(0,0,0,0.05)',
-        transform: h ? 'translateY(-5px)' : 'none',
+        transform: h ? 'translateY(-6px)' : 'none',
         transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease', cursor: 'default' }}>
       <div style={{ height: 180, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%',
         transform: h ? 'scale(1.05)' : 'scale(1)', transition: 'transform 0.55s ease' }} />
@@ -152,8 +152,8 @@ function CredentialCard({ c }) {
         border: `1px solid ${h ? 'var(--blue)' : 'var(--shape-stroke)'}`,
         borderRadius: 16, padding: '36px 20px',
         display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 14,
-        transform: h ? 'translateY(-5px)' : 'none',
-        boxShadow: h ? '0 20px 48px rgba(0,128,198,0.22)' : 'none',
+        transform: h ? 'translateY(-6px)' : 'none',
+        boxShadow: h ? '0 20px 48px rgba(0,128,198,0.12)' : 'none',
         transition: 'background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease', cursor: 'default' }}>
       <div style={{ width: 72, height: 72, background: h ? 'rgba(255,255,255,0.18)' : '#fff',
         borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',

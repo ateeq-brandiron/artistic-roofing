@@ -68,7 +68,7 @@ export default function CallToAction() {
             display: 'inline-flex',
             alignItems: 'center',
             gap: 14,
-            padding: '15px 28px',
+            padding: '16px 32px',
             background: 'var(--blue)',
             borderRadius: 10,
             fontFamily: 'Outfit, sans-serif',
