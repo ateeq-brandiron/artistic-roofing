@@ -42,15 +42,16 @@ const certifications = [
 function CoreValueCard({ icon, title, desc }) {
   return (
     <div style={{
-      width: 'clamp(260px, 30%, 360px)',
-      background: 'var(--shape-fill)',
-      borderRadius: 16,
-      padding: '40px 28px 36px',
       display: 'flex',
+      width: 316,
+      padding: '30px 0',
       flexDirection: 'column',
       alignItems: 'center',
-      textAlign: 'center',
-      gap: 20,
+      gap: 30,
+      flexShrink: 0,
+      borderRadius: 10,
+      border: '2px solid #D1EFFF',
+      background: '#E8F8FF',
       boxSizing: 'border-box',
     }}>
       {/* Dashed ring + inner circle + icon */}
@@ -283,10 +284,10 @@ export default function AboutPage() {
 
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 'clamp(32px,4vw,52px)', lineHeight: 1.2,
+              fontSize: 48, lineHeight: '120%',
               color: '#000', margin: 0, textAlign: 'center',
             }}>
-              Our <span style={{ color: 'var(--blue)', fontStyle: 'italic' }}>Core Values</span>
+              Our <span style={{ color: 'var(--blue)', fontStyle: 'normal' }}>Core Values</span>
             </h2>
 
             <p style={{
@@ -299,14 +300,14 @@ export default function AboutPage() {
           </div>
 
           {/* Row 1 — 3 cards */}
-          <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 24 }}>
+          <div style={{ display: 'flex', gap: 100, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 100 }}>
             {coreValues.slice(0, 3).map(({ icon, title, desc }, i) => (
               <CoreValueCard key={i} icon={icon} title={title} desc={desc} />
             ))}
           </div>
 
           {/* Row 2 — 2 cards centered */}
-          <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: 100, justifyContent: 'center', flexWrap: 'wrap' }}>
             {coreValues.slice(3).map(({ icon, title, desc }, i) => (
               <CoreValueCard key={i} icon={icon} title={title} desc={desc} />
             ))}
