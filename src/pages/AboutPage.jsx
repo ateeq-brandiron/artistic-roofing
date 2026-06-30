@@ -21,61 +21,13 @@ function SectionLabel({ text, center }) {
   );
 }
 
-/* ── Core value icons (inline SVG) ── */
-function IntegrityIcon() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-      <circle cx="18" cy="18" r="14" stroke="var(--blue)" strokeWidth="1.5" />
-      <path d="M18 10l2.5 5 5.5.8-4 3.9 1 5.3L18 22.5l-5 2.5 1-5.3-4-3.9 5.5-.8z" fill="var(--blue)" opacity="0.8" />
-    </svg>
-  );
-}
-function CraftsmanshipIcon() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-      <circle cx="18" cy="18" r="14" stroke="var(--blue)" strokeWidth="1.5" />
-      <path d="M13 23l10-10M20 13l3 3M13 23l-3 3 3-3z" stroke="var(--blue)" strokeWidth="2" strokeLinecap="round" />
-      <path d="M23 13c0 0-1-2-3-2s-2 2-2 2" stroke="var(--blue)" strokeWidth="2" strokeLinecap="round" />
-    </svg>
-  );
-}
-function SafetyIcon() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-      <circle cx="18" cy="18" r="14" stroke="var(--blue)" strokeWidth="1.5" />
-      <path d="M18 11l7 3v5c0 4-7 8-7 8s-7-4-7-8v-5l7-3z" stroke="var(--blue)" strokeWidth="1.5" fill="rgba(0,128,198,0.08)" />
-      <path d="M15 18l2 2 4-4" stroke="var(--blue)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-function CommunityIcon() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-      <circle cx="18" cy="18" r="14" stroke="var(--blue)" strokeWidth="1.5" />
-      <circle cx="18" cy="15" r="3" stroke="var(--blue)" strokeWidth="1.5" />
-      <circle cx="12" cy="16" r="2.5" stroke="var(--blue)" strokeWidth="1.5" />
-      <circle cx="24" cy="16" r="2.5" stroke="var(--blue)" strokeWidth="1.5" />
-      <path d="M11 23c0-2.2 3.1-4 7-4s7 1.8 7 4" stroke="var(--blue)" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M8 23c0-1.5 1.8-2.8 4-3" stroke="var(--blue)" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M28 23c0-1.5-1.8-2.8-4-3" stroke="var(--blue)" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-function AccountabilityIcon() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-      <circle cx="18" cy="18" r="14" stroke="var(--blue)" strokeWidth="1.5" />
-      <path d="M12 18l4 4 8-8" stroke="var(--blue)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 const coreValues = [
-  { Icon: IntegrityIcon, title: 'Integrity', desc: 'We believe in doing the right thing, even when no one is watching.' },
-  { Icon: CraftsmanshipIcon, title: 'Craftsmanship', desc: 'Every project is completed with precision, pride, and attention to detail.' },
-  { Icon: SafetyIcon, title: 'Safety', desc: 'We follow OSHA-certified standards and ongoing training to keep every jobsite safe.' },
-  { Icon: CommunityIcon, title: 'Community', desc: 'We live and work in Cochise County and take pride in serving our neighbors.' },
-  { Icon: AccountabilityIcon, title: 'Accountability', desc: 'We stand behind our work and treat every home as if it were our own.' },
+  { icon: '/img/core-values/Vector-4.svg', title: 'Integrity', desc: 'We believe in doing the right thing, even when no one is watching.' },
+  { icon: '/img/core-values/Vector-3.svg', title: 'Craftsmanship', desc: 'Every project is completed with precision, pride, and attention to detail.' },
+  { icon: '/img/core-values/Vector-2.svg', title: 'Safety', desc: 'We follow OSHA-certified standards and ongoing training to keep every jobsite safe.' },
+  { icon: '/img/core-values/Vector-1.svg', title: 'Community', desc: 'We live and work in Cochise County and take pride in serving our neighbors.' },
+  { icon: '/img/core-values/Vector.svg',   title: 'Accountability', desc: 'We stand behind our work and treat every home as if it were our own.' },
 ];
 
 const certifications = [
@@ -85,6 +37,60 @@ const certifications = [
   { text: 'Better Business Bureau (BBB) Accredited', sub: 'Demonstrating a commitment to trusted service and customer satisfaction' },
   { text: 'Chamber of Commerce Member', sub: 'Proud to be part of the local Sierra Vista business community' },
 ];
+
+/* ── Core Value Card ── */
+function CoreValueCard({ icon, title, desc }) {
+  return (
+    <div style={{
+      width: 'clamp(260px, 30%, 360px)',
+      background: 'var(--shape-fill)',
+      borderRadius: 16,
+      padding: '40px 28px 36px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      textAlign: 'center',
+      gap: 20,
+      boxSizing: 'border-box',
+    }}>
+      {/* Dashed ring + inner circle + icon */}
+      <div style={{ position: 'relative', width: 134, height: 134, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+        <img src="/img/core-values/Ellipse 9.svg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
+        <div style={{
+          width: 104,
+          height: 104,
+          borderRadius: '50%',
+          background: 'var(--shape-fill)',
+          border: '1px solid var(--shape-stroke)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          position: 'relative',
+        }}>
+          <img src={icon} alt={title} style={{ width: 52, height: 52, objectFit: 'contain' }} />
+        </div>
+      </div>
+
+      <h3 style={{
+        fontFamily: 'Playfair Display, serif',
+        fontWeight: 700,
+        fontSize: 22,
+        lineHeight: 1.2,
+        color: '#000',
+        margin: 0,
+      }}>{title}</h3>
+
+      <p style={{
+        fontFamily: 'Outfit',
+        fontWeight: 400,
+        fontSize: 16,
+        lineHeight: '1.65',
+        color: 'var(--color-3)',
+        margin: 0,
+      }}>{desc}</p>
+    </div>
+  );
+}
 
 /* ── Checkmark icon ── */
 function Check() {
@@ -264,50 +270,48 @@ export default function AboutPage() {
       </section>
 
       {/* ── Core Values ── */}
-      <section style={{ background: '#fff', padding: 'clamp(48px,6vw,88px) clamp(20px,5vw,76px)' }}>
+      <section style={{ background: '#fff', padding: 'clamp(48px,6vw,88px) clamp(20px,5vw,76px)', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
+
           {/* Header */}
-          <div style={{ textAlign: 'center', marginBottom: 56 }}>
-            <SectionLabel text="CORE VALUES" center />
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 56 }}>
+            {/* Label pill */}
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
+              <img src="/img/core-values/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>CORE VALUES</span>
+            </div>
+
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 'clamp(28px,4vw,44px)', lineHeight: 1.2,
-              marginTop: 16, color: '#000',
+              fontSize: 'clamp(32px,4vw,52px)', lineHeight: 1.2,
+              color: '#000', margin: 0, textAlign: 'center',
             }}>
               Our <span style={{ color: 'var(--blue)', fontStyle: 'italic' }}>Core Values</span>
             </h2>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '1.65', color: 'var(--color-3)', maxWidth: 560, margin: '16px auto 0' }}>
-              At Artistic Roofing Systems, our work is guided by values that reflect who we are as a local company.
+
+            <p style={{
+              fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
+              lineHeight: '1.6', color: 'var(--color-3)',
+              textAlign: 'center', maxWidth: 580, margin: 0,
+            }}>
+              At Artistic Roofing Systems, our work is guided by values that reflect who we are as a local company:
             </p>
           </div>
 
-          {/* Cards — 3 top, 2 bottom centered */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24, justifyContent: 'center' }}>
-            {coreValues.map(({ Icon, title, desc }, i) => (
-              <div key={i} style={{
-                width: 'clamp(220px, 28%, 340px)',
-                background: 'var(--shape-fill)',
-                border: '1px solid var(--shape-stroke)',
-                borderRadius: 16,
-                padding: '36px 28px',
-                display: 'flex', flexDirection: 'column', alignItems: 'center',
-                textAlign: 'center', gap: 16,
-              }}>
-                <div style={{
-                  width: 72, height: 72,
-                  background: '#fff',
-                  border: '1.5px solid var(--shape-stroke)',
-                  borderRadius: '50%',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  boxShadow: '0 4px 12px rgba(0,128,198,0.08)',
-                }}>
-                  <Icon />
-                </div>
-                <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 20, color: '#000' }}>{title}</h3>
-                <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, lineHeight: '1.65', color: 'var(--color-3)' }}>{desc}</p>
-              </div>
+          {/* Row 1 — 3 cards */}
+          <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 24 }}>
+            {coreValues.slice(0, 3).map(({ icon, title, desc }, i) => (
+              <CoreValueCard key={i} icon={icon} title={title} desc={desc} />
             ))}
           </div>
+
+          {/* Row 2 — 2 cards centered */}
+          <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap' }}>
+            {coreValues.slice(3).map(({ icon, title, desc }, i) => (
+              <CoreValueCard key={i} icon={icon} title={title} desc={desc} />
+            ))}
+          </div>
+
         </div>
       </section>
 
