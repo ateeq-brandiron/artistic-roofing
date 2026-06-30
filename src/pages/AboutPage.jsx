@@ -104,7 +104,7 @@ export default function AboutPage() {
         position: 'relative',
         width: '100%',
         minHeight: 819,
-        backgroundImage: 'url(/img/Frame%202147223464%20(2).png)',
+        backgroundImage: 'url(/img/Frame%202147223464%20%282%29.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 40%',
         display: 'flex',
@@ -112,13 +112,12 @@ export default function AboutPage() {
         justifyContent: 'center',
         alignItems: 'flex-start',
         padding: '0 clamp(20px,5vw,76px)',
-        gap: 233,
         boxSizing: 'border-box',
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.55)' }} />
 
         {/* Breadcrumb */}
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 8 }}>
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 8, marginBottom: 233 }}>
           <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
           <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 12 }}>▶</span>
           <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>ABOUT US</span>
@@ -142,7 +141,7 @@ export default function AboutPage() {
       <ScrollBar />
 
       {/* ── Intro paragraph ── */}
-      <section style={{ background: '#fff', padding: 'clamp(40px,5vw,72px) clamp(20px,5vw,76px)' }}>
+      <section style={{ background: 'var(--shape-fill)', padding: 'clamp(40px,5vw,72px) clamp(20px,5vw,76px)' }}>
         <p style={{
           fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 'clamp(16px,2vw,20px)',
           lineHeight: '1.65', color: 'var(--color-3)', textAlign: 'center',
