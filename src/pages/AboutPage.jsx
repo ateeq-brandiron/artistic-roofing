@@ -1,25 +1,6 @@
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
-/* ── Shared label pill ── */
-function SectionLabel({ text, center }) {
-  return (
-    <div style={{ display: 'flex', justifyContent: center ? 'center' : 'flex-start' }}>
-      <div style={{
-        display: 'inline-flex', alignItems: 'center', gap: 8,
-        padding: '7px 16px',
-        background: '#fff',
-        borderRadius: 100,
-        boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
-      }}>
-        <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
-        <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>
-          {text}
-        </span>
-      </div>
-    </div>
-  );
-}
 
 
 const coreValues = [
@@ -94,15 +75,6 @@ function CoreValueCard({ icon, title, desc }) {
   );
 }
 
-/* ── Checkmark icon ── */
-function Check() {
-  return (
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
-      <circle cx="11" cy="11" r="11" fill="var(--blue)" opacity="0.12" />
-      <path d="M7 11l3 3 5-5" stroke="var(--blue)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 export default function AboutPage() {
   return (
