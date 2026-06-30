@@ -161,11 +161,13 @@ export default function ProcessPage() {
                     alignItems: 'center',
                     justifyContent: 'center',
                   }}>
-                    <img src="/img/process/icons/Ellipse 1221-1.svg" alt="" style={{ position: 'absolute', inset: 0, width: 56, height: 56 }} />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" style={{ position: 'absolute', inset: 0 }}>
+                      <circle cx="28" cy="28" r="28" fill="#D1EFFF" />
+                    </svg>
                     <span style={{
                       position: 'relative',
                       fontFamily: 'Outfit', fontWeight: 700, fontSize: 18,
-                      color: '#fff', lineHeight: 1,
+                      color: '#0080C6', lineHeight: 1,
                     }}>{step.num}</span>
                   </div>
 
