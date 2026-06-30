@@ -152,76 +152,79 @@ export default function AboutPage() {
       </section>
 
       {/* ── Our Story ── */}
-      <section style={{ background: '#fdfeff', padding: 'clamp(40px,5vw,80px) clamp(20px,5vw,76px)' }}>
+      <section style={{ background: '#fff', padding: 'clamp(40px,5vw,80px) clamp(20px,5vw,76px)' }}>
         <div style={{
           maxWidth: 1290, margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: 'clamp(32px, 5vw, 72px)',
+          display: 'flex',
           alignItems: 'center',
+          gap: 'clamp(32px,5vw,80px)',
+          flexWrap: 'wrap',
         }}>
-          {/* Left — stacked / overlapping images */}
-          <div style={{ position: 'relative', minHeight: 380 }}>
-            {/* Background image */}
-            <div style={{
-              borderRadius: 16,
-              overflow: 'hidden',
-              width: '88%',
-              aspectRatio: '4/3',
-              backgroundImage: 'url(/img/background.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: '50% 50%',
-            }} />
-            {/* Foreground image — offset */}
+          {/* Left — overlapping images */}
+          <div style={{ position: 'relative', flex: '0 0 auto', width: 'clamp(300px,42%,560px)', minHeight: 520 }}>
+            {/* Background image (roofer) */}
+            <img
+              src="/img/about/20260507_103206.jpg"
+              alt="Roofing work"
+              style={{
+                width: '78%',
+                aspectRatio: '3/4',
+                objectFit: 'cover',
+                borderRadius: 20,
+                display: 'block',
+              }}
+            />
+            {/* Foreground image (house) — offset bottom-right */}
             <div style={{
               position: 'absolute',
-              bottom: -24,
+              bottom: 0,
               right: 0,
-              width: '55%',
-              aspectRatio: '1',
-              borderRadius: 12,
+              width: '62%',
+              aspectRatio: '4/3',
+              borderRadius: 20,
               overflow: 'hidden',
-              border: '4px solid #fff',
-              boxShadow: '0 8px 32px rgba(0,0,0,0.14)',
-              backgroundImage: 'url(/img/frame-2147223409.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: '50% 50%',
-            }} />
+              border: '4px solid var(--shape-fill)',
+              boxShadow: '0 8px 32px rgba(0,0,0,0.12)',
+            }}>
+              <img
+                src="/img/about/Cardillo.jpg"
+                alt="Completed roofing project"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </div>
             {/* Trust badge */}
             <div style={{
               position: 'absolute',
-              bottom: 12,
+              bottom: 32,
               left: 12,
-              background: 'rgba(36,80,121,0.92)',
-              borderRadius: 10,
-              padding: '10px 16px',
-              display: 'flex', alignItems: 'center', gap: 10,
+              background: 'rgba(20,20,20,0.88)',
+              borderRadius: 12,
+              padding: '14px 18px',
+              display: 'flex', alignItems: 'center', gap: 12,
+              backdropFilter: 'blur(4px)',
             }}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2l3.5 6.5L23 10l-6 5.5 1.5 8L12 20l-6.5 3.5L7 15.5 1 10l7.5-1.5z" fill="rgba(255,255,255,0.25)" stroke="#fff" strokeWidth="1.5" />
-                <path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+              <img src="/img/about/Vector.svg" alt="" style={{ width: 36, height: 36, flexShrink: 0 }} />
               <div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 11, color: '#fff', letterSpacing: '0.04em' }}>Trust and Quality</div>
-                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 10, color: 'rgba(255,255,255,0.75)' }}>Service You Can Depend On</div>
+                <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 14, color: '#fff' }}>Trust and Quality</div>
+                <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.7)' }}>Service you can count on</div>
               </div>
             </div>
           </div>
 
           {/* Right — text */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+          <div style={{ flex: 1, minWidth: 280, display: 'flex', flexDirection: 'column', gap: 24 }}>
             <SectionLabel text="OUR STORY" />
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 'clamp(28px, 4vw, 44px)', lineHeight: 1.2, color: '#000',
+              fontSize: 'clamp(32px,3.5vw,48px)', lineHeight: 1.15, color: '#000', margin: 0,
             }}>
               Our Story and Roots in{' '}
               <span style={{ color: 'var(--blue)' }}>Sierra Vista AZ</span>
             </h2>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '1.7', color: 'var(--color-3)' }}>
+            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '1.7', color: 'var(--color-3)', margin: 0 }}>
               Founded with a mission to deliver honest, high-quality roofing, Artistic Roofing Systems has grown alongside the Sierra Vista community we call home. Many of our experienced team members live right here in Cochise County, and their dedication shows in every project.
             </p>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '1.7', color: 'var(--color-3)' }}>
+            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '1.7', color: 'var(--color-3)', margin: 0 }}>
               Our crews do more than build and repair roofs. They build trust with neighbors, families, and local businesses through consistent workmanship and dependable service.
             </p>
           </div>
