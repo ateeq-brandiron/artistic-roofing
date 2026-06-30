@@ -12,7 +12,7 @@ const coreValues = [
 ];
 
 const certifications = [
-  { text: 'TRI Certified Tile Installer', sub: 'Trained in the best techniques for long-term roof performance' },
+  { text: 'TRI Certified Tile Installer', sub: 'Trained in proper tile installation techniques for long-term roof performance' },
   { text: 'Polyglass Roof Coating Certified', sub: 'Trained in advanced coating applications for low-slope and flat roofs' },
   { text: 'Tamko Preferred Contractor', sub: 'Recognized for quality installation and product expertise' },
   { text: 'Better Business Bureau (BBB) Accredited', sub: 'Demonstrating a commitment to trusted service and customer satisfaction' },
