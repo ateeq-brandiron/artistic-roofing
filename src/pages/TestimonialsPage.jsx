@@ -166,9 +166,6 @@ export default function TestimonialsPage() {
         }}>
           Artistic Roofing Systems: Roofing Company Reviews in Sierra Vista AZ
         </h1>
-        <p style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 20, lineHeight: '120%', color: '#fff', margin: 0 }}>
-          See why homeowners across Cochise County choose us.
-        </p>
       </section>
 
       {/* ── Ticker ── */}

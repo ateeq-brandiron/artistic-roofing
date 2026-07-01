@@ -133,9 +133,6 @@ export default function AboutPage() {
         }}>
           About Artistic Roofing – Roofing Contractors in Sierra Vista AZ
         </h1>
-        <p style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 20, lineHeight: '120%', color: '#fff', margin: 0 }}>
-          Serving Sierra Vista and Cochise County for over a decade.
-        </p>
       </section>
 
       {/* ── Ticker ── */}

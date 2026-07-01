@@ -207,9 +207,6 @@ export default function ServicesPage() {
         }}>
           Roofing Services in Sierra Vista AZ
         </h1>
-        <p style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 20, lineHeight: '120%', color: '#fff', margin: 0 }}>
-          Residential, commercial, and custom solutions built for Arizona.
-        </p>
       </section>
 
       {/* ── Ticker ── */}

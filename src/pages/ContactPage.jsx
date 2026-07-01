@@ -48,9 +48,6 @@ export default function ContactPage() {
         }}>
           Contact Artistic Roofing Systems in Sierra Vista AZ
         </h1>
-        <p style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 20, lineHeight: '120%', color: '#fff', margin: 0 }}>
-          We're ready to help — reach out for a free estimate today.
-        </p>
       </section>
 
       {/* ── Ticker ── */}

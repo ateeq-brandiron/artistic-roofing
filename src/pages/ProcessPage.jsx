@@ -82,9 +82,6 @@ export default function ProcessPage() {
         }}>
           What to Expect During Your Installation Process
         </h1>
-        <p style={{ position: 'relative', fontFamily: 'Outfit, sans-serif', fontWeight: 500, fontSize: 20, lineHeight: '120%', color: '#fff', margin: 0 }}>
-          Simple, transparent, and stress-free from start to finish.
-        </p>
       </section>
 
       {/* ── Ticker ── */}
