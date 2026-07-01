@@ -370,7 +370,7 @@ export default function ServicesPage() {
         }}>
           {/* Left */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 30, maxWidth: 560 }}>
-            <Pill text="GUTTERS" />
+            <Pill text="SERVICES" />
             <h2 style={{
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
