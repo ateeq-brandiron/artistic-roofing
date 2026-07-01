@@ -42,26 +42,10 @@ const gutterFeatures = [
 ];
 
 const credentials = [
-  {
-    icon: <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><rect x="10" y="12" width="28" height="28" rx="4" stroke="#0080C6" strokeWidth="2"/><path d="M38 20h6a4 4 0 014 4v16a4 4 0 01-4 4H22a4 4 0 01-4-4v-4" stroke="#0080C6" strokeWidth="2" strokeLinecap="round"/><circle cx="22" cy="35" r="5" fill="#E8F8FF" stroke="#0080C6" strokeWidth="1.5"/><path d="M20 35l1.5 1.5 3-3" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-    title: 'Fully Licensed',
-    sub: '#273695 K-42',
-  },
-  {
-    icon: <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M30 10l16 6v12c0 10-16 20-16 20S14 38 14 28V16l16-6z" stroke="#0080C6" strokeWidth="2" fill="#E8F8FF"/><text x="30" y="33" textAnchor="middle" fontFamily="Outfit" fontWeight="700" fontSize="10" fill="#0080C6">B&I</text></svg>,
-    title: 'Bonded & Insured',
-    sub: 'Complete Protection',
-  },
-  {
-    icon: <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="20" stroke="#0080C6" strokeWidth="2" fill="#E8F8FF"/><text x="30" y="35" textAnchor="middle" fontFamily="Outfit" fontWeight="700" fontSize="11" fill="#0080C6">ARCA</text></svg>,
-    title: 'ARCA Member',
-    sub: 'Arizona Roofing Contractors Association',
-  },
-  {
-    icon: <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="20" stroke="#0080C6" strokeWidth="2" fill="#E8F8FF"/><text x="30" y="35" textAnchor="middle" fontFamily="Outfit" fontWeight="700" fontSize="11" fill="#0080C6">BBB</text></svg>,
-    title: 'BBB Accredited',
-    sub: 'A+ Integrity',
-  },
+  { icon: '/img/trust/icon-licensed.svg', title: 'Fully Licensed',    sub: '#273695 K-42' },
+  { icon: '/img/trust/icon-bonded.svg',   title: 'Bonded & Insured',  sub: 'Complete Protection' },
+  { icon: '/img/trust/icon-arca.svg',     title: 'ARCA Member',       sub: 'Arizona Roofing Contractors Association' },
+  { icon: '/img/trust/icon-bbb.svg',      title: 'BBB Accredited',    sub: 'A+ Integrity' },
 ];
 
 const faqs = [
@@ -233,7 +217,7 @@ function CredentialCard({ c }) {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-          {c.icon}
+          <img src={c.icon} alt="" style={{ width: 64, height: 64, objectFit: 'contain' }} />
         </div>
       </div>
       {/* Text */}
