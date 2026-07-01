@@ -35,26 +35,10 @@ const residential = [
 ];
 
 const gutterFeatures = [
-  {
-    icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 8h20M4 14h14M4 20h8" stroke="#0080C6" strokeWidth="2" strokeLinecap="round"/><rect x="18" y="13" width="6" height="8" rx="1" stroke="#0080C6" strokeWidth="1.5"/></svg>,
-    title: 'Custom Fit',
-    desc: 'Fabricated on-site to match your roofline precisely.',
-  },
-  {
-    icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4c0 0-7 7-7 13a7 7 0 0014 0C21 11 14 4 14 4z" stroke="#0080C6" strokeWidth="1.8" fill="rgba(0,128,198,0.08)"/><path d="M10 18c0 2.2 1.8 4 4 4" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round"/></svg>,
-    title: 'Manage Water Flow',
-    desc: 'Proper slope alignment to direct water away from your foundation.',
-  },
-  {
-    icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="10" cy="10" r="4" stroke="#0080C6" strokeWidth="1.8"/><circle cx="20" cy="10" r="4" stroke="#0080C6" strokeWidth="1.8"/><circle cx="10" cy="20" r="4" stroke="#0080C6" strokeWidth="1.8"/><circle cx="20" cy="20" r="4" stroke="#0080C6" strokeWidth="1.8"/></svg>,
-    title: 'Multiple Colors',
-    desc: 'Available in a wide range of colors to complement your home.',
-  },
-  {
-    icon: <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="10" width="20" height="14" rx="2" stroke="#0080C6" strokeWidth="1.8"/><path d="M8 10V8a6 6 0 0112 0v2" stroke="#0080C6" strokeWidth="1.8" strokeLinecap="round"/><circle cx="14" cy="17" r="2" fill="#0080C6"/></svg>,
-    title: 'On-Site Fab',
-    desc: 'Seamless gutters made fresh at your property for a perfect fit.',
-  },
+  { icon: '/img/gutters/icon-custom-fit.svg',  title: 'Custom Fit' },
+  { icon: '/img/gutters/icon-water-flow.svg',  title: 'Manage Water Flow' },
+  { icon: '/img/gutters/icon-colors.svg',      title: 'Multiple Colors' },
+  { icon: '/img/gutters/icon-onsite.svg',      title: 'On-Site Fab' },
 ];
 
 const credentials = [
@@ -189,22 +173,32 @@ function ResidentialCard({ s }) {
 }
 
 function GutterFeatureCard({ f }) {
-  const [h, setH] = useState(false);
   return (
-    <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
-      style={{ background: h ? 'rgba(0,128,198,0.25)' : 'rgba(255,255,255,0.07)',
-        border: `1px solid ${h ? 'var(--blue)' : 'rgba(255,255,255,0.12)'}`,
-        borderRadius: 12, padding: '28px 20px',
-        display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 12,
-        transform: h ? 'translateY(-4px)' : 'none',
-        transition: 'background 0.3s ease, border-color 0.3s ease, transform 0.3s ease', cursor: 'default' }}>
-      <div style={{ width: 60, height: 60, background: h ? 'var(--blue)' : 'var(--shape-fill)', borderRadius: '50%',
-        display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-        transform: h ? 'scale(1.1)' : 'scale(1)', transition: 'background 0.3s ease, transform 0.3s ease' }}>
-        {f.icon}
-      </div>
-      <div style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff' }}>{f.title}</div>
-      <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.65)', lineHeight: '1.5' }}>{f.desc}</div>
+    <div style={{
+      display: 'flex',
+      width: 273,
+      height: 162,
+      padding: '25px 81px',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 10,
+      flexShrink: 0,
+      borderRadius: 10,
+      border: '1px solid #0080C6',
+      background: '#E8F8FF',
+      boxSizing: 'border-box',
+    }}>
+      <img src={f.icon} alt="" style={{ width: 40, height: 40, objectFit: 'contain' }} />
+      <span style={{
+        fontFamily: 'Outfit, sans-serif',
+        fontWeight: 600,
+        fontSize: 16,
+        lineHeight: '120%',
+        color: '#000',
+        textAlign: 'center',
+        whiteSpace: 'nowrap',
+      }}>{f.title}</span>
     </div>
   );
 }
@@ -343,24 +337,68 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Gutter Installation ── */}
-      <section style={{ background: '#3a3a3a', padding: '75px 76px', boxSizing: 'border-box' }}>
-        <div style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+      <section style={{
+        background: '#3a3a3a',
+        width: '100%',
+        boxSizing: 'border-box',
+      }}>
+        <div style={{
+          display: 'flex',
+          maxWidth: 1440,
+          margin: '0 auto',
+          padding: 75,
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          boxSizing: 'border-box',
+        }}>
           {/* Left */}
-          <div style={{ flex: '1 1 320px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 30, maxWidth: 560 }}>
             <Pill text="GUTTERS" />
-            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 48, lineHeight: '120%', color: '#fff', margin: 0 }}>
+            <h2 style={{
+              fontFamily: 'Playfair Display, serif',
+              fontWeight: 900,
+              fontSize: 48,
+              lineHeight: '120%',
+              color: '#fff',
+              margin: 0,
+              alignSelf: 'stretch',
+            }}>
               Gutter Installation
             </h2>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'rgba(255,255,255,0.75)', margin: 0 }}>
-              Our seamless 5" and 6" gutter systems fit to your property and home location site for precise installation. Gutters assist with water flow and drainage from your roof, reducing overflow around your home or business.
+            <p style={{
+              fontFamily: 'Outfit, sans-serif',
+              fontWeight: 300,
+              fontSize: 20,
+              lineHeight: '120%',
+              color: '#E8F8FF',
+              margin: 0,
+              alignSelf: 'stretch',
+            }}>
+              Our seamless 5" and 6" gutter systems are custom-fit to your property and fabricated on-site for precise installation. Gutters assist with proper water flow and drainage from your roof, helping reduce overflow around your home or business.
             </p>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'rgba(255,255,255,0.75)', margin: 0 }}>
+            <p style={{
+              fontFamily: 'Outfit, sans-serif',
+              fontWeight: 300,
+              fontSize: 20,
+              lineHeight: '120%',
+              color: '#E8F8FF',
+              margin: 0,
+              alignSelf: 'stretch',
+            }}>
               Available in multiple colors and styles, our gutters are both functional and visually complementary to your roofline.
             </p>
           </div>
 
-          {/* Right — 2×2 feature grid */}
-          <div style={{ flex: '1 1 320px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+          {/* Right — 2×2 cards */}
+          <div style={{
+            display: 'flex',
+            width: 581,
+            alignItems: 'flex-start',
+            alignContent: 'flex-start',
+            gap: '28px 35px',
+            flexShrink: 0,
+            flexWrap: 'wrap',
+          }}>
             {gutterFeatures.map((f, i) => <GutterFeatureCard key={i} f={f} />)}
           </div>
         </div>
