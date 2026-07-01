@@ -26,12 +26,12 @@ const commercial = [
 ];
 
 const residential = [
-  { img: '/img/Frame%202147223409.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
-  { img: '/img/Frame%202147223415.png', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
-  { img: '/img/Frame%202147223416.png', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
-  { img: '/img/Frame%202147223417.png', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an aging roof, our team installs durable systems using trusted manufacturers including Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
-  { img: '/img/Frame%202147223418.png', title: 'Roof Inspections', desc: 'Our experienced team provides thorough roof inspections to assess condition, identify wear or damage, and provide clear, actionable solutions to extend your roof\'s performance.' },
-  { img: '/img/Frame%202147223409.png', title: 'Roof Coatings & Restoration', desc: 'We provide Polyglass-certified coatings and repair systems for low-slope roofs, supporting long-term waterproofing, energy efficiency, and performance in Arizona\'s climate.' },
+  { img: '/img/services/res-home-roofing.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
+  { img: '/img/services/res-reroofing.png', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
+  { img: '/img/services/res-roof-repair.png', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
+  { img: '/img/services/res-inspections.png', title: 'Roof Inspections', desc: 'Our experienced team provides thorough roof inspections to assess condition, identify wear or damage, and provide clear, actionable solutions to extend your roof\'s performance.' },
+  { img: '/img/services/res-installation.jpg', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an aging roof, our team installs durable systems using trusted manufacturers including Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
+  { img: '/img/services/res-coatings.jpg', title: 'Roof Coatings & Restoration', desc: 'We provide Polyglass-certified coatings and repair systems for low-slope roofs, supporting long-term waterproofing, energy efficiency, and performance in Arizona\'s climate.' },
 ];
 
 const gutterFeatures = [
@@ -136,18 +136,52 @@ function CommercialCard({ s }) {
 }
 
 function ResidentialCard({ s }) {
-  const [h, setH] = useState(false);
   return (
-    <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
-      style={{ borderRadius: 12, overflow: 'hidden', border: `1px solid ${h ? 'var(--blue)' : 'var(--shape-stroke)'}`, background: '#fff',
-        boxShadow: h ? '0 20px 48px rgba(0,128,198,0.12)' : '0 4px 16px rgba(0,0,0,0.05)',
-        transform: h ? 'translateY(-6px)' : 'none',
-        transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease', cursor: 'default' }}>
-      <div style={{ height: 180, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%',
-        transform: h ? 'scale(1.05)' : 'scale(1)', transition: 'transform 0.55s ease' }} />
-      <div style={{ padding: '20px 20px 24px' }}>
-        <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 20, color: h ? 'var(--blue)' : '#000', margin: '0 0 8px', transition: 'color 0.3s ease' }}>{s.title}</h3>
-        <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>{s.desc}</p>
+    <div style={{
+      display: 'flex',
+      width: 403,
+      height: 583,
+      padding: '30px 17px',
+      flexDirection: 'column',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      gap: 10,
+      flexShrink: 0,
+      borderRadius: 10,
+      backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00) 39.9%, rgba(0,0,0,0.75) 100%), url(${s.img})`,
+      backgroundSize: 'cover',
+      backgroundPosition: '50% 50%',
+      backgroundRepeat: 'no-repeat',
+      boxSizing: 'border-box',
+    }}>
+      <div style={{
+        display: 'flex',
+        width: 360,
+        padding: 15,
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        gap: 10,
+        borderRadius: 10,
+        opacity: 0.98,
+        background: 'rgba(253,255,255,0.95)',
+        boxSizing: 'border-box',
+      }}>
+        <h3 style={{
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 700,
+          fontSize: 18,
+          lineHeight: '130%',
+          color: '#000',
+          margin: 0,
+        }}>{s.title}</h3>
+        <p style={{
+          fontFamily: 'Outfit, sans-serif',
+          fontWeight: 400,
+          fontSize: 14,
+          lineHeight: '150%',
+          color: 'var(--color-3)',
+          margin: 0,
+        }}>{s.desc}</p>
       </div>
     </div>
   );
@@ -283,20 +317,27 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Residential Roofing Services ── */}
-      <section style={{ background: 'var(--shape-fill)', padding: '75px 76px', boxSizing: 'border-box' }}>
-        <div style={{ maxWidth: 1290, margin: '0 auto' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 48 }}>
-            <Pill text="SERVICES" />
-            <h2 style={{
-              fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 48, lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
-            }}>
-              Residential Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
-            </h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
-            {residential.map((s, i) => <ResidentialCard key={i} s={s} />)}
-          </div>
+      <section style={{
+        background: 'var(--shape-fill)',
+        display: 'flex',
+        padding: 75,
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 50,
+        boxSizing: 'border-box',
+        width: '100%',
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+          <Pill text="SERVICES" />
+          <h2 style={{
+            fontFamily: 'Playfair Display, serif', fontWeight: 900,
+            fontSize: 48, lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
+          }}>
+            Residential Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
+          </h2>
+        </div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, justifyContent: 'center', maxWidth: 1290 }}>
+          {residential.map((s, i) => <ResidentialCard key={i} s={s} />)}
         </div>
       </section>
 
