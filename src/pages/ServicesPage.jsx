@@ -26,26 +26,26 @@ const commercial = [
 ];
 
 const residential = [
-  { img: '/img/services/res-inspections.png', title: 'Roof Inspections', desc: 'Our experienced team provides thorough roof inspections to assess condition, identify wear or damage, and provide clear, actionable solutions to extend your roof\'s performance.' },
-  { img: '/img/services/res-installation.jpg', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an aging roof, our team installs durable systems using trusted manufacturers including Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
-  { img: '/img/services/res-coatings.jpg', title: 'Roof Coatings & Restoration', desc: 'We provide Polyglass-certified coatings and repair systems for low-slope roofs, supporting long-term waterproofing, energy efficiency, and performance in Arizona\'s climate.' },
-  { img: '/img/services/res-reroofing.png', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
-  { img: '/img/services/res-roof-repair.png', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
-  { img: '/img/services/res-home-roofing.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
+  { img: '/img/services/res-inspections.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
+  { img: '/img/services/res-installation.jpg', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
+  { img: '/img/services/res-coatings.jpg', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
+  { img: '/img/services/res-reroofing.png', title: 'Roof Inspections', desc: 'Our experienced team provides thorough roof inspections to assess condition, identify wear or damage, and provide clear, actionable solutions to extend your roof\'s performance.' },
+  { img: '/img/services/res-roof-repair.png', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an aging roof, our team installs durable systems using trusted manufacturers including Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
+  { img: '/img/services/res-home-roofing.png', title: 'Roof Coatings & Restoration', desc: 'We provide Polyglass-certified coatings and repair systems for low-slope roofs, supporting long-term waterproofing, energy efficiency, and performance in Arizona\'s climate.' },
 ];
 
 const gutterFeatures = [
-  { icon: '/img/gutters/icon-onsite.svg',      title: 'On-Site Fab' },
-  { icon: '/img/gutters/icon-colors.svg',      title: 'Multiple Colors' },
-  { icon: '/img/gutters/icon-water-flow.svg',  title: 'Manage Water Flow' },
-  { icon: '/img/gutters/icon-custom-fit.svg',  title: 'Custom Fit' },
+  { icon: '/img/gutters/icon-onsite.svg',      title: 'Custom Fit' },
+  { icon: '/img/gutters/icon-colors.svg',      title: 'Manage Water Flow' },
+  { icon: '/img/gutters/icon-water-flow.svg',  title: 'Multiple Colors' },
+  { icon: '/img/gutters/icon-custom-fit.svg',  title: 'On-Site Fab' },
 ];
 
 const credentials = [
-  { icon: '/img/trust/icon-bbb.svg',      title: 'BBB Accredited',    sub: 'A+ Integrity' },
-  { icon: '/img/trust/icon-arca.svg',     title: 'ARCA Member',       sub: 'Arizona Roofing Contractors Association' },
-  { icon: '/img/trust/icon-bonded.svg',   title: 'Bonded & Insured',  sub: 'Complete Protection' },
-  { icon: '/img/trust/icon-licensed.svg', title: 'Fully Licensed',    sub: '#273695 K-42' },
+  { icon: '/img/trust/icon-bbb.svg',      title: 'Fully Licensed',    sub: '#273695 K-42' },
+  { icon: '/img/trust/icon-arca.svg',     title: 'Bonded & Insured',  sub: 'Complete Protection' },
+  { icon: '/img/trust/icon-bonded.svg',   title: 'ARCA Member',       sub: 'Arizona Roofing Contractors Association' },
+  { icon: '/img/trust/icon-licensed.svg', title: 'BBB Accredited',    sub: 'A+ Integrity' },
 ];
 
 const faqs = [
