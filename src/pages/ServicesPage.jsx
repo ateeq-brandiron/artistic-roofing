@@ -5,7 +5,7 @@ import ScrollBar from '../components/ScrollBar';
 /* ── Standard white label pill ── */
 function Pill({ text }) {
   return (
-    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)', alignSelf: 'flex-start' }}>
+    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
       <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
       <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
     </div>
@@ -369,7 +369,7 @@ export default function ServicesPage() {
           boxSizing: 'border-box',
         }}>
           {/* Left */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 30, maxWidth: 560 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 30, maxWidth: 560 }}>
             <Pill text="SERVICES" />
             <h2 style={{
               fontFamily: 'Playfair Display, serif',
@@ -514,7 +514,7 @@ export default function ServicesPage() {
       <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }}>
           {/* Left */}
-          <div style={{ flex: '0 0 340px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+          <div style={{ flex: '0 0 340px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 20 }}>
             <Pill text="FAQ" />
             <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 40, lineHeight: '120%', color: '#000', margin: 0 }}>
               Frequently Asked Questions About Roofing and Gutters
