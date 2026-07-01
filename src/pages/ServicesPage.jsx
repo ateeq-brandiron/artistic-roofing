@@ -26,12 +26,12 @@ const commercial = [
 ];
 
 const residential = [
-  { img: '/img/services/res-inspections.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
-  { img: '/img/services/res-installation.jpg', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
-  { img: '/img/services/res-coatings.jpg', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
-  { img: '/img/services/res-reroofing.png', title: 'Roof Inspections', desc: 'Our experienced team provides thorough roof inspections to assess condition, identify wear or damage, and provide clear, actionable solutions to extend your roof\'s performance.' },
-  { img: '/img/services/res-roof-repair.png', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an aging roof, our team installs durable systems using trusted manufacturers including Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
-  { img: '/img/services/res-home-roofing.png', title: 'Roof Coatings & Restoration', desc: 'We provide Polyglass-certified coatings and repair systems for low-slope roofs, supporting long-term waterproofing, energy efficiency, and performance in Arizona\'s climate.' },
+  { img: '/img/services/res-inspections.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we provide complete roofing services for homeowners. Our team specializes in roof installation, repairs, inspections, maintenance, and energy-efficient options designed for Arizona\'s climate.' },
+  { img: '/img/services/res-installation.jpg', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re adding on to your home, our re-roofing services provide a seamless, professional upgrade that protects your property and enhances curb appeal.' },
+  { img: '/img/services/res-coatings.jpg', title: 'Residential Roof Repair', desc: 'We handle everything from small leaks to storm damage with responsive service that restores your roof\'s strength and integrity.' },
+  { img: '/img/services/res-reroofing.png', title: 'Roof Inspections', desc: 'Our inspections cover shingles, tile, and flashing to identify wear or damage before it becomes a costly problem.' },
+  { img: '/img/services/res-roof-repair.png', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an old roof, we bring the right materials and expertise to deliver dependable results. From asphalt shingles and concrete tile to metal roofing systems built for long-term durability and energy efficiency in Arizona\'s climate, our team ensures every installation meets strict quality standards. We work with trusted manufacturers including Tamko, Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
+  { img: '/img/services/res-home-roofing.png', title: 'Roof Coatings & Restoration', desc: 'We provide coatings and repair solutions for low-slope roofs using professional-grade Polyglass products. Roof coatings serve as a maintenance solution for modified bitumen and compatible flat roofing systems, helping extend roof life and maintain waterproofing. These applications protect against heat, UV exposure, and weather while supporting long-term performance in Arizona\'s climate.' },
 ];
 
 const gutterFeatures = [
