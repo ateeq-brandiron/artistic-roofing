@@ -14,14 +14,14 @@ function Pill({ text }) {
 
 const commercial = [
   {
-    img: '/img/Frame%202147223416.png',
+    img: '/img/services/commercial-repair.jpg',
     title: 'Commercial Roof Repairs',
     desc: 'We deliver prompt, reliable repair services for businesses facing storm damage, wear, or leaks. Our experienced team quickly addresses problem areas to protect your property and minimize disruption.',
   },
   {
-    img: '/img/Frame%202147223417.png',
+    img: '/img/services/commercial-install.jpg',
     title: 'Commercial Roof Installation',
-    desc: 'Our clients bring years of experience with metal roofing systems and low-slope applications, including modified bitumen, helping ensure your commercial property stays well protected with materials suited to Arizona conditions.',
+    desc: 'Our crews bring years of experience with metal roofing systems and low-slope applications, including modified bitumen, helping ensure your commercial property stays well protected with materials suited to Arizona conditions.',
   },
 ];
 
@@ -88,19 +88,49 @@ const faqs = [
 ];
 
 function CommercialCard({ s }) {
-  const [h, setH] = useState(false);
   return (
-    <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
-      style={{ borderRadius: 12, overflow: 'hidden', border: '1px solid var(--shape-stroke)',
-        boxShadow: h ? '0 20px 48px rgba(0,128,198,0.12)' : '0 4px 16px rgba(0,0,0,0.06)',
-        transform: h ? 'translateY(-6px)' : 'none',
-        transition: 'transform 0.3s ease, box-shadow 0.3s ease', cursor: 'default' }}>
-      <div style={{ height: 240, backgroundImage: `url(${s.img})`, backgroundSize: 'cover', backgroundPosition: '50% 50%',
-        transform: h ? 'scale(1.04)' : 'scale(1)', transition: 'transform 0.55s ease' }} />
-      <div style={{ padding: '24px 24px 28px' }}>
-        <h3 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 22, color: h ? 'var(--blue)' : '#000', margin: '0 0 10px', transition: 'color 0.3s ease' }}>{s.title}</h3>
-        <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>{s.desc}</p>
-      </div>
+    <div style={{
+      display: 'flex',
+      height: 498,
+      padding: '23px 33px',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      gap: 10,
+      borderRadius: 10,
+      border: '1px solid #D1EFFF',
+      background: '#E8F8FF',
+      boxSizing: 'border-box',
+      flex: 1,
+    }}>
+      {/* Image */}
+      <div style={{
+        height: 232,
+        alignSelf: 'stretch',
+        borderRadius: 10,
+        backgroundImage: `url(${s.img})`,
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 50%',
+        backgroundRepeat: 'no-repeat',
+        flexShrink: 0,
+      }} />
+      {/* Title */}
+      <h3 style={{
+        fontFamily: 'Playfair Display, serif',
+        fontWeight: 700,
+        fontSize: 22,
+        lineHeight: '130%',
+        color: '#000',
+        margin: 0,
+      }}>{s.title}</h3>
+      {/* Description */}
+      <p style={{
+        fontFamily: 'Outfit, sans-serif',
+        fontWeight: 400,
+        fontSize: 16,
+        lineHeight: '150%',
+        color: 'var(--color-3)',
+        margin: 0,
+      }}>{s.desc}</p>
     </div>
   );
 }
@@ -228,20 +258,27 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Commercial Roofing Services ── */}
-      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
-        <div style={{ maxWidth: 1290, margin: '0 auto' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 48 }}>
-            <Pill text="SERVICES" />
-            <h2 style={{
-              fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 48, lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
-            }}>
-              Commercial Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
-            </h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px,1fr))', gap: 28 }}>
-            {commercial.map((s, i) => <CommercialCard key={i} s={s} />)}
-          </div>
+      <section style={{
+        background: '#fff',
+        display: 'flex',
+        padding: 75,
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 50,
+        boxSizing: 'border-box',
+        width: '100%',
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+          <Pill text="SERVICES" />
+          <h2 style={{
+            fontFamily: 'Playfair Display, serif', fontWeight: 900,
+            fontSize: 48, lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
+          }}>
+            Commercial Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
+          </h2>
+        </div>
+        <div style={{ display: 'flex', gap: 28, width: '100%', maxWidth: 1290 }}>
+          {commercial.map((s, i) => <CommercialCard key={i} s={s} />)}
         </div>
       </section>
 
