@@ -26,12 +26,12 @@ const commercial = [
 ];
 
 const residential = [
-  { img: '/img/services/res-home-roofing.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
-  { img: '/img/services/res-reroofing.png', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
-  { img: '/img/services/res-roof-repair.png', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
   { img: '/img/services/res-inspections.png', title: 'Roof Inspections', desc: 'Our experienced team provides thorough roof inspections to assess condition, identify wear or damage, and provide clear, actionable solutions to extend your roof\'s performance.' },
   { img: '/img/services/res-installation.jpg', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an aging roof, our team installs durable systems using trusted manufacturers including Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
   { img: '/img/services/res-coatings.jpg', title: 'Roof Coatings & Restoration', desc: 'We provide Polyglass-certified coatings and repair systems for low-slope roofs, supporting long-term waterproofing, energy efficiency, and performance in Arizona\'s climate.' },
+  { img: '/img/services/res-reroofing.png', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re looking to upgrade, our re-roofing service is a seamless, professional solution that protects your property and enhances curb appeal.' },
+  { img: '/img/services/res-roof-repair.png', title: 'Residential Roof Repair', desc: 'We handle everything from small fixes to comprehensive repair service that restores your roof\'s strength and integrity.' },
+  { img: '/img/services/res-home-roofing.png', title: 'Home Roofing', desc: 'From installation to ongoing care, we specialize in residential roofing services for the Sierra Vista area. Whether you need roof installation, repairs, inspections, or maintenance, our energy-efficient systems are designed for Arizona\'s climate.' },
 ];
 
 const gutterFeatures = [
