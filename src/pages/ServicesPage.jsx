@@ -337,7 +337,7 @@ export default function ServicesPage() {
             Residential Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
           </h2>
         </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 40, justifyContent: 'center', maxWidth: 1290 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 403px)', gap: 40 }}>
           {residential.map((s, i) => <ResidentialCard key={i} s={s} />)}
         </div>
       </section>
