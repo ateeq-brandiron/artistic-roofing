@@ -83,7 +83,7 @@ function ReviewCard({ review }) {
       {/* Stars + Quote icon */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
         <Stars count={review.stars} />
-        <img src="/img/testimonials/#U201c.svg" alt="" style={{ width: 40, height: 32, flexShrink: 0 }} />
+        <img src="/img/testimonials/quote.svg" alt="" style={{ width: 40, height: 32, flexShrink: 0 }} />
       </div>
       {/* Review text */}
       <p style={{
