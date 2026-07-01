@@ -139,16 +139,18 @@ function ResidentialCard({ s }) {
           fontFamily: 'Playfair Display, serif',
           fontWeight: 700,
           fontSize: 18,
-          lineHeight: '130%',
+          lineHeight: '120%',
           color: '#000',
+          textAlign: 'center',
           margin: 0,
         }}>{s.title}</h3>
         <p style={{
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 400,
-          fontSize: 14,
-          lineHeight: '150%',
-          color: 'var(--color-3)',
+          fontSize: 18,
+          lineHeight: '120%',
+          color: '#464646',
+          alignSelf: 'stretch',
           margin: 0,
         }}>{s.desc}</p>
       </div>
