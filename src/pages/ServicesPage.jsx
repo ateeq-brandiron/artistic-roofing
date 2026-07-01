@@ -14,12 +14,12 @@ function Pill({ text }) {
 
 const commercial = [
   {
-    img: '/img/services/commercial-repair.jpg',
+    img: '/img/services/commercial-install.jpg',
     title: 'Commercial Roof Repairs',
     desc: 'We deliver prompt, reliable repair services for businesses facing storm damage, wear, or leaks. Our experienced team quickly addresses problem areas to protect your property and minimize disruption.',
   },
   {
-    img: '/img/services/commercial-install.jpg',
+    img: '/img/services/commercial-repair.jpg',
     title: 'Commercial Roof Installation',
     desc: 'Our crews bring years of experience with metal roofing systems and low-slope applications, including modified bitumen, helping ensure your commercial property stays well protected with materials suited to Arizona conditions.',
   },
@@ -117,19 +117,20 @@ function CommercialCard({ s }) {
       <h3 style={{
         fontFamily: 'Playfair Display, serif',
         fontWeight: 700,
-        fontSize: 22,
-        lineHeight: '130%',
+        fontSize: 32,
+        lineHeight: 'normal',
         color: '#000',
         margin: 0,
       }}>{s.title}</h3>
       {/* Description */}
       <p style={{
         fontFamily: 'Outfit, sans-serif',
-        fontWeight: 400,
-        fontSize: 16,
-        lineHeight: '150%',
-        color: 'var(--color-3)',
+        fontWeight: 300,
+        fontSize: 20,
+        lineHeight: '120%',
+        color: '#464646',
         margin: 0,
+        width: 508,
       }}>{s.desc}</p>
     </div>
   );
