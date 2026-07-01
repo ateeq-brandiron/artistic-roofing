@@ -35,10 +35,10 @@ const residential = [
 ];
 
 const gutterFeatures = [
-  { icon: '/img/gutters/icon-custom-fit.svg',  title: 'Custom Fit' },
-  { icon: '/img/gutters/icon-water-flow.svg',  title: 'Manage Water Flow' },
-  { icon: '/img/gutters/icon-colors.svg',      title: 'Multiple Colors' },
   { icon: '/img/gutters/icon-onsite.svg',      title: 'On-Site Fab' },
+  { icon: '/img/gutters/icon-colors.svg',      title: 'Multiple Colors' },
+  { icon: '/img/gutters/icon-water-flow.svg',  title: 'Manage Water Flow' },
+  { icon: '/img/gutters/icon-custom-fit.svg',  title: 'Custom Fit' },
 ];
 
 const credentials = [
