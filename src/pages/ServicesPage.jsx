@@ -475,17 +475,20 @@ export default function ServicesPage() {
       </section>
 
       {/* ── CTA ── */}
-      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 75px 75px', boxSizing: 'border-box' }}>
+      <div style={{ width: '100%', padding: '0 75px 75px', boxSizing: 'border-box' }}>
         <section style={{
           display: 'flex',
-          width: 1290,
-          padding: '80px 100px',
+          maxWidth: 1440,
+          margin: '0 auto',
+          padding: '75px 100px',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
           gap: 24,
           borderRadius: 10,
-          background: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/source_20191114_091038.jpg) lightgray 50% / cover no-repeat`,
+          backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/source_20191114_091038.jpg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: '50% 50%',
           boxSizing: 'border-box',
           textAlign: 'center',
         }}>
@@ -499,7 +502,7 @@ export default function ServicesPage() {
             display: 'inline-flex', alignItems: 'center', gap: 12,
             padding: '16px 32px', background: 'var(--blue)', borderRadius: 10,
             fontFamily: 'Outfit', fontWeight: 600, fontSize: 17, color: '#fff',
-            letterSpacing: '0.02em', marginTop: 8,
+            letterSpacing: '0.02em', marginTop: 8, textDecoration: 'none',
           }}>
             Request Your Free Roofing Estimate
             <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
