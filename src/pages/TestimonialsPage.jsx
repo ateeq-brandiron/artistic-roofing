@@ -3,7 +3,7 @@ import ScrollBar from '../components/ScrollBar';
 
 const groups = [
   {
-    icon: '/img/testimonials/Vector.svg',
+    icon: '/img/testimonials/Vector-5.svg',
     label: 'Short & Sweet Praise',
     cols: 2,
     reviews: [
@@ -49,7 +49,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Vector-5.svg',
+    icon: '/img/testimonials/Vector.svg',
     label: 'From Start to Finish – A Perfect Experience',
     cols: 1,
     reviews: [
