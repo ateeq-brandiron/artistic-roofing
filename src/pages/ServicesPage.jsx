@@ -175,9 +175,9 @@ function GutterFeatureCard({ f }) {
     }}>
       <img src={f.icon} alt="" style={{ width: 40, height: 40, objectFit: 'contain' }} />
       <span style={{
-        fontFamily: 'Outfit, sans-serif',
-        fontWeight: 600,
-        fontSize: 16,
+        fontFamily: 'Playfair Display, serif',
+        fontWeight: 500,
+        fontSize: 20,
         lineHeight: '120%',
         color: '#000',
         textAlign: 'center',
