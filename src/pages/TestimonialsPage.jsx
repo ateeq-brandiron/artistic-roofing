@@ -248,7 +248,11 @@ export default function TestimonialsPage() {
           alignItems: 'center',
           gap: 24,
           borderRadius: 10,
-          background: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/testimonials/Box.png) lightgray 50% / cover no-repeat`,
+          backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/testimonials/Box.png)`,
+          backgroundSize: 'cover',
+          backgroundPosition: '50% 50%',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#ccc',
           boxSizing: 'border-box',
           textAlign: 'center',
         }}>
