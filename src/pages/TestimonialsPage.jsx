@@ -12,7 +12,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Vector-1.svg',
+    icon: '/img/testimonials/Vector-3.svg',
     label: 'Quality Roofing Repairs & Lasting Results in Sierra Vista',
     cols: 3,
     reviews: [
@@ -22,7 +22,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Vector-2.svg',
+    icon: '/img/testimonials/Vector-4.svg',
     label: 'Knowledgeable, Reliable, and Professional',
     cols: 3,
     reviews: [
@@ -32,7 +32,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Vector-3.svg',
+    icon: '/img/testimonials/Vector-1.svg',
     label: 'Competitive Pricing & Expert Guidance',
     cols: 1,
     reviews: [
@@ -40,7 +40,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Vector-4.svg',
+    icon: '/img/testimonials/Vector-2.svg',
     label: 'Going the Extra Mile',
     cols: 2,
     reviews: [
