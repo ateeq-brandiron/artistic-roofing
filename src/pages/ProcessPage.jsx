@@ -77,8 +77,8 @@ export default function ProcessPage() {
           fontSize: 60,
           lineHeight: '120%',
           color: '#fff',
-          margin: '0 0 16px',
-          maxWidth: 620,
+          margin: 0,
+          width: 812,
         }}>
           What to Expect During Your Installation Process
         </h1>
