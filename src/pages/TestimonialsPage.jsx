@@ -3,7 +3,7 @@ import ScrollBar from '../components/ScrollBar';
 
 const groups = [
   {
-    icon: '/img/testimonials/Icon.svg',
+    icon: '/img/testimonials/Vector.svg',
     label: 'Short & Sweet Praise',
     cols: 2,
     reviews: [
@@ -12,7 +12,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Icon-1.svg',
+    icon: '/img/testimonials/Vector-1.svg',
     label: 'Quality Roofing Repairs & Lasting Results in Sierra Vista',
     cols: 3,
     reviews: [
@@ -22,7 +22,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Icon-2.svg',
+    icon: '/img/testimonials/Vector-2.svg',
     label: 'Knowledgeable, Reliable, and Professional',
     cols: 3,
     reviews: [
@@ -32,7 +32,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Icon-3.svg',
+    icon: '/img/testimonials/Vector-3.svg',
     label: 'Competitive Pricing & Expert Guidance',
     cols: 1,
     reviews: [
@@ -40,7 +40,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Icon-4.svg',
+    icon: '/img/testimonials/Vector-4.svg',
     label: 'Going the Extra Mile',
     cols: 2,
     reviews: [
@@ -49,7 +49,7 @@ const groups = [
     ],
   },
   {
-    icon: '/img/testimonials/Icon-5.svg',
+    icon: '/img/testimonials/Vector-5.svg',
     label: 'From Start to Finish – A Perfect Experience',
     cols: 1,
     reviews: [
@@ -89,9 +89,9 @@ function ReviewCard({ review }) {
       <p style={{
         fontFamily: 'Outfit, sans-serif',
         fontWeight: 400,
-        fontSize: 16,
-        lineHeight: '175%',
-        color: 'var(--color-3)',
+        fontSize: 20,
+        lineHeight: '120%',
+        color: '#464646',
         margin: 0,
         flex: 1,
       }}>
@@ -194,30 +194,33 @@ export default function TestimonialsPage() {
           {groups.map((group, gi) => (
             <div key={gi}>
               {/* Group header */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24 }}>
-                <div style={{
-                  width: 36,
-                  height: 36,
-                  background: 'var(--shape-fill)',
-                  border: '1px solid var(--shape-stroke)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
-                }}>
-                  <img src={group.icon} alt="" style={{ width: 18, height: 18, objectFit: 'contain' }} />
+              <div style={{ marginBottom: 24 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+                  <div style={{
+                    width: 36,
+                    height: 36,
+                    background: 'var(--shape-fill)',
+                    border: '1px solid var(--shape-stroke)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                  }}>
+                    <img src={group.icon} alt="" style={{ width: 18, height: 18, objectFit: 'contain' }} />
+                  </div>
+                  <h2 style={{
+                    fontFamily: 'Playfair Display, serif',
+                    fontWeight: 800,
+                    fontSize: 30,
+                    lineHeight: '120%',
+                    color: '#000',
+                    margin: 0,
+                  }}>
+                    {group.label}
+                  </h2>
                 </div>
-                <h2 style={{
-                  fontFamily: 'Outfit, sans-serif',
-                  fontWeight: 700,
-                  fontSize: 20,
-                  lineHeight: '130%',
-                  color: '#000',
-                  margin: 0,
-                }}>
-                  {group.label}
-                </h2>
+                <div style={{ width: '100%', height: 1, background: 'var(--shape-stroke)' }} />
               </div>
 
               {/* Cards grid */}
