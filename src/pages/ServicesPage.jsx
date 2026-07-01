@@ -42,10 +42,10 @@ const gutterFeatures = [
 ];
 
 const credentials = [
-  { icon: '/img/trust/icon-licensed.svg', title: 'Fully Licensed',    sub: '#273695 K-42' },
-  { icon: '/img/trust/icon-bonded.svg',   title: 'Bonded & Insured',  sub: 'Complete Protection' },
-  { icon: '/img/trust/icon-arca.svg',     title: 'ARCA Member',       sub: 'Arizona Roofing Contractors Association' },
   { icon: '/img/trust/icon-bbb.svg',      title: 'BBB Accredited',    sub: 'A+ Integrity' },
+  { icon: '/img/trust/icon-arca.svg',     title: 'ARCA Member',       sub: 'Arizona Roofing Contractors Association' },
+  { icon: '/img/trust/icon-bonded.svg',   title: 'Bonded & Insured',  sub: 'Complete Protection' },
+  { icon: '/img/trust/icon-licensed.svg', title: 'Fully Licensed',    sub: '#273695 K-42' },
 ];
 
 const faqs = [
