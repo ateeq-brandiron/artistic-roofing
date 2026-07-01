@@ -43,24 +43,24 @@ const gutterFeatures = [
 
 const credentials = [
   {
-    icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 3l10 4v8c0 6-10 12-10 12S6 21 6 15V7l10-4z" stroke="#0080C6" strokeWidth="1.8" fill="rgba(0,128,198,0.08)"/><path d="M11 16l3 3 7-7" stroke="#0080C6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+    icon: <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><rect x="10" y="12" width="28" height="28" rx="4" stroke="#0080C6" strokeWidth="2"/><path d="M38 20h6a4 4 0 014 4v16a4 4 0 01-4 4H22a4 4 0 01-4-4v-4" stroke="#0080C6" strokeWidth="2" strokeLinecap="round"/><circle cx="22" cy="35" r="5" fill="#E8F8FF" stroke="#0080C6" strokeWidth="1.5"/><path d="M20 35l1.5 1.5 3-3" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
     title: 'Fully Licensed',
-    sub: 'AZTRB11-A12',
+    sub: '#273695 K-42',
   },
   {
-    icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="5" y="7" width="22" height="18" rx="2" stroke="#0080C6" strokeWidth="1.8"/><path d="M5 13h22" stroke="#0080C6" strokeWidth="1.8"/><path d="M10 19h6M10 23h4" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    icon: <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><path d="M30 10l16 6v12c0 10-16 20-16 20S14 38 14 28V16l16-6z" stroke="#0080C6" strokeWidth="2" fill="#E8F8FF"/><text x="30" y="33" textAnchor="middle" fontFamily="Outfit" fontWeight="700" fontSize="10" fill="#0080C6">B&I</text></svg>,
     title: 'Bonded & Insured',
     sub: 'Complete Protection',
   },
   {
-    icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l3 6 6.5 1-4.7 4.6 1.1 6.4L16 19l-5.9 3 1.1-6.4L6.5 11l6.5-1z" stroke="#0080C6" strokeWidth="1.8" fill="rgba(0,128,198,0.08)"/><circle cx="16" cy="27" r="2" fill="#0080C6"/><path d="M16 22v3" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    icon: <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="20" stroke="#0080C6" strokeWidth="2" fill="#E8F8FF"/><text x="30" y="35" textAnchor="middle" fontFamily="Outfit" fontWeight="700" fontSize="11" fill="#0080C6">ARCA</text></svg>,
     title: 'ARCA Member',
     sub: 'Arizona Roofing Contractors Association',
   },
   {
-    icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="14" r="9" stroke="#0080C6" strokeWidth="1.8"/><path d="M12 14l3 3 5-5" stroke="#0080C6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M10 25l1.5-2M22 25l-1.5-2" stroke="#0080C6" strokeWidth="1.5" strokeLinecap="round"/></svg>,
+    icon: <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="20" stroke="#0080C6" strokeWidth="2" fill="#E8F8FF"/><text x="30" y="35" textAnchor="middle" fontFamily="Outfit" fontWeight="700" fontSize="11" fill="#0080C6">BBB</text></svg>,
     title: 'BBB Accredited',
-    sub: 'A+ Rating',
+    sub: 'A+ Integrity',
   },
 ];
 
@@ -204,24 +204,57 @@ function GutterFeatureCard({ f }) {
 }
 
 function CredentialCard({ c }) {
-  const [h, setH] = useState(false);
   return (
-    <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
-      style={{ background: h ? 'var(--blue)' : 'var(--shape-fill)',
-        border: `1px solid ${h ? 'var(--blue)' : 'var(--shape-stroke)'}`,
-        borderRadius: 16, padding: '36px 20px',
-        display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 14,
-        transform: h ? 'translateY(-6px)' : 'none',
-        boxShadow: h ? '0 20px 48px rgba(0,128,198,0.12)' : 'none',
-        transition: 'background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease', cursor: 'default' }}>
-      <div style={{ width: 72, height: 72, background: h ? 'rgba(255,255,255,0.18)' : '#fff',
-        borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
-        border: '1.5px solid var(--shape-stroke)', flexShrink: 0,
-        transform: h ? 'scale(1.1)' : 'scale(1)', transition: 'background 0.3s ease, transform 0.3s ease' }}>
-        {c.icon}
+    <div style={{
+      display: 'flex',
+      width: 206,
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 30,
+      flexShrink: 0,
+    }}>
+      {/* Outer dotted ring → inner filled circle → icon */}
+      <div style={{
+        width: 180,
+        height: 180,
+        borderRadius: '50%',
+        border: '1.5px dashed #0080C6',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexShrink: 0,
+      }}>
+        <div style={{
+          width: 148,
+          height: 148,
+          borderRadius: '50%',
+          background: '#D1EFFF',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+          {c.icon}
+        </div>
       </div>
-      <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 18, color: h ? '#fff' : '#000', transition: 'color 0.3s ease' }}>{c.title}</div>
-      <div style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: h ? 'rgba(255,255,255,0.85)' : 'var(--color-3)', lineHeight: '1.5', transition: 'color 0.3s ease' }}>{c.sub}</div>
+      {/* Text */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
+        <span style={{
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 700,
+          fontSize: 20,
+          lineHeight: '120%',
+          color: '#000',
+          textAlign: 'center',
+        }}>{c.title}</span>
+        <span style={{
+          fontFamily: 'Outfit, sans-serif',
+          fontWeight: 400,
+          fontSize: 16,
+          lineHeight: '130%',
+          color: 'var(--color-3)',
+          textAlign: 'center',
+        }}>{c.sub}</span>
+      </div>
     </div>
   );
 }
@@ -405,18 +438,53 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Trust & Credentials ── */}
-      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
-        <div style={{ maxWidth: 1290, margin: '0 auto' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 48 }}>
-            <Pill text="TRUST" />
-            <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 48, lineHeight: '120%', color: '#000', margin: 0 }}>
-              Trust & <span style={{ color: 'var(--blue)' }}>Credentials</span>
-            </h2>
-            <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'var(--color-3)', maxWidth: 760, margin: 0 }}>
-              Artistic Roofing Systems LLC is fully licensed (AZTRB45-A12), bonded, and insured. We are a proud member of the Arizona Roofing Contractors Association (ARCA), accredited by the Better Business Bureau, and active within the Sierra Vista Chamber of Commerce. Each project reflects our dedication to craftsmanship, integrity, and customer satisfaction.
-            </p>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+      <section style={{ background: '#fff', width: '100%', boxSizing: 'border-box' }}>
+        <div style={{
+          display: 'flex',
+          maxWidth: 1440,
+          margin: '0 auto',
+          padding: '75px 100px',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 30,
+          boxSizing: 'border-box',
+        }}>
+          <Pill text="TRUST" />
+          <h2 style={{
+            width: 608,
+            fontFamily: 'Playfair Display, serif',
+            fontWeight: 900,
+            fontSize: 48,
+            lineHeight: '120%',
+            color: '#000',
+            textAlign: 'center',
+            margin: 0,
+          }}>
+            Trust & <span style={{ color: 'var(--blue)' }}>Credentials</span>
+          </h2>
+          <p style={{
+            width: 816,
+            fontFamily: 'Outfit, sans-serif',
+            fontWeight: 300,
+            fontSize: 20,
+            lineHeight: '120%',
+            color: '#464646',
+            textAlign: 'center',
+            margin: 0,
+          }}>
+            Artistic Roofing Systems LLC is fully licensed (#273695 K-42), bonded, and insured. We are a proud member of the Arizona Roofing Contractors Association (ARCA), accredited by the Better Business Bureau, and active within the Sierra Vista Chamber of Commerce. Every project reflects our dedication to craftsmanship, integrity, and customer satisfaction.
+          </p>
+
+          {/* Icons row */}
+          <div style={{
+            display: 'flex',
+            width: '100%',
+            maxWidth: 1440,
+            padding: '50px 0',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: 100,
+          }}>
             {credentials.map((c, i) => <CredentialCard key={i} c={c} />)}
           </div>
         </div>
