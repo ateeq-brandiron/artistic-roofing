@@ -21,12 +21,12 @@ export default function WhyUs() {
       padding: 75,
       justifyContent: 'space-between',
       alignItems: 'center',
-      gap: 48,
+      gap: 75,
       boxSizing: 'border-box',
     }}>
 
       {/* Left */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, maxWidth: 560, flex: '1 1 300px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, flex: '1 0 0' }}>
 
         {/* Label */}
         <div style={{
