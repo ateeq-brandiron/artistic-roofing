@@ -46,10 +46,11 @@ export default function FAQ() {
           <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>FAQ'S</span>
         </div>
         <h2 style={{
+          width: 407,
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(36px,4vw,56px)',
-          lineHeight: 1.15,
+          fontSize: 48,
+          lineHeight: '120%',
           color: '#000',
           margin: 0,
         }}>
