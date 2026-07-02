@@ -261,7 +261,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right – address */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 500 }}>
+          <div style={{ display: 'flex', width: 622, flexDirection: 'column', alignItems: 'flex-start', gap: 30, flexShrink: 0 }}>
             {/* LOCATION pill */}
             <div style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
