@@ -318,19 +318,29 @@ export default function ContactPage() {
 
       {/* ── Contact Form ── */}
       <section id="estimate-form" style={{
-        position: 'relative',
         display: 'flex',
-        width: '100%',
-        padding: '75px 100px',
-        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        padding: '75px 76px',
         boxSizing: 'border-box',
-        backgroundImage: 'linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/contact/20260507_103206.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: '50% 50%',
-        backgroundRepeat: 'no-repeat',
+        background: '#fff',
       }}>
+        {/* Card */}
+        <div style={{
+          display: 'flex',
+          width: 1290,
+          padding: '100px',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: 10,
+          borderRadius: 10,
+          backgroundImage: 'linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 100%), url(/img/contact/20260507_103206.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: '50% 50%',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: 'lightgray',
+          boxSizing: 'border-box',
+        }}>
         {/* Inner row */}
         <div style={{
           width: '100%',
@@ -414,6 +424,7 @@ export default function ContactPage() {
               <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />
             </button>
           </form>
+        </div>
         </div>
       </section>
 
