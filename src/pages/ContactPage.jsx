@@ -430,53 +430,71 @@ export default function ContactPage() {
 
       {/* ── Service Area ── */}
       <section style={{
-        background: '#fff',
-        padding: '75px 76px',
+        display: 'flex',
+        width: '100%',
+        padding: '75px 100px',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 30,
         boxSizing: 'border-box',
-        textAlign: 'center',
+        background: '#fff',
       }}>
         {/* LOCATIONS pill */}
         <div style={{
           display: 'inline-flex', alignItems: 'center', gap: 8,
           padding: '7px 16px', background: '#fff', borderRadius: 100,
-          boxShadow: '0 2px 6px rgba(0,0,0,0.06)', marginBottom: 20,
+          boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
         }}>
-          <img src="/img/contact/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+          <img src="/img/contact/location-icon.svg" alt="" style={{ width: 15, height: 15 }} />
           <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>LOCATIONS</span>
         </div>
 
         <h2 style={{
+          width: 608,
           fontFamily: 'Playfair Display, serif', fontWeight: 900,
-          fontSize: 48, lineHeight: '120%', color: '#000', margin: '0 0 16px',
+          fontSize: 48, lineHeight: '120%', color: '#000',
+          textAlign: 'center', margin: 0,
         }}>
           Service Area
         </h2>
 
         <p style={{
-          fontFamily: 'Outfit', fontWeight: 400, fontSize: 17,
-          lineHeight: '160%', color: 'var(--color-3)',
-          maxWidth: 600, margin: '0 auto 36px',
+          width: 766,
+          fontFamily: 'Outfit', fontWeight: 300, fontSize: 20,
+          lineHeight: '120%', color: '#464646',
+          textAlign: 'center', margin: 0,
         }}>
           We provide roofing and gutter services throughout Cochise County, including:
         </p>
 
-        {/* City pills */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center', maxWidth: 700, margin: '0 auto 24px' }}>
+        {/* City cards */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, justifyContent: 'center' }}>
           {cities.map(city => (
-            <span key={city} style={{
-              padding: '12px 28px',
-              background: '#fff',
-              border: '1.5px solid var(--shape-stroke)',
-              borderRadius: 100,
-              fontFamily: 'Outfit', fontWeight: 400, fontSize: 16,
-              color: '#000',
+            <div key={city} style={{
+              display: 'flex',
+              width: 300,
+              padding: '20px 50px',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: 20,
+              flexShrink: 0,
+              borderRadius: 10,
+              border: '1px solid #0080C6',
+              background: 'var(--shape-fill)',
+              boxShadow: '-4px 0 4px 0 rgba(255,255,255,0.10) inset, 0 -4px 4px 0 rgba(255,255,255,0.10) inset, 4px 0 4px 0 rgba(255,255,255,0.10) inset, 0 4px 4px 0 rgba(255,255,255,0.10) inset',
+              boxSizing: 'border-box',
             }}>
-              {city}
-            </span>
+              <span style={{
+                fontFamily: 'Outfit', fontWeight: 500, fontSize: 18,
+                color: '#000', textAlign: 'center', lineHeight: 'normal',
+              }}>
+                {city}
+              </span>
+            </div>
           ))}
         </div>
 
-        <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, color: 'var(--color-3)', margin: 0 }}>
+        <p style={{ fontFamily: 'Outfit', fontWeight: 300, fontSize: 20, color: '#464646', lineHeight: '120%', margin: 0, textAlign: 'center' }}>
           and surrounding areas.
         </p>
       </section>
