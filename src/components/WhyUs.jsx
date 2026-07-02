@@ -26,7 +26,7 @@ export default function WhyUs() {
     }}>
 
       {/* Left */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, flex: '1 0 0' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, flex: '0 0 480px' }}>
 
         {/* Label */}
         <div style={{
