@@ -320,26 +320,30 @@ export default function ContactPage() {
       <section id="estimate-form" style={{
         position: 'relative',
         display: 'flex',
-        minHeight: 480,
+        width: '100%',
+        padding: '75px 100px',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        boxSizing: 'border-box',
+        backgroundImage: 'linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/contact/20260507_103206.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 50%',
+        backgroundRepeat: 'no-repeat',
       }}>
-        {/* Left – background image + heading */}
+        {/* Inner row */}
         <div style={{
-          flex: '0 0 50%',
-          position: 'relative',
-          backgroundImage: 'url(/img/contact/DJI_0169.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: '50% 50%',
+          width: '100%',
           display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          padding: '80px 64px',
-          boxSizing: 'border-box',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 60,
         }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.60)' }} />
-          <div style={{ position: 'relative', maxWidth: 400 }}>
+          {/* Left – heading & subtext */}
+          <div style={{ flex: '1 1 0', maxWidth: 480 }}>
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 42, lineHeight: '120%', color: '#fff', margin: '0 0 16px',
+              fontSize: 48, lineHeight: '120%', color: '#fff', margin: '0 0 20px',
             }}>
               Request a Free Estimate
             </h2>
@@ -350,25 +354,18 @@ export default function ContactPage() {
               Fill out the form below and our team will contact you as soon as possible.
             </p>
           </div>
-        </div>
 
-        {/* Right – form */}
-        <div style={{
-          flex: '0 0 50%',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          padding: '80px 64px',
-          boxSizing: 'border-box',
-          background: '#fff',
-        }}>
-          <form onSubmit={e => e.preventDefault()} style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 480 }}>
+          {/* Right – form */}
+          <form onSubmit={e => e.preventDefault()} style={{
+            flex: '0 0 540px',
+            display: 'flex', flexDirection: 'column', gap: 16,
+          }}>
             <input
               type="text"
-              placeholder="Enter Full Name"
+              placeholder="Enter Full name"
               style={{
-                width: '100%', padding: '16px 18px',
-                border: '1.5px solid var(--shape-stroke)',
+                width: '100%', padding: '18px 20px',
+                border: 'none',
                 borderRadius: 8,
                 fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
                 background: 'var(--shape-fill)', outline: 'none',
@@ -377,10 +374,10 @@ export default function ContactPage() {
             />
             <input
               type="email"
-              placeholder="Email Address"
+              placeholder="Email Adress"
               style={{
-                width: '100%', padding: '16px 18px',
-                border: '1.5px solid var(--shape-stroke)',
+                width: '100%', padding: '18px 20px',
+                border: 'none',
                 borderRadius: 8,
                 fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
                 background: 'var(--shape-fill)', outline: 'none',
@@ -388,11 +385,11 @@ export default function ContactPage() {
               }}
             />
             <textarea
-              rows={5}
+              rows={6}
               placeholder="Message"
               style={{
-                width: '100%', padding: '16px 18px',
-                border: '1.5px solid var(--shape-stroke)',
+                width: '100%', padding: '18px 20px',
+                border: 'none',
                 borderRadius: 8,
                 fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
                 background: 'var(--shape-fill)', outline: 'none',
@@ -405,11 +402,12 @@ export default function ContactPage() {
               className="btn-blue"
               style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
-                padding: '16px 28px',
+                padding: '18px 28px',
                 background: 'var(--blue)',
                 borderRadius: 10,
-                fontFamily: 'Outfit', fontWeight: 600, fontSize: 16,
+                fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
                 color: '#fff', border: 'none', cursor: 'pointer',
+                alignSelf: 'flex-start',
               }}
             >
               Schedule Your Free Roofing Estimate
