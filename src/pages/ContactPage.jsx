@@ -57,24 +57,30 @@ export default function ContactPage() {
       {/* ── Intro ── */}
       <section style={{
         background: 'var(--shape-fill)',
-        padding: '60px 76px',
+        padding: '75px 76px',
         boxSizing: 'border-box',
-        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 10,
       }}>
-        <p style={{
-          fontFamily: 'Outfit', fontWeight: 700, fontSize: 20,
-          lineHeight: '150%', color: '#000',
-          maxWidth: 820, margin: '0 auto 12px',
-        }}>
-          Have a question about your roof or need a free estimate?
-        </p>
-        <p style={{
-          fontFamily: 'Outfit', fontWeight: 400, fontSize: 17,
-          lineHeight: '160%', color: 'var(--color-3)',
-          maxWidth: 820, margin: '0 auto',
-        }}>
-          Contact Artistic Roofing Systems in Sierra Vista AZ today. We proudly serve Sierra Vista and surrounding Cochise County communities with reliable residential and light commercial roofing services. From roof repairs and replacements to gutter installations and maintenance, our experienced team responds quickly to help protect your property from leaks, storm damage, and everyday wear.
-        </p>
+        <div style={{ width: 1088, display: 'flex', flexDirection: 'column', gap: 0 }}>
+          <p style={{
+            fontFamily: 'Outfit', fontWeight: 700, fontSize: 24,
+            lineHeight: '150%', color: '#000',
+            textAlign: 'center', margin: 0,
+          }}>
+            Have a question about your roof or need a free estimate?
+          </p>
+          <p style={{
+            fontFamily: 'Outfit', fontWeight: 400, fontSize: 24,
+            lineHeight: '150%', color: '#000',
+            textAlign: 'center', margin: 0,
+          }}>
+            Contact Artistic Roofing Systems in Sierra Vista AZ today. We proudly serve Sierra Vista and surrounding Cochise County communities with reliable residential and light commercial roofing services. From roof repairs and replacements to gutter installations and maintenance, our experienced team responds quickly to help protect your property from leaks, storm damage, and everyday wear.
+          </p>
+        </div>
       </section>
 
       {/* ── Phone Banner ── */}
