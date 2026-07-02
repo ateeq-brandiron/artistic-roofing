@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About us', path: '/about' },
-  { label: 'Gallery', path: '/gallery' },
+  { label: 'Gallery', path: '/testimonials' },
   { label: 'Services', path: '/services' },
   { label: 'Contact us', path: '/contact' },
 ];
