@@ -16,15 +16,17 @@ export default function ContactPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 819,
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/contact/Frame%202147223464.png)',
+        height: 819,
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.52) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/contact/Frame%202147223464.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
+        backgroundRepeat: 'no-repeat',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
         alignItems: 'flex-start',
-        padding: '0 76px 72px',
+        padding: '0 76px',
+        gap: 233,
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
@@ -43,8 +45,8 @@ export default function ContactPage() {
           fontSize: 60,
           lineHeight: '120%',
           color: '#fff',
-          margin: '0 0 16px',
-          maxWidth: 620,
+          margin: 0,
+          width: 749,
         }}>
           Contact Artistic Roofing Systems in Sierra Vista AZ
         </h1>
