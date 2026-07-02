@@ -187,7 +187,7 @@ export default function ContactPage() {
                   background: 'var(--shape-fill)',
                   borderBottom: i < hours.length - 1 ? '1px solid var(--shape-stroke)' : 'none',
                 }}>
-                  <span style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 16, color: '#000' }}>
+                  <span style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#000' }}>
                     {row.day}
                   </span>
                   <span style={{
@@ -207,7 +207,7 @@ export default function ContactPage() {
             borderRadius: 20,
             overflow: 'hidden',
             height: 380,
-            border: '1px solid var(--shape-stroke)',
+            border: '2px solid #0080C6',
           }}>
             <img
               src="/img/contact/Tile%20roof%202.jpg"
