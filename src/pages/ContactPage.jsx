@@ -237,6 +237,7 @@ export default function ContactPage() {
         padding: '75px',
         justifyContent: 'space-between',
         alignItems: 'center',
+        gap: 75,
         background: 'var(--shape-fill)',
         boxSizing: 'border-box',
       }}>
