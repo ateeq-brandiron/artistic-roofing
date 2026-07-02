@@ -232,17 +232,17 @@ export default function ContactPage() {
 
       {/* ── Map + Location ── */}
       <section style={{
+        display: 'flex',
+        width: '100%',
+        padding: '75px',
+        justifyContent: 'space-between',
+        alignItems: 'center',
         background: 'var(--shape-fill)',
-        padding: '75px 76px',
         boxSizing: 'border-box',
       }}>
-        <div style={{
-          maxWidth: 1290, margin: '0 auto',
-          display: 'flex', alignItems: 'center', gap: 80, flexWrap: 'wrap',
-        }}>
           {/* Left – map image */}
           <div style={{
-            flex: '1 1 340px', minWidth: 280, maxWidth: 540,
+            flex: '1 1 340px', minWidth: 280, maxWidth: 600,
             borderRadius: 16,
             overflow: 'hidden',
             border: '2px solid #0080C6',
@@ -256,33 +256,33 @@ export default function ContactPage() {
           </div>
 
           {/* Right – address */}
-          <div style={{ flex: '1 1 340px', minWidth: 280, display: 'flex', flexDirection: 'column', gap: 16 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 500 }}>
             {/* LOCATION pill */}
             <div style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
               padding: '7px 16px', background: '#fff', borderRadius: 100,
               boxShadow: '0 2px 6px rgba(0,0,0,0.06)', alignSelf: 'flex-start',
             }}>
-              <img src="/img/contact/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <img src="/img/contact/location-icon.svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>LOCATION</span>
             </div>
 
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 40, lineHeight: '120%', color: '#000', margin: 0,
+              fontSize: 48, lineHeight: '120%', color: '#000', margin: 0,
             }}>
               Visit our Office
             </h2>
 
             {/* Address row */}
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
-              <img src="/img/contact/Vector.svg" alt="" style={{ width: 20, height: 23, flexShrink: 0, marginTop: 2 }} />
+              <img src="/img/contact/location-pin.svg" alt="" style={{ width: 20, height: 23, flexShrink: 0, marginTop: 2 }} />
               <div>
                 <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#000', margin: '0 0 4px' }}>
                   Artistic Roofing Systems
                 </p>
                 <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'var(--color-3)', lineHeight: '160%', margin: 0 }}>
-                  5563 S Santa Elena Ave Sierra Vista,<br />AZ 85650
+                  5362 S Santa Elena Ave Sierra Vista,<br />AZ 85650
                 </p>
               </div>
             </div>
@@ -290,7 +290,7 @@ export default function ContactPage() {
             {/* Directions button */}
             <a
               className="btn-blue"
-              href="https://maps.google.com/?q=5563+S+Santa+Elena+Ave+Sierra+Vista+AZ+85650"
+              href="https://maps.google.com/?q=5362+S+Santa+Elena+Ave+Sierra+Vista+AZ+85650"
               target="_blank"
               rel="noopener noreferrer"
               style={{
