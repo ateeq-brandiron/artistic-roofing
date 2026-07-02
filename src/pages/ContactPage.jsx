@@ -85,45 +85,45 @@ export default function ContactPage() {
 
       {/* ── Phone Banner ── */}
       <section style={{
-        background: '#464646',
-        padding: 75,
+        background: '#3a3a3a',
+        padding: '48px 76px',
         boxSizing: 'border-box',
         display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+        flexDirection: 'column',
         alignItems: 'center',
-        width: '100%',
+        gap: 28,
       }}>
-        {/* Left — icon + number */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+        {/* Phone number row */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
           <div style={{
-            display: 'flex',
-            padding: 20.329,
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: 20.329,
-            borderRadius: 60.987,
-            background: '#FFF',
-            boxShadow: '0 4.066px 4.066px 0 rgba(0,0,0,0.05)',
-            flexShrink: 0,
+            width: 52, height: 52,
+            borderRadius: '50%',
+            background: 'rgba(255,255,255,0.12)',
+            border: '1px solid rgba(255,255,255,0.2)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
           }}>
-            <img src="/img/contact/phone-icon.svg" alt="" style={{ width: 39, height: 39 }} />
+            <svg width="24" height="24" viewBox="0 0 39 39" fill="none">
+              <path d="M36.5862 31.2916C36.5862 31.9511 36.4397 32.629 36.1282 33.2885C35.8168 33.9481 35.4137 34.571 34.8824 35.1572C33.9847 36.1466 32.9954 36.8611 31.8778 37.3191C30.7786 37.7771 29.5878 38.0153 28.3053 38.0153C26.4366 38.0153 24.4397 37.5756 22.3328 36.6778C20.2259 35.7801 18.1191 34.571 16.0305 33.0504C13.9237 31.5114 11.9267 29.8076 10.0214 27.9206C8.13435 26.0153 6.43053 24.0183 4.90992 21.9298C3.40763 19.8412 2.19847 17.7527 1.31908 15.6824C0.439695 13.5939 0 11.5969 0 9.6916C0 8.4458 0.219847 7.25496 0.659542 6.15572C1.09924 5.03817 1.79542 4.01221 2.76641 3.09618C3.93893 1.94198 5.22137 1.37405 6.5771 1.37405C7.09007 1.37405 7.60305 1.48397 8.06107 1.70382C8.5374 1.92366 8.95878 2.25343 9.28855 2.72977L13.5389 8.72061C13.8687 9.17862 14.1069 9.6 14.2717 10.003C14.4366 10.3878 14.5282 10.7725 14.5282 11.1206C14.5282 11.5603 14.4 12 14.1435 12.4214C13.9053 12.8427 13.5572 13.2824 13.1176 13.7221L11.7252 15.1695C11.5237 15.371 11.4321 15.6092 11.4321 15.9023C11.4321 16.0488 11.4504 16.1771 11.487 16.3237C11.542 16.4702 11.5969 16.5801 11.6336 16.6901C11.9634 17.2946 12.5313 18.0824 13.3374 19.0351C14.1618 19.9878 15.0412 20.9588 15.9939 21.9298C16.9832 22.9008 17.9359 23.7985 18.9069 24.6229C19.8595 25.429 20.6473 25.9786 21.2702 26.3084C21.3618 26.345 21.4717 26.4 21.6 26.455C21.7466 26.5099 21.8931 26.5282 22.058 26.5282C22.3695 26.5282 22.6076 26.4183 22.8092 26.2168L24.2015 24.8427C24.6595 24.3847 25.0992 24.0366 25.5206 23.8168C25.942 23.5603 26.3633 23.4321 26.8214 23.4321C27.1695 23.4321 27.5359 23.5053 27.9389 23.6702C28.342 23.8351 28.7633 24.0733 29.2214 24.3847L35.2855 28.6901C35.7618 29.0198 36.0916 29.4046 36.2931 29.8626C36.4763 30.3206 36.5862 30.7786 36.5862 31.2916Z" fill="white"/>
+              <path d="M28.8549 14.1985C28.8549 13.9601 28.7452 13.4907 28.4166 12.8513C28.1019 12.2392 27.6395 11.5774 27.0801 10.978L27.0784 10.9745C26.0205 9.834 24.8022 9.1603 23.8168 9.1603C23.0579 9.1603 22.4427 8.54512 22.4427 7.78626C22.4427 7.02739 23.0579 6.41221 23.8168 6.41221C25.9072 6.41221 27.8022 7.71496 29.0893 9.10126C29.8123 9.8759 30.4241 10.7446 30.8606 11.5935C31.2827 12.4147 31.603 13.3377 31.603 14.1985C31.603 14.9573 30.9879 15.5725 30.229 15.5725C29.4701 15.5725 28.8549 14.9573 28.8549 14.1985Z" fill="white"/>
+              <path d="M35.2672 14.1985C35.2672 7.86726 30.148 2.74809 23.8168 2.74809C23.0579 2.74809 22.4427 2.13291 22.4427 1.37405C22.4427 0.615181 23.0579 0 23.8168 0C31.6657 0 38.0153 6.34953 38.0153 14.1985C38.0153 14.9573 37.4001 15.5725 36.6412 15.5725C35.8823 15.5725 35.2672 14.9573 35.2672 14.1985Z" fill="white"/>
+            </svg>
           </div>
           <a href="tel:5204586781" style={{
             fontFamily: 'Outfit, sans-serif',
-            fontWeight: 900,
-            fontSize: 65.109,
-            lineHeight: '120%',
+            fontWeight: 700,
+            fontSize: 56,
+            lineHeight: 1,
             color: '#fff',
             textDecoration: 'none',
+            letterSpacing: '-0.01em',
           }}>
             520-458-6781
           </a>
         </div>
 
-        {/* Right — buttons */}
+        {/* Buttons */}
         <div style={{ display: 'flex', gap: 16 }}>
-          <a href="tel:5204586781" style={{
+          <a href="tel:5204586781" className="btn-dark" style={{
             display: 'inline-flex', alignItems: 'center', gap: 10,
             padding: '14px 28px',
             background: '#fff',
@@ -132,9 +132,9 @@ export default function ContactPage() {
             color: '#000', textDecoration: 'none',
           }}>
             Call Us Today
-            <img src="/img/contact/arrow-dark.svg" alt="" style={{ width: 20, height: 16 }} />
+            <img src="/img/contact/Icon-2.svg" alt="" style={{ width: 14, height: 11 }} />
           </a>
-          <a href="#estimate-form" style={{
+          <a href="#estimate-form" className="btn-blue" style={{
             display: 'inline-flex', alignItems: 'center', gap: 10,
             padding: '14px 28px',
             background: 'var(--blue)',
@@ -143,7 +143,7 @@ export default function ContactPage() {
             color: '#fff', textDecoration: 'none',
           }}>
             Free Estimate
-            <img src="/img/contact/arrow-white.svg" alt="" style={{ width: 20, height: 16 }} />
+            <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />
           </a>
         </div>
       </section>
@@ -233,7 +233,7 @@ export default function ContactPage() {
             flex: '1 1 340px', minWidth: 280, maxWidth: 540,
             borderRadius: 16,
             overflow: 'hidden',
-            border: '1px solid var(--shape-stroke)',
+            border: '2px solid #0080C6',
             height: 340,
           }}>
             <img
