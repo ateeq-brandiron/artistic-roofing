@@ -56,6 +56,7 @@ export default function Hero() {
 
             <button
               onClick={() => window.location.href = '/contact'}
+              className="btn-dark"
               style={{
                 alignSelf: 'flex-start',
                 display: 'flex',
@@ -64,7 +65,7 @@ export default function Hero() {
                 gap: 20,
                 padding: '15px 20px',
                 background: '#fff',
-                border: 'none',
+                border: '2px solid #fff',
                 borderRadius: 10,
                 fontFamily: 'Outfit, sans-serif',
                 fontWeight: 600,

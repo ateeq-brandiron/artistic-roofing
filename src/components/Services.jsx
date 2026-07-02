@@ -36,7 +36,7 @@ const services = [
     desc: 'For low-slope or flat roofs, Artistic Roofing offers Polyglass-certified coatings designed to extend roof life and improve performance. This affordable maintenance service is recommended every 3 to 5 years to help maintain waterproofing, energy efficiency, and overall durability in Arizona\'s climate.',
   },
   {
-    bg: '/img/Frame%202147223418.png',
+    bg: '/img/frame-2147223418.png',
     title: 'Gutter Installation and Maintenance',
     desc: 'Our seamless 5" and 6" gutter systems are custom-fabricated on-site and installed to assist with effective water control around your property. We use durable materials and precise slope alignment to help manage rainfall and minimize pooling or overflow. Available in multiple color options.',
   },
