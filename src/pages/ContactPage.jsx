@@ -240,7 +240,7 @@ export default function ContactPage() {
         background: 'var(--shape-fill)',
         boxSizing: 'border-box',
       }}>
-          {/* Left – map image */}
+          {/* Left – map embed */}
           <div style={{
             flex: '1 1 340px', minWidth: 280, maxWidth: 600,
             borderRadius: 16,
@@ -248,10 +248,15 @@ export default function ContactPage() {
             border: '2px solid #0080C6',
             height: 340,
           }}>
-            <img
-              src="/img/contact/Rectangle%203.png"
-              alt="Map"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+            <iframe
+              title="Artistic Roofing Systems location"
+              src="https://maps.google.com/maps?q=5362+S+Santa+Elena+Ave,+Sierra+Vista,+AZ+85650&output=embed&z=15"
+              width="100%"
+              height="100%"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
 
