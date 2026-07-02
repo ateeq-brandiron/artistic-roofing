@@ -307,7 +307,6 @@ export default function ContactPage() {
               <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />
             </a>
           </div>
-        </div>
       </section>
 
       {/* ── Contact Form ── */}
