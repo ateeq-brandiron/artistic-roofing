@@ -242,11 +242,12 @@ export default function ContactPage() {
       }}>
           {/* Left – map embed */}
           <div style={{
-            flex: '1 1 340px', minWidth: 280, maxWidth: 600,
+            width: 593,
+            flexShrink: 0,
             borderRadius: 16,
             overflow: 'hidden',
             border: '2px solid #0080C6',
-            height: 340,
+            height: 390,
           }}>
             <iframe
               title="Artistic Roofing Systems location"
