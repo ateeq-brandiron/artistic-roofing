@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section id="hero" style={{
@@ -54,12 +56,12 @@ export default function Hero() {
               At Artistic Roofing, we take pride in being a trusted roofing company in Sierra Vista AZ. Our team helps homeowners and businesses across Cochise County and surrounding Southeast Arizona communities maintain durable, efficient roofing and gutter systems that stand up to Arizona's weather.
             </p>
 
-            <button
-              onClick={() => window.location.href = '/contact'}
+            <Link
+              to="/contact"
               className="btn-dark"
               style={{
                 alignSelf: 'flex-start',
-                display: 'flex',
+                display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: 20,
@@ -71,12 +73,12 @@ export default function Hero() {
                 fontWeight: 600,
                 fontSize: 18,
                 color: '#1e1e1e',
-                cursor: 'pointer',
+                textDecoration: 'none',
                 whiteSpace: 'nowrap',
               }}>
               Request Your Free Roofing
               <img src="/img/call-made-2.svg" alt="" style={{ width: 14, height: 14 }} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -169,6 +169,7 @@ button {
 }
 .nav-cta:hover svg path { stroke: #fff !important; }
 .nav-cta:hover img { filter: brightness(0) invert(1) !important; }
+.nav-cta svg path { transition: stroke 0.25s ease; }
 
 /* ─── Logo hover ─── */
 .logo-hover {
