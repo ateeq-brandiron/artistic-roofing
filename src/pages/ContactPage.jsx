@@ -470,7 +470,7 @@ export default function ContactPage() {
         {/* City cards */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, justifyContent: 'center' }}>
           {cities.map(city => (
-            <div key={city} style={{
+            <div key={city} className="city-card" style={{
               display: 'flex',
               width: 300,
               padding: '20px 50px',

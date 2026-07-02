@@ -83,31 +83,38 @@ button {
   transform: translateY(0);
 }
 
-/* ─── Blue button hover ─── */
+/* ─── Blue button hover → white bg / blue text ─── */
 .btn-blue {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease !important;
+  transition: background 0.25s ease, color 0.25s ease,
+              border-color 0.25s ease, transform 0.25s ease,
+              box-shadow 0.25s ease !important;
+  border: 2px solid var(--blue) !important;
   will-change: transform;
 }
 .btn-blue:hover {
+  background: #fff !important;
+  color: var(--blue) !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 10px 28px rgba(0,128,198,0.38) !important;
-  filter: brightness(1.07);
+  box-shadow: 0 10px 28px rgba(0,128,198,0.25) !important;
 }
+.btn-blue:hover img { filter: invert(39%) sepia(98%) saturate(510%) hue-rotate(170deg) brightness(95%) contrast(101%) !important; }
 .btn-blue:active { transform: translateY(0) !important; }
 
-/* ─── Dark outline button hover ─── */
+/* ─── Dark/white outline button hover → blue bg / white text ─── */
 .btn-dark {
-  transition: background 0.22s ease, color 0.22s ease,
-              transform 0.22s ease, box-shadow 0.22s ease !important;
+  transition: background 0.25s ease, color 0.25s ease,
+              border-color 0.25s ease, transform 0.25s ease,
+              box-shadow 0.25s ease !important;
   will-change: transform;
 }
 .btn-dark:hover {
-  background: #000 !important;
+  background: var(--blue) !important;
   color: #fff !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.18) !important;
+  border-color: var(--blue) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 28px rgba(0,128,198,0.30) !important;
 }
-.btn-dark:hover svg path { stroke: #fff !important; }
+.btn-dark:hover img { filter: brightness(0) invert(1) !important; }
 
 /* ─── Card hover elevation ─── */
 .card-hover {
@@ -149,18 +156,19 @@ button {
 
 /* ─── Navbar CTA button ─── */
 .nav-cta {
-  transition: background 0.22s ease, color 0.22s ease,
-              border-color 0.22s ease, box-shadow 0.22s ease,
-              transform 0.22s ease !important;
+  transition: background 0.25s ease, color 0.25s ease,
+              border-color 0.25s ease, box-shadow 0.25s ease,
+              transform 0.25s ease !important;
 }
 .nav-cta:hover {
-  background: #000 !important;
+  background: var(--blue) !important;
   color: #fff !important;
-  border-color: #000 !important;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2) !important;
-  transform: translateY(-1px) !important;
+  border-color: var(--blue) !important;
+  box-shadow: 0 8px 22px rgba(0,128,198,0.30) !important;
+  transform: translateY(-2px) !important;
 }
 .nav-cta:hover svg path { stroke: #fff !important; }
+.nav-cta:hover img { filter: brightness(0) invert(1) !important; }
 
 /* ─── Logo hover ─── */
 .logo-hover {
@@ -239,3 +247,60 @@ button {
   .desktop-nav { display: none !important; }
   .mobile-btn  { display: flex !important; }
 }
+
+/* ─── Modern global polish ─── */
+
+/* Smooth all interactive elements */
+a, button { transition: color 0.2s ease, opacity 0.2s ease; }
+
+/* Form inputs – focus glow */
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(0,128,198,0.18) !important;
+  border-color: var(--blue) !important;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* Service / testimonial card lift on hover */
+.card-hover {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  will-change: transform;
+}
+.card-hover:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 48px rgba(0,128,198,0.12) !important;
+}
+
+/* Pill hover – subtle scale */
+.pill-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  cursor: default;
+}
+.pill-hover:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 4px 14px rgba(0,128,198,0.15) !important;
+}
+
+/* City area cards hover */
+.city-card {
+  transition: background 0.22s ease, border-color 0.22s ease,
+              color 0.22s ease, transform 0.22s ease,
+              box-shadow 0.22s ease !important;
+  cursor: default;
+}
+.city-card:hover {
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 24px rgba(0,128,198,0.22) !important;
+}
+.city-card:hover span { color: #fff !important; }
+
+/* Image zoom – smooth scale */
+.img-zoom { overflow: hidden !important; }
+.img-zoom img {
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  will-change: transform;
+}
+.img-zoom:hover img { transform: scale(1.05) !important; }
