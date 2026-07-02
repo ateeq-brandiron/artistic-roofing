@@ -159,31 +159,42 @@ export default function ContactPage() {
           display: 'flex', alignItems: 'center', gap: 80, flexWrap: 'wrap',
         }}>
           {/* Left – hours */}
-          <div style={{ flex: '1 1 340px', minWidth: 280 }}>
+          <div style={{
+            display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
+            gap: 30, flex: '1 0 0',
+          }}>
             {/* TIMINGS pill */}
             <div style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
               padding: '7px 16px', background: '#fff', borderRadius: 100,
-              boxShadow: '0 2px 6px rgba(0,0,0,0.06)', marginBottom: 16,
+              boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
             }}>
               <img src="/img/contact/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>TIMINGS</span>
             </div>
 
             <h2 style={{
+              alignSelf: 'stretch',
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 40, lineHeight: '120%', color: '#000',
-              margin: '0 0 28px',
+              fontSize: 48, lineHeight: '120%', color: '#000',
+              margin: 0,
             }}>
               Office Hours:
             </h2>
 
             {/* Hours table */}
-            <div style={{ display: 'flex', flexDirection: 'column', border: '1px solid var(--shape-stroke)', borderRadius: 12, overflow: 'hidden' }}>
+            <div style={{
+              display: 'flex', width: 574, padding: '30px 10px',
+              flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
+              gap: 10, borderRadius: 10,
+              border: '1px solid #DADADA',
+              background: 'var(--shape-fill)',
+              boxSizing: 'border-box',
+            }}>
               {hours.map((row, i) => (
                 <div key={i} style={{
                   display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-                  padding: '18px 24px',
+                  padding: '18px 24px', width: '100%',
                   background: 'var(--shape-fill)',
                   borderBottom: i < hours.length - 1 ? '1px solid var(--shape-stroke)' : 'none',
                 }}>
