@@ -23,16 +23,15 @@ export default function ContactPage() {
         backgroundRepeat: 'no-repeat',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 76px',
-        gap: 233,
+        padding: '0 76px 72px',
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
 
         {/* Breadcrumb */}
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20, alignSelf: 'stretch', marginBottom: 16 }}>
           <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
           <img src="/img/contact/caret-right.svg" alt="" style={{ width: 8, height: 13 }} />
           <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>CONTACT US</span>
