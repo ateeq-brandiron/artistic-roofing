@@ -203,11 +203,12 @@ export default function ContactPage() {
 
           {/* Right – photo */}
           <div style={{
-            flex: '1 1 340px', minWidth: 280, maxWidth: 540,
-            borderRadius: 20,
-            overflow: 'hidden',
-            height: 380,
+            width: 525,
+            height: 477,
+            flexShrink: 0,
+            borderRadius: 30,
             border: '2px solid #0080C6',
+            overflow: 'hidden',
           }}>
             <img
               src="/img/contact/Tile%20roof%202.jpg"
