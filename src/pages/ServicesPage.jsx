@@ -184,7 +184,7 @@ function ResidentialCard({ s }) {
 
 function GutterFeatureCard({ f }) {
   return (
-    <div className="city-card" style={{
+    <div style={{
       display: 'flex',
       width: 273,
       height: 162,
