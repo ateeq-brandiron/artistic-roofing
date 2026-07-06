@@ -56,100 +56,126 @@ const faqs = [
 ];
 
 function CommercialCard({ s }) {
+  const [hovered, setHovered] = useState(false);
   return (
-    <div className="card-hover" style={{
-      display: 'flex',
-      height: 498,
-      padding: '23px 33px',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-      gap: 10,
-      borderRadius: 10,
-      border: '1px solid #D1EFFF',
-      background: '#E8F8FF',
-      boxSizing: 'border-box',
-      flex: 1,
-    }}>
-      {/* Image */}
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        display: 'flex',
+        height: 498,
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        gap: 10,
+        borderRadius: 10,
+        border: '1px solid #D1EFFF',
+        background: '#E8F8FF',
+        boxSizing: 'border-box',
+        flex: 1,
+        overflow: 'hidden',
+        transform: hovered ? 'translateY(-6px)' : 'translateY(0)',
+        boxShadow: hovered ? '0 24px 56px rgba(0,128,198,0.18)' : '0 4px 16px rgba(0,0,0,0.06)',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        cursor: 'default',
+      }}
+    >
+      {/* Image with zoom */}
       <div style={{
         height: 232,
         alignSelf: 'stretch',
-        borderRadius: 10,
         backgroundImage: `url(${s.img})`,
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
         backgroundRepeat: 'no-repeat',
         flexShrink: 0,
+        transform: hovered ? 'scale(1.06)' : 'scale(1)',
+        transition: 'transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
       }} />
-      {/* Title */}
-      <h3 style={{
-        fontFamily: 'Playfair Display, serif',
-        fontWeight: 700,
-        fontSize: 32,
-        lineHeight: 'normal',
-        color: '#000',
-        margin: 0,
-      }}>{s.title}</h3>
-      {/* Description */}
-      <p style={{
-        fontFamily: 'Outfit, sans-serif',
-        fontWeight: 300,
-        fontSize: 20,
-        lineHeight: '120%',
-        color: '#464646',
-        margin: 0,
-        width: 508,
-      }}>{s.desc}</p>
+      {/* Content */}
+      <div style={{
+        padding: '0 33px 23px',
+        display: 'flex', flexDirection: 'column', gap: 10,
+        background: hovered ? 'rgba(0,128,198,0.06)' : 'transparent',
+        transition: 'background 0.3s ease',
+        flex: 1,
+      }}>
+        <h3 style={{
+          fontFamily: 'Playfair Display, serif',
+          fontWeight: 700, fontSize: 32, lineHeight: 'normal',
+          color: hovered ? 'var(--blue)' : '#000',
+          margin: 0,
+          transition: 'color 0.3s ease',
+        }}>{s.title}</h3>
+        <p style={{
+          fontFamily: 'Outfit, sans-serif',
+          fontWeight: 300, fontSize: 20, lineHeight: '120%',
+          color: '#464646', margin: 0,
+        }}>{s.desc}</p>
+      </div>
     </div>
   );
 }
 
 function ResidentialCard({ s }) {
+  const [hovered, setHovered] = useState(false);
   return (
-    <div className="card-hover img-zoom" style={{
-      display: 'flex',
-      width: 403,
-      height: 583,
-      padding: '30px 17px',
-      flexDirection: 'column',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-      gap: 10,
-      flexShrink: 0,
-      borderRadius: 10,
-      backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00) 39.9%, rgba(0,0,0,0.75) 100%), url(${s.img})`,
-      backgroundSize: 'cover',
-      backgroundPosition: '50% 50%',
-      backgroundRepeat: 'no-repeat',
-      boxSizing: 'border-box',
-    }}>
-      <div style={{
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
         display: 'flex',
-        width: 360,
-        padding: 15,
+        width: 403, height: 583,
+        padding: '30px 17px',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        gap: 10,
+        flexShrink: 0,
+        borderRadius: 10,
+        overflow: 'hidden',
+        position: 'relative',
+        boxSizing: 'border-box',
+        transform: hovered ? 'translateY(-6px)' : 'translateY(0)',
+        boxShadow: hovered ? '0 24px 56px rgba(0,0,0,0.18)' : '0 4px 16px rgba(0,0,0,0.08)',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        cursor: 'default',
+      }}
+    >
+      {/* Background image with zoom */}
+      <div style={{
+        position: 'absolute', inset: 0,
+        backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00) 39.9%, rgba(0,0,0,0.75) 100%), url(${s.img})`,
+        backgroundSize: 'cover',
+        backgroundPosition: '50% 50%',
+        transform: hovered ? 'scale(1.06)' : 'scale(1)',
+        transition: 'transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+      }} />
+      {/* Content card */}
+      <div style={{
+        position: 'relative',
+        display: 'flex',
+        width: 360, padding: 15,
         flexDirection: 'column',
         alignItems: 'flex-start',
         gap: 10,
         borderRadius: 10,
-        opacity: 0.98,
-        background: 'rgba(253,255,255,0.95)',
+        background: hovered ? 'rgba(0,128,198,0.97)' : 'rgba(253,255,255,0.95)',
         boxSizing: 'border-box',
+        transition: 'background 0.3s ease',
       }}>
         <h3 style={{
           fontFamily: 'Playfair Display, serif',
-          fontWeight: 700,
-          fontSize: 18,
-          lineHeight: '130%',
-          color: '#000',
+          fontWeight: 700, fontSize: 18, lineHeight: '130%',
+          color: hovered ? '#fff' : '#000',
           margin: 0,
+          transition: 'color 0.3s ease',
         }}>{s.title}</h3>
         <p style={{
           fontFamily: 'Outfit, sans-serif',
-          fontWeight: 400,
-          fontSize: 14,
-          lineHeight: '150%',
-          color: 'var(--color-3)',
+          fontWeight: 400, fontSize: 14, lineHeight: '150%',
+          color: hovered ? 'rgba(255,255,255,0.88)' : 'var(--color-3)',
           margin: 0,
+          transition: 'color 0.3s ease',
         }}>{s.desc}</p>
       </div>
     </div>
@@ -193,49 +219,40 @@ function CredentialCard({ c }) {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      style={{
-        display: 'flex',
-        width: 206,
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: 30,
-        flexShrink: 0,
-        cursor: 'default',
-      }}
+      style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28, cursor: 'default' }}
     >
-      {/* Outer dotted ring → spins on hover */}
-      <div style={{
-        position: 'relative',
-        width: 180,
-        height: 180,
-        borderRadius: '50%',
-        border: '1.5px dashed #0080C6',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexShrink: 0,
-        transform: hovered ? 'rotate(30deg)' : 'rotate(0deg)',
-        transition: 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
-      }}>
+      <div style={{ position: 'relative', width: 200, height: 200, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        {/* Dashed ring – spins on hover */}
+        <img
+          src="/img/certs/Ellipse%209.svg"
+          alt=""
+          style={{
+            position: 'absolute', inset: 0, width: '100%', height: '100%',
+            transform: hovered ? 'rotate(30deg)' : 'rotate(0deg)',
+            transition: 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
+          }}
+        />
         {/* Inner filled circle */}
         <div style={{
-          width: 148,
-          height: 148,
+          width: 160, height: 160,
           borderRadius: '50%',
-          background: hovered ? 'var(--blue)' : '#D1EFFF',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
+          background: hovered ? 'var(--blue)' : 'var(--shape-fill)',
+          border: '1px solid var(--shape-stroke)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          position: 'relative',
           boxShadow: hovered ? '0 12px 36px rgba(0,128,198,0.35)' : 'none',
           transition: 'background 0.35s ease, box-shadow 0.35s ease',
-          transform: hovered ? 'rotate(-30deg)' : 'rotate(0deg)',
         }}>
-          <img src={c.icon} alt="" style={{
-            width: 64, height: 64, objectFit: 'contain',
-            filter: hovered ? 'brightness(0) invert(1)' : 'none',
-            transform: hovered ? 'scale(1.12)' : 'scale(1)',
-            transition: 'transform 0.35s ease, filter 0.35s ease',
-          }} />
+          <img
+            src={c.icon}
+            alt={c.title}
+            style={{
+              width: 80, height: 80, objectFit: 'contain',
+              filter: hovered ? 'brightness(0) invert(1)' : 'none',
+              transform: hovered ? 'scale(1.12)' : 'scale(1)',
+              transition: 'transform 0.35s ease, filter 0.35s ease',
+            }}
+          />
         </div>
       </div>
       {/* Text */}
