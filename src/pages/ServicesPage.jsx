@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
@@ -158,7 +158,7 @@ function ResidentialCard({ s }) {
 
 function GutterFeatureCard({ f }) {
   return (
-    <div style={{
+    <div className="city-card" style={{
       display: 'flex',
       width: 273,
       height: 162,
@@ -188,17 +188,24 @@ function GutterFeatureCard({ f }) {
 }
 
 function CredentialCard({ c }) {
+  const [hovered, setHovered] = useState(false);
   return (
-    <div style={{
-      display: 'flex',
-      width: 206,
-      flexDirection: 'column',
-      alignItems: 'center',
-      gap: 30,
-      flexShrink: 0,
-    }}>
-      {/* Outer dotted ring → inner filled circle → icon */}
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        display: 'flex',
+        width: 206,
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 30,
+        flexShrink: 0,
+        cursor: 'default',
+      }}
+    >
+      {/* Outer dotted ring → spins on hover */}
       <div style={{
+        position: 'relative',
         width: 180,
         height: 180,
         borderRadius: '50%',
@@ -207,17 +214,28 @@ function CredentialCard({ c }) {
         alignItems: 'center',
         justifyContent: 'center',
         flexShrink: 0,
+        transform: hovered ? 'rotate(30deg)' : 'rotate(0deg)',
+        transition: 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)',
       }}>
+        {/* Inner filled circle */}
         <div style={{
           width: 148,
           height: 148,
           borderRadius: '50%',
-          background: '#D1EFFF',
+          background: hovered ? 'var(--blue)' : '#D1EFFF',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          boxShadow: hovered ? '0 12px 36px rgba(0,128,198,0.35)' : 'none',
+          transition: 'background 0.35s ease, box-shadow 0.35s ease',
+          transform: hovered ? 'rotate(-30deg)' : 'rotate(0deg)',
         }}>
-          <img src={c.icon} alt="" style={{ width: 64, height: 64, objectFit: 'contain' }} />
+          <img src={c.icon} alt="" style={{
+            width: 64, height: 64, objectFit: 'contain',
+            filter: hovered ? 'brightness(0) invert(1)' : 'none',
+            transform: hovered ? 'scale(1.12)' : 'scale(1)',
+            transition: 'transform 0.35s ease, filter 0.35s ease',
+          }} />
         </div>
       </div>
       {/* Text */}
@@ -227,8 +245,9 @@ function CredentialCard({ c }) {
           fontWeight: 700,
           fontSize: 20,
           lineHeight: '120%',
-          color: '#000',
+          color: hovered ? 'var(--blue)' : '#000',
           textAlign: 'center',
+          transition: 'color 0.25s ease',
         }}>{c.title}</span>
         <span style={{
           fontFamily: 'Outfit, sans-serif',
@@ -363,7 +382,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Gutter Installation ── */}
-      <section style={{
+      <section className="sr-section" style={{
         background: '#3a3a3a',
         width: '100%',
         boxSizing: 'border-box',
@@ -431,7 +450,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Trust & Credentials ── */}
-      <section style={{ background: '#fff', width: '100%', boxSizing: 'border-box' }}>
+      <section className="sr-section" style={{ background: '#fff', width: '100%', boxSizing: 'border-box' }}>
         <div style={{
           display: 'flex',
           maxWidth: 1440,
@@ -520,7 +539,7 @@ export default function ServicesPage() {
       </div>
 
       {/* ── FAQ ── */}
-      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
+      <section className="sr-section" style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }}>
           {/* Left */}
           <div style={{ flex: '0 0 340px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 20 }}>
