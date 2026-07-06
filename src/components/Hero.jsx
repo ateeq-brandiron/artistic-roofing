@@ -76,7 +76,7 @@ export default function Hero() {
                 textDecoration: 'none',
                 whiteSpace: 'nowrap',
               }}>
-              Request Your Free Roofing
+              Request Your Free Roofing Estimate
               <img src="/img/call-made-2.svg" alt="" style={{ width: 14, height: 14 }} />
             </Link>
           </div>
