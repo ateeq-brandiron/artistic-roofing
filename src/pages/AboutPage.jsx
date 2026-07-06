@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
 
@@ -95,6 +95,15 @@ function CoreValueCard({ icon, title, desc }) {
 
 
 export default function AboutPage() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }, [hash]);
+
   return (
     <>
       {/* ── Hero Banner ── */}
