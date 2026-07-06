@@ -103,7 +103,7 @@ export default function Certifications() {
       </div>
 
       {/* CTA */}
-      <Link to="/about" className="btn-blue" style={{
+      <Link to="/about#certifications" className="btn-blue" style={{
         display: 'inline-flex', alignItems: 'center', gap: 12,
         padding: '16px 32px',
         background: 'var(--blue)',

@@ -300,7 +300,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Certifications & Memberships ── */}
-      <section style={{ background: '#fff', padding: '75px', boxSizing: 'border-box' }}>
+      <section id="certifications" style={{ background: '#fff', padding: '75px', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
 
           {/* Header — centered */}

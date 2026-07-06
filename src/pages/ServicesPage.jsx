@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
@@ -57,7 +57,7 @@ const faqs = [
 
 function CommercialCard({ s }) {
   return (
-    <div style={{
+    <div className="card-hover" style={{
       display: 'flex',
       height: 498,
       padding: '23px 33px',
@@ -106,7 +106,7 @@ function CommercialCard({ s }) {
 
 function ResidentialCard({ s }) {
   return (
-    <div style={{
+    <div className="card-hover img-zoom" style={{
       display: 'flex',
       width: 403,
       height: 583,
@@ -246,6 +246,15 @@ function CredentialCard({ c }) {
 export default function ServicesPage() {
   const [openFaq, setOpenFaq] = useState(0);
 
+  useEffect(() => {
+    const els = document.querySelectorAll('.sr-section');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('sr-visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    els.forEach(el => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
   return (
     <>
       {/* ── Hero ── */}
@@ -253,7 +262,7 @@ export default function ServicesPage() {
         position: 'relative',
         width: '100%',
         minHeight: 819,
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/source_DJI_0120.jpg)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.50) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/source_DJI_0120.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
         display: 'flex',
@@ -304,7 +313,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Commercial Roofing Services ── */}
-      <section style={{
+      <section className="sr-section" style={{
         background: '#fff',
         display: 'flex',
         padding: 75,
@@ -329,7 +338,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Residential Roofing Services ── */}
-      <section style={{
+      <section className="sr-section" style={{
         background: 'var(--shape-fill)',
         display: 'flex',
         padding: 75,

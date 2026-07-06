@@ -135,7 +135,7 @@ export default function TestimonialsPage() {
         position: 'relative',
         width: '100%',
         minHeight: 819,
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/testimonials/Frame%202147223464.png)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.50) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/testimonials/Frame%202147223464.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
         display: 'flex',

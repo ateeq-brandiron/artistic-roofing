@@ -81,7 +81,7 @@ export default function Footer() {
         <div style={{ height: 1, background: '#e5e5e5', margin: '24px 0 20px' }} />
 
         <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'var(--color-2)', textAlign: 'center', margin: 0 }}>
-          © 2025 Artistic Roofing. All Rights Reserved.
+          © 2026 Artistic Roofing. All Rights Reserved.
         </p>
 
       </div>
