@@ -31,7 +31,7 @@ export default function About() {
           alignSelf: 'stretch',
         }}>
           Experienced Roofing Professionals in{' '}
-          <span style={{ color: 'var(--blue)' }}>Sierra Vista AZ</span>
+          <span style={{ color: 'var(--blue)' }}>Sierra Vista, AZ</span>
         </h2>
 
         {/* Para 1 */}

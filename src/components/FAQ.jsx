@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    q: 'What services does Artistic Roofing provide in Sierra Vista AZ?',
+    q: 'What services does Artistic Roofing provide in Sierra Vista, AZ?',
     a: 'Artistic Roofing provides complete roofing and gutter solutions for residential and light commercial properties. Our services include new construction roofing, roof repairs, replacements, coatings, maintenance, and seamless 5" and 6" gutter installations. We work with shingles, tiles, and metal roofing systems, as well as select low-slope applications. For flat and low-slope roofs, our team specializes in modified bitumen systems and compatible coatings, ensuring reliable performance in Arizona\'s climate. Every project is completed by trained and certified professionals to ensure reliable workmanship and lasting results.',
   },
   {

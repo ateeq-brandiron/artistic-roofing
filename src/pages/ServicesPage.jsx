@@ -49,10 +49,10 @@ const credentials = [
 ];
 
 const faqs = [
-  { q: 'What roofing services does Artistic Roofing provide in Sierra Vista AZ?', a: 'Artistic Roofing Systems LLC provides complete roofing services to homeowners and light commercial properties in Sierra Vista and throughout Cochise County. Our services include new construction roofing, roof repairs, replacements, coatings, maintenance, and seamless 5" and 6" gutter installations. We work with shingles, tiles, metal, and flat roofs using materials from trusted manufacturers such as Tamko, GAF, Owens Corning, Westlake, and Eagle. Every project is completed by licensed professionals who are TRI Certified and trained in OSHA safety standards.' },
+  { q: 'What roofing services does Artistic Roofing provide in Sierra Vista, AZ?', a: 'Artistic Roofing Systems LLC provides complete roofing services to homeowners and light commercial properties in Sierra Vista and throughout Cochise County. Our services include new construction roofing, roof repairs, replacements, coatings, maintenance, and seamless 5" and 6" gutter installations. We work with shingles, tiles, metal, and flat roofs using materials from trusted manufacturers such as Tamko, GAF, Owens Corning, Westlake, and Eagle. Every project is completed by licensed professionals who are TRI Certified and trained in OSHA safety standards.' },
   { q: 'How does Artistic Roofing handle roof repairs and maintenance?', a: 'Our technicians address leaks, wind-blown shingles, and wear from aging materials or heavy rain. We recommend roof inspections every 3 to 4 years and annual checkups for roofs older than 15 years. Regular maintenance helps identify small issues early and extends the life of your roofing system.' },
   { q: 'Do you install gutters and patio covers in addition to roofing?', a: 'Yes. We offer seamless 5" and 6" gutter systems custom-fabricated on-site. Our gutters are available in multiple colors and styles and are designed to help manage water flow around your property effectively.' },
-  { q: 'Why choose Artistic Roofing for roofing services in Sierra Vista AZ?', a: 'Artistic Roofing Systems has served Sierra Vista and Cochise County for over a decade. We are licensed, bonded, insured, TRI Certified, OSHA trained, and Polyglass certified. Our long-term team members are locals who take pride in serving their community with honest, dependable workmanship.' },
+  { q: 'Why choose Artistic Roofing for roofing services in Sierra Vista, AZ?', a: 'Artistic Roofing Systems has served Sierra Vista and Cochise County for over a decade. We are licensed, bonded, insured, TRI Certified, OSHA trained, and Polyglass certified. Our long-term team members are locals who take pride in serving their community with honest, dependable workmanship.' },
 ];
 
 function CommercialCard({ s }) {
@@ -281,7 +281,7 @@ export default function ServicesPage() {
           margin: '0 0 16px',
           maxWidth: 580,
         }}>
-          Roofing Services in Sierra Vista AZ
+          Roofing Services in Sierra Vista, AZ
         </h1>
       </section>
 

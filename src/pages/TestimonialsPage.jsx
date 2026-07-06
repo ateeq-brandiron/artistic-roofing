@@ -164,7 +164,7 @@ export default function TestimonialsPage() {
           margin: 0,
           width: 749,
         }}>
-          Artistic Roofing Systems: Roofing Company Reviews in Sierra Vista AZ
+          Artistic Roofing Systems: Roofing Company Reviews in Sierra Vista, AZ
         </h1>
       </section>
 
@@ -182,7 +182,7 @@ export default function TestimonialsPage() {
           lineHeight: '150%', color: '#000',
           textAlign: 'center', width: 1038, margin: '0 auto',
         }}>
-          These roofing company reviews in Sierra Vista AZ highlight the quality craftsmanship, professionalism, and long-term value we provide. Whether it's a new roof installation, leak repair, seamless gutters, or custom patio covers, our customers share why they continue to recommend{' '}
+          These roofing company reviews in Sierra Vista, AZ highlight the quality craftsmanship, professionalism, and long-term value we provide. Whether it's a new roof installation, leak repair, seamless gutters, or custom patio covers, our customers share why they continue to recommend{' '}
           <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Artistic Roofing Systems</span>
           {' '}for dependable service and lasting results.
         </p>
@@ -270,7 +270,7 @@ export default function TestimonialsPage() {
             lineHeight: '160%', color: 'rgba(255,255,255,0.9)',
             maxWidth: 740, margin: 0,
           }}>
-            These roofing company reviews in Sierra Vista AZ highlight the dedication, expertise, and customer-first approach that define Artistic Roofing Systems. From dependable roof installations to custom gutters and patio covers, our team is proud to deliver solutions that protect and enhance your property.
+            These roofing company reviews in Sierra Vista, AZ highlight the dedication, expertise, and customer-first approach that define Artistic Roofing Systems. From dependable roof installations to custom gutters and patio covers, our team is proud to deliver solutions that protect and enhance your property.
           </p>
           <Link to="/contact" className="btn-blue" style={{
             display: 'inline-flex', alignItems: 'center', gap: 12,

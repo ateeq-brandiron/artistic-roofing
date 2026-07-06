@@ -53,7 +53,7 @@ export default function Hero() {
               margin: 0,
               alignSelf: 'stretch',
             }}>
-              At Artistic Roofing, we take pride in being a trusted roofing company in Sierra Vista AZ. Our team helps homeowners and businesses across Cochise County and surrounding Southeast Arizona communities maintain durable, efficient roofing and gutter systems that stand up to Arizona's weather.
+              At Artistic Roofing, we take pride in being a trusted roofing company in Sierra Vista, AZ. Our team helps homeowners and businesses across Cochise County and surrounding Southeast Arizona communities maintain durable, efficient roofing and gutter systems that stand up to Arizona's weather.
             </p>
 
             <Link

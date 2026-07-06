@@ -47,7 +47,7 @@ export default function ContactPage() {
           margin: 0,
           width: 749,
         }}>
-          Contact Artistic Roofing Systems in Sierra Vista AZ
+          Contact Artistic Roofing Systems in Sierra Vista, AZ
         </h1>
       </section>
 
@@ -78,7 +78,7 @@ export default function ContactPage() {
             lineHeight: '150%', color: '#000',
             textAlign: 'center', margin: 0,
           }}>
-            Contact Artistic Roofing Systems in Sierra Vista AZ today. We proudly serve Sierra Vista and surrounding Cochise County communities with reliable residential and light commercial roofing services. From roof repairs and replacements to gutter installations and maintenance, our experienced team responds quickly to help protect your property from leaks, storm damage, and everyday wear.
+            Contact Artistic Roofing Systems in Sierra Vista, AZ today. We proudly serve Sierra Vista and surrounding Cochise County communities with reliable residential and light commercial roofing services. From roof repairs and replacements to gutter installations and maintenance, our experienced team responds quickly to help protect your property from leaks, storm damage, and everyday wear.
           </p>
         </div>
       </section>
