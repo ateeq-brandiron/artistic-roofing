@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
@@ -10,6 +11,23 @@ const hours = [
 const cities = ['Sierra Vista', 'Hereford', 'Huachuca City', 'Benson', 'Sonoita', 'Patagonia', 'Tombstone'];
 
 export default function ContactPage() {
+  const [status, setStatus] = useState('idle'); // idle | sending | sent | error
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus('sending');
+    const data = new FormData(e.target);
+    try {
+      const res = await fetch('https://formspree.io/f/xldblwkb', {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      });
+      if (res.ok) { setStatus('sent'); e.target.reset(); }
+      else setStatus('error');
+    } catch { setStatus('error'); }
+  }
+
   return (
     <>
       {/* ── Hero ── */}
@@ -366,12 +384,14 @@ export default function ContactPage() {
           </div>
 
           {/* Right – form */}
-          <form onSubmit={e => e.preventDefault()} style={{
+          <form onSubmit={handleSubmit} style={{
             flex: '0 0 540px',
             display: 'flex', flexDirection: 'column', gap: 16,
           }}>
             <input
               type="text"
+              name="name"
+              required
               placeholder="Enter Full name"
               style={{
                 width: '100%', padding: '18px 20px',
@@ -384,6 +404,8 @@ export default function ContactPage() {
             />
             <input
               type="email"
+              name="email"
+              required
               placeholder="Email Adress"
               style={{
                 width: '100%', padding: '18px 20px',
@@ -396,6 +418,8 @@ export default function ContactPage() {
             />
             <textarea
               rows={6}
+              name="message"
+              required
               placeholder="Message"
               style={{
                 width: '100%', padding: '18px 20px',
@@ -407,8 +431,19 @@ export default function ContactPage() {
                 boxSizing: 'border-box',
               }}
             />
+            {status === 'sent' && (
+              <p style={{ fontFamily: 'Outfit', fontSize: 15, color: '#1a7a3c', margin: 0 }}>
+                Thank you! We'll be in touch shortly.
+              </p>
+            )}
+            {status === 'error' && (
+              <p style={{ fontFamily: 'Outfit', fontSize: 15, color: '#c0392b', margin: 0 }}>
+                Something went wrong. Please try again or email us directly at artisticroofing11@gmail.com.
+              </p>
+            )}
             <button
               type="submit"
+              disabled={status === 'sending'}
               className="btn-blue"
               style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
@@ -416,12 +451,13 @@ export default function ContactPage() {
                 background: 'var(--blue)',
                 borderRadius: 10,
                 fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
-                color: '#fff', border: 'none', cursor: 'pointer',
+                color: '#fff', border: 'none', cursor: status === 'sending' ? 'not-allowed' : 'pointer',
                 alignSelf: 'flex-start',
+                opacity: status === 'sending' ? 0.7 : 1,
               }}
             >
-              Schedule Your Free Roofing Estimate
-              <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />
+              {status === 'sending' ? 'Sending…' : 'Schedule Your Free Roofing Estimate'}
+              {status !== 'sending' && <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />}
             </button>
           </form>
         </div>
