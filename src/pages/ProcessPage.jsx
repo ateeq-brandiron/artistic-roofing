@@ -4,7 +4,7 @@ import ScrollBar from '../components/ScrollBar';
 const steps = [
   {
     num: '01',
-    img: '/img/process/Rectangle%20227-3.png',
+    img: '/img/process/Process%20-%20Step%201.jpg',
     title: 'Step 1 – Consultation & Inspection',
     items: [
       'In-person visit to assess your roof, gutters, or structures',
@@ -34,7 +34,7 @@ const steps = [
   },
   {
     num: '04',
-    img: '/img/process/Rectangle%20227.png',
+    img: '/img/process/Home%20-%20EST%20%2B%20Process%20-%20Step%204.jpg',
     title: 'Step 4 – Quality Assurance & Walkthrough',
     items: [
       'Final inspection to ensure all standards are met',
