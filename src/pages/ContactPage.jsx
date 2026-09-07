@@ -240,7 +240,7 @@ export default function ContactPage() {
             overflow: 'hidden',
           }}>
             <img
-              src="/img/contact/Tile%20roof%202.jpg"
+              src="/img/contact/Contact%20-%20Office%20Hours.jpg"
               alt="Artistic Roofing project"
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
