@@ -36,6 +36,7 @@ const steps = [
     num: '04',
     img: '/img/process/Home%20-%20EST%20%2B%20Process%20-%20Step%204.jpg',
     pos: 'right center',
+    bgSize: '280% auto',
     title: 'Step 4 – Quality Assurance & Walkthrough',
     items: [
       'Final inspection to ensure all standards are met',
@@ -140,15 +141,28 @@ export default function ProcessPage() {
                 <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 40, width: '100%' }}>
 
                   {/* Step image */}
-                  <div style={{
-                    width: 178,
-                    height: 178,
-                    flexShrink: 0,
-                    borderRadius: 12,
-                    overflow: 'hidden',
-                  }}>
-                    <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: step.pos || 'center', display: 'block' }} />
-                  </div>
+                  {step.bgSize ? (
+                    <div style={{
+                      width: 178,
+                      height: 178,
+                      flexShrink: 0,
+                      borderRadius: 12,
+                      backgroundImage: `url(${step.img})`,
+                      backgroundSize: step.bgSize,
+                      backgroundPosition: step.pos || 'center',
+                      backgroundRepeat: 'no-repeat',
+                    }} />
+                  ) : (
+                    <div style={{
+                      width: 178,
+                      height: 178,
+                      flexShrink: 0,
+                      borderRadius: 12,
+                      overflow: 'hidden',
+                    }}>
+                      <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: step.pos || 'center', display: 'block' }} />
+                    </div>
+                  )}
 
                   {/* Number circle */}
                   <div style={{
