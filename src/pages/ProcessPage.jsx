@@ -35,6 +35,7 @@ const steps = [
   {
     num: '04',
     img: '/img/process/Home%20-%20EST%20%2B%20Process%20-%20Step%204.jpg',
+    pos: 'right center',
     title: 'Step 4 – Quality Assurance & Walkthrough',
     items: [
       'Final inspection to ensure all standards are met',
@@ -146,7 +147,7 @@ export default function ProcessPage() {
                     borderRadius: 12,
                     overflow: 'hidden',
                   }}>
-                    <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                    <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: step.pos || 'center', display: 'block' }} />
                   </div>
 
                   {/* Number circle */}
