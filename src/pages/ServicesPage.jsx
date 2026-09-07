@@ -27,11 +27,11 @@ const commercial = [
 
 const residential = [
   { img: '/img/services/res-coatings.jpg', title: 'Home Roofing', desc: 'From installation to ongoing care, we provide complete roofing services for homeowners. Our team specializes in roof installation, repairs, inspections, maintenance, and energy-efficient options designed for Arizona\'s climate.' },
-  { img: '/img/services/res-inspections.png', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re adding on to your home, our re-roofing services provide a seamless, professional upgrade that protects your property and enhances curb appeal.' },
+  { img: '/img/services/Services%20-%20Re-Roofing.jpg', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re adding on to your home, our re-roofing services provide a seamless, professional upgrade that protects your property and enhances curb appeal.' },
   { img: '/img/services/res-installation.jpg', title: 'Residential Roof Repair', desc: 'We handle everything from small leaks to storm damage with responsive service that restores your roof\'s strength and integrity.' },
-  { img: '/img/services/res-home-roofing.png', title: 'Roof Inspections', desc: 'Our inspections cover shingles, tile, and flashing to identify wear or damage before it becomes a costly problem.' },
+  { img: '/img/services/Services%20-%20Roof%20Inspection.jpg', title: 'Roof Inspections', desc: 'Our inspections cover shingles, tile, and flashing to identify wear or damage before it becomes a costly problem.' },
   { img: '/img/services/res-card5.png', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an old roof, we bring the right materials and expertise to deliver dependable results. From asphalt shingles and concrete tile to metal roofing systems built for long-term durability and energy efficiency in Arizona\'s climate, our team ensures every installation meets strict quality standards. We work with trusted manufacturers including Tamko, Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
-  { img: '/img/services/res-card6.png', title: 'Roof Coatings & Restoration', desc: 'We provide coatings and repair solutions for low-slope roofs using professional-grade Polyglass products. Roof coatings serve as a maintenance solution for modified bitumen and compatible flat roofing systems, helping extend roof life and maintain waterproofing. These applications protect against heat, UV exposure, and weather while supporting long-term performance in Arizona\'s climate.' },
+  { img: '/img/services/Services%20-%20Roof%20Coatings.jpg', title: 'Roof Coatings & Restoration', desc: 'We provide coatings and repair solutions for low-slope roofs using professional-grade Polyglass products. Roof coatings serve as a maintenance solution for modified bitumen and compatible flat roofing systems, helping extend roof life and maintain waterproofing. These applications protect against heat, UV exposure, and weather while supporting long-term performance in Arizona\'s climate.' },
 ];
 
 const gutterFeatures = [
@@ -531,7 +531,7 @@ export default function ServicesPage() {
           alignItems: 'center',
           gap: 24,
           borderRadius: 10,
-          backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/source_20191114_091038.jpg)`,
+          backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/services/Services%20-%20CTA.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: '50% 50%',
           boxSizing: 'border-box',
