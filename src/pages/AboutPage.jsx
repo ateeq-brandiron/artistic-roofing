@@ -357,7 +357,7 @@ export default function AboutPage() {
               {/* Background image with overlay */}
               <div style={{
                 position: 'absolute', inset: 0,
-                backgroundImage: 'url(/img/source_IQC.jpg)',
+                backgroundImage: 'url(/img/about/About%20Us%20Hero.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: '50% 50%',
                 opacity: 0.18,
