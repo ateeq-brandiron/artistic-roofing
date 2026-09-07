@@ -6,7 +6,7 @@ export default function Hero() {
       position: 'relative',
       width: '100%',
       minHeight: 819,
-      backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/frame-2147223464.png)',
+      backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/homepage/Home%20Hero.png)',
       backgroundSize: 'cover',
       backgroundPosition: '50% 50%',
       display: 'flex',

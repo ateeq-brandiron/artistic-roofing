@@ -51,7 +51,7 @@ export default function ProcessPage() {
         position: 'relative',
         width: '100%',
         minHeight: 819,
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.45) 71.27%, rgba(0,0,0,0.68) 100%), url(/img/process/Frame%202147223464.png)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.45) 71.27%, rgba(0,0,0,0.68) 100%), url(/img/process/Process%20Hero.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
         display: 'flex',

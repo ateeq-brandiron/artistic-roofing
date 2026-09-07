@@ -298,7 +298,7 @@ export default function ServicesPage() {
         position: 'relative',
         width: '100%',
         minHeight: 819,
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.50) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/source_DJI_0120.jpg)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.50) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/services/Services%20Hero.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
         display: 'flex',

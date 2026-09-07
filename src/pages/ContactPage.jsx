@@ -35,7 +35,7 @@ export default function ContactPage() {
         position: 'relative',
         width: '100%',
         height: 819,
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.52) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/contact/Frame%202147223464.png)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.52) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/contact/Contact%20Hero.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
         backgroundRepeat: 'no-repeat',

@@ -176,7 +176,7 @@ export default function AboutPage() {
               flexShrink: 0,
               alignSelf: 'stretch',
               borderRadius: 30,
-              background: `url(/img/about/20260507_103206.jpg) lightgray 50% / cover no-repeat`,
+              background: `url(/img/about/About%20Us%20Hero.png) lightgray 50% / cover no-repeat`,
             }} />
 
             {/* Left Image (foreground — house, absolute bottom-right) + badge */}
