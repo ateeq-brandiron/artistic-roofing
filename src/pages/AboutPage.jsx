@@ -111,7 +111,7 @@ export default function AboutPage() {
         position: 'relative',
         width: '100%',
         minHeight: 819,
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/Frame%202147223464%20%282%29.png)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/about/About%20Us%20Hero.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
         display: 'flex',
@@ -176,7 +176,7 @@ export default function AboutPage() {
               flexShrink: 0,
               alignSelf: 'stretch',
               borderRadius: 30,
-              background: `url(/img/about/About%20Us%20Hero.png) lightgray 50% / cover no-repeat`,
+              background: `url(/img/about/20260507_103206.jpg) lightgray 50% / cover no-repeat`,
             }} />
 
             {/* Left Image (foreground — house, absolute bottom-right) + badge */}
@@ -426,7 +426,7 @@ export default function AboutPage() {
           alignItems: 'center',
           gap: 10,
           borderRadius: 10,
-          background: `linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 100%), url(/img/source_20191114_091038.jpg) lightgray 50% / cover no-repeat`,
+          background: `linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 100%), url(/img/about/About%20-%20CTA.png) lightgray 50% / cover no-repeat`,
           boxSizing: 'border-box',
         }}>
           <div style={{ maxWidth: 900, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28 }}>
