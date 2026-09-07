@@ -87,7 +87,7 @@ export default function About() {
         alignItems: 'center',
         borderRadius: 30,
         border: '1px solid #D1EFFF',
-        backgroundImage: 'url(/img/source_2.png)',
+        backgroundImage: 'url(/img/homepage/Home%20-%20EST%20%2B%20Process%20-%20Step%204.jpg)',
         backgroundPosition: '-84.5px -73.973px',
         backgroundSize: '128.79% 89.151%',
         backgroundRepeat: 'no-repeat',
