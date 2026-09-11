@@ -13,19 +13,10 @@ const cities = ['Sierra Vista', 'Hereford', 'Huachuca City', 'Benson', 'Sonoita'
 export default function ContactPage() {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
 
-  async function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
-    setStatus('sending');
-    const data = new FormData(e.target);
-    try {
-      const res = await fetch('https://formspree.io/f/xldblwkb', {
-        method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
-      });
-      if (res.ok) { setStatus('sent'); e.target.reset(); }
-      else setStatus('error');
-    } catch { setStatus('error'); }
+    setStatus('sent');
+    e.target.reset();
   }
 
   return (
@@ -440,18 +431,32 @@ export default function ContactPage() {
               }}
             />
             {status === 'sent' && (
-              <p style={{ fontFamily: 'Outfit', fontSize: 15, color: '#1a7a3c', margin: 0 }}>
-                Thank you! We'll be in touch shortly.
-              </p>
-            )}
-            {status === 'error' && (
-              <p style={{ fontFamily: 'Outfit', fontSize: 15, color: '#c0392b', margin: 0 }}>
-                Something went wrong. Please try again or email us directly at artisticroofing11@gmail.com.
-              </p>
+              <div style={{
+                background: 'rgba(255,255,255,0.12)',
+                border: '1px solid rgba(255,255,255,0.35)',
+                borderRadius: 10,
+                padding: '20px 24px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 10,
+              }}>
+                <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff', margin: 0 }}>
+                  Thank you for reaching out!
+                </p>
+                <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.88)', margin: 0, lineHeight: '1.6' }}>
+                  Please send us an email with your query at{' '}
+                  <a
+                    href="mailto:artisticroofing11@gmail.com"
+                    style={{ color: '#7dd3fc', fontWeight: 600, textDecoration: 'underline' }}
+                  >
+                    artisticroofing11@gmail.com
+                  </a>
+                  {' '}and our team will get back to you as soon as possible.
+                </p>
+              </div>
             )}
             <button
               type="submit"
-              disabled={status === 'sending'}
               className="btn-blue"
               style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
@@ -459,13 +464,12 @@ export default function ContactPage() {
                 background: 'var(--blue)',
                 borderRadius: 10,
                 fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
-                color: '#fff', border: 'none', cursor: status === 'sending' ? 'not-allowed' : 'pointer',
+                color: '#fff', border: 'none', cursor: 'pointer',
                 alignSelf: 'flex-start',
-                opacity: status === 'sending' ? 0.7 : 1,
               }}
             >
-              {status === 'sending' ? 'Sending…' : 'Schedule Your Free Roofing Estimate'}
-              {status !== 'sending' && <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />}
+              Schedule Your Free Roofing Estimate
+              <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />
             </button>
           </form>
         </div>
