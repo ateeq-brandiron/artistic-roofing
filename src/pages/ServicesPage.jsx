@@ -125,14 +125,14 @@ function ResidentialCard({ s }) {
       onMouseLeave={() => setHovered(false)}
       style={{
         display: 'flex',
-        width: 'clamp(280px, 30vw, 403px)',
+        flex: '1 1 280px',
+        maxWidth: 403,
         height: 'clamp(420px, 50vw, 583px)',
         padding: '30px 17px',
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'center',
         gap: 10,
-        flexShrink: 0,
         borderRadius: 10,
         overflow: 'hidden',
         position: 'relative',

@@ -133,6 +133,7 @@ export default function ProcessPage() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2" height="693" viewBox="0 0 2 693" fill="none"
+              className="process-connector"
               style={{ position: 'absolute', left: 245, top: 28, zIndex: 0, pointerEvents: 'none' }}
             >
               <path d="M1 0V693" stroke="#0080C6" strokeWidth="2" strokeDasharray="8 8" />

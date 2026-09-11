@@ -362,6 +362,9 @@ button {
     width: 100% !important;
     height: 200px !important;
   }
+  .process-connector {
+    display: none !important;
+  }
 }
 
 /* ─── Footer ─── */

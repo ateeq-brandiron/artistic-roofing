@@ -49,12 +49,13 @@ function ServiceCard({ s }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        width: 'clamp(260px, 30vw, 403px)', minHeight: 411,
+        flex: '1 1 260px',
+        maxWidth: 403,
+        minHeight: 411,
         borderRadius: 10,
         overflow: 'hidden',
         display: 'flex', flexDirection: 'column',
         justifyContent: 'flex-end',
-        flexShrink: 0,
         position: 'relative',
         transform: hovered ? 'translateY(-6px)' : 'translateY(0)',
         boxShadow: hovered ? '0 24px 56px rgba(0,0,0,0.18)' : '0 4px 16px rgba(0,0,0,0.08)',
