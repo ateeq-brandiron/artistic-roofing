@@ -10,7 +10,6 @@ export default function About() {
       gap: 48,
       flexWrap: 'wrap',
       boxSizing: 'border-box',
-      boxSizing: 'border-box',
     }}>
 
       {/* Left column */}
