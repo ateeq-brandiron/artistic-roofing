@@ -308,7 +308,7 @@ export default function ServicesPage() {
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
         padding: 'clamp(20px,5vw,76px)',
-        paddingTop: 0,
+        paddingTop: 120,
         paddingBottom: 'clamp(40px,5vw,72px)',
         boxSizing: 'border-box',
         overflow: 'hidden',
