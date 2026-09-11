@@ -29,7 +29,7 @@ function CoreValueCard({ icon, title, desc }) {
       onMouseLeave={() => setHovered(false)}
       style={{
         display: 'flex',
-        width: 316,
+        width: 'clamp(240px, 28vw, 316px)',
         padding: '30px 24px',
         flexDirection: 'column',
         alignItems: 'center',
@@ -110,7 +110,7 @@ export default function AboutPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 819,
+        minHeight: 'clamp(480px, 65vh, 819px)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/about/About%20Us%20Hero.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
@@ -118,7 +118,9 @@ export default function AboutPage() {
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 76px 72px',
+        padding: 'clamp(20px,5vw,76px)',
+        paddingTop: 0,
+        paddingBottom: 'clamp(40px,5vw,72px)',
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
@@ -134,7 +136,7 @@ export default function AboutPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 60,
+          fontSize: 'clamp(32px, 5vw, 60px)',
           lineHeight: '120%',
           color: '#fff',
           margin: '0 0 16px',
@@ -148,7 +150,7 @@ export default function AboutPage() {
       <ScrollBar />
 
       {/* ── Intro paragraph ── */}
-      <section style={{ background: 'var(--shape-fill)', padding: '60px 76px', boxSizing: 'border-box' }}>
+      <section style={{ background: 'var(--shape-fill)', padding: 'clamp(40px,5vw,60px) clamp(20px,5vw,76px)', boxSizing: 'border-box' }}>
         <p style={{
           fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 18,
           lineHeight: '1.65', color: 'var(--color-3)', textAlign: 'center',
@@ -168,7 +170,7 @@ export default function AboutPage() {
           flexWrap: 'wrap',
         }}>
           {/* Left column — overlapping images */}
-          <div style={{ position: 'relative', display: 'flex', height: 487, paddingRight: 200, flexDirection: 'column', alignItems: 'flex-start', flex: '1 0 0' }}>
+          <div className="story-left" style={{ position: 'relative', display: 'flex', height: 487, paddingRight: 200, flexDirection: 'column', alignItems: 'flex-start', flex: '1 0 0' }}>
 
             {/* Right Image (main/background — roofer photo) */}
             <div style={{
@@ -270,7 +272,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Core Values ── */}
-      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
+      <section style={{ background: '#fff', padding: 'clamp(48px,6vw,75px) clamp(20px,5vw,76px)', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
 
           {/* Header */}
@@ -283,7 +285,7 @@ export default function AboutPage() {
 
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 48, lineHeight: '120%',
+              fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%',
               color: '#000', margin: 0, textAlign: 'center',
             }}>
               Our <span style={{ color: 'var(--blue)', fontStyle: 'normal' }}>Core Values</span>
@@ -299,7 +301,7 @@ export default function AboutPage() {
           </div>
 
           {/* All 5 cards — flex-wrap centers 2-card second row automatically */}
-          <div style={{ display: 'flex', gap: 100, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div className="core-values-row" style={{ display: 'flex', gap: 'clamp(24px,6vw,100px)', justifyContent: 'center', flexWrap: 'wrap' }}>
             {coreValues.map(({ icon, title, desc }, i) => (
               <CoreValueCard key={i} icon={icon} title={title} desc={desc} />
             ))}
@@ -309,7 +311,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Certifications & Memberships ── */}
-      <section id="certifications" style={{ background: '#fff', padding: '75px', boxSizing: 'border-box' }}>
+      <section id="certifications" style={{ background: '#fff', padding: 'clamp(48px,6vw,75px) clamp(20px,5vw,75px)', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto' }}>
 
           {/* Header — centered */}
@@ -320,7 +322,7 @@ export default function AboutPage() {
             </div>
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 48, lineHeight: '120%',
+              fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%',
               color: '#000', margin: 0, textAlign: 'center',
             }}>
               <span style={{ color: 'var(--blue)' }}>Certifications</span> and Memberships
@@ -335,11 +337,12 @@ export default function AboutPage() {
           </div>
 
           {/* Two-column layout */}
-          <div style={{ display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: 'clamp(32px,5vw,80px)', alignItems: 'flex-start', flexWrap: 'wrap' }}>
 
             {/* Left — card with background image */}
             <div style={{
-              flex: '0 0 590px',
+              flex: '1 1 300px',
+              maxWidth: 590,
               position: 'relative',
               borderRadius: 20,
               overflow: 'hidden',

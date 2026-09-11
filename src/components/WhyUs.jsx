@@ -18,15 +18,16 @@ export default function WhyUs() {
       display: 'flex',
       maxWidth: 1440,
       margin: '0 auto',
-      padding: 75,
+      padding: 'clamp(48px,5vw,75px) clamp(20px,5vw,75px)',
       justifyContent: 'space-between',
       alignItems: 'center',
-      gap: 75,
+      gap: 'clamp(40px,5vw,75px)',
+      flexWrap: 'wrap',
       boxSizing: 'border-box',
     }}>
 
       {/* Left */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, flex: '0 0 480px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, flex: '1 1 280px', maxWidth: 480 }}>
 
         {/* Label */}
         <div style={{
@@ -45,7 +46,7 @@ export default function WhyUs() {
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 48,
+          fontSize: 'clamp(32px, 4vw, 48px)',
           lineHeight: '120%',
           color: '#fff',
           margin: 0,
@@ -58,7 +59,7 @@ export default function WhyUs() {
         <p style={{
           fontFamily: 'Outfit, sans-serif',
           fontWeight: 300,
-          fontSize: 20,
+          fontSize: 'clamp(16px, 2vw, 20px)',
           lineHeight: '120%',
           color: '#fff',
           margin: 0,
@@ -70,11 +71,11 @@ export default function WhyUs() {
       </div>
 
       {/* Right — 2×3 feature grid */}
-      <div style={{
+      <div className="whyus-grid" style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(2, minmax(220px, 280px))',
-        gap: '32px 48px',
-        flex: '1 1 400px',
+        gridTemplateColumns: 'repeat(2, minmax(180px, 280px))',
+        gap: 'clamp(20px,3vw,32px) clamp(24px,4vw,48px)',
+        flex: '1 1 320px',
       }}>
         {features.map((f, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>

@@ -52,7 +52,7 @@ export default function ProcessPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 819,
+        minHeight: 'clamp(480px, 65vh, 819px)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.45) 71.27%, rgba(0,0,0,0.68) 100%), url(/img/process/Process%20Hero.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
@@ -60,7 +60,9 @@ export default function ProcessPage() {
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 76px 72px',
+        padding: 'clamp(20px,5vw,76px)',
+        paddingTop: 0,
+        paddingBottom: 'clamp(40px,5vw,72px)',
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
@@ -76,11 +78,11 @@ export default function ProcessPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 60,
+          fontSize: 'clamp(32px, 5vw, 60px)',
           lineHeight: '120%',
           color: '#fff',
           margin: 0,
-          width: 812,
+          maxWidth: 812,
         }}>
           What to Expect During Your Installation Process
         </h1>
@@ -92,7 +94,7 @@ export default function ProcessPage() {
       {/* ── Intro ── */}
       <section style={{
         background: 'var(--shape-fill)',
-        padding: '60px 76px',
+        padding: 'clamp(40px,5vw,60px) clamp(20px,5vw,76px)',
         boxSizing: 'border-box',
       }}>
         <p style={{
@@ -107,7 +109,7 @@ export default function ProcessPage() {
       </section>
 
       {/* ── Step-by-Step Process ── */}
-      <section style={{ background: '#fff', display: 'flex', padding: 75, flexDirection: 'column', alignItems: 'center', gap: 50, boxSizing: 'border-box' }}>
+      <section style={{ background: '#fff', display: 'flex', padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,75px)', flexDirection: 'column', alignItems: 'center', gap: 50, boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, width: '100%', margin: '0 auto' }}>
 
           {/* Header */}
@@ -118,7 +120,7 @@ export default function ProcessPage() {
             </div>
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 48, lineHeight: '120%',
+              fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%',
               color: '#000', margin: 0, textAlign: 'center',
             }}>
               Our Step-by-Step <span style={{ color: 'var(--blue)' }}>Process</span>
@@ -138,11 +140,11 @@ export default function ProcessPage() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 48 }}>
               {steps.map((step, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 40, width: '100%' }}>
+                <div key={i} className="timeline-row" style={{ display: 'flex', alignItems: 'flex-start', gap: 40, width: '100%' }}>
 
                   {/* Step image */}
                   {step.bgSize ? (
-                    <div style={{
+                    <div className="step-img" style={{
                       width: 178,
                       height: 178,
                       flexShrink: 0,
@@ -153,7 +155,7 @@ export default function ProcessPage() {
                       backgroundRepeat: 'no-repeat',
                     }} />
                   ) : (
-                    <div style={{
+                    <div className="step-img" style={{
                       width: 178,
                       height: 178,
                       flexShrink: 0,
@@ -218,11 +220,12 @@ export default function ProcessPage() {
       </section>
 
       {/* ── CTA ── */}
-      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 75px 75px', boxSizing: 'border-box' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 clamp(20px,5vw,75px) clamp(40px,5vw,75px)', boxSizing: 'border-box' }}>
         <section style={{
           display: 'flex',
-          width: 1290,
-          padding: '80px 100px',
+          width: '100%',
+          maxWidth: 1290,
+          padding: 'clamp(48px,6vw,80px) clamp(24px,5vw,100px)',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
@@ -234,7 +237,7 @@ export default function ProcessPage() {
         }}>
           <h2 style={{
             fontFamily: 'Playfair Display, serif', fontWeight: 900,
-            fontSize: 48, lineHeight: '120%', color: '#fff', margin: 0,
+            fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#fff', margin: 0,
           }}>
             Building Trust With Every Project
           </h2>

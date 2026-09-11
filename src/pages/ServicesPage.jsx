@@ -63,7 +63,7 @@ function CommercialCard({ s }) {
       onMouseLeave={() => setHovered(false)}
       style={{
         display: 'flex',
-        height: 498,
+        height: 'clamp(380px, 40vw, 498px)',
         flexDirection: 'column',
         alignItems: 'flex-start',
         gap: 10,
@@ -71,7 +71,8 @@ function CommercialCard({ s }) {
         border: '1px solid #D1EFFF',
         background: '#E8F8FF',
         boxSizing: 'border-box',
-        flex: 1,
+        flex: '1 1 280px',
+        minWidth: 0,
         overflow: 'hidden',
         transform: hovered ? 'translateY(-6px)' : 'translateY(0)',
         boxShadow: hovered ? '0 24px 56px rgba(0,128,198,0.18)' : '0 4px 16px rgba(0,0,0,0.06)',
@@ -124,7 +125,8 @@ function ResidentialCard({ s }) {
       onMouseLeave={() => setHovered(false)}
       style={{
         display: 'flex',
-        width: 403, height: 583,
+        width: 'clamp(280px, 30vw, 403px)',
+        height: 'clamp(420px, 50vw, 583px)',
         padding: '30px 17px',
         flexDirection: 'column',
         justifyContent: 'flex-end',
@@ -154,7 +156,7 @@ function ResidentialCard({ s }) {
       <div style={{
         position: 'relative',
         display: 'flex',
-        width: 360, padding: 15,
+        width: '100%', maxWidth: 360, padding: 15,
         flexDirection: 'column',
         alignItems: 'flex-start',
         gap: 10,
@@ -297,7 +299,7 @@ export default function ServicesPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 819,
+        minHeight: 'clamp(480px, 65vh, 819px)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.50) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/services/Services%20Hero.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
@@ -305,7 +307,9 @@ export default function ServicesPage() {
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 76px 72px',
+        padding: 'clamp(20px,5vw,76px)',
+        paddingTop: 0,
+        paddingBottom: 'clamp(40px,5vw,72px)',
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
@@ -320,7 +324,7 @@ export default function ServicesPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 60,
+          fontSize: 'clamp(32px, 5vw, 60px)',
           lineHeight: '120%',
           color: '#fff',
           margin: '0 0 16px',
@@ -334,7 +338,7 @@ export default function ServicesPage() {
       <ScrollBar />
 
       {/* ── Intro ── */}
-      <section style={{ background: 'var(--shape-fill)', padding: '60px 76px', boxSizing: 'border-box' }}>
+      <section style={{ background: 'var(--shape-fill)', padding: 'clamp(40px,5vw,60px) clamp(20px,5vw,76px)', boxSizing: 'border-box' }}>
         <p style={{
           fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
           lineHeight: '160%', color: 'var(--color-3)',
@@ -352,10 +356,10 @@ export default function ServicesPage() {
       <section className="sr-section" style={{
         background: '#fff',
         display: 'flex',
-        padding: 75,
+        padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,75px)',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: 50,
+        gap: 'clamp(32px,4vw,50px)',
         boxSizing: 'border-box',
         width: '100%',
       }}>
@@ -363,12 +367,12 @@ export default function ServicesPage() {
           <Pill text="SERVICES" />
           <h2 style={{
             fontFamily: 'Playfair Display, serif', fontWeight: 900,
-            fontSize: 48, lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
+            fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
           }}>
             Commercial Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
           </h2>
         </div>
-        <div style={{ display: 'flex', gap: 28, width: '100%', maxWidth: 1290 }}>
+        <div className="services-page-commercial" style={{ display: 'flex', gap: 28, width: '100%', maxWidth: 1290, flexWrap: 'wrap' }}>
           {commercial.map((s, i) => <CommercialCard key={i} s={s} />)}
         </div>
       </section>
@@ -377,10 +381,10 @@ export default function ServicesPage() {
       <section className="sr-section" style={{
         background: 'var(--shape-fill)',
         display: 'flex',
-        padding: 75,
+        padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,75px)',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: 50,
+        gap: 'clamp(32px,4vw,50px)',
         boxSizing: 'border-box',
         width: '100%',
       }}>
@@ -388,12 +392,12 @@ export default function ServicesPage() {
           <Pill text="SERVICES" />
           <h2 style={{
             fontFamily: 'Playfair Display, serif', fontWeight: 900,
-            fontSize: 48, lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
+            fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
           }}>
             Residential Roofing <span style={{ color: 'var(--blue)' }}>Services</span>
           </h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 403px)', gap: 40 }}>
+        <div className="services-page-commercial" style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(20px,3vw,40px)', justifyContent: 'center', width: '100%', maxWidth: 1290 }}>
           {residential.map((s, i) => <ResidentialCard key={i} s={s} />)}
         </div>
       </section>
@@ -408,18 +412,20 @@ export default function ServicesPage() {
           display: 'flex',
           maxWidth: 1440,
           margin: '0 auto',
-          padding: 75,
+          padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,75px)',
           justifyContent: 'space-between',
           alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: 40,
           boxSizing: 'border-box',
         }}>
           {/* Left */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 30, maxWidth: 560 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 30, maxWidth: 560, flex: '1 1 280px' }}>
             <Pill text="SERVICES" />
             <h2 style={{
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
-              fontSize: 48,
+              fontSize: 'clamp(28px, 4vw, 48px)',
               lineHeight: '120%',
               color: '#fff',
               margin: 0,
@@ -454,11 +460,11 @@ export default function ServicesPage() {
           {/* Right — 2×2 cards */}
           <div style={{
             display: 'flex',
-            width: 581,
+            flex: '1 1 280px',
+            maxWidth: 581,
             alignItems: 'flex-start',
             alignContent: 'flex-start',
             gap: '28px 35px',
-            flexShrink: 0,
             flexWrap: 'wrap',
           }}>
             {gutterFeatures.map((f, i) => <GutterFeatureCard key={i} f={f} />)}
@@ -472,7 +478,7 @@ export default function ServicesPage() {
           display: 'flex',
           maxWidth: 1440,
           margin: '0 auto',
-          padding: '75px 100px',
+          padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,100px)',
           flexDirection: 'column',
           alignItems: 'center',
           gap: 30,
@@ -480,10 +486,10 @@ export default function ServicesPage() {
         }}>
           <Pill text="TRUST" />
           <h2 style={{
-            width: 608,
+            maxWidth: 608,
             fontFamily: 'Playfair Display, serif',
             fontWeight: 900,
-            fontSize: 48,
+            fontSize: 'clamp(28px, 4vw, 48px)',
             lineHeight: '120%',
             color: '#000',
             textAlign: 'center',
@@ -492,7 +498,7 @@ export default function ServicesPage() {
             Trust & <span style={{ color: 'var(--blue)' }}>Credentials</span>
           </h2>
           <p style={{
-            width: 816,
+            maxWidth: 816,
             fontFamily: 'Outfit, sans-serif',
             fontWeight: 300,
             fontSize: 20,
@@ -509,10 +515,11 @@ export default function ServicesPage() {
             display: 'flex',
             width: '100%',
             maxWidth: 1440,
-            padding: '50px 0',
+            padding: 'clamp(32px,4vw,50px) 0',
             justifyContent: 'center',
             alignItems: 'center',
-            gap: 100,
+            gap: 'clamp(32px,6vw,100px)',
+            flexWrap: 'wrap',
           }}>
             {credentials.map((c, i) => <CredentialCard key={i} c={c} />)}
           </div>
@@ -520,12 +527,12 @@ export default function ServicesPage() {
       </section>
 
       {/* ── CTA ── */}
-      <div style={{ width: '100%', padding: '0 75px 75px', boxSizing: 'border-box' }}>
+      <div style={{ width: '100%', padding: '0 clamp(20px,5vw,75px) clamp(40px,5vw,75px)', boxSizing: 'border-box' }}>
         <section style={{
           display: 'flex',
           maxWidth: 1440,
           margin: '0 auto',
-          padding: '75px 100px',
+          padding: 'clamp(48px,6vw,75px) clamp(24px,5vw,100px)',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
@@ -537,7 +544,7 @@ export default function ServicesPage() {
           boxSizing: 'border-box',
           textAlign: 'center',
         }}>
-          <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 48, lineHeight: '120%', color: '#fff', margin: 0 }}>
+          <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#fff', margin: 0 }}>
             Ready to Protect Your Property?
           </h2>
           <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 18, lineHeight: '160%', color: 'rgba(255,255,255,0.9)', maxWidth: 700, margin: 0 }}>
@@ -556,10 +563,10 @@ export default function ServicesPage() {
       </div>
 
       {/* ── FAQ ── */}
-      <section className="sr-section" style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
-        <div style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', gap: 80, alignItems: 'flex-start', flexWrap: 'wrap' }}>
+      <section className="sr-section" style={{ background: '#fff', padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,76px)', boxSizing: 'border-box' }}>
+        <div className="faq-wrap" style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', gap: 'clamp(32px,5vw,80px)', alignItems: 'flex-start', flexWrap: 'wrap' }}>
           {/* Left */}
-          <div style={{ flex: '0 0 340px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 20 }}>
+          <div className="faq-heading" style={{ flex: '1 1 280px', maxWidth: 340, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 20 }}>
             <Pill text="FAQ" />
             <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 40, lineHeight: '120%', color: '#000', margin: 0 }}>
               Frequently Asked Questions About Roofing and Gutters

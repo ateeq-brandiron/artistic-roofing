@@ -34,7 +34,7 @@ export default function ContactPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        height: 819,
+        minHeight: 'clamp(480px, 65vh, 819px)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.52) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/contact/Contact%20Hero.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
@@ -43,7 +43,9 @@ export default function ContactPage() {
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 76px 72px',
+        padding: 'clamp(20px,5vw,76px)',
+        paddingTop: 0,
+        paddingBottom: 'clamp(40px,5vw,72px)',
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
@@ -59,11 +61,11 @@ export default function ContactPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 60,
+          fontSize: 'clamp(32px, 5vw, 60px)',
           lineHeight: '120%',
           color: '#fff',
           margin: 0,
-          width: 749,
+          maxWidth: 749,
         }}>
           Contact Artistic Roofing Systems in Sierra Vista, AZ
         </h1>
@@ -75,7 +77,7 @@ export default function ContactPage() {
       {/* ── Intro ── */}
       <section style={{
         background: 'var(--shape-fill)',
-        padding: '75px 76px',
+        padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,76px)',
         boxSizing: 'border-box',
         display: 'flex',
         flexDirection: 'column',
@@ -83,7 +85,7 @@ export default function ContactPage() {
         alignItems: 'center',
         gap: 10,
       }}>
-        <div style={{ width: 1088, display: 'flex', flexDirection: 'column', gap: 0 }}>
+        <div style={{ maxWidth: 1088, width: '100%', display: 'flex', flexDirection: 'column', gap: 0 }}>
           <p style={{
             fontFamily: 'Outfit', fontWeight: 700, fontSize: 24,
             lineHeight: '150%', color: '#000',
@@ -104,7 +106,7 @@ export default function ContactPage() {
       {/* ── Phone Banner ── */}
       <section style={{
         background: '#3a3a3a',
-        padding: '48px 76px',
+        padding: 'clamp(32px,4vw,48px) clamp(20px,5vw,76px)',
         boxSizing: 'border-box',
         display: 'flex',
         flexDirection: 'column',
@@ -129,7 +131,7 @@ export default function ContactPage() {
           <a href="tel:5204586781" style={{
             fontFamily: 'Outfit, sans-serif',
             fontWeight: 700,
-            fontSize: 56,
+            fontSize: 'clamp(32px, 6vw, 56px)',
             lineHeight: 1,
             color: '#fff',
             textDecoration: 'none',
@@ -140,7 +142,7 @@ export default function ContactPage() {
         </div>
 
         {/* Buttons */}
-        <div style={{ display: 'flex', gap: 16 }}>
+        <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
           <a href="tel:5204586781" className="btn-dark" style={{
             display: 'inline-flex', alignItems: 'center', gap: 10,
             padding: '14px 28px',
@@ -169,12 +171,12 @@ export default function ContactPage() {
       {/* ── Office Hours + Photo ── */}
       <section style={{
         background: '#fff',
-        padding: '75px 76px',
+        padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,76px)',
         boxSizing: 'border-box',
       }}>
-        <div style={{
+        <div className="contact-grid" style={{
           maxWidth: 1290, margin: '0 auto',
-          display: 'flex', alignItems: 'center', gap: 80, flexWrap: 'wrap',
+          display: 'flex', alignItems: 'center', gap: 'clamp(32px,5vw,80px)', flexWrap: 'wrap',
         }}>
           {/* Left – hours */}
           <div style={{
@@ -194,7 +196,7 @@ export default function ContactPage() {
             <h2 style={{
               alignSelf: 'stretch',
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 48, lineHeight: '120%', color: '#000',
+              fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#000',
               margin: 0,
             }}>
               Office Hours:
@@ -202,7 +204,7 @@ export default function ContactPage() {
 
             {/* Hours table */}
             <div style={{
-              display: 'flex', width: 574, padding: '30px 10px',
+              display: 'flex', width: '100%', maxWidth: 574, padding: '30px 10px',
               flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
               gap: 10, borderRadius: 10,
               border: '1px solid #DADADA',
@@ -252,16 +254,19 @@ export default function ContactPage() {
       <section style={{
         display: 'flex',
         width: '100%',
-        padding: '75px',
+        padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,75px)',
         justifyContent: 'space-between',
         alignItems: 'center',
-        gap: 75,
+        gap: 'clamp(32px,5vw,75px)',
+        flexWrap: 'wrap',
         background: 'var(--shape-fill)',
         boxSizing: 'border-box',
       }}>
           {/* Left – map embed */}
           <div style={{
-            width: 593,
+            flex: '1 1 280px',
+            maxWidth: 593,
+            width: '100%',
             flexShrink: 0,
             borderRadius: 16,
             overflow: 'hidden',
@@ -281,7 +286,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right – address */}
-          <div style={{ display: 'flex', width: 622, flexDirection: 'column', alignItems: 'flex-start', gap: 30, flexShrink: 0 }}>
+          <div style={{ display: 'flex', flex: '1 1 280px', maxWidth: 622, flexDirection: 'column', alignItems: 'flex-start', gap: 30 }}>
             {/* LOCATION pill */}
             <div style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
@@ -294,7 +299,7 @@ export default function ContactPage() {
 
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 48, lineHeight: '120%', color: '#000', margin: 0,
+              fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#000', margin: 0,
             }}>
               Visit our Office
             </h2>
@@ -339,15 +344,16 @@ export default function ContactPage() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '75px 76px',
+        padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,76px)',
         boxSizing: 'border-box',
         background: '#fff',
       }}>
         {/* Card */}
         <div style={{
           display: 'flex',
-          width: 1290,
-          padding: '100px',
+          width: '100%',
+          maxWidth: 1290,
+          padding: 'clamp(40px,6vw,100px)',
           justifyContent: 'center',
           alignItems: 'center',
           gap: 10,
@@ -365,13 +371,14 @@ export default function ContactPage() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          gap: 60,
+          gap: 'clamp(32px,5vw,60px)',
+          flexWrap: 'wrap',
         }}>
           {/* Left – heading & subtext */}
-          <div style={{ flex: '1 1 0', maxWidth: 480 }}>
+          <div style={{ flex: '1 1 240px', maxWidth: 480 }}>
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
-              fontSize: 48, lineHeight: '120%', color: '#fff', margin: '0 0 20px',
+              fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#fff', margin: '0 0 20px',
             }}>
               Request a Free Estimate
             </h2>
@@ -385,7 +392,8 @@ export default function ContactPage() {
 
           {/* Right – form */}
           <form onSubmit={handleSubmit} style={{
-            flex: '0 0 540px',
+            flex: '1 1 280px',
+            maxWidth: 540,
             display: 'flex', flexDirection: 'column', gap: 16,
           }}>
             <input

@@ -49,7 +49,7 @@ function ServiceCard({ s }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        width: 403, minHeight: 411,
+        width: 'clamp(260px, 30vw, 403px)', minHeight: 411,
         borderRadius: 10,
         overflow: 'hidden',
         display: 'flex', flexDirection: 'column',
@@ -101,18 +101,18 @@ function ServiceCard({ s }) {
 
 export default function Services() {
   return (
-    <section id="services" style={{ padding: '50px 75px 75px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 50 }}>
+    <section id="services" style={{ padding: 'clamp(40px,5vw,50px) clamp(20px,5vw,75px) clamp(48px,6vw,75px)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'clamp(32px,4vw,50px)' }}>
       {/* Header */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, width: '100%', maxWidth: 1290 }}>
         <SectionLabel text="SERVICES" />
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 48,
+          fontSize: 'clamp(28px, 4vw, 48px)',
           lineHeight: '120%',
           textAlign: 'center',
           color: '#000',
-          width: 608,
+          maxWidth: 608,
           margin: 0,
         }}>
           Comprehensive{' '}
@@ -124,11 +124,11 @@ export default function Services() {
       </div>
 
       {/* Cards */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 40, width: '100%', maxWidth: 1290 }}>
-        <div style={{ display: 'flex', gap: 40, justifyContent: 'center' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(24px,3vw,40px)', width: '100%', maxWidth: 1290 }}>
+        <div className="services-row" style={{ display: 'flex', gap: 'clamp(16px,3vw,40px)', justifyContent: 'center', flexWrap: 'wrap' }}>
           {services.slice(0, 3).map((s, i) => <ServiceCard key={i} s={s} />)}
         </div>
-        <div style={{ display: 'flex', gap: 40, justifyContent: 'center' }}>
+        <div className="services-row" style={{ display: 'flex', gap: 'clamp(16px,3vw,40px)', justifyContent: 'center', flexWrap: 'wrap' }}>
           {services.slice(3).map((s, i) => <ServiceCard key={i} s={s} />)}
         </div>
       </div>

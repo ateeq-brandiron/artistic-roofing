@@ -3,16 +3,17 @@ export default function About() {
     <section id="about-us" style={{
       width: '100%',
       background: '#fff',
-      padding: '75px',
+      padding: 'clamp(48px,6vw,75px) clamp(20px,5vw,75px)',
       display: 'flex',
       alignItems: 'flex-start',
       justifyContent: 'space-between',
       gap: 48,
+      flexWrap: 'wrap',
       boxSizing: 'border-box',
     }}>
 
       {/* Left column */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, maxWidth: 622, flex: '1 1 340px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 28, maxWidth: 622, flex: '1 1 300px', minWidth: 0 }}>
 
         {/* Label */}
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)', alignSelf: 'flex-start' }}>
@@ -24,7 +25,7 @@ export default function About() {
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 48,
+          fontSize: 'clamp(28px, 4vw, 48px)',
           lineHeight: '120%',
           color: '#000',
           margin: 0,
@@ -57,7 +58,8 @@ export default function About() {
         {/* Blue info box */}
         <div style={{
           display: 'flex',
-          width: 623,
+          width: '100%',
+          maxWidth: 623,
           padding: '11px 0',
           justifyContent: 'center',
           alignItems: 'center',
@@ -67,7 +69,7 @@ export default function About() {
           background: 'var(--shape-fill)',
           boxSizing: 'border-box',
         }}>
-          <p style={{ width: 560, flexShrink: 0, fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0 }}>
+          <p style={{ width: '100%', maxWidth: 560, fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: '120%', color: 'var(--color-3)', margin: 0 }}>
             Our commitment to safety includes{' '}
             <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Polyglass roof coating training,</span>
             {' '}giving customers confidence that every project follows established standards for quality, safety, and long-term performance.
@@ -79,7 +81,7 @@ export default function About() {
       <div style={{
         flexShrink: 0,
         width: 'min(587px, 100%)',
-        height: 644,
+        height: 'clamp(400px, 55vw, 644px)',
         padding: '535px 21px 32px 21px',
         display: 'flex',
         flexDirection: 'column',

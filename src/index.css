@@ -249,6 +249,218 @@ button {
   .mobile-btn  { display: flex !important; }
 }
 
+/* ══════════════════════════════════════════
+   RESPONSIVE FOUNDATION
+   Breakpoints: 640px (sm), 768px (md), 960px (lg)
+   ══════════════════════════════════════════ */
+
+/* ─── Hero sections ─── */
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 520px !important;
+    padding: 0 24px 48px !important;
+  }
+  .page-hero h1 {
+    font-size: clamp(32px, 8vw, 52px) !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ─── Section padding – fluid ─── */
+.section-pad {
+  padding: clamp(48px, 6vw, 75px) clamp(20px, 5vw, 76px);
+  box-sizing: border-box;
+}
+
+/* ─── Two-column flex → stack on mobile ─── */
+@media (max-width: 768px) {
+  .col-split {
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+  .col-split > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+}
+
+/* ─── Service cards grid ─── */
+@media (max-width: 960px) {
+  .services-row {
+    flex-wrap: wrap !important;
+  }
+  .services-row > * {
+    width: calc(50% - 20px) !important;
+    min-width: 260px !important;
+  }
+}
+@media (max-width: 560px) {
+  .services-row > * {
+    width: 100% !important;
+  }
+}
+
+/* ─── Why Us feature grid ─── */
+@media (max-width: 640px) {
+  .whyus-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ─── Testimonial slider cards ─── */
+@media (max-width: 640px) {
+  .testimonial-slider {
+    flex-direction: column !important;
+  }
+}
+
+/* ─── Core values cards ─── */
+@media (max-width: 960px) {
+  .core-values-row {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .core-values-row > * {
+    width: calc(50% - 16px) !important;
+    min-width: 260px !important;
+  }
+}
+@media (max-width: 560px) {
+  .core-values-row > * {
+    width: 100% !important;
+  }
+}
+
+/* ─── About page story section ─── */
+@media (max-width: 900px) {
+  .story-left {
+    display: none !important;
+  }
+}
+
+/* ─── Contact page grid ─── */
+@media (max-width: 900px) {
+  .contact-grid {
+    flex-direction: column !important;
+  }
+  .contact-grid > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+}
+
+/* ─── Process timeline ─── */
+@media (max-width: 768px) {
+  .timeline-row {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .timeline-row .step-img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+}
+
+/* ─── Footer ─── */
+@media (max-width: 640px) {
+  .footer-middle {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+  .footer-middle .footer-links {
+    flex-wrap: wrap !important;
+    gap: 8px 0 !important;
+  }
+}
+
+/* ─── FAQ layout ─── */
+@media (max-width: 768px) {
+  .faq-wrap {
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+  .faq-wrap .faq-heading {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ─── ServicesPage cards ─── */
+@media (max-width: 960px) {
+  .services-page-commercial {
+    flex-wrap: wrap !important;
+  }
+  .services-page-commercial > * {
+    flex: 1 1 calc(50% - 20px) !important;
+    min-width: 280px !important;
+  }
+}
+@media (max-width: 640px) {
+  .services-page-commercial > * {
+    flex: 1 1 100% !important;
+  }
+}
+
+/* ─── Cert circles ─── */
+@media (max-width: 640px) {
+  .cert-circles {
+    gap: 40px !important;
+  }
+  .cert-circle-wrap {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  .cert-inner {
+    width: 128px !important;
+    height: 128px !important;
+  }
+}
+
+/* ─── About EST badges ─── */
+@media (max-width: 640px) {
+  .about-badges {
+    flex-direction: column !important;
+  }
+}
+
+/* ─── Testimonials page review cards ─── */
+@media (max-width: 768px) {
+  .review-grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+  .review-grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ─── ScrollBar (ticker) ─── */
+@media (max-width: 640px) {
+  .scrollbar-item {
+    font-size: 13px !important;
+    gap: 12px !important;
+  }
+}
+
+/* ─── Prevent any fixed-width overflow ─── */
+.no-overflow {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* ─── Mobile: prevent hard-coded width overflow ─── */
+@media (max-width: 600px) {
+  [style*="width: 623"] { width: 100% !important; }
+  [style*="width: 608"] { width: 100% !important; }
+  [style*="width: 407"] { width: 100% !important; }
+  [style*="width: 749"] { width: auto !important; }
+  [style*="width: 812"] { width: auto !important; }
+  [style*="width: 1038"] { width: auto !important; }
+}
+
 /* ─── Modern global polish ─── */
 
 /* Smooth all interactive elements */

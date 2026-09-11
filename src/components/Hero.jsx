@@ -5,7 +5,7 @@ export default function Hero() {
     <section id="hero" style={{
       position: 'relative',
       width: '100%',
-      minHeight: 819,
+      minHeight: 'clamp(520px, 70vh, 819px)',
       backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/homepage/Home%20Hero.png)',
       backgroundSize: 'cover',
       backgroundPosition: '50% 50%',
@@ -15,15 +15,15 @@ export default function Hero() {
       overflow: 'hidden',
     }}>
 
-      <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px) 72px' }}>
+      <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px) clamp(40px,5vw,72px)' }}>
         {/* Row: left col + right col */}
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
           {/* Left – Headline + tagline */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, width: 628, maxWidth: '100%' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: '100%', flex: '1 1 320px' }}>
             <h1 style={{
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
-              fontSize: 60,
+              fontSize: 'clamp(32px, 5vw, 60px)',
               lineHeight: '120%',
               color: '#fff',
               margin: 0,
@@ -33,7 +33,7 @@ export default function Hero() {
             <p style={{
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 500,
-              fontSize: 20,
+              fontSize: 'clamp(16px, 2vw, 20px)',
               lineHeight: '120%',
               color: '#fff',
               margin: 0,
@@ -43,11 +43,11 @@ export default function Hero() {
           </div>
 
           {/* Right – paragraph + CTA */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 30, flex: 1, minWidth: 280, maxWidth: 560 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 30, flex: '1 1 280px', maxWidth: 560 }}>
             <p style={{
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 500,
-              fontSize: 20,
+              fontSize: 'clamp(15px, 1.8vw, 20px)',
               lineHeight: '120%',
               color: '#fff',
               margin: 0,
@@ -65,13 +65,13 @@ export default function Hero() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: 20,
-                padding: '15px 20px',
+                padding: 'clamp(12px,2vw,15px) clamp(16px,2vw,20px)',
                 background: '#fff',
                 border: '2px solid #fff',
                 borderRadius: 10,
                 fontFamily: 'Outfit, sans-serif',
                 fontWeight: 600,
-                fontSize: 18,
+                fontSize: 'clamp(15px, 1.8vw, 18px)',
                 color: '#1e1e1e',
                 textDecoration: 'none',
                 whiteSpace: 'nowrap',

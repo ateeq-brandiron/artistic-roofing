@@ -134,7 +134,7 @@ export default function TestimonialsPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 819,
+        minHeight: 'clamp(480px, 65vh, 819px)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.50) 71.27%, rgba(0,0,0,0.75) 100%), url(/img/testimonials/Testimonials%20Hero.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
@@ -142,7 +142,9 @@ export default function TestimonialsPage() {
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'flex-start',
-        padding: '0 76px 72px',
+        padding: 'clamp(20px,5vw,76px)',
+        paddingTop: 0,
+        paddingBottom: 'clamp(40px,5vw,72px)',
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
@@ -158,11 +160,11 @@ export default function TestimonialsPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 60,
+          fontSize: 'clamp(32px, 5vw, 60px)',
           lineHeight: '120%',
           color: '#fff',
           margin: 0,
-          width: 749,
+          maxWidth: 749,
         }}>
           Artistic Roofing Systems: Roofing Company Reviews in Sierra Vista, AZ
         </h1>
@@ -174,13 +176,13 @@ export default function TestimonialsPage() {
       {/* ── Intro ── */}
       <section style={{
         background: 'var(--shape-fill)',
-        padding: '60px 76px',
+        padding: 'clamp(40px,5vw,60px) clamp(20px,5vw,76px)',
         boxSizing: 'border-box',
       }}>
         <p style={{
-          fontFamily: 'Outfit', fontWeight: 400, fontSize: 24,
+          fontFamily: 'Outfit', fontWeight: 400, fontSize: 'clamp(16px, 2vw, 24px)',
           lineHeight: '150%', color: '#000',
-          textAlign: 'center', width: 1038, margin: '0 auto',
+          textAlign: 'center', maxWidth: 1038, margin: '0 auto',
         }}>
           These roofing company reviews in Sierra Vista, AZ highlight the quality craftsmanship, professionalism, and long-term value we provide. Whether it's a new roof installation, leak repair, seamless gutters, or custom patio covers, our customers share why they continue to recommend{' '}
           <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Artistic Roofing Systems</span>
@@ -189,7 +191,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* ── Review Groups ── */}
-      <section style={{ background: '#fff', padding: '75px 76px', boxSizing: 'border-box' }}>
+      <section style={{ background: '#fff', padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,76px)', boxSizing: 'border-box' }}>
         <div style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 56 }}>
           {groups.map((group, gi) => (
             <div key={gi}>
@@ -212,7 +214,7 @@ export default function TestimonialsPage() {
                   <h2 style={{
                     fontFamily: 'Playfair Display, serif',
                     fontWeight: 800,
-                    fontSize: 30,
+                    fontSize: 'clamp(20px, 3vw, 30px)',
                     lineHeight: '120%',
                     color: '#000',
                     margin: 0,
@@ -224,15 +226,17 @@ export default function TestimonialsPage() {
               </div>
 
               {/* Cards grid */}
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: group.cols === 1
-                  ? '1fr'
-                  : group.cols === 2
-                    ? 'repeat(2, 1fr)'
-                    : 'repeat(3, 1fr)',
-                gap: 20,
-              }}>
+              <div
+                className={group.cols === 3 ? 'review-grid-3' : group.cols === 2 ? 'review-grid-2' : ''}
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: group.cols === 1
+                    ? '1fr'
+                    : group.cols === 2
+                      ? 'repeat(2, 1fr)'
+                      : 'repeat(3, 1fr)',
+                  gap: 20,
+                }}>
                 {group.reviews.map((r, ri) => <ReviewCard key={ri} review={r} />)}
               </div>
             </div>
@@ -241,10 +245,11 @@ export default function TestimonialsPage() {
       </section>
 
       {/* ── CTA ── */}
-      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 75px 75px', boxSizing: 'border-box' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 clamp(20px,5vw,75px) clamp(40px,5vw,75px)', boxSizing: 'border-box' }}>
         <section style={{
           display: 'flex',
-          width: 1290,
+          width: '100%',
+          maxWidth: 1290,
           padding: '80px 100px',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -261,7 +266,7 @@ export default function TestimonialsPage() {
         }}>
           <h2 style={{
             fontFamily: 'Playfair Display, serif', fontWeight: 900,
-            fontSize: 48, lineHeight: '120%', color: '#fff', margin: 0,
+            fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#fff', margin: 0,
           }}>
             Why Homeowners Trust Artistic Roofing Systems
           </h2>
