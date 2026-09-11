@@ -73,9 +73,10 @@ export default function WhyUs() {
       {/* Right — 2×3 feature grid */}
       <div className="whyus-grid" style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(2, minmax(180px, 280px))',
+        gridTemplateColumns: 'repeat(2, minmax(0, 280px))',
         gap: 'clamp(20px,3vw,32px) clamp(24px,4vw,48px)',
         flex: '1 1 320px',
+        minWidth: 0,
       }}>
         {features.map((f, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>

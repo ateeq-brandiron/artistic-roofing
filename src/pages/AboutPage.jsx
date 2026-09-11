@@ -224,12 +224,12 @@ export default function AboutPage() {
           {/* Right — text */}
           <div style={{
             display: 'flex',
-            height: 487,
-            padding: '60px 0',
+            padding: 'clamp(24px,4vw,60px) 0',
             flexDirection: 'column',
             alignItems: 'flex-start',
             gap: 30,
-            flex: '1 0 0',
+            flex: '1 1 280px',
+            minWidth: 0,
             boxSizing: 'border-box',
           }}>
             {/* Label pill */}
@@ -251,7 +251,7 @@ export default function AboutPage() {
               alignSelf: 'stretch',
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
-              fontSize: 48,
+              fontSize: 'clamp(28px, 4vw, 48px)',
               lineHeight: '120%',
               color: '#000',
               margin: 0,
