@@ -130,7 +130,7 @@ function ResidentialCard({ s }) {
         height: 'clamp(420px, 50vw, 583px)',
         padding: '30px 17px',
         flexDirection: 'column',
-        justifyContent: 'flex-start',
+        justifyContent: 'flex-end',
         alignItems: 'center',
         gap: 10,
         borderRadius: 10,
