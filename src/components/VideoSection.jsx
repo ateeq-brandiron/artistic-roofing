@@ -30,6 +30,7 @@ export default function VideoSection() {
             src="/DJI_0136%20(1).mp4"
             autoPlay
             controls
+            onEnded={() => setPlaying(false)}
             style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
           />
         ) : (
@@ -76,29 +77,6 @@ export default function VideoSection() {
               </svg>
             </div>
 
-            {/* Bottom gradient */}
-            <div style={{
-              position: 'absolute', bottom: 0, left: 0, right: 0,
-              background: 'linear-gradient(0deg, rgba(0,0,0,0.75) 0%, transparent 100%)',
-              padding: '24px 20px 12px',
-              display: 'flex', flexDirection: 'column', gap: 8,
-            }}>
-              <div style={{ width: '100%', height: 3, background: 'rgba(255,255,255,0.3)', borderRadius: 2 }}>
-                <div style={{ width: '33%', height: '100%', background: '#ff0000', borderRadius: 2 }} />
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-                  <img src="/img/ico-play.svg" alt="" style={{ width: 18, height: 18, filter: 'brightness(0) invert(1)' }} />
-                  <img src="/img/ico-next.svg" alt="" style={{ width: 18, height: 18, filter: 'brightness(0) invert(1)' }} />
-                  <img src="/img/ico-sound.svg" alt="" style={{ width: 18, height: 18, filter: 'brightness(0) invert(1)' }} />
-                  <span style={{ fontFamily: 'Outfit, sans-serif', fontSize: 13, color: '#fff' }}>0:00 / 1:30</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <img src="/img/ico-hd.svg" alt="" style={{ height: 16 }} />
-                  <img src="/img/ico-fullscreen.svg" alt="" style={{ width: 18, height: 18, filter: 'brightness(0) invert(1)' }} />
-                </div>
-              </div>
-            </div>
           </>
         )}
       </div>
