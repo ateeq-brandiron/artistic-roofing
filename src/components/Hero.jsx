@@ -23,8 +23,8 @@ export default function Hero() {
             <h1 style={{
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
-              fontSize: 'clamp(36px, 5.5vw, 72px)',
-              lineHeight: '115%',
+              fontSize: 'clamp(32px, 5vw, 60px)',
+              lineHeight: '120%',
               color: '#fff',
               margin: 0,
             }}>
@@ -33,8 +33,8 @@ export default function Hero() {
             <p style={{
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 500,
-              fontSize: 'clamp(16px, 2vw, 20px)',
-              lineHeight: '150%',
+              fontSize: 'clamp(15px, 1.6vw, 18px)',
+              lineHeight: '140%',
               color: '#fff',
               margin: 0,
             }}>
@@ -47,8 +47,8 @@ export default function Hero() {
             <p style={{
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 500,
-              fontSize: 'clamp(16px, 1.8vw, 20px)',
-              lineHeight: '170%',
+              fontSize: 'clamp(15px, 1.6vw, 18px)',
+              lineHeight: '160%',
               color: '#fff',
               margin: 0,
               alignSelf: 'stretch',
