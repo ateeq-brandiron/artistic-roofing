@@ -140,17 +140,16 @@ export default function TestimonialsPage() {
         backgroundPosition: '50% 50%',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-start',
+        justifyContent: 'flex-end',
         alignItems: 'flex-start',
         padding: 'clamp(20px,5vw,76px)',
-        paddingTop: 140,
-        paddingBottom: 'clamp(60px,6vw,96px)',
+        paddingBottom: 'clamp(48px,5vw,80px)',
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
 
         {/* Breadcrumb */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 20, alignSelf: 'stretch', marginBottom: 16 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 20, alignSelf: 'stretch', marginBottom: 10 }}>
           <Link to="/" style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', letterSpacing: '0.06em' }}>HOMEPAGE</Link>
           <img src="/img/testimonials/caret-right.svg" alt="" style={{ width: 8, height: 13 }} />
           <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.9)', letterSpacing: '0.06em' }}>TESTIMONIALS</span>
@@ -160,8 +159,8 @@ export default function TestimonialsPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(32px, 5vw, 60px)',
-          lineHeight: '120%',
+          fontSize: 'clamp(28px, 4vw, 48px)',
+          lineHeight: '118%',
           color: '#fff',
           margin: 0,
           maxWidth: 749,
@@ -197,7 +196,7 @@ export default function TestimonialsPage() {
             <div key={gi}>
               {/* Group header */}
               <div style={{ marginBottom: 24 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 10 }}>
                   <div style={{
                     width: 36,
                     height: 36,
