@@ -51,7 +51,7 @@ function ServiceCard({ s }) {
       style={{
         flex: '1 1 260px',
         maxWidth: 403,
-        minHeight: 411,
+        minHeight: 440,
         borderRadius: 10,
         overflow: 'hidden',
         display: 'flex', flexDirection: 'column',
@@ -80,7 +80,7 @@ function ServiceCard({ s }) {
         background: hovered ? 'rgba(0,128,198,0.97)' : 'rgba(253,254,255,0.95)',
         borderRadius: 10,
         padding: 15,
-        display: 'flex', flexDirection: 'column', gap: 11,
+        display: 'flex', flexDirection: 'column', gap: 14,
         transition: 'background 0.3s ease',
       }}>
         <h3 style={{
@@ -109,7 +109,7 @@ export default function Services() {
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(28px, 4vw, 48px)',
+          fontSize: 'clamp(32px, 4.5vw, 56px)',
           lineHeight: '120%',
           textAlign: 'center',
           color: '#000',

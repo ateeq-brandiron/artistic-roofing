@@ -23,8 +23,8 @@ export default function Hero() {
             <h1 style={{
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
-              fontSize: 'clamp(32px, 5vw, 60px)',
-              lineHeight: '120%',
+              fontSize: 'clamp(36px, 5.2vw, 68px)',
+              lineHeight: '116%',
               color: '#fff',
               margin: 0,
             }}>
@@ -43,12 +43,12 @@ export default function Hero() {
           </div>
 
           {/* Right – paragraph + CTA */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 30, flex: '1 1 280px', maxWidth: 560 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 30, flex: '1 1 300px', maxWidth: 620 }}>
             <p style={{
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 500,
-              fontSize: 'clamp(15px, 1.6vw, 18px)',
-              lineHeight: '160%',
+              fontSize: 'clamp(16px, 1.7vw, 19px)',
+              lineHeight: '165%',
               color: '#fff',
               margin: 0,
               alignSelf: 'stretch',

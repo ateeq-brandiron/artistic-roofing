@@ -25,7 +25,7 @@ export default function About() {
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(28px, 4vw, 48px)',
+          fontSize: 'clamp(32px, 4.5vw, 56px)',
           lineHeight: '120%',
           color: '#000',
           margin: 0,

@@ -53,13 +53,13 @@ export default function Navbar() {
 
       <div style={{
         maxWidth: 1440, margin: '0 auto',
-        padding: '19px clamp(20px,3vw,43px) 15px clamp(20px,3.5vw,50px)',
+        padding: '22px clamp(20px,3vw,43px) 18px clamp(20px,3.5vw,50px)',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         gap: 24,
       }}>
         {/* Logo */}
         <Link to="/" className="logo-hover" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
-          <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 48, width: 'auto' }} />
+          <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto' }} />
         </Link>
 
         {/* Desktop nav */}

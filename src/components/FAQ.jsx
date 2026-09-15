@@ -49,7 +49,7 @@ export default function FAQ() {
           width: 407,
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 48,
+          fontSize: 'clamp(36px, 4.5vw, 56px)',
           lineHeight: '120%',
           color: '#000',
           margin: 0,
