@@ -299,10 +299,10 @@ export default function ServicesPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 'clamp(560px, 75vh, 900px)',
+        minHeight: 'max(500px, 66.61vw)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.20) 100%), url(/img/services/Services%20Hero.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: '50% 50%',
+        backgroundSize: '100% auto',
+        backgroundPosition: 'center top',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-end',
