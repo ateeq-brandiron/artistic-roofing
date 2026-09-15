@@ -113,7 +113,7 @@ export default function AboutPage() {
         minHeight: 'max(580px, 56.25vw)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/about/About%20Us%20Hero.png)',
         backgroundSize: '100% auto',
-        backgroundPosition: 'center top',
+        backgroundPosition: 'center bottom',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-end',
