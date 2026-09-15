@@ -110,8 +110,8 @@ export default function AboutPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 'max(500px, 75vw)',
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.20) 100%), url(/img/about/About%20Us%20Hero.png)',
+        minHeight: 'max(580px, 56.25vw)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/about/About%20Us%20Hero.png)',
         backgroundSize: '100% auto',
         backgroundPosition: 'center top',
         display: 'flex',
