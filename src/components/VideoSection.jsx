@@ -10,7 +10,7 @@ export default function VideoSection() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      padding: 'clamp(40px,5vw,75px) clamp(20px,5vw,74px)',
+      padding: 'clamp(64px,7vw,96px) clamp(20px,5vw,74px)',
       boxSizing: 'border-box',
     }}>
       <div style={{

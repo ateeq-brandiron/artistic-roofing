@@ -71,7 +71,7 @@ export default function Certifications() {
       backgroundImage: 'url(/img/pattern.svg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      padding: 'clamp(60px,8vw,100px) clamp(24px,5vw,100px)',
+      padding: 'clamp(72px,9vw,112px) clamp(24px,5vw,100px)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',

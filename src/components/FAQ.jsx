@@ -30,7 +30,7 @@ export default function FAQ() {
     <section style={{
       width: '100%',
       background: '#fff',
-      padding: 'clamp(48px,6vw,80px) clamp(24px,5vw,80px)',
+      padding: 'clamp(64px,7vw,96px) clamp(24px,5vw,80px)',
       display: 'flex',
       alignItems: 'flex-start',
       justifyContent: 'center',

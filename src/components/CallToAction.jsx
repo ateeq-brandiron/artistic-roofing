@@ -15,7 +15,7 @@ export default function CallToAction() {
         margin: '0 auto',
         borderRadius: 20,
         overflow: 'hidden',
-        minHeight: 460,
+        minHeight: 540,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -39,7 +39,7 @@ export default function CallToAction() {
           alignItems: 'center',
           gap: 24,
           textAlign: 'center',
-          padding: '60px 40px',
+          padding: 'clamp(60px,8vw,96px) clamp(40px,6vw,80px)',
         }}>
           <h2 style={{
             fontFamily: 'Playfair Display, serif',

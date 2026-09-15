@@ -15,7 +15,7 @@ export default function Hero() {
       overflow: 'hidden',
     }}>
 
-      <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: 'clamp(80px,10vw,140px) clamp(20px,5vw,76px) clamp(60px,6vw,96px)' }}>
+      <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px) clamp(56px,6vw,88px)' }}>
         {/* Row: left col + right col */}
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
           {/* Left – Headline + tagline */}

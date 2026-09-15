@@ -102,7 +102,7 @@ function ServiceCard({ s }) {
 
 export default function Services() {
   return (
-    <section id="services" style={{ padding: 'clamp(40px,5vw,50px) clamp(20px,5vw,75px) clamp(48px,6vw,75px)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'clamp(32px,4vw,50px)' }}>
+    <section id="services" style={{ padding: 'clamp(64px,7vw,96px) clamp(20px,5vw,75px)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 'clamp(40px,5vw,64px)' }}>
       {/* Header */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, width: '100%', maxWidth: 1290 }}>
         <SectionLabel text="SERVICES" />

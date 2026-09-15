@@ -55,11 +55,11 @@ export default function Testimonials() {
     <section style={{
       width: '100%',
       background: 'var(--shape-fill)',
-      padding: 'clamp(48px,6vw,75px) clamp(24px,5vw,75px)',
+      padding: 'clamp(64px,7vw,96px) clamp(24px,5vw,75px)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      gap: 32,
+      gap: 48,
       boxSizing: 'border-box',
     }}>
 

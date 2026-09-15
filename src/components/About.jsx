@@ -3,11 +3,11 @@ export default function About() {
     <section id="about-us" style={{
       width: '100%',
       background: '#fff',
-      padding: 'clamp(48px,6vw,75px) clamp(20px,5vw,75px)',
+      padding: 'clamp(64px,7vw,96px) clamp(20px,5vw,75px)',
       display: 'flex',
       alignItems: 'flex-start',
       justifyContent: 'space-between',
-      gap: 48,
+      gap: 64,
       flexWrap: 'wrap',
       boxSizing: 'border-box',
     }}>

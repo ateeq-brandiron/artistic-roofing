@@ -18,7 +18,7 @@ export default function WhyUs() {
       display: 'flex',
       maxWidth: 1440,
       margin: '0 auto',
-      padding: 'clamp(48px,5vw,75px) clamp(20px,5vw,75px)',
+      padding: 'clamp(64px,7vw,96px) clamp(20px,5vw,75px)',
       justifyContent: 'space-between',
       alignItems: 'center',
       gap: 'clamp(40px,5vw,75px)',
