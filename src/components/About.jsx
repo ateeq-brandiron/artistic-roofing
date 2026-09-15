@@ -91,7 +91,7 @@ export default function About() {
         border: '1px solid #D1EFFF',
         backgroundImage: 'url(/img/homepage/Home%20-%20EST%20%2B%20Process%20-%20Step%204.jpg)',
         backgroundPosition: 'left top',
-        backgroundSize: '200% 100%',
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundColor: '#E8F8FF',
         boxSizing: 'border-box',

@@ -46,7 +46,7 @@ export default function WhyUs() {
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(32px, 4.5vw, 56px)',
+          fontSize: 'clamp(32px, 3.5vw, 48px)',
           lineHeight: '120%',
           color: '#fff',
           margin: 0,
