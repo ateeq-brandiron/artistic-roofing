@@ -28,7 +28,7 @@ export default function ContactPage() {
         minHeight: 'max(580px, 56.25vw)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/contact/Contact%20Hero.jpg)',
         backgroundSize: '100% auto',
-        backgroundPosition: 'center bottom',
+        backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
         display: 'flex',
         flexDirection: 'column',
