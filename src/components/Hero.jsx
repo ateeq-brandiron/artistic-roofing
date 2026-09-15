@@ -5,10 +5,10 @@ export default function Hero() {
     <section id="hero" style={{
       position: 'relative',
       width: '100%',
-      minHeight: 'clamp(600px, 80vh, 900px)',
-      backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/homepage/Home%20Hero.png)',
+      minHeight: 'clamp(600px, 90vh, 960px)',
+      backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/homepage/Home%20Hero.png)',
       backgroundSize: 'cover',
-      backgroundPosition: '50% 50%',
+      backgroundPosition: '50% 65%',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'flex-end',
