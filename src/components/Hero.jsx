@@ -5,7 +5,7 @@ export default function Hero() {
     <section id="hero" style={{
       position: 'relative',
       width: '100%',
-      minHeight: 'clamp(520px, 70vh, 819px)',
+      minHeight: 'clamp(600px, 80vh, 900px)',
       backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 36.6%, rgba(0,0,0,0.64) 71.27%, rgba(0,0,0,0.91) 100%), url(/img/homepage/Home%20Hero.png)',
       backgroundSize: 'cover',
       backgroundPosition: '50% 50%',
@@ -15,7 +15,7 @@ export default function Hero() {
       overflow: 'hidden',
     }}>
 
-      <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,76px) clamp(40px,5vw,72px)' }}>
+      <div style={{ position: 'relative', maxWidth: 1440, margin: '0 auto', width: '100%', padding: 'clamp(80px,10vw,140px) clamp(20px,5vw,76px) clamp(60px,6vw,96px)' }}>
         {/* Row: left col + right col */}
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
           {/* Left – Headline + tagline */}
@@ -23,8 +23,8 @@ export default function Hero() {
             <h1 style={{
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
-              fontSize: 'clamp(32px, 5vw, 60px)',
-              lineHeight: '120%',
+              fontSize: 'clamp(36px, 5.5vw, 72px)',
+              lineHeight: '115%',
               color: '#fff',
               margin: 0,
             }}>
@@ -34,7 +34,7 @@ export default function Hero() {
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 500,
               fontSize: 'clamp(16px, 2vw, 20px)',
-              lineHeight: '120%',
+              lineHeight: '150%',
               color: '#fff',
               margin: 0,
             }}>
@@ -47,8 +47,8 @@ export default function Hero() {
             <p style={{
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 500,
-              fontSize: 'clamp(15px, 1.8vw, 20px)',
-              lineHeight: '120%',
+              fontSize: 'clamp(16px, 1.8vw, 20px)',
+              lineHeight: '170%',
               color: '#fff',
               margin: 0,
               alignSelf: 'stretch',
@@ -65,7 +65,7 @@ export default function Hero() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: 20,
-                padding: 'clamp(12px,2vw,15px) clamp(16px,2vw,20px)',
+                padding: 'clamp(14px,2vw,18px) clamp(24px,2.5vw,36px)',
                 background: '#fff',
                 border: '2px solid #fff',
                 borderRadius: 10,

@@ -110,7 +110,7 @@ export default function AboutPage() {
       <section style={{
         position: 'relative',
         width: '100%',
-        minHeight: 'clamp(480px, 65vh, 819px)',
+        minHeight: 'clamp(560px, 75vh, 900px)',
         backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.20) 100%), url(/img/about/About%20Us%20Hero.png)',
         backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
@@ -119,8 +119,8 @@ export default function AboutPage() {
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
         padding: 'clamp(20px,5vw,76px)',
-        paddingTop: 120,
-        paddingBottom: 'clamp(40px,5vw,72px)',
+        paddingTop: 140,
+        paddingBottom: 'clamp(60px,6vw,96px)',
         boxSizing: 'border-box',
         overflow: 'hidden',
       }}>
@@ -136,7 +136,7 @@ export default function AboutPage() {
           position: 'relative',
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
-          fontSize: 'clamp(32px, 5vw, 60px)',
+          fontSize: 'clamp(36px, 5.5vw, 72px)',
           lineHeight: '120%',
           color: '#fff',
           margin: '0 0 16px',
