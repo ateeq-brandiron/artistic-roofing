@@ -107,7 +107,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ── Hero Banner ── */}
-      <section style={{
+      <section className="page-hero" style={{
         position: 'relative',
         width: '100%',
         minHeight: 'max(580px, 56.25vw)',

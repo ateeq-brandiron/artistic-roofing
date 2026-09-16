@@ -249,6 +249,15 @@ button {
   .mobile-btn  { display: flex !important; }
 }
 
+/* ─── Navbar: tighter margins on mobile ─── */
+@media (max-width: 768px) {
+  header {
+    left: 12px !important;
+    right: 12px !important;
+    top: 10px !important;
+  }
+}
+
 /* ══════════════════════════════════════════
    RESPONSIVE FOUNDATION
    Breakpoints: 640px (sm), 768px (md), 960px (lg)
@@ -256,12 +265,21 @@ button {
 
 /* ─── Hero sections ─── */
 @media (max-width: 768px) {
+  /* Home hero: tall enough so stacked content clears the fixed navbar */
+  #hero {
+    min-height: 740px !important;
+    background-size: cover !important;
+    background-position: center top !important;
+  }
+
+  /* Inner page heroes: cover so image fills on narrow screens */
   .page-hero {
-    min-height: 520px !important;
-    padding: 0 24px 48px !important;
+    min-height: 560px !important;
+    background-size: cover !important;
+    background-position: center center !important;
   }
   .page-hero h1 {
-    font-size: clamp(32px, 8vw, 52px) !important;
+    font-size: clamp(26px, 7vw, 48px) !important;
     width: auto !important;
     max-width: 100% !important;
   }

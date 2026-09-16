@@ -131,7 +131,7 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section style={{
+      <section className="page-hero" style={{
         position: 'relative',
         width: '100%',
         minHeight: 'max(580px, 56.25vw)',

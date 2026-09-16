@@ -296,7 +296,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section style={{
+      <section className="page-hero" style={{
         position: 'relative',
         width: '100%',
         minHeight: 'max(580px, 56.25vw)',
