@@ -33,13 +33,20 @@ function BodyBlock({ block }) {
         }}>{block.text}</h3>
       );
     case 'p':
-      return (
-        <p style={{
-          fontFamily: 'Outfit, sans-serif', fontWeight: 400,
-          fontSize: 'clamp(16px, 1.6vw, 18px)', lineHeight: '170%',
-          color: 'var(--color-3)', margin: '0 0 20px',
-        }}>{block.text}</p>
-      );
+      return block.html
+        ? (
+          <p style={{
+            fontFamily: 'Outfit, sans-serif', fontWeight: 400,
+            fontSize: 'clamp(16px, 1.6vw, 18px)', lineHeight: '170%',
+            color: 'var(--color-3)', margin: '0 0 20px',
+          }} dangerouslySetInnerHTML={{ __html: block.html }} />
+        ) : (
+          <p style={{
+            fontFamily: 'Outfit, sans-serif', fontWeight: 400,
+            fontSize: 'clamp(16px, 1.6vw, 18px)', lineHeight: '170%',
+            color: 'var(--color-3)', margin: '0 0 20px',
+          }}>{block.text}</p>
+        );
     case 'ul':
       return (
         <ul style={{ margin: '0 0 20px', paddingLeft: 24, display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -214,9 +221,11 @@ export default function BlogPostPage() {
           </p>
 
           {/* Body blocks */}
-          {post.body.map((block, i) => (
-            <BodyBlock key={i} block={block} />
-          ))}
+          <div className="blog-body">
+            {post.body.map((block, i) => (
+              <BodyBlock key={i} block={block} />
+            ))}
+          </div>
 
           {/* Back link */}
           <div style={{ marginTop: 56, paddingTop: 32, borderTop: '1px solid var(--shape-stroke)' }}>

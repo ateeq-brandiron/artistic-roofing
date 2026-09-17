@@ -37,7 +37,7 @@ const blogPosts = [
     body: [
       {
         type: 'p',
-        text: "Your roof is more than just a cover over your head; it's your first line of defense against the Arizona elements. Especially here in Sierra Vista, where the sun beats down relentlessly and our monsoon season can bring sudden, intense storms, a strong, reliable roof isn't just a luxury — it's a necessity. But when it comes time to repair or replace it, figuring out where to start can feel overwhelming.",
+        html: "Your roof is more than just a cover over your head; it's your first line of defense against the Arizona elements. Especially here in Sierra Vista, where the sun beats down relentlessly and our monsoon season can bring sudden, intense storms, a strong, reliable roof isn't just a luxury — it's a necessity. But when it comes time to <a href='/services'>repair or replace it</a>, figuring out where to start can feel overwhelming.",
       },
       {
         type: 'p',
@@ -119,6 +119,10 @@ const blogPosts = [
       },
       { type: 'h2', text: 'The Roofing Process: What to Expect' },
       {
+        type: 'p',
+        html: "While every project is unique, a <a href='/process'>typical re-roofing process</a> usually follows these steps:",
+      },
+      {
         type: 'ol',
         items: [
           'Initial Consultation & Inspection: Assessment of your existing roof and discussion of needs',
@@ -145,7 +149,7 @@ const blogPosts = [
       },
       {
         type: 'p',
-        text: "At Artistic Roofing Systems, we're proud to serve the Sierra Vista community. We believe in clear communication, quality workmanship, and standing behind every roof we install. If you're ready to discuss your roofing needs, we're here to help.",
+        html: "At <a href='/about'>Artistic Roofing Systems</a>, we're proud to serve the Sierra Vista community. We believe in clear communication, quality workmanship, and standing behind every roof we install. If you're ready to discuss your roofing needs, <a href='/contact'>we're here to help</a>.",
       },
       { type: 'h2', text: 'Frequently Asked Questions' },
       { type: 'h3', text: 'How long does a new roof typically last in Sierra Vista?' },
@@ -177,7 +181,7 @@ const blogPosts = [
     body: [
       {
         type: 'p',
-        text: "In a place like Sierra Vista, with scorching summers and sudden monsoon downpours, a roof isn't just a lid on your building — it's a critical shield. When it's time for a repair, a full replacement, or a new installation, picking the right roofing company isn't something you want to rush. You're not just hiring someone to put shingles on; you're investing in peace of mind.",
+        html: "In a place like Sierra Vista, with scorching summers and sudden monsoon downpours, a roof isn't just a lid on your building — it's a critical shield. When it's time for a repair, <a href='/services'>a full replacement, or a new installation</a>, picking the right roofing company isn't something you want to rush. You're not just hiring someone to put shingles on; you're investing in peace of mind. Here at <a href='/'>Artistic Roofing Systems</a>, we understand the unique challenges our desert climate throws at your roof.",
       },
       { type: 'h2', text: "Understanding Sierra Vista's Unique Roofing Needs" },
       {
@@ -193,7 +197,7 @@ const blogPosts = [
       { type: 'h3', text: '2. Proper Licensing and Insurance: No Exceptions' },
       {
         type: 'p',
-        text: "A legitimate roofing contractor in Sierra Vista must be properly licensed and insured. Ask for their license number and verify it through the Arizona Registrar of Contractors. They should carry both liability insurance and workers' compensation insurance — don't just take their word for it; ask for current certificates directly from their insurance provider.",
+        html: "A legitimate roofing contractor in Sierra Vista must be properly licensed and insured. Ask for their license number and verify it through the <a href='https://roc.az.gov/search' target='_blank' rel='noopener noreferrer'>Arizona Registrar of Contractors</a>. They should carry both liability insurance and workers' compensation insurance — don't just take their word for it; ask for current certificates directly from their insurance provider.",
       },
       { type: 'h3', text: '3. Transparent Communication and Clear Contracts' },
       {
@@ -217,7 +221,7 @@ const blogPosts = [
       { type: 'h3', text: '6. Excellent Reputation and References' },
       {
         type: 'p',
-        text: 'Check online reviews on Google, Yelp, and other local review sites. Pay attention to both positive and negative feedback and how the company responds. A good company should also be happy to provide contact information for past clients.',
+        html: "Check <a href='/testimonials'>online reviews</a> on Google, Yelp, and other local review sites. Pay attention to both positive and negative feedback and how the company responds. A good company should also be happy to provide contact information for past clients.",
       },
       { type: 'h2', text: 'The Installation Process: What to Expect' },
       { type: 'h3', text: 'Pre-Installation Walkthrough and Preparation' },
@@ -239,11 +243,15 @@ const blogPosts = [
         type: 'tip',
         text: "After gathering proposals and checking references, trust your gut. Did they listen to your concerns? Were they transparent? Did they make you feel confident in their abilities? These are the signals that matter.",
       },
+      {
+        type: 'p',
+        html: "Ready to protect your Sierra Vista property with a reliable, durable roof? <a href='/contact'>Schedule Your Roof Inspection</a>.",
+      },
       { type: 'h2', text: 'Frequently Asked Questions About Sierra Vista Roofing' },
       { type: 'h3', text: 'How often should I have my Sierra Vista roof inspected?' },
       {
         type: 'p',
-        text: "Given our intense climate, have your roof inspected at least once a year — preferably before monsoon season — and again after any major weather event like a strong hailstorm or heavy winds.",
+        html: "Given our intense climate, <a href='/services'>have your roof inspected</a> at least once a year — preferably before monsoon season — and again after any major weather event like a strong hailstorm or heavy winds.",
       },
       { type: 'h3', text: 'What are the best roofing materials for Sierra Vista\'s high heat?' },
       {
@@ -269,7 +277,7 @@ const blogPosts = [
     body: [
       {
         type: 'p',
-        text: "When you notice a leak after a monsoon or spot a few shingles missing after a windstorm, your first instinct is to get it fixed fast. You might be tempted to call the guy with a ladder and a truck who quoted half the price of a professional company. But there's a real difference between a handyman and a licensed, bonded, and insured roofing contractor.",
+        html: "When you notice a leak after a monsoon or spot a few shingles missing after a windstorm, your first instinct is to get it fixed fast. You might be tempted to call the guy with a ladder and a truck who quoted half the price of a professional company. But there's a real difference between a handyman and a licensed, bonded, and insured roofing contractor. At <a href='/'>Artistic Roofing</a>, we've spent over a decade fixing what uncertified work leaves behind.",
       },
       {
         type: 'p',
@@ -289,7 +297,7 @@ const blogPosts = [
       { type: 'h3', text: '3. Insurance' },
       {
         type: 'p',
-        text: "This is the big one. The two minimum insurance policies a roofing contractor should carry are general liability and workers' compensation. General liability covers damage to your home — like a worker accidentally putting a foot through your ceiling. Workers' comp covers the workers themselves. If a roofer is injured on your property and the company isn't insured, that worker could potentially pursue a claim against you for medical expenses and lost wages.",
+        html: "This is the big one. According to the <a href='https://www.nrcia.org/guide-to-choosing-a-professional-roofing-contractor/' target='_blank' rel='noopener noreferrer'>National Roofing Contractors Industry Alliance's guide to hiring a contractor</a>, the two minimum insurance policies a roofing contractor should carry are general liability and workers' compensation. General liability covers damage to your home — like a worker accidentally putting a foot through your ceiling. Workers' comp covers the workers themselves. If a roofer is injured on your property and the company isn't insured, that worker could potentially pursue a claim against you for medical expenses and lost wages.",
       },
       { type: 'h2', text: 'Insured vs. Uninsured: The Real Cost Comparison' },
       {
@@ -317,13 +325,13 @@ const blogPosts = [
       { type: 'h3', text: 'Custom Seamless Gutters' },
       {
         type: 'p',
-        text: "We fabricate 5\" and 6\" seamless gutters on-site instead of installing pre-made sections. Because the gutter is formed to the exact length of your roofline in one continuous piece, there are no seams along the run for water to find and exploit — which is usually where leaks and rust spots on sectional gutter systems start.",
+        html: "We fabricate 5\" and 6\" <a href='/services'>seamless gutters</a> on-site instead of installing pre-made sections. Because the gutter is formed to the exact length of your roofline in one continuous piece, there are no seams along the run for water to find and exploit — which is usually where leaks and rust spots on sectional gutter systems start.",
       },
       { type: 'h2', text: "The Hidden Costs of the 'Cheaper' Option" },
       { type: 'h3', text: 'A Voided Warranty' },
       {
         type: 'p',
-        text: "Most roofing material manufacturers won't honor their warranty if the product wasn't installed to spec. If an installer skips the specified nailing pattern or underlayment, the manufacturer's warranty on that shingle can be worthless — regardless of its original term. That's built into the warranty terms from day one.",
+        html: "Most roofing material manufacturers won't honor their warranty if the product wasn't installed to spec. If an installer skips the specified nailing pattern or underlayment, the manufacturer's warranty on that shingle can be worthless — regardless of its original term. When we handle your <a href='/services'>replacement or repair</a>, following manufacturer installation requirements is part of how we keep those warranties intact.",
       },
       { type: 'h3', text: 'The Home Resale Headache' },
       {
@@ -335,7 +343,7 @@ const blogPosts = [
         type: 'ul',
         items: [
           'Ask for a Certificate of Insurance (COI) directly from the contractor — not just a verbal confirmation. It should list both general liability and workers\' compensation coverage, with policy numbers and expiration dates.',
-          'Call the insurance carrier listed on the COI to confirm the policy is active.',
+          'Call the insurance carrier listed on the COI to confirm the policy is active — a certificate alone can be outdated or altered.',
           'Check the ROC license number on the Arizona Registrar of Contractors website to confirm it\'s current and in good standing.',
           'Ask about manufacturer certifications relevant to your roof type — TRI Certified for tile, Polyglass Certified for low-slope coatings.',
         ],
@@ -343,6 +351,10 @@ const blogPosts = [
       {
         type: 'tip',
         text: "Saving a few dollars on an uninsured worker is a gamble that rarely pays off. The cost of a problem down the line is almost always higher than the difference in the original quote.",
+      },
+      {
+        type: 'p',
+        html: "Whether you need a small repair, a full replacement, or a restoration coating for a commercial building, <a href='/contact'>get a free estimate</a> and we'll talk through what your roof actually needs.",
       },
       { type: 'h2', text: 'Frequently Asked Questions' },
       { type: 'h3', text: 'Is it illegal to hire an unlicensed contractor in Arizona?' },
@@ -390,12 +402,12 @@ const blogPosts = [
         items: [
           "Licensed: Proves they've met the state's requirements for competency and character",
           "Bonded: Provides consumer protection if the contractor fails to complete the job or meet legal obligations",
-          "Insured: Includes general liability and workers' compensation to protect both your property and the people working on it",
+          "Insured: Includes general liability and workers' compensation to protect both your property and the people working on it — the baseline for any reputable roofing company per the National Roofing Contractors Industry Alliance",
         ],
       },
       {
         type: 'p',
-        text: "Artistic Roofing is licensed, bonded, and insured — professional standards aren't optional to us, they're the foundation of every project we take on.",
+        html: "<a href='/'>Artistic Roofing</a> is licensed, bonded, and insured — professional standards aren't optional to us, they're the foundation of every project we take on. It's worth verifying this yourself too: the <a href='https://www.bbb.org/article/tips/14082-bbb-tip-roofing-contractors' target='_blank' rel='noopener noreferrer'>BBB's guide to hiring a roofing contractor</a> walks through what to check — accreditation, reviews, and licensing — before you sign anything.",
       },
       { type: 'h2', text: '2. Look for Longevity in the Local Community' },
       {
@@ -446,6 +458,10 @@ const blogPosts = [
         type: 'p',
         text: "For property managers and general contractors, the stakes are even higher. You need a partner who can handle new construction roofing or complex flat roof restorations with minimal disruption to tenants. Working with licensed and insured contractors isn't just a preference — it's a risk management necessity.",
       },
+      {
+        type: 'p',
+        html: "Whether it's a new tile roof for a residential build or a Polyglass coating for a light commercial warehouse, technical precision is what prevents future headaches. <a href='/contact'>Contact Artistic Roofing today</a> to talk through licensed, bonded, insured, and certified craftsmanship.",
+      },
       { type: 'h2', text: 'Frequently Asked Questions' },
       { type: 'h3', text: 'Why is it important to hire a TRI Certified installer for my tile roof?' },
       {
@@ -465,7 +481,12 @@ const blogPosts = [
       { type: 'h3', text: 'How do I verify if a contractor is actually licensed in Arizona?' },
       {
         type: 'p',
-        text: "You can check the Arizona Registrar of Contractors (ROC) website directly. A contractor worth hiring, like Artistic Roofing, will gladly provide their license number so you can verify their standing, bonding, and insurance status yourself.",
+        html: "You can check the <a href='https://roc.az.gov/search' target='_blank' rel='noopener noreferrer'>Arizona Registrar of Contractors (ROC) website</a> directly. A contractor worth hiring, like Artistic Roofing, will gladly provide their license number so you can verify their standing, bonding, and insurance status yourself.",
+      },
+      { type: 'h3', text: 'How often should I have my Arizona roof inspected?' },
+      {
+        type: 'p',
+        html: "Given our extreme heat and monsoon seasons, we recommend a professional inspection at least once a year, or after any major storm. <a href='/services'>Schedule a roof inspection</a> — catching small issues early is almost always more affordable than dealing with them after they've turned into bigger repairs.",
       },
     ],
   },

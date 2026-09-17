@@ -545,3 +545,12 @@ input:focus, textarea:focus, select:focus {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ─── Blog post inline links ─── */
+.blog-body a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s ease;
+}
+.blog-body a:hover { opacity: 0.75; }
