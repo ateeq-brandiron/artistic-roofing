@@ -6,6 +6,8 @@ import ProcessPage from './pages/ProcessPage';
 import ServicesPage from './pages/ServicesPage';
 import TestimonialsPage from './pages/TestimonialsPage';
 import ContactPage from './pages/ContactPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="services" element={<ServicesPage />} />
           <Route path="testimonials" element={<TestimonialsPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="blog/:slug" element={<BlogPostPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

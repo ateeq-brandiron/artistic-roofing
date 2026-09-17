@@ -538,3 +538,10 @@ input:focus, textarea:focus, select:focus {
   will-change: transform;
 }
 .img-zoom:hover img { transform: scale(1.05) !important; }
+
+/* ─── Blog grid ─── */
+@media (max-width: 640px) {
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
