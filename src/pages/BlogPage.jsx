@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 import blogPosts from '../data/blogPosts';
 
-const CATEGORIES = ['All', 'Roofing Tips', 'Maintenance', 'Monsoon Season', 'Project Spotlight', 'Company News', 'Gutters'];
-
 const CATEGORY_COLORS = {
   'Roofing Tips':      { bg: '#E8F8FF', color: '#0080C6' },
   'Maintenance':       { bg: '#E8F8FF', color: '#0080C6' },

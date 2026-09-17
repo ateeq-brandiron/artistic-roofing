@@ -319,7 +319,7 @@ const blogPosts = [
         type: 'p',
         text: "We fabricate 5\" and 6\" seamless gutters on-site instead of installing pre-made sections. Because the gutter is formed to the exact length of your roofline in one continuous piece, there are no seams along the run for water to find and exploit — which is usually where leaks and rust spots on sectional gutter systems start.",
       },
-      { type: 'h2', text: 'The Hidden Costs of the \"Cheaper\" Option' },
+      { type: 'h2', text: "The Hidden Costs of the 'Cheaper' Option" },
       { type: 'h3', text: 'A Voided Warranty' },
       {
         type: 'p',
