@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 import blogPosts from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 const CATEGORY_COLORS = {
   'Roofing Tips':      { bg: '#E8F8FF', color: '#0080C6' },
@@ -116,6 +117,11 @@ export default function BlogPage() {
 
   return (
     <>
+      <SEO
+        title="Roofing Tips & Advice Blog – Sierra Vista, AZ"
+        description="Roofing tips, maintenance guides, and local advice for Sierra Vista & Cochise County homeowners from Artistic Roofing Systems. Learn about tile, metal, shingles, gutters & monsoon prep."
+        canonical="/blog"
+      />
       {/* ── Hero ── */}
       <section className="page-hero" style={{
         position: 'relative',

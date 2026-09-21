@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Link, useLocation } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
@@ -106,6 +107,11 @@ export default function AboutPage() {
 
   return (
     <>
+      <SEO
+        title="About Us – Licensed Roofing Company in Sierra Vista, AZ"
+        description="Learn about Artistic Roofing Systems — Sierra Vista's trusted local roofer for over 10 years. TRI Certified, Polyglass Certified, BBB Accredited. Serving Cochise County, AZ."
+        canonical="/about"
+      />
       {/* ── Hero Banner ── */}
       <section className="page-hero" style={{
         position: 'relative',

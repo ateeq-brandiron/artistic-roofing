@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
+import SEO from '../components/SEO';
 
 const groups = [
   {
@@ -127,9 +128,43 @@ function ReviewCard({ review }) {
   );
 }
 
+const testimonialsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'RoofingContractor',
+  '@id': 'https://artisticroofingllc.com/#organization',
+  'name': 'Artistic Roofing Systems',
+  'aggregateRating': {
+    '@type': 'AggregateRating',
+    'ratingValue': '5',
+    'reviewCount': '13',
+    'bestRating': '5',
+    'worstRating': '1',
+  },
+  'review': [
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Tom S' }, 'reviewBody': 'Best roofing company in Cochise County, but I am biased.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Chase M' }, 'reviewBody': 'Best place to get a new roof.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Selina B' }, 'reviewBody': 'We had Artistic out to repair an area of our roof that a roofer in Tucson botched, and they fit us in despite how busy they are. The employees were friendly, fast, and thorough. Our roof looks great.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Andy H' }, 'reviewBody': 'Excellent work, excellent communication. Thank you. Quote was spot on, no surprises.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Allison B' }, 'reviewBody': 'They addressed roof leaks and determined the source of a window leak (stucco problem) that several others could not find. We were very impressed with their expertise and persistence.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Rick S' }, 'reviewBody': 'Harley and his team have proven to be knowledgeable, reliable, and innovative. I have been extremely satisfied in my experiences.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Rick D' }, 'reviewBody': 'Thanks again for the wonderful service; much appreciate your expertise and professionalism. Most of all though, I am grateful for your salt-of-the-earth humanness and warmth.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Leah R' }, 'reviewBody': 'Thank you so much for your relentless efforts and commitment to our clients. I always appreciate the opportunity to work with you.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Steven S' }, 'reviewBody': 'The best roofing company I have used by far in the Sierra Vista area. The bid price was very competitive and there were no surprise additions.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'Richard C' }, 'reviewBody': 'The roof is lovely – a great job! They even came back and pointed the line of the old tiles above the punch out, which was not part of the job.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'David K' }, 'reviewBody': 'They did a great job and I would recommend them to anyone.' },
+    { '@type': 'Review', 'reviewRating': { '@type': 'Rating', 'ratingValue': '5' }, 'author': { '@type': 'Person', 'name': 'A & T Carrillo' }, 'reviewBody': 'My wife and I thank you all for our beautiful new roof. All phases of the job – the estimate, tear-off of the old material, and final installation of the metal roof – were accomplished with professionalism.' },
+  ],
+};
+
 export default function TestimonialsPage() {
   return (
     <>
+      <SEO
+        title="Customer Reviews & Testimonials – Artistic Roofing Sierra Vista, AZ"
+        description="Read what Sierra Vista homeowners say about Artistic Roofing Systems. 5-star reviews for roof repair, replacement, tile, metal roofing, and seamless gutters across Cochise County."
+        canonical="/testimonials"
+        schema={testimonialsSchema}
+      />
       {/* ── Hero ── */}
       <section className="page-hero" style={{
         position: 'relative',

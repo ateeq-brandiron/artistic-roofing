@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Layout from './layouts/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -11,6 +12,7 @@ import BlogPostPage from './pages/BlogPostPage';
 
 function App() {
   return (
+    <HelmetProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -25,6 +27,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </HelmetProvider>
   );
 }
 

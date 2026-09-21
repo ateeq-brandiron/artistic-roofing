@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
@@ -295,6 +296,11 @@ export default function ServicesPage() {
 
   return (
     <>
+      <SEO
+        title="Roofing Services in Sierra Vista, AZ – Tile, Metal, Shingle & Gutters"
+        description="Expert roofing services in Sierra Vista & Cochise County, AZ. Residential & commercial roof repair, replacement, tile, metal, shingles, seamless gutters & patio covers. Free estimates."
+        canonical="/services"
+      />
       {/* ── Hero ── */}
       <section className="page-hero" style={{
         position: 'relative',

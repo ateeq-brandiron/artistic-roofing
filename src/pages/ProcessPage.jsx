@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
+import SEO from '../components/SEO';
 
 const steps = [
   {
@@ -48,6 +49,11 @@ const steps = [
 export default function ProcessPage() {
   return (
     <>
+      <SEO
+        title="Our Roofing Process – What to Expect in Sierra Vista, AZ"
+        description="See how Artistic Roofing Systems approaches every roofing project — from free inspection and estimate to installation and final walkthrough. No surprises, quality guaranteed."
+        canonical="/process"
+      />
       {/* ── Hero ── */}
       <section className="page-hero" style={{
         position: 'relative',

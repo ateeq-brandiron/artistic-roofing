@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
+import SEO from '../components/SEO';
 
 const hours = [
   { day: 'Monday – Friday', time: '7:30 AM – 4:00 PM', highlight: true },
@@ -21,6 +22,11 @@ export default function ContactPage() {
 
   return (
     <>
+      <SEO
+        title="Contact Us – Free Roofing Estimate in Sierra Vista, AZ"
+        description="Contact Artistic Roofing Systems for a free roofing estimate in Sierra Vista & Cochise County, AZ. Call (520) 458-6781 or send us a message. Licensed, bonded & insured."
+        canonical="/contact"
+      />
       {/* ── Hero ── */}
       <section className="page-hero" style={{
         position: 'relative',
