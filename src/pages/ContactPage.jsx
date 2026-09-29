@@ -11,7 +11,7 @@ const hours = [
 
 const cities = ['Sierra Vista', 'Hereford', 'Huachuca City', 'Benson', 'Sonoita', 'Patagonia', 'Tombstone'];
 
-const FORMSPREE_ENDPOINT = `https://formspree.io/f/${process.env.REACT_APP_FORMSPREE_ID || 'YOUR_FORM_ID'}`;
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/myezlngv';
 
 export default function ContactPage() {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
