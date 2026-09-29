@@ -35,11 +35,6 @@ export default function ContactPage() {
       name: form.name.value,
       email: form.email.value,
       phone: form.phone.value,
-      streetAddress: form.streetAddress.value,
-      addressLine2: form.addressLine2.value,
-      city: form.city.value,
-      state: form.state.value,
-      zip: form.zip.value,
       comments: form.comments.value,
     };
     try {
@@ -455,22 +450,6 @@ export default function ContactPage() {
                 Phone <span style={{ color: '#f87171' }}>*</span>
               </label>
               <input type="tel" name="phone" required disabled={status === 'sending'} style={fieldStyle} />
-            </div>
-
-            {/* Address */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
-                Address
-              </label>
-              <input type="text" name="streetAddress" placeholder="Street Address" disabled={status === 'sending'} style={{ ...fieldStyle, marginBottom: 8 }} />
-              <input type="text" name="addressLine2" placeholder="Address Line 2" disabled={status === 'sending'} style={fieldStyle} />
-            </div>
-
-            {/* City / State / ZIP */}
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              <input type="text" name="city" placeholder="City" disabled={status === 'sending'} style={{ ...fieldStyle, flex: '2 1 120px' }} />
-              <input type="text" name="state" placeholder="State" disabled={status === 'sending'} style={{ ...fieldStyle, flex: '1 1 60px' }} />
-              <input type="text" name="zip" placeholder="ZIP Code" disabled={status === 'sending'} style={{ ...fieldStyle, flex: '1 1 80px' }} />
             </div>
 
             {/* Comments */}
