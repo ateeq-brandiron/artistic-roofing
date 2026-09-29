@@ -517,7 +517,7 @@ export default function ContactPage() {
                 transition: 'background 0.2s, opacity 0.2s',
               }}
             >
-              {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message Sent ✓' : 'Submit'}
+              {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message Sent ✓' : 'Schedule Your Free Roofing Estimate'}
               {status === 'idle' && <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />}
             </button>
           </form>
