@@ -7,7 +7,7 @@ const navLinks = [
   { label: 'Process', path: '/process' },
   { label: 'Services', path: '/services' },
   { label: 'Testimonials', path: '/testimonials' },
-  { label: 'Blog', path: '/blog' },
+  // { label: 'Blog', path: '/blog' }, // uncomment when blog is approved
   { label: 'Contact us', path: '/contact' },
 ];
 
