@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 const steps = [
   {
     num: '01',
-    img: '/img/process/Process%20-%20Step%201.jpg',
+    img: '/img/process/process-step1.jpg',
     title: 'Step 1 – Consultation & Inspection',
     items: [
       'In-person visit to assess your roof, gutters, or structures',
@@ -15,7 +15,7 @@ const steps = [
   },
   {
     num: '02',
-    img: '/img/process/Rectangle%20227-2.png',
+    img: '/img/process/process-inspection.png',
     title: 'Step 2 – Detailed Proposal',
     items: [
       'Clear, written estimate outlining the scope of work and materials',
@@ -25,7 +25,7 @@ const steps = [
   },
   {
     num: '03',
-    img: '/img/process/Rectangle%20227-1.png',
+    img: '/img/process/process-proposal.png',
     title: 'Step 3 – Project Kickoff',
     items: [
       'On-time arrival of our skilled, experienced crew',
@@ -35,7 +35,7 @@ const steps = [
   },
   {
     num: '04',
-    img: '/img/process/Home%20-%20EST%20%2B%20Process%20-%20Step%204.jpg',
+    img: '/img/process/process-step4.jpg',
     pos: 'right center',
     bgSize: '280% auto',
     title: 'Step 4 – Quality Assurance & Walkthrough',
@@ -59,7 +59,7 @@ export default function ProcessPage() {
         position: 'relative',
         width: '100%',
         minHeight: 'max(580px, 56.25vw)',
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/process/Process%20Hero.png)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/process/process-hero.png)',
         backgroundSize: '100% auto',
         backgroundPosition: 'center bottom',
         display: 'flex',
@@ -120,7 +120,7 @@ export default function ProcessPage() {
           {/* Header */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 64 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
-              <img src="/img/process/icons/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <img src="/img/process/icons/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>PROCESS</span>
             </div>
             <h2 style={{

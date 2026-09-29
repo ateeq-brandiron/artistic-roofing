@@ -8,7 +8,7 @@ function SectionLabel({ text }) {
       padding: '7px 16px', background: '#fff',
       borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
     }}>
-      <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+      <img src="/img/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
       <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
     </div>
   );
@@ -36,7 +36,7 @@ const services = [
     desc: 'For low-slope or flat roofs, Artistic Roofing offers Polyglass-certified coatings designed to extend roof life and improve performance. This affordable maintenance service is recommended every 3 to 5 years to help maintain waterproofing, energy efficiency, and overall durability in Arizona\'s climate.',
   },
   {
-    bg: '/img/homepage/Home%20-%20Gutter%20Installation.jpg',
+    bg: '/img/homepage/home-gutter-installation.jpg',
     title: 'Gutter Installation and Maintenance',
     desc: 'Our seamless 5" and 6" gutter systems are custom-fabricated on-site and installed to assist with effective water control around your property. We use durable materials and precise slope alignment to help manage rainfall and minimize pooling or overflow. Available in multiple color options.',
   },

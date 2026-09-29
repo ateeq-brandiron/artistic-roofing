@@ -33,7 +33,7 @@ const blogPosts = [
     author: 'Artistic Roofing Systems',
     excerpt:
       'Navigating roofing in Sierra Vista, AZ? This buying guide helps homeowners and businesses understand local climate needs, materials, and how to choose the right roofer.',
-    image: '/img/blog-roofing-buying-guide.png',
+    image: '/img/blog/roofing-buying-guide.png',
     body: [
       {
         type: 'p',
@@ -177,7 +177,7 @@ const blogPosts = [
     author: 'Artistic Roofing Systems',
     excerpt:
       'Learn how to pick the best Sierra Vista roofing company — from local climate expertise to licensing, warranties, and what separates a good roofer from a great one.',
-    image: '/img/blog-sierra-vista-roofing-company.png',
+    image: '/img/blog/sierra-vista-roofing-company.png',
     body: [
       {
         type: 'p',
@@ -273,7 +273,7 @@ const blogPosts = [
     author: 'Artistic Roofing Systems',
     excerpt:
       'Hiring an uninsured roofer can leave you on the hook for accidents and subpar work. Here\'s what licensing, bonding, and insurance actually mean — and how to verify them before you sign.',
-    image: '/img/blog-insured-contractor-roofing.jpg',
+    image: '/img/blog/insured-contractor-roofing.jpg',
     body: [
       {
         type: 'p',
@@ -382,7 +382,7 @@ const blogPosts = [
     author: 'Artistic Roofing Systems',
     excerpt:
       'Trust in a roofing contractor is built on verifiable credentials, local history, and technical precision. Here\'s exactly what to look for when hiring in Sierra Vista or Cochise County.',
-    image: '/img/blog-roofing-contractor-trust.png',
+    image: '/img/blog/roofing-contractor-trust.png',
     body: [
       {
         type: 'p',

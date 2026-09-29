@@ -4,35 +4,35 @@ const allReviews = [
   {
     stars: 5,
     text: 'Artistic Roofing did a fantastic job on our replacement roof. Professional, fast, and detail-oriented',
-    photo: '/img/testimonials/source/0bf4306e31fb53c1da8c053abfe25cf657432806.jpg',
+    photo: '/img/testimonials/source/reviewer-google-1.jpg',
     name: 'Sarah M.',
     location: 'SIERRA VISTA',
   },
   {
     stars: 5,
     text: 'Best roofing company in Cochise County. Honest, reliable, and skilled',
-    photo: '/img/testimonials/source/57f0ffb0289abd7a4ed15a1f27a837ab2507dc33.jpg',
+    photo: '/img/testimonials/source/reviewer-google-2.jpg',
     name: 'Tom S',
     location: 'HOUSING ARTS',
   },
   {
     stars: 5,
     text: 'They addressed roof leaks and determined the source of a window leak that several others could not find.',
-    photo: '/img/testimonials/Rectangle 8.png',
+    photo: '/img/testimonials/reviewer-photo-1.png',
     name: 'Allison B.',
     location: 'SIERRA VISTA',
   },
   {
     stars: 5,
     text: 'Excellent work, excellent communication. Quote was spot on, no surprises.',
-    photo: '/img/testimonials/Rectangle 8-1.png',
+    photo: '/img/testimonials/reviewer-photo-2.png',
     name: 'Andy H.',
     location: 'COCHISE COUNTY',
   },
   {
     stars: 5,
     text: 'Thank you for the wonderful service; much appreciate your expertise and professionalism.',
-    photo: '/img/testimonials/Rectangle 8.png',
+    photo: '/img/testimonials/reviewer-photo-1.png',
     name: 'Rick D.',
     location: 'SIERRA VISTA',
   },
@@ -72,7 +72,7 @@ export default function Testimonials() {
           borderRadius: 100,
           boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
         }}>
-          <img src="/img/testimonials/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+          <img src="/img/testimonials/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
           <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>TESTIMONIALS</span>
         </div>
         <h2 style={{
@@ -98,7 +98,7 @@ export default function Testimonials() {
       }}>
         {/* Background image */}
         <div style={{
-          backgroundImage: 'url(/img/testimonials/Testimonials.png)',
+          backgroundImage: 'url(/img/testimonials/testimonials-bg.png)',
           backgroundSize: 'cover',
           backgroundPosition: '50% 50%',
           padding: 'clamp(24px,3vw,40px) clamp(16px,3vw,40px) 80px',

@@ -63,7 +63,7 @@ function Stars({ count }) {
   return (
     <div style={{ display: 'flex', gap: 4 }}>
       {Array.from({ length: count }).map((_, i) => (
-        <img key={i} src="/img/testimonials/Star 1.svg" alt="" style={{ width: 20, height: 20 }} />
+        <img key={i} src="/img/testimonials/star.svg" alt="" style={{ width: 20, height: 20 }} />
       ))}
     </div>
   );
@@ -170,7 +170,7 @@ export default function TestimonialsPage() {
         position: 'relative',
         width: '100%',
         minHeight: 'max(580px, 56.25vw)',
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/testimonials/Testimonials%20Hero.png)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/testimonials/testimonials-hero.png)',
         backgroundSize: '100% auto',
         backgroundPosition: 'center bottom',
         display: 'flex',
@@ -290,7 +290,7 @@ export default function TestimonialsPage() {
           alignItems: 'center',
           gap: 24,
           borderRadius: 10,
-          backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/testimonials/Testimonials%20-%20CTA.jpg)`,
+          backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/testimonials/testimonials-cta.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: '50% 50%',
           backgroundRepeat: 'no-repeat',

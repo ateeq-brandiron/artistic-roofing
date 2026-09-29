@@ -18,7 +18,7 @@ function CertCircle({ icon, name }) {
       <div style={{ position: 'relative', width: 200, height: 200, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {/* Dashed ring – spins on hover */}
         <img
-          src="/img/certs/Ellipse%209.svg"
+          src="/img/certs/ellipse-bg.svg"
           alt=""
           style={{
             position: 'absolute', inset: 0, width: '100%', height: '100%',
@@ -82,7 +82,7 @@ export default function Certifications() {
       {/* Header */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
-          <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+          <img src="/img/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
           <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>CERTIFICATIONS</span>
         </div>
         <h2 style={{

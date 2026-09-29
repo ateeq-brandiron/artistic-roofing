@@ -32,7 +32,7 @@ export default function ContactPage() {
         position: 'relative',
         width: '100%',
         minHeight: 'max(580px, 56.25vw)',
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/contact/Contact%20Hero.jpg)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/contact/contact-hero.jpg)',
         backgroundSize: '100% auto',
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
@@ -185,7 +185,7 @@ export default function ContactPage() {
               padding: '7px 16px', background: '#fff', borderRadius: 100,
               boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
             }}>
-              <img src="/img/contact/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <img src="/img/contact/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>TIMINGS</span>
             </div>
 
@@ -238,7 +238,7 @@ export default function ContactPage() {
             overflow: 'hidden',
           }}>
             <img
-              src="/img/contact/Contact%20-%20Office%20Hours.jpg"
+              src="/img/contact/contact-office-hours.jpg"
               alt="Artistic Roofing project"
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
@@ -354,7 +354,7 @@ export default function ContactPage() {
           alignItems: 'center',
           gap: 10,
           borderRadius: 10,
-          backgroundImage: 'linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 100%), url(/img/contact/20260507_103206.jpg)',
+          backgroundImage: 'linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 100%), url(/img/contact/office-exterior.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: '50% 50%',
           backgroundRepeat: 'no-repeat',

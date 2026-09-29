@@ -48,7 +48,7 @@ function CoreValueCard({ icon, title, desc }) {
     >
       {/* Dashed ring + inner circle + icon */}
       <div style={{ position: 'relative', width: 134, height: 134, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-        <img src="/img/core-values/Ellipse 9.svg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
+        <img src="/img/core-values/ellipse-bg.svg" alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
         <div style={{
           width: 104,
           height: 104,
@@ -117,7 +117,7 @@ export default function AboutPage() {
         position: 'relative',
         width: '100%',
         minHeight: 'max(580px, 56.25vw)',
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/about/About%20Us%20Hero.png)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/about/about-hero.png)',
         backgroundSize: '100% auto',
         backgroundPosition: 'center bottom',
         display: 'flex',
@@ -183,7 +183,7 @@ export default function AboutPage() {
               flexShrink: 0,
               alignSelf: 'stretch',
               borderRadius: 30,
-              background: `url(/img/about/20260507_103206.jpg) lightgray 50% / cover no-repeat`,
+              background: `url(/img/about/about-team-photo.jpg) lightgray 50% / cover no-repeat`,
             }} />
 
             {/* Left Image (foreground — house, absolute bottom-right) + badge */}
@@ -247,7 +247,7 @@ export default function AboutPage() {
               background: '#fff',
               boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
             }}>
-              <img src="/img/about/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <img src="/img/about/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>OUR STORY</span>
             </div>
 
@@ -284,7 +284,7 @@ export default function AboutPage() {
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 56 }}>
             {/* Label pill */}
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
-              <img src="/img/core-values/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <img src="/img/core-values/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>CORE VALUES</span>
             </div>
 
@@ -322,7 +322,7 @@ export default function AboutPage() {
           {/* Header — centered */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, marginBottom: 60 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
-              <img src="/img/certs-section/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+              <img src="/img/certs-section/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>CERTIFICATIONS</span>
             </div>
             <h2 style={{
@@ -365,7 +365,7 @@ export default function AboutPage() {
               {/* Background image with overlay */}
               <div style={{
                 position: 'absolute', inset: 0,
-                backgroundImage: 'url(/img/about/About%20Us%20Hero.png)',
+                backgroundImage: 'url(/img/about/about-hero.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: '50% 50%',
                 opacity: 0.18,
@@ -434,7 +434,7 @@ export default function AboutPage() {
           alignItems: 'center',
           gap: 10,
           borderRadius: 10,
-          background: `linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 100%), url(/img/about/About%20-%20CTA.png) lightgray 50% / cover no-repeat`,
+          background: `linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.50) 100%), url(/img/about/about-cta.png) lightgray 50% / cover no-repeat`,
           boxSizing: 'border-box',
         }}>
           <div style={{ maxWidth: 900, textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 28 }}>

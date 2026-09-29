@@ -38,7 +38,7 @@ export default function WhyUs() {
           boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
           alignSelf: 'flex-start',
         }}>
-          <img src="/img/why-us/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+          <img src="/img/why-us/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
           <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>WHY US?</span>
         </div>
 

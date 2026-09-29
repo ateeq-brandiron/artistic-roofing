@@ -27,7 +27,7 @@ export default function VideoSection() {
       >
         {playing ? (
           <video
-            src="/DJI_0136%20(1).mp4"
+            src="/video/hero-aerial.mp4"
             autoPlay
             controls
             onEnded={() => setPlaying(false)}
@@ -37,7 +37,7 @@ export default function VideoSection() {
           <>
             {/* Thumbnail */}
             <img
-              src="/img/Frame%202147223472%20(1).png"
+              src="/img/frame-video-placeholder.png"
               alt="Company Overview Video"
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
             />

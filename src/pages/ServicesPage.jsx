@@ -7,7 +7,7 @@ import ScrollBar from '../components/ScrollBar';
 function Pill({ text }) {
   return (
     <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
-      <img src="/img/Vector (Stroke).svg" alt="" style={{ width: 15, height: 15 }} />
+      <img src="/img/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
       <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
     </div>
   );
@@ -28,11 +28,11 @@ const commercial = [
 
 const residential = [
   { img: '/img/services/res-coatings.jpg', title: 'Home Roofing', desc: 'From installation to ongoing care, we provide complete roofing services for homeowners. Our team specializes in roof installation, repairs, inspections, maintenance, and energy-efficient options designed for Arizona\'s climate.' },
-  { img: '/img/services/Services%20-%20Re-Roofing.jpg', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re adding on to your home, our re-roofing services provide a seamless, professional upgrade that protects your property and enhances curb appeal.' },
+  { img: '/img/services/services-re-roofing.jpg', title: 'Re-Roofing', desc: 'Whether your roof is aging or you\'re adding on to your home, our re-roofing services provide a seamless, professional upgrade that protects your property and enhances curb appeal.' },
   { img: '/img/services/res-installation.jpg', title: 'Residential Roof Repair', desc: 'We handle everything from small leaks to storm damage with responsive service that restores your roof\'s strength and integrity.' },
-  { img: '/img/services/Services%20-%20Roof%20Inspection.jpg', title: 'Roof Inspections', desc: 'Our inspections cover shingles, tile, and flashing to identify wear or damage before it becomes a costly problem.' },
+  { img: '/img/services/services-roof-inspection.jpg', title: 'Roof Inspections', desc: 'Our inspections cover shingles, tile, and flashing to identify wear or damage before it becomes a costly problem.' },
   { img: '/img/services/res-card5.png', title: 'Roof Installation & Replacement', desc: 'Whether you\'re building new or replacing an old roof, we bring the right materials and expertise to deliver dependable results. From asphalt shingles and concrete tile to metal roofing systems built for long-term durability and energy efficiency in Arizona\'s climate, our team ensures every installation meets strict quality standards. We work with trusted manufacturers including Tamko, Owens Corning, GAF, Westlake, and Eagle Roofing Products.' },
-  { img: '/img/services/Services%20-%20Roof%20Coatings.jpg', title: 'Roof Coatings & Restoration', desc: 'We provide coatings and repair solutions for low-slope roofs using professional-grade Polyglass products. Roof coatings serve as a maintenance solution for modified bitumen and compatible flat roofing systems, helping extend roof life and maintain waterproofing. These applications protect against heat, UV exposure, and weather while supporting long-term performance in Arizona\'s climate.' },
+  { img: '/img/services/services-roof-coatings.jpg', title: 'Roof Coatings & Restoration', desc: 'We provide coatings and repair solutions for low-slope roofs using professional-grade Polyglass products. Roof coatings serve as a maintenance solution for modified bitumen and compatible flat roofing systems, helping extend roof life and maintain waterproofing. These applications protect against heat, UV exposure, and weather while supporting long-term performance in Arizona\'s climate.' },
 ];
 
 const gutterFeatures = [
@@ -227,7 +227,7 @@ function CredentialCard({ c }) {
       <div style={{ position: 'relative', width: 200, height: 200, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {/* Dashed ring – spins on hover */}
         <img
-          src="/img/certs/Ellipse%209.svg"
+          src="/img/certs/ellipse-bg.svg"
           alt=""
           style={{
             position: 'absolute', inset: 0, width: '100%', height: '100%',
@@ -306,7 +306,7 @@ export default function ServicesPage() {
         position: 'relative',
         width: '100%',
         minHeight: 'max(580px, 56.25vw)',
-        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/services/Services%20Hero.jpg)',
+        backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00) 30%, rgba(0,0,0,0.55) 65%, rgba(0,0,0,0.78) 100%), url(/img/services/services-hero.jpg)',
         backgroundSize: '100% auto',
         backgroundPosition: 'center top',
         display: 'flex',
@@ -543,7 +543,7 @@ export default function ServicesPage() {
           alignItems: 'center',
           gap: 24,
           borderRadius: 10,
-          backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/services/Services%20-%20CTA.jpg)`,
+          backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%), url(/img/services/services-cta.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: '50% 50%',
           boxSizing: 'border-box',

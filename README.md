@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Artistic Roofing Systems — Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Marketing website for **Artistic Roofing Systems LLC**, a licensed roofing contractor serving Sierra Vista and Cochise County, AZ.
 
-## Available Scripts
+**Live site:** https://artisticroofingllc.com  
+**Stack:** React 19 (Create React App) · React Router v7 · react-helmet-async · Deployed on Vercel
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm install
+npm start        # dev server at http://localhost:3000
+npm run build    # production build
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── pages/           # One file per route (HomePage, AboutPage, …)
+├── components/      # Reusable sections used across pages
+├── layouts/         # Layout.jsx wraps all pages (Navbar + Footer)
+├── data/            # Static data (blogPosts.js)
+└── index.css        # Global styles and CSS variables
 
-### `npm run build`
+public/
+├── img/
+│   ├── homepage/    # Home page images
+│   ├── about/       # About page images
+│   ├── services/    # Services page images
+│   ├── process/     # Process page images
+│   ├── testimonials/# Testimonials page images
+│   ├── contact/     # Contact page images
+│   ├── blog/        # Blog post cover images
+│   ├── gutters/     # Gutters section icons
+│   ├── trust/       # Trust badge icons (BBB, licensed, bonded, …)
+│   ├── core-values/ # Core values section icons
+│   ├── certs/       # Certifications section decorative assets
+│   ├── certs-section/ # Certifications section layout assets
+│   ├── footer/      # Footer icons
+│   ├── why-us/      # Why Us section icons
+│   └── process/icons/ # Process step icons
+├── video/           # Video files (hero-aerial.mp4)
+├── index.html       # HTML shell — GA4 and GSC tags live here
+├── robots.txt
+└── sitemap.xml
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Adding Assets
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| What | Where |
+|------|-------|
+| New page hero image | `public/img/<page-name>/` |
+| Blog post cover | `public/img/blog/` |
+| Icon or badge | `public/img/<section-name>/` |
+| Logo variant | `public/img/` root (e.g. `vector-3.png`) |
+| Video file | `public/video/` |
 
-### `npm run eject`
+**Naming convention:** kebab-case, descriptive. Example: `services-roof-coatings.jpg`, not `IMG_1234.jpg`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Routes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Path | Page |
+|------|------|
+| `/` | Home |
+| `/about` | About Us |
+| `/services` | Services |
+| `/process` | Our Process |
+| `/testimonials` | Testimonials |
+| `/contact` | Contact / Free Estimate |
+| `/blog` | Blog (currently unpublished) |
+| `/blog/:slug` | Blog post (currently unpublished) |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Blog routes are commented out in `src/App.js` and `src/components/Navbar.jsx` pending client approval.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pushes to `main` auto-deploy via Vercel. SPA routing is handled by `vercel.json`.
