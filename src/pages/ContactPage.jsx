@@ -15,6 +15,81 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xzezyjvo';
 
 const MAX_COMMENTS = 600;
 
+function SuccessModal({ onClose }) {
+  return (
+    <div
+      onClick={onClose}
+      style={{
+        position: 'fixed', inset: 0, zIndex: 9999,
+        background: 'rgba(0,0,0,0.55)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        padding: '20px',
+        boxSizing: 'border-box',
+      }}
+    >
+      <div
+        onClick={e => e.stopPropagation()}
+        style={{
+          background: '#fff',
+          borderRadius: 16,
+          padding: 'clamp(36px,5vw,56px) clamp(32px,5vw,56px)',
+          maxWidth: 520,
+          width: '100%',
+          boxShadow: '0 24px 60px rgba(0,0,0,0.18)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 20,
+          position: 'relative',
+        }}
+      >
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          style={{
+            position: 'absolute', top: 16, right: 16,
+            background: 'none', border: 'none', cursor: 'pointer',
+            color: '#999', fontSize: 20, lineHeight: 1, padding: 4,
+          }}
+          aria-label="Close"
+        >
+          ✕
+        </button>
+
+        {/* Checkmark icon */}
+        <div style={{
+          width: 56, height: 56, borderRadius: '50%',
+          border: '2px solid #0080C6',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          flexShrink: 0,
+        }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M5 13l4 4L19 7" stroke="#0080C6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+
+        <h2 style={{
+          fontFamily: 'Playfair Display, serif', fontWeight: 900,
+          fontSize: 'clamp(22px,3vw,28px)', lineHeight: '120%',
+          color: '#000', margin: 0,
+        }}>
+          Thank you for reaching out!
+        </h2>
+
+        <p style={{
+          fontFamily: 'Outfit', fontWeight: 400, fontSize: 16,
+          lineHeight: '160%', color: '#555', margin: 0,
+        }}>
+          We received your message and will get back to you as soon as possible.
+          If you need immediate assistance, call us at{' '}
+          <a href="tel:5204586781" style={{ color: '#0080C6', fontWeight: 600, textDecoration: 'none' }}>
+            520-458-6781
+          </a>.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function ContactPage() {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
   const [comments, setComments] = useState('');
@@ -57,6 +132,7 @@ export default function ContactPage() {
 
   return (
     <>
+      {status === 'sent' && <SuccessModal onClose={() => setStatus('idle')} />}
       <SEO
         title="Contact Us – Free Roofing Estimate in Sierra Vista, AZ"
         description="Contact Artistic Roofing Systems for a free roofing estimate in Sierra Vista & Cochise County, AZ. Call (520) 458-6781 or send us a message. Licensed, bonded & insured."
@@ -469,21 +545,6 @@ export default function ContactPage() {
               </span>
             </div>
 
-            {status === 'sent' && (
-              <div style={{
-                background: 'rgba(255,255,255,0.12)',
-                border: '1px solid rgba(255,255,255,0.35)',
-                borderRadius: 10, padding: '20px 24px',
-              }}>
-                <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff', margin: '0 0 6px' }}>
-                  Thank you! We'll be in touch soon.
-                </p>
-                <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.88)', margin: 0, lineHeight: '1.6' }}>
-                  Your message was sent. Our team typically responds within one business day.
-                </p>
-              </div>
-            )}
-
             {status === 'error' && (
               <div style={{
                 background: 'rgba(220,38,38,0.15)',
@@ -503,22 +564,22 @@ export default function ContactPage() {
             <button
               type="submit"
               className="btn-blue"
-              disabled={status === 'sending' || status === 'sent'}
+              disabled={status === 'sending'}
               style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
                 padding: '18px 28px',
-                background: status === 'sent' ? 'rgba(255,255,255,0.2)' : 'var(--blue)',
+                background: 'var(--blue)',
                 borderRadius: 10,
                 fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
                 color: '#fff', border: 'none',
-                cursor: status === 'sending' || status === 'sent' ? 'default' : 'pointer',
+                cursor: status === 'sending' ? 'default' : 'pointer',
                 alignSelf: 'flex-start',
                 opacity: status === 'sending' ? 0.7 : 1,
-                transition: 'background 0.2s, opacity 0.2s',
+                transition: 'opacity 0.2s',
               }}
             >
-              {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message Sent ✓' : 'Schedule Your Free Roofing Estimate'}
-              {status === 'idle' && <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />}
+              {status === 'sending' ? 'Sending…' : 'Schedule Your Free Roofing Estimate'}
+              {status !== 'sending' && <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />}
             </button>
           </form>
         </div>
