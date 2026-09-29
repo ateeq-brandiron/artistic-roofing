@@ -11,7 +11,7 @@ const hours = [
 
 const cities = ['Sierra Vista', 'Hereford', 'Huachuca City', 'Benson', 'Sonoita', 'Patagonia', 'Tombstone'];
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/myezlkjv';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xzezyjvo';
 
 const MAX_COMMENTS = 600;
 
