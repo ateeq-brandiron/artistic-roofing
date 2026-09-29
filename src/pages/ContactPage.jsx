@@ -11,13 +11,36 @@ const hours = [
 
 const cities = ['Sierra Vista', 'Hereford', 'Huachuca City', 'Benson', 'Sonoita', 'Patagonia', 'Tombstone'];
 
+const FORMSPREE_ENDPOINT = `https://formspree.io/f/${process.env.REACT_APP_FORMSPREE_ID || 'YOUR_FORM_ID'}`;
+
 export default function ContactPage() {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    setStatus('sent');
-    e.target.reset();
+    setStatus('sending');
+    const form = e.target;
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      message: form.message.value,
+    };
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        setStatus('sent');
+        form.reset();
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   }
 
   return (
@@ -396,7 +419,8 @@ export default function ContactPage() {
               type="text"
               name="name"
               required
-              placeholder="Enter Full name"
+              placeholder="Full Name"
+              disabled={status === 'sending'}
               style={{
                 width: '100%', padding: '18px 20px',
                 border: 'none',
@@ -410,7 +434,22 @@ export default function ContactPage() {
               type="email"
               name="email"
               required
-              placeholder="Email Adress"
+              placeholder="Email Address"
+              disabled={status === 'sending'}
+              style={{
+                width: '100%', padding: '18px 20px',
+                border: 'none',
+                borderRadius: 8,
+                fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
+                background: 'var(--shape-fill)', outline: 'none',
+                boxSizing: 'border-box',
+              }}
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              disabled={status === 'sending'}
               style={{
                 width: '100%', padding: '18px 20px',
                 border: 'none',
@@ -421,10 +460,11 @@ export default function ContactPage() {
               }}
             />
             <textarea
-              rows={6}
+              rows={5}
               name="message"
               required
-              placeholder="Message"
+              placeholder="Tell us about your project"
+              disabled={status === 'sending'}
               style={{
                 width: '100%', padding: '18px 20px',
                 border: 'none',
@@ -435,46 +475,59 @@ export default function ContactPage() {
                 boxSizing: 'border-box',
               }}
             />
+
             {status === 'sent' && (
               <div style={{
                 background: 'rgba(255,255,255,0.12)',
                 border: '1px solid rgba(255,255,255,0.35)',
                 borderRadius: 10,
                 padding: '20px 24px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 10,
               }}>
-                <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff', margin: 0 }}>
-                  Thank you for reaching out!
+                <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff', margin: '0 0 6px' }}>
+                  Thank you! We'll be in touch soon.
                 </p>
                 <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.88)', margin: 0, lineHeight: '1.6' }}>
-                  Please send us an email with your query at{' '}
-                  <a
-                    href="mailto:artisticroofing11@gmail.com"
-                    style={{ color: '#7dd3fc', fontWeight: 600, textDecoration: 'underline' }}
-                  >
-                    artisticroofing11@gmail.com
-                  </a>
-                  {' '}and our team will get back to you as soon as possible.
+                  Your message was sent. Our team typically responds within one business day.
                 </p>
               </div>
             )}
+
+            {status === 'error' && (
+              <div style={{
+                background: 'rgba(220,38,38,0.15)',
+                border: '1px solid rgba(220,38,38,0.4)',
+                borderRadius: 10,
+                padding: '20px 24px',
+              }}>
+                <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff', margin: '0 0 6px' }}>
+                  Something went wrong.
+                </p>
+                <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.88)', margin: 0, lineHeight: '1.6' }}>
+                  Please try again or call us at{' '}
+                  <a href="tel:5204586781" style={{ color: '#7dd3fc', fontWeight: 600 }}>520-458-6781</a>.
+                </p>
+              </div>
+            )}
+
             <button
               type="submit"
               className="btn-blue"
+              disabled={status === 'sending' || status === 'sent'}
               style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
                 padding: '18px 28px',
-                background: 'var(--blue)',
+                background: status === 'sent' ? 'rgba(255,255,255,0.2)' : 'var(--blue)',
                 borderRadius: 10,
                 fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
-                color: '#fff', border: 'none', cursor: 'pointer',
+                color: '#fff', border: 'none',
+                cursor: status === 'sending' || status === 'sent' ? 'default' : 'pointer',
                 alignSelf: 'flex-start',
+                opacity: status === 'sending' ? 0.7 : 1,
+                transition: 'background 0.2s, opacity 0.2s',
               }}
             >
-              Schedule Your Free Roofing Estimate
-              <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />
+              {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message Sent ✓' : 'Schedule Your Free Roofing Estimate'}
+              {status === 'idle' && <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />}
             </button>
           </form>
         </div>
