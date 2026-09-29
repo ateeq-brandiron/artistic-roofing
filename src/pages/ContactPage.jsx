@@ -21,7 +21,7 @@ function SuccessModal({ onClose }) {
       onClick={onClose}
       style={{
         position: 'fixed', inset: 0, zIndex: 9999,
-        background: 'rgba(0,0,0,0.55)',
+        background: 'rgba(0,0,0,0.65)',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         padding: '20px',
         boxSizing: 'border-box',
@@ -32,13 +32,13 @@ function SuccessModal({ onClose }) {
         style={{
           background: '#fff',
           borderRadius: 16,
-          padding: 'clamp(36px,5vw,56px) clamp(32px,5vw,56px)',
-          maxWidth: 520,
+          padding: 'clamp(40px,5vw,64px)',
+          maxWidth: 500,
           width: '100%',
-          boxShadow: '0 24px 60px rgba(0,0,0,0.18)',
+          boxShadow: '0 32px 80px rgba(0,0,0,0.25)',
           display: 'flex',
           flexDirection: 'column',
-          gap: 20,
+          gap: 24,
           position: 'relative',
         }}
       >
@@ -46,45 +46,69 @@ function SuccessModal({ onClose }) {
         <button
           onClick={onClose}
           style={{
-            position: 'absolute', top: 16, right: 16,
-            background: 'none', border: 'none', cursor: 'pointer',
-            color: '#999', fontSize: 20, lineHeight: 1, padding: 4,
+            position: 'absolute', top: 20, right: 20,
+            background: 'none', border: '1px solid #e5e5e5',
+            borderRadius: '50%', width: 32, height: 32,
+            cursor: 'pointer', color: '#888',
+            fontFamily: 'Outfit', fontSize: 16, lineHeight: 1,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
           }}
           aria-label="Close"
         >
           ✕
         </button>
 
-        {/* Checkmark icon */}
+        {/* Checkmark */}
         <div style={{
-          width: 56, height: 56, borderRadius: '50%',
-          border: '2px solid #0080C6',
+          width: 64, height: 64, borderRadius: '50%',
+          background: 'var(--shape-fill)',
+          border: '2px solid var(--blue)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           flexShrink: 0,
         }}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
             <path d="M5 13l4 4L19 7" stroke="#0080C6" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>
 
+        {/* Heading */}
         <h2 style={{
           fontFamily: 'Playfair Display, serif', fontWeight: 900,
-          fontSize: 'clamp(22px,3vw,28px)', lineHeight: '120%',
+          fontSize: 'clamp(24px,3vw,32px)', lineHeight: '120%',
           color: '#000', margin: 0,
         }}>
           Thank you for reaching out!
         </h2>
 
+        {/* Divider */}
+        <div style={{ height: 1, background: 'var(--shape-stroke)', margin: '-8px 0' }} />
+
+        {/* Body */}
         <p style={{
           fontFamily: 'Outfit', fontWeight: 400, fontSize: 16,
-          lineHeight: '160%', color: '#555', margin: 0,
+          lineHeight: '170%', color: 'var(--color-3)', margin: 0,
         }}>
           We received your message and will get back to you as soon as possible.
           If you need immediate assistance, call us at{' '}
-          <a href="tel:5204586781" style={{ color: '#0080C6', fontWeight: 600, textDecoration: 'none' }}>
+          <a href="tel:5204586781" style={{ color: 'var(--blue)', fontWeight: 600, textDecoration: 'none' }}>
             520-458-6781
           </a>.
         </p>
+
+        {/* CTA */}
+        <button
+          onClick={onClose}
+          style={{
+            alignSelf: 'flex-start',
+            padding: '14px 28px',
+            background: 'var(--blue)',
+            border: 'none', borderRadius: 10,
+            fontFamily: 'Outfit', fontWeight: 600, fontSize: 16,
+            color: '#fff', cursor: 'pointer',
+          }}
+        >
+          Close
+        </button>
       </div>
     </div>
   );
