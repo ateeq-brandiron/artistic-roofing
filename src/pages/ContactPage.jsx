@@ -13,8 +13,19 @@ const cities = ['Sierra Vista', 'Hereford', 'Huachuca City', 'Benson', 'Sonoita'
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/myezlngv';
 
+const MAX_COMMENTS = 600;
+
 export default function ContactPage() {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
+  const [comments, setComments] = useState('');
+
+  const fieldStyle = {
+    width: '100%', padding: '14px 16px',
+    border: 'none', borderRadius: 8,
+    fontFamily: 'Outfit', fontSize: 15, color: '#222',
+    background: '#fff', outline: 'none',
+    boxSizing: 'border-box',
+  };
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -24,7 +35,12 @@ export default function ContactPage() {
       name: form.name.value,
       email: form.email.value,
       phone: form.phone.value,
-      message: form.message.value,
+      streetAddress: form.streetAddress.value,
+      addressLine2: form.addressLine2.value,
+      city: form.city.value,
+      state: form.state.value,
+      zip: form.zip.value,
+      comments: form.comments.value,
     };
     try {
       const res = await fetch(FORMSPREE_ENDPOINT, {
@@ -34,6 +50,7 @@ export default function ContactPage() {
       });
       if (res.ok) {
         setStatus('sent');
+        setComments('');
         form.reset();
       } else {
         setStatus('error');
@@ -412,76 +429,76 @@ export default function ContactPage() {
           {/* Right – form */}
           <form onSubmit={handleSubmit} style={{
             flex: '1 1 280px',
-            maxWidth: 540,
-            display: 'flex', flexDirection: 'column', gap: 16,
+            maxWidth: 580,
+            display: 'flex', flexDirection: 'column', gap: 14,
           }}>
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Full Name"
-              disabled={status === 'sending'}
-              style={{
-                width: '100%', padding: '18px 20px',
-                border: 'none',
-                borderRadius: 8,
-                fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
-                background: 'var(--shape-fill)', outline: 'none',
-                boxSizing: 'border-box',
-              }}
-            />
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Email Address"
-              disabled={status === 'sending'}
-              style={{
-                width: '100%', padding: '18px 20px',
-                border: 'none',
-                borderRadius: 8,
-                fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
-                background: 'var(--shape-fill)', outline: 'none',
-                boxSizing: 'border-box',
-              }}
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-              disabled={status === 'sending'}
-              style={{
-                width: '100%', padding: '18px 20px',
-                border: 'none',
-                borderRadius: 8,
-                fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
-                background: 'var(--shape-fill)', outline: 'none',
-                boxSizing: 'border-box',
-              }}
-            />
-            <textarea
-              rows={5}
-              name="message"
-              required
-              placeholder="Tell us about your project"
-              disabled={status === 'sending'}
-              style={{
-                width: '100%', padding: '18px 20px',
-                border: 'none',
-                borderRadius: 8,
-                fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
-                background: 'var(--shape-fill)', outline: 'none',
-                resize: 'vertical',
-                boxSizing: 'border-box',
-              }}
-            />
+
+            {/* Name */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
+                Name <span style={{ color: '#f87171' }}>*</span>
+              </label>
+              <input type="text" name="name" required disabled={status === 'sending'} style={fieldStyle} />
+            </div>
+
+            {/* Email */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
+                Email <span style={{ color: '#f87171' }}>*</span>
+              </label>
+              <input type="email" name="email" required disabled={status === 'sending'} style={fieldStyle} />
+            </div>
+
+            {/* Phone */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
+                Phone <span style={{ color: '#f87171' }}>*</span>
+              </label>
+              <input type="tel" name="phone" required disabled={status === 'sending'} style={fieldStyle} />
+            </div>
+
+            {/* Address */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
+                Address
+              </label>
+              <input type="text" name="streetAddress" placeholder="Street Address" disabled={status === 'sending'} style={{ ...fieldStyle, marginBottom: 8 }} />
+              <input type="text" name="addressLine2" placeholder="Address Line 2" disabled={status === 'sending'} style={fieldStyle} />
+            </div>
+
+            {/* City / State / ZIP */}
+            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+              <input type="text" name="city" placeholder="City" disabled={status === 'sending'} style={{ ...fieldStyle, flex: '2 1 120px' }} />
+              <input type="text" name="state" placeholder="State" disabled={status === 'sending'} style={{ ...fieldStyle, flex: '1 1 60px' }} />
+              <input type="text" name="zip" placeholder="ZIP Code" disabled={status === 'sending'} style={{ ...fieldStyle, flex: '1 1 80px' }} />
+            </div>
+
+            {/* Comments */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
+                Comments <span style={{ color: '#f87171' }}>*</span>
+              </label>
+              <textarea
+                name="comments"
+                required
+                rows={5}
+                maxLength={MAX_COMMENTS}
+                placeholder="Please let us know what's on your mind. Have a question for us? Ask away."
+                disabled={status === 'sending'}
+                value={comments}
+                onChange={e => setComments(e.target.value)}
+                style={{ ...fieldStyle, resize: 'vertical' }}
+              />
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.55)', textAlign: 'right' }}>
+                {comments.length} of {MAX_COMMENTS} max characters
+              </span>
+            </div>
 
             {status === 'sent' && (
               <div style={{
                 background: 'rgba(255,255,255,0.12)',
                 border: '1px solid rgba(255,255,255,0.35)',
-                borderRadius: 10,
-                padding: '20px 24px',
+                borderRadius: 10, padding: '20px 24px',
               }}>
                 <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff', margin: '0 0 6px' }}>
                   Thank you! We'll be in touch soon.
@@ -496,8 +513,7 @@ export default function ContactPage() {
               <div style={{
                 background: 'rgba(220,38,38,0.15)',
                 border: '1px solid rgba(220,38,38,0.4)',
-                borderRadius: 10,
-                padding: '20px 24px',
+                borderRadius: 10, padding: '20px 24px',
               }}>
                 <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff', margin: '0 0 6px' }}>
                   Something went wrong.
@@ -526,7 +542,7 @@ export default function ContactPage() {
                 transition: 'background 0.2s, opacity 0.2s',
               }}
             >
-              {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message Sent ✓' : 'Schedule Your Free Roofing Estimate'}
+              {status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message Sent ✓' : 'Submit'}
               {status === 'idle' && <img src="/img/contact/Icon-1.svg" alt="" style={{ width: 14, height: 11 }} />}
             </button>
           </form>
