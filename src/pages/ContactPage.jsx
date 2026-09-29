@@ -20,10 +20,10 @@ export default function ContactPage() {
   const [comments, setComments] = useState('');
 
   const fieldStyle = {
-    width: '100%', padding: '14px 16px',
+    width: '100%', padding: '18px 20px',
     border: 'none', borderRadius: 8,
-    fontFamily: 'Outfit', fontSize: 15, color: '#222',
-    background: '#fff', outline: 'none',
+    fontFamily: 'Outfit', fontSize: 15, color: 'var(--color-3)',
+    background: 'var(--shape-fill)', outline: 'none',
     boxSizing: 'border-box',
   };
 
@@ -428,35 +428,31 @@ export default function ContactPage() {
             display: 'flex', flexDirection: 'column', gap: 14,
           }}>
 
-            {/* Name */}
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Full Name"
+              disabled={status === 'sending'}
+              style={fieldStyle}
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Email Address"
+              disabled={status === 'sending'}
+              style={fieldStyle}
+            />
+            <input
+              type="tel"
+              name="phone"
+              required
+              placeholder="Phone Number"
+              disabled={status === 'sending'}
+              style={fieldStyle}
+            />
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
-                Name <span style={{ color: '#f87171' }}>*</span>
-              </label>
-              <input type="text" name="name" required disabled={status === 'sending'} style={fieldStyle} />
-            </div>
-
-            {/* Email */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
-                Email <span style={{ color: '#f87171' }}>*</span>
-              </label>
-              <input type="email" name="email" required disabled={status === 'sending'} style={fieldStyle} />
-            </div>
-
-            {/* Phone */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
-                Phone <span style={{ color: '#f87171' }}>*</span>
-              </label>
-              <input type="tel" name="phone" required disabled={status === 'sending'} style={fieldStyle} />
-            </div>
-
-            {/* Comments */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-              <label style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)', letterSpacing: '0.03em' }}>
-                Comments <span style={{ color: '#f87171' }}>*</span>
-              </label>
               <textarea
                 name="comments"
                 required
