@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 import SEO from '../components/SEO';
@@ -16,6 +16,22 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xzezyjvo';
 const MAX_COMMENTS = 600;
 
 function SuccessModal({ onClose }) {
+  // Lock scroll so the page background stays where the user was
+  React.useEffect(() => {
+    const y = window.scrollY;
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${y}px`;
+    document.body.style.width = '100%';
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo(0, y);
+    };
+  }, []);
+
   return (
     <div
       onClick={onClose}
