@@ -150,6 +150,11 @@ export default function ContactPage() {
       name: form.name.value,
       email: form.email.value,
       phone: form.phone.value,
+      streetAddress: form.streetAddress.value,
+      addressLine2: form.addressLine2.value,
+      city: form.city.value,
+      state: form.state.value,
+      zip: form.zip.value,
       comments: form.comments.value,
     };
     try {
@@ -568,6 +573,47 @@ export default function ContactPage() {
               disabled={status === 'sending'}
               style={fieldStyle}
             />
+            <input
+              type="text"
+              name="streetAddress"
+              required
+              placeholder="Street Address"
+              disabled={status === 'sending'}
+              style={fieldStyle}
+            />
+            <input
+              type="text"
+              name="addressLine2"
+              placeholder="Address Line 2 (Apt, Suite, etc.)"
+              disabled={status === 'sending'}
+              style={fieldStyle}
+            />
+            <div style={{ display: 'flex', gap: 14 }}>
+              <input
+                type="text"
+                name="city"
+                required
+                placeholder="City"
+                disabled={status === 'sending'}
+                style={{ ...fieldStyle, flex: 1 }}
+              />
+              <input
+                type="text"
+                name="state"
+                required
+                placeholder="State"
+                disabled={status === 'sending'}
+                style={{ ...fieldStyle, width: 90, flexShrink: 0 }}
+              />
+              <input
+                type="text"
+                name="zip"
+                required
+                placeholder="ZIP Code"
+                disabled={status === 'sending'}
+                style={{ ...fieldStyle, width: 110, flexShrink: 0 }}
+              />
+            </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
               <textarea
                 name="comments"
