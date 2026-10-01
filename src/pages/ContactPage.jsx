@@ -576,7 +576,6 @@ export default function ContactPage() {
             <input
               type="text"
               name="streetAddress"
-              required
               placeholder="Street Address"
               disabled={status === 'sending'}
               style={fieldStyle}
@@ -592,7 +591,6 @@ export default function ContactPage() {
               <input
                 type="text"
                 name="city"
-                required
                 placeholder="City"
                 disabled={status === 'sending'}
                 style={{ ...fieldStyle, flex: 1 }}
@@ -600,7 +598,6 @@ export default function ContactPage() {
               <input
                 type="text"
                 name="state"
-                required
                 placeholder="State"
                 disabled={status === 'sending'}
                 style={{ ...fieldStyle, width: 90, flexShrink: 0 }}
@@ -608,7 +605,6 @@ export default function ContactPage() {
               <input
                 type="text"
                 name="zip"
-                required
                 placeholder="ZIP Code"
                 disabled={status === 'sending'}
                 style={{ ...fieldStyle, width: 110, flexShrink: 0 }}
