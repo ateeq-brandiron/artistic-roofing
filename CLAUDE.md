@@ -25,10 +25,10 @@ public/img/       ← all images, organised by section (see README)
 public/video/     ← video files
 ```
 
-## Blog (Unpublished)
-Blog is built but disabled. To re-enable:
-1. Uncomment the 2 imports and 2 `<Route>` lines in `src/App.js`
-2. Uncomment the Blog entry in `src/components/Navbar.jsx`
+## Blog
+Blog is live. To disable again:
+1. Comment out the 2 imports and 2 `<Route>` lines in `src/App.js`
+2. Comment out the Blog entry in `src/components/Navbar.jsx`
 
 ## SEO Component
 `src/components/SEO.jsx` — pass `title`, `description`, `canonical`, and optionally `image` and `schema` (JSON-LD object). Every page should include it.
