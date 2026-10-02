@@ -160,7 +160,17 @@ const blogPosts = [
       { type: 'h3', text: 'Is a permit required for roofing work in Sierra Vista?' },
       {
         type: 'p',
-        text: 'Yes, a permit is generally required for most re-roofing projects, especially full replacements. A reputable contractor will handle all necessary permitting for you.',
+        text: 'Residential roofing projects in Sierra Vista generally do not require a permit, while commercial roofing projects do. Your contractor should confirm any project-specific requirements before work begins. A reputable contractor will handle all necessary permitting for you.',
+      },
+      { type: 'h3', text: 'How can I tell if my roof needs repair or a full replacement?' },
+      {
+        type: 'p',
+        text: 'Common signs that your roof needs attention include missing or cracked shingles, visible sagging, water stains on your ceilings, granules in your gutters (for asphalt roofs), or an old roof that\'s past its expected lifespan. A professional inspection can accurately determine whether repairs are sufficient or if a full replacement is needed.',
+      },
+      { type: 'h3', text: 'How long does a typical roof replacement take?' },
+      {
+        type: 'p',
+        text: 'The duration varies depending on the size and complexity of your roof, the materials chosen, and weather conditions. Most residential shingle roof replacements can be completed in 3–8 days. Larger or more complex projects, or those involving tile or metal, may take longer. Your contractor should provide an estimated timeline.',
       },
       { type: 'h3', text: 'Will a new roof help lower my energy bills?' },
       {
@@ -258,10 +268,20 @@ const blogPosts = [
         type: 'p',
         text: 'For high heat and UV exposure, materials with good reflectivity and durability are key — certain asphalt shingles designed for high temperatures, metal roofing, or tile roofing. A qualified local roofer can help you compare options for your specific situation.',
       },
+      { type: 'h3', text: 'How long does a new roof installation typically take in Sierra Vista?' },
+      {
+        type: 'p',
+        text: 'The duration depends on the size and complexity of your roof, the type of materials being used, and weather conditions. Generally, a residential roof replacement can take anywhere from a few days to a couple of weeks. Your chosen contractor should provide a clear timeline in their proposal.',
+      },
       { type: 'h3', text: 'Do I need to be home during the roofing project?' },
       {
         type: 'p',
         text: "While you don't need to be present every minute, it's often helpful to be available at the start and for the final walkthrough. Ensuring clear communication channels with your contractor is crucial whether you're home or not.",
+      },
+      { type: 'h3', text: 'What kind of warranty should I expect for a new roof in Sierra Vista?' },
+      {
+        type: 'p',
+        text: "You should expect two main types of warranties: a manufacturer's warranty on the materials (which can range from 20 years to lifetime, depending on the product) and a workmanship warranty from the roofing contractor, typically lasting 2 years or more. Always get both warranties in writing and understand what they cover.",
       },
     ],
   },
@@ -299,6 +319,15 @@ const blogPosts = [
         type: 'p',
         html: "This is the big one. According to the <a href='https://www.nrcia.org/guide-to-choosing-a-professional-roofing-contractor/' target='_blank' rel='noopener noreferrer'>National Roofing Contractors Industry Alliance's guide to hiring a contractor</a>, the two minimum insurance policies a roofing contractor should carry are general liability and workers' compensation. General liability covers damage to your home — like a worker accidentally putting a foot through your ceiling. Workers' comp covers the workers themselves. If a roofer is injured on your property and the company isn't insured, that worker could potentially pursue a claim against you for medical expenses and lost wages.",
       },
+      { type: 'h3', text: 'A Realistic Scenario (Illustrative)' },
+      {
+        type: 'p',
+        text: "Here's how this tends to play out — not a specific customer, but a composite of common outcomes we see in this line of work.",
+      },
+      {
+        type: 'p',
+        text: "A homeowner hires an uninsured worker to replace a section of shingles after storm damage. Partway through the job, the worker falls off a ladder and breaks an arm. Because there's no workers' comp policy behind the job, the worker's medical bills have nowhere else to go — and depending on the circumstances, a claim can end up filed against the homeowner's own insurance, sometimes followed by a premium increase or a coverage dispute. Compare that to a licensed and insured contractor: the same accident is covered by the contractor's own workers' comp policy, and the homeowner isn't drawn into the claim at all. Same accident, very different outcome — and the difference comes entirely down to what was confirmed before the first nail went in.",
+      },
       { type: 'h2', text: 'Insured vs. Uninsured: The Real Cost Comparison' },
       {
         type: 'ul',
@@ -320,12 +349,17 @@ const blogPosts = [
       { type: 'h3', text: 'Low-Slope Solutions (Polyglass Certification)' },
       {
         type: 'p',
-        text: "For light commercial properties or homes with flat additions, we use Polyglass low-slope roof coating systems. Being Polyglass certified means we're applying an engineered, multi-layer system — not just a coat of paint. Cheaper, store-bought coatings tend to peel within a year, leaving the structure underneath exposed to moisture it was never designed to handle.",
+        text: "For commercial properties and residential areas with flat or low-slope roofs, porches, additions, or carports, Artistic Roofing works with multiple roofing systems and manufacturers depending on the needs of the structure. Modified bitumen and torch-down systems are commonly used for low-slope applications, while roof coatings may be applied as a final protective layer on certain smooth-surface systems or as part of ongoing roof maintenance. Coatings can help protect the underlying bitumen from UV exposure and weathering, but they are not intended to correct structural or drainage problems such as ponding water.",
       },
       { type: 'h3', text: 'Custom Seamless Gutters' },
       {
         type: 'p',
         html: "We fabricate 5\" and 6\" <a href='/services'>seamless gutters</a> on-site instead of installing pre-made sections. Because the gutter is formed to the exact length of your roofline in one continuous piece, there are no seams along the run for water to find and exploit — which is usually where leaks and rust spots on sectional gutter systems start.",
+      },
+      { type: 'h3', text: 'The Ethical Choice' },
+      {
+        type: 'p',
+        text: "Hiring a licensed, bonded, and insured contractor also means supporting a business that follows the rules, pays its taxes, and treats its employees fairly — rather than one that's cutting corners to undercut on price. At Artistic Roofing LLC, we try to lead with honesty, precision, and clear communication. We're not here for one job; we've been doing this for over a decade and plan to be around for a lot longer, which is part of why we take the credentialing side of the work seriously.",
       },
       { type: 'h2', text: "The Hidden Costs of the 'Cheaper' Option" },
       { type: 'h3', text: 'A Voided Warranty' },
@@ -371,6 +405,16 @@ const blogPosts = [
       {
         type: 'p',
         text: "No. Insurance protects against accidents and injuries. A bond is financial security that protects you if the contractor fails to fulfill the contract or follow legal requirements. Artistic Roofing is licensed, bonded, and insured.",
+      },
+      { type: 'h3', text: 'How do I know if my roof repair needs a specialist?' },
+      {
+        type: 'p',
+        text: "If you have a tile roof or a flat, low-slope roof, yes. Tile requires TRI Certification to ensure the structural integrity and water shedding are handled correctly. Flat roofs need specific systems — like modified bitumen or Polyglass coatings — that require specialized training to apply properly.",
+      },
+      { type: 'h3', text: "What should I do if I already hired someone and I'm not sure they were insured?" },
+      {
+        type: 'p',
+        text: "Ask them directly for a Certificate of Insurance and confirm it with their carrier. If they can't produce one, it's worth having a licensed contractor inspect the completed work before you consider the job finished — that way you know what you're actually working with going forward.",
       },
     ],
   },
@@ -428,7 +472,16 @@ const blogPosts = [
       },
       {
         type: 'tip',
-        text: 'Certified contractors often qualify for extended manufacturer warranties that general handymen cannot offer — an important long-term value for Arizona homeowners.',
+        text: 'Certified contractors often qualify for extended manufacturer warranties that general handymen cannot offer. They also bring specialized knowledge of water shedding, flashings, and Arizona-specific thermal code requirements — an important long-term value for homeowners.',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Warranty Support — Certified: Often qualifies for extended manufacturer warranties | Handyman: Workmanship warranty only (if any)',
+          'Technical Training — Certified: Specialized knowledge of water shedding and flashings | Handyman: General best-guess installation',
+          'Material Access — Certified: Access to top-tier brands like GAF, Owens Corning, and Tamko | Handyman: Limited to off-the-shelf retail products',
+          'Code Compliance — Certified: Up to date on Arizona-specific thermal requirements | Handyman: May miss local climate-adapted standards',
+        ],
       },
       { type: 'h2', text: '4. Prioritize Climate-Adapted Solutions' },
       {
