@@ -293,7 +293,7 @@ const blogPosts = [
     author: 'Artistic Roofing Systems',
     excerpt:
       'Hiring an uninsured roofer can leave you on the hook for accidents and subpar work. Here\'s what licensing, bonding, and insurance actually mean — and how to verify them before you sign.',
-    image: '/img/blog/insured-contractor-roofing.jpg',
+    image: '/img/blog/insured-contractor-roofing.png',
     body: [
       {
         type: 'p',
