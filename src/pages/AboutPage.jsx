@@ -108,8 +108,8 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title="About Us – Licensed Roofing Company in Sierra Vista, AZ"
-        description="Learn about Artistic Roofing Systems — Sierra Vista's trusted local roofer for over 10 years. TRI Certified, Polyglass Certified, BBB Accredited. Serving Cochise County, AZ."
+        title="About Artistic Roofing Systems | Sierra Vista, AZ Roofers"
+        description="Sierra Vista roofing contractor for homes and businesses, and sister company of Su Casa Builders. Members of the BBB, ARCA and local Chamber. Free quotes."
         canonical="/about"
       />
       {/* ── Hero Banner ── */}

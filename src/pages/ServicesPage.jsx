@@ -297,8 +297,8 @@ export default function ServicesPage() {
   return (
     <>
       <SEO
-        title="Roofing Services in Sierra Vista, AZ – Tile, Metal, Shingle & Gutters"
-        description="Expert roofing services in Sierra Vista & Cochise County, AZ. Residential & commercial roof repair, replacement, tile, metal, shingles, seamless gutters & patio covers. Free estimates."
+        title="Roofing Services in Sierra Vista, AZ | Artistic Roofing"
+        description="Roof repair, replacement, inspections, maintenance, and coatings for homes and businesses in Sierra Vista, AZ. Call (520) 458-6781 for a free estimate."
         canonical="/services"
       />
       {/* ── Hero ── */}

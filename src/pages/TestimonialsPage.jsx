@@ -160,8 +160,8 @@ export default function TestimonialsPage() {
   return (
     <>
       <SEO
-        title="Customer Reviews & Testimonials – Artistic Roofing Sierra Vista, AZ"
-        description="Read what Sierra Vista homeowners say about Artistic Roofing Systems. 5-star reviews for roof repair, replacement, tile, metal roofing, and seamless gutters across Cochise County."
+        title="Roofing Reviews in Sierra Vista, AZ | Artistic Roofing"
+        description="Read reviews from Sierra Vista and Cochise County homeowners about our roof repairs, replacements, and new installs. See why neighbors recommend us."
         canonical="/testimonials"
         schema={testimonialsSchema}
       />

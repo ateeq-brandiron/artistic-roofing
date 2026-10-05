@@ -14,8 +14,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Roofing Contractor in Sierra Vista, AZ"
-        description="Licensed roofing contractor in Sierra Vista, AZ. Roof repair, replacement & maintenance for homes and businesses. TRI Certified tile, metal, shingle & gutters. Call for a free estimate."
+        title="Roofing Contractor in Sierra Vista, AZ | Artistic Roofing"
+        description="Tile, shingle, metal & flat roof installation, repair and replacement in Sierra Vista, AZ. TRI-certified tile installers. Free estimates: (520) 458-6781."
         canonical="/"
       />
       <Hero />

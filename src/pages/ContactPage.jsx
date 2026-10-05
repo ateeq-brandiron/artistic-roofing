@@ -179,8 +179,8 @@ export default function ContactPage() {
     <>
       {status === 'sent' && <SuccessModal onClose={() => setStatus('idle')} />}
       <SEO
-        title="Contact Us – Free Roofing Estimate in Sierra Vista, AZ"
-        description="Contact Artistic Roofing Systems for a free roofing estimate in Sierra Vista & Cochise County, AZ. Call (520) 458-6781 or send us a message. Licensed, bonded & insured."
+        title="Contact Us | Free Roofing Estimates in Sierra Vista, AZ"
+        description="Call (520) 458-6781 or visit 5362 S Santa Elena Ave, Sierra Vista, AZ to schedule a free roofing estimate for your home or business."
         canonical="/contact"
       />
       {/* ── Hero ── */}

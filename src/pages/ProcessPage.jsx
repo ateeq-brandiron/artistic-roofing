@@ -50,8 +50,8 @@ export default function ProcessPage() {
   return (
     <>
       <SEO
-        title="Our Roofing Process – What to Expect in Sierra Vista, AZ"
-        description="See how Artistic Roofing Systems approaches every roofing project — from free inspection and estimate to installation and final walkthrough. No surprises, quality guaranteed."
+        title="How to Prepare for a Roof Replacement | Artistic Roofing"
+        description="Getting ready for a new roof? Learn how to protect attic items, wall décor, and patio furniture before our Sierra Vista, AZ roofing crew arrives."
         canonical="/process"
       />
       {/* ── Hero ── */}
