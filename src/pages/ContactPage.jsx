@@ -546,93 +546,97 @@ export default function ContactPage() {
           <form onSubmit={handleSubmit} style={{
             flex: '1 1 280px',
             maxWidth: 580,
-            display: 'flex', flexDirection: 'column', gap: 14,
+            background: 'rgba(255,255,255,0.08)',
+            backdropFilter: 'blur(12px)',
+            WebkitBackdropFilter: 'blur(12px)',
+            border: '1px solid rgba(255,255,255,0.18)',
+            borderRadius: 16,
+            padding: 'clamp(24px,4vw,40px)',
+            display: 'flex', flexDirection: 'column', gap: 18,
           }}>
 
-            {/* Legend */}
-            <p style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
-              Fields marked <span style={{ color: '#f87171' }}>*</span> are required
-            </p>
+            {/* Name + Email row */}
+            <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+              <label style={{ display: 'flex', flexDirection: 'column', gap: 6, flex: '1 1 160px' }}>
+                <span style={{ fontFamily: 'Outfit', fontSize: 12, fontWeight: 600, color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                  Full Name <span style={{ color: '#f87171' }}>*</span>
+                </span>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Jane Smith"
+                  disabled={status === 'sending'}
+                  style={fieldStyle}
+                />
+              </label>
+              <label style={{ display: 'flex', flexDirection: 'column', gap: 6, flex: '1 1 160px' }}>
+                <span style={{ fontFamily: 'Outfit', fontSize: 12, fontWeight: 600, color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                  Email Address <span style={{ color: '#f87171' }}>*</span>
+                </span>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="jane@email.com"
+                  disabled={status === 'sending'}
+                  style={fieldStyle}
+                />
+              </label>
+            </div>
 
-            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
-                Full Name <span style={{ color: '#f87171' }}>*</span>
-              </span>
-              <input
-                type="text"
-                name="name"
-                required
-                placeholder="Full Name"
-                disabled={status === 'sending'}
-                style={fieldStyle}
-              />
-            </label>
-
-            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
-                Email Address <span style={{ color: '#f87171' }}>*</span>
-              </span>
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="Email Address"
-                disabled={status === 'sending'}
-                style={fieldStyle}
-              />
-            </label>
-
-            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, fontWeight: 600, color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
                 Phone Number <span style={{ color: '#f87171' }}>*</span>
               </span>
               <input
                 type="tel"
                 name="phone"
                 required
-                placeholder="Phone Number"
+                placeholder="(520) 000-0000"
                 disabled={status === 'sending'}
                 style={fieldStyle}
               />
             </label>
 
-            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, fontWeight: 600, color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
                 Street Address <span style={{ color: '#f87171' }}>*</span>
               </span>
               <input
                 type="text"
                 name="streetAddress"
                 required
-                placeholder="Street Address"
+                placeholder="1234 Main St"
                 disabled={status === 'sending'}
                 style={fieldStyle}
               />
             </label>
 
-            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
-                Address Line 2 <span style={{ color: 'rgba(255,255,255,0.4)' }}>(Optional)</span>
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, fontWeight: 600, color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                Address Line 2 <span style={{ color: 'rgba(255,255,255,0.38)', fontWeight: 400, textTransform: 'none', letterSpacing: 0 }}>(Optional)</span>
               </span>
               <input
                 type="text"
                 name="addressLine2"
-                placeholder="Apt, Suite, etc."
+                placeholder="Apt, Suite, Unit, etc."
                 disabled={status === 'sending'}
                 style={fieldStyle}
               />
             </label>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+            {/* City / State / ZIP */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, fontWeight: 600, color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
                 City / State / ZIP <span style={{ color: '#f87171' }}>*</span>
               </span>
-              <div style={{ display: 'flex', gap: 14 }}>
+              <div style={{ display: 'flex', gap: 10 }}>
                 <input
                   type="text"
                   name="city"
                   required
-                  placeholder="City"
+                  placeholder="Sierra Vista"
                   disabled={status === 'sending'}
                   style={{ ...fieldStyle, flex: 1 }}
                 />
@@ -640,38 +644,38 @@ export default function ContactPage() {
                   type="text"
                   name="state"
                   required
-                  placeholder="State"
+                  placeholder="AZ"
                   disabled={status === 'sending'}
-                  style={{ ...fieldStyle, width: 90, flexShrink: 0 }}
+                  style={{ ...fieldStyle, width: 72, flexShrink: 0 }}
                 />
                 <input
                   type="text"
                   name="zip"
                   required
-                  placeholder="ZIP Code"
+                  placeholder="85635"
                   disabled={status === 'sending'}
-                  style={{ ...fieldStyle, width: 110, flexShrink: 0 }}
+                  style={{ ...fieldStyle, width: 96, flexShrink: 0 }}
                 />
               </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, fontWeight: 600, color: 'rgba(255,255,255,0.75)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
                 Comments <span style={{ color: '#f87171' }}>*</span>
               </span>
               <textarea
                 name="comments"
                 required
-                rows={5}
+                rows={4}
                 maxLength={MAX_COMMENTS}
-                placeholder="Please let us know what's on your mind. Have a question for us? Ask away."
+                placeholder="Tell us about your roof — what's the issue or what are you looking for?"
                 disabled={status === 'sending'}
                 value={comments}
                 onChange={e => setComments(e.target.value)}
                 style={{ ...fieldStyle, resize: 'vertical' }}
               />
-              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.55)', textAlign: 'right' }}>
-                {comments.length} of {MAX_COMMENTS} max characters
+              <span style={{ fontFamily: 'Outfit', fontSize: 11, color: 'rgba(255,255,255,0.4)', textAlign: 'right' }}>
+                {comments.length} / {MAX_COMMENTS}
               </span>
             </div>
 
@@ -679,12 +683,12 @@ export default function ContactPage() {
               <div style={{
                 background: 'rgba(220,38,38,0.15)',
                 border: '1px solid rgba(220,38,38,0.4)',
-                borderRadius: 10, padding: '20px 24px',
+                borderRadius: 10, padding: '16px 20px',
               }}>
-                <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 16, color: '#fff', margin: '0 0 6px' }}>
+                <p style={{ fontFamily: 'Outfit', fontWeight: 700, fontSize: 15, color: '#fff', margin: '0 0 4px' }}>
                   Something went wrong.
                 </p>
-                <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.88)', margin: 0, lineHeight: '1.6' }}>
+                <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.88)', margin: 0, lineHeight: '1.6' }}>
                   Please try again or call us at{' '}
                   <a href="tel:5204586781" style={{ color: '#7dd3fc', fontWeight: 600 }}>520-458-6781</a>.
                 </p>
@@ -697,13 +701,13 @@ export default function ContactPage() {
               disabled={status === 'sending'}
               style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10,
-                padding: '18px 28px',
+                padding: '16px 28px',
                 background: 'var(--blue)',
                 borderRadius: 10,
-                fontFamily: 'Outfit', fontWeight: 600, fontSize: 17,
+                fontFamily: 'Outfit', fontWeight: 600, fontSize: 16,
                 color: '#fff', border: 'none',
                 cursor: status === 'sending' ? 'default' : 'pointer',
-                alignSelf: 'flex-start',
+                width: '100%',
                 opacity: status === 'sending' ? 0.7 : 1,
                 transition: 'opacity 0.2s',
               }}
