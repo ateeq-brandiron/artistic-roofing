@@ -549,72 +549,116 @@ export default function ContactPage() {
             display: 'flex', flexDirection: 'column', gap: 14,
           }}>
 
-            <input
-              type="text"
-              name="name"
-              required
-              placeholder="Full Name"
-              disabled={status === 'sending'}
-              style={fieldStyle}
-            />
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="Email Address"
-              disabled={status === 'sending'}
-              style={fieldStyle}
-            />
-            <input
-              type="tel"
-              name="phone"
-              required
-              placeholder="Phone Number"
-              disabled={status === 'sending'}
-              style={fieldStyle}
-            />
-            <input
-              type="text"
-              name="streetAddress"
-              required
-              placeholder="Street Address"
-              disabled={status === 'sending'}
-              style={fieldStyle}
-            />
-            <input
-              type="text"
-              name="addressLine2"
-              placeholder="Address Line 2 (Apt, Suite, etc.)"
-              disabled={status === 'sending'}
-              style={fieldStyle}
-            />
-            <div style={{ display: 'flex', gap: 14 }}>
+            {/* Legend */}
+            <p style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
+              Fields marked <span style={{ color: '#f87171' }}>*</span> are required
+            </p>
+
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+                Full Name <span style={{ color: '#f87171' }}>*</span>
+              </span>
               <input
                 type="text"
-                name="city"
+                name="name"
                 required
-                placeholder="City"
+                placeholder="Full Name"
                 disabled={status === 'sending'}
-                style={{ ...fieldStyle, flex: 1 }}
+                style={fieldStyle}
               />
+            </label>
+
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+                Email Address <span style={{ color: '#f87171' }}>*</span>
+              </span>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Email Address"
+                disabled={status === 'sending'}
+                style={fieldStyle}
+              />
+            </label>
+
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+                Phone Number <span style={{ color: '#f87171' }}>*</span>
+              </span>
+              <input
+                type="tel"
+                name="phone"
+                required
+                placeholder="Phone Number"
+                disabled={status === 'sending'}
+                style={fieldStyle}
+              />
+            </label>
+
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+                Street Address <span style={{ color: '#f87171' }}>*</span>
+              </span>
               <input
                 type="text"
-                name="state"
+                name="streetAddress"
                 required
-                placeholder="State"
+                placeholder="Street Address"
                 disabled={status === 'sending'}
-                style={{ ...fieldStyle, width: 90, flexShrink: 0 }}
+                style={fieldStyle}
               />
+            </label>
+
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+                Address Line 2 <span style={{ color: 'rgba(255,255,255,0.4)' }}>(Optional)</span>
+              </span>
               <input
                 type="text"
-                name="zip"
-                required
-                placeholder="ZIP Code"
+                name="addressLine2"
+                placeholder="Apt, Suite, etc."
                 disabled={status === 'sending'}
-                style={{ ...fieldStyle, width: 110, flexShrink: 0 }}
+                style={fieldStyle}
               />
+            </label>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+                City / State / ZIP <span style={{ color: '#f87171' }}>*</span>
+              </span>
+              <div style={{ display: 'flex', gap: 14 }}>
+                <input
+                  type="text"
+                  name="city"
+                  required
+                  placeholder="City"
+                  disabled={status === 'sending'}
+                  style={{ ...fieldStyle, flex: 1 }}
+                />
+                <input
+                  type="text"
+                  name="state"
+                  required
+                  placeholder="State"
+                  disabled={status === 'sending'}
+                  style={{ ...fieldStyle, width: 90, flexShrink: 0 }}
+                />
+                <input
+                  type="text"
+                  name="zip"
+                  required
+                  placeholder="ZIP Code"
+                  disabled={status === 'sending'}
+                  style={{ ...fieldStyle, width: 110, flexShrink: 0 }}
+                />
+              </div>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              <span style={{ fontFamily: 'Outfit', fontSize: 12, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
+                Comments <span style={{ color: '#f87171' }}>*</span>
+              </span>
               <textarea
                 name="comments"
                 required
