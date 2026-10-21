@@ -1,0 +1,11 @@
+Options -MultiViews
+RewriteEngine On
+
+# Redirect trailing slashes to non-trailing-slash (canonical URL fix)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# Route all non-file requests to index.html (React SPA routing)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [QL]
