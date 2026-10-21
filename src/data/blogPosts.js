@@ -543,6 +543,709 @@ const blogPosts = [
       },
     ],
   },
+
+  // ── NEW BLOGS (Oct 2026) ────────────────────────────────────────────────────
+
+  {
+    id: 'signs-you-need-a-new-roof-sierra-vista',
+    title: 'Signs You Need a New Roof in Sierra Vista: What to Look For and What It Means',
+    category: 'Roofing Tips',
+    date: '2026-10-21',
+    author: 'Artistic Roofing Systems',
+    excerpt:
+      "Cracked shingles, slipped tile, granule loss, ceiling stains — learn the signs a Sierra Vista roof may need replacement and what to do next.",
+    image: '/img/blog/signs-new-roof-sierra-vista.png',
+    body: [
+      {
+        type: 'p',
+        text: "Sierra Vista's high-desert climate is hard on roofs. Strong sun for most of the year, wide swings between daytime and nighttime temperatures, and a summer monsoon season all add wear over time. Catching wear early usually gives you more options than finding out after a storm.",
+      },
+      { type: 'h2', text: "Why Sierra Vista's Climate Is Hard on Roofs" },
+      { type: 'h3', text: 'Sun and UV Exposure' },
+      {
+        type: 'p',
+        text: "UV exposure gradually breaks down many roofing materials. On asphalt shingles, it dries out the asphalt and makes them more brittle over time. It's the same process you see on a garden hose left in the yard — the material slowly loses flexibility, then starts to crack.",
+      },
+      { type: 'h3', text: 'Temperature Swings' },
+      {
+        type: 'p',
+        text: "Warm days, cool nights, and freezing nights in winter mean roofing materials expand and contract constantly. Over the years, that movement can stress seals, loosen fasteners, and open small cracks — especially around flashing, vents, and other roof penetrations.",
+      },
+      { type: 'h3', text: 'Monsoon Storms' },
+      {
+        type: 'p',
+        text: "Monsoon storms can bring high winds, heavy rain, and sometimes hail, all in a short window. Wind can lift or tear off shingles that have already turned brittle. If storm season is on your mind, checking your roof before the storms arrive is the best move.",
+      },
+      { type: 'h2', text: 'Top Signs Your Roof May Need Replacement' },
+      {
+        type: 'tip',
+        text: "You can spot most of these from the ground. Stay off the roof yourself — roofs are a real fall hazard, and walking on tile can crack it. A look from the yard with binoculars usually tells you plenty.",
+      },
+      { type: 'h3', text: '1. Cracked, Curled, or Missing Shingles (Asphalt Shingle Roofs)' },
+      {
+        type: 'ul',
+        items: [
+          'Cracked shingles show lines running across the surface — a sign the shingle has become brittle.',
+          'Curling shingles cup upward at the edges or lift in the middle (called clawing). Curling is commonly associated with aging, heat exposure, and ventilation problems.',
+          'Missing shingles often show up after high winds. When a shingle is gone, the underlayment is exposed and should be addressed promptly.',
+        ],
+      },
+      {
+        type: 'p',
+        text: "A few scattered damaged shingles can often be repaired. Widespread cracking or curling across several slopes usually means the shingles as a whole are wearing out.",
+      },
+      { type: 'h3', text: '2. Heavy Granule Loss' },
+      {
+        type: 'p',
+        text: "Check your gutters after a rain. Those sand-like particles are asphalt shingle granules that help shield the asphalt from UV exposure. Heavy buildup in the gutters, or dark bare patches on the shingles, means the protective layer is thinning.",
+      },
+      { type: 'h3', text: '3. Cracked, Slipped, or Broken Tile (Tile Roofs)' },
+      {
+        type: 'p',
+        text: "On a tile roof, the underlayment beneath the tile is the primary waterproofing layer. A cracked or slipped tile can expose that underlayment to sun and weather, which may speed up its deterioration. An inspection can determine whether you need a localized repair, a tile re-set, or a complete tile reroof.",
+      },
+      { type: 'h3', text: '4. Cracking, Blistering, or Standing Water (Low-Slope Roofs)' },
+      {
+        type: 'ul',
+        items: [
+          'A cracked or "alligatored" surface',
+          'Blisters or bubbles in the membrane',
+          'Seams that are lifting or separating',
+          'A coating that has worn thin or is flaking away',
+        ],
+      },
+      {
+        type: 'p',
+        text: "Water that stays on the roof well after a storm (ponding) is a drainage or slope issue. Drainage problems need to be addressed as part of any repair or replacement plan.",
+      },
+      { type: 'h3', text: '5. A Sagging Roof Deck' },
+      {
+        type: 'p',
+        text: "A roofline that dips or sags — especially between rafters or trusses — is a serious sign. It can indicate that the decking or supporting structure has weakened. Stay off the roof and avoid the area directly beneath the sag until it's been assessed.",
+      },
+      { type: 'h3', text: '6. Water Stains on Ceilings or Walls' },
+      {
+        type: 'p',
+        text: "Stains, discoloration, or peeling paint on ceilings and walls can indicate a roof leak, but the source is not always the roofing system. Plumbing, HVAC condensation, and solar systems can create similar signs. Water can travel along framing before becoming visible, so even a small or intermittent leak should be investigated promptly.",
+      },
+      { type: 'h3', text: '7. The Roof\'s Age' },
+      {
+        type: 'p',
+        text: "Age isn't damage by itself, but it matters. Every roofing product has an expected service life. If your roof has been in place for many years — or you don't know when it was installed — an inspection gives you a baseline. Planning a replacement on your own timeline is far easier than scheduling one after a storm.",
+      },
+      { type: 'h2', text: 'What Happens During a Professional Roof Inspection' },
+      {
+        type: 'p',
+        html: "If you notice any of these signs, the best first step is a <a href='/services'>professional roof inspection</a>. A thorough inspection typically covers:",
+      },
+      {
+        type: 'ul',
+        items: [
+          'The roofing surface: condition of shingles, tile, membrane, or coating',
+          'Flashing: material around chimneys, vents, skylights, and walls — one of the most common leak points',
+          'Underlayment: especially on tile roofs, where it does most of the waterproofing',
+          'Gutters and drainage: clogged gutters can contribute to fascia and soffit damage',
+          'The attic: signs of moisture, staining, and ventilation quality',
+        ],
+      },
+      { type: 'h2', text: 'Frequently Asked Questions' },
+      { type: 'h3', text: 'How often should I have my roof inspected in Sierra Vista, AZ?' },
+      {
+        type: 'p',
+        text: "A good baseline is once a year, plus a check after any major monsoon storm. Many homeowners schedule their inspection in spring — before monsoon season — so storm-related wear gets caught in time.",
+      },
+      { type: 'h3', text: 'Does a cracked tile mean my roof is leaking?' },
+      {
+        type: 'p',
+        text: "Not necessarily. The underlayment beneath the tile is the primary waterproofing layer. A cracked tile can expose it to sun and weather, which may shorten its life — so it's worth addressing. Whether water is actually getting in depends on underlayment condition, which an inspection can confirm.",
+      },
+      { type: 'h3', text: 'Can a small roof leak really cause much damage?' },
+      {
+        type: 'p',
+        text: "Yes. A small, intermittent leak can soak insulation, stain and weaken drywall, contribute to rot in wood framing, and create conditions for mold — often before you see anything inside. Having a leak checked early is far simpler than dealing with hidden damage later.",
+      },
+      { type: 'h3', text: 'Is it worth repairing an old roof, or should I replace it?' },
+      {
+        type: 'p',
+        text: "It depends on how widespread the damage is and the condition of the layers underneath. If wear is widespread or the layers beneath are failing, replacement is often the more reliable long-term choice. An inspection gives you the facts to decide.",
+      },
+      {
+        type: 'p',
+        html: "If you've noticed any of these signs, or simply don't know how much life your roof has left, <a href='/contact'>contact Artistic Roofing Systems LLC</a> to schedule an inspection. We'll walk you through what we find, what we'd recommend, and why.",
+      },
+    ],
+  },
+
+  {
+    id: 'sierra-vista-roof-replacement-cost',
+    title: 'How Much Does a New Roof Cost in Sierra Vista, AZ?',
+    category: 'Roofing Tips',
+    date: '2026-10-21',
+    author: 'Artistic Roofing Systems',
+    excerpt:
+      "What drives roof replacement pricing in Sierra Vista — from materials and roof complexity to permits and warranties — and how to get an estimate that actually reflects your home.",
+    image: '/img/blog/sierra-vista-roof-replacement-cost.png',
+    body: [
+      {
+        type: 'p',
+        text: "The honest answer to what a new roof costs is: it depends. Two houses on the same street can come in at very different prices, and the reasons behind that difference are worth understanding before you start collecting quotes.",
+      },
+      { type: 'h2', text: "Why Sierra Vista's Climate Factors Into the Price" },
+      {
+        type: 'ul',
+        items: [
+          'Strong UV exposure — sun at elevation is intense and nearly year-round, drying out asphalt and fading finishes',
+          'Wide temperature swings — thermal cycling contributes to wear on shingles, sealants, and flashing over years',
+          'Monsoon storms — how well flashing, underlayment, and fastening were installed matters when a storm moves through',
+          'Wind and dust — wind-blown grit can gradually wear down roof surfaces and shingle granules',
+        ],
+      },
+      { type: 'h2', text: 'What Goes Into a Roof Replacement Estimate' },
+      { type: 'h3', text: '1. Roofing Material' },
+      {
+        type: 'p',
+        text: "Material is usually the single biggest factor in the price. Each option is its own system with different installation requirements, weight, and upkeep.",
+      },
+      {
+        type: 'ul',
+        items: [
+          'Asphalt shingles — lowest upfront cost; architectural (laminated) shingles offer better wind resistance and warranties than 3-tab',
+          'Concrete and clay tile — long-lived when properly maintained; tile is heavy, so the structure must be evaluated; underlayment condition is often the deciding factor',
+          'Metal roofing — noncombustible, lightweight compared to tile; standing seam is higher cost but hides fasteners',
+          'Low-slope systems (modified bitumen, coatings) — for porches, carports, additions, and commercial buildings',
+        ],
+      },
+      { type: 'h3', text: '2. Roof Size, Shape, and Pitch' },
+      {
+        type: 'p',
+        text: "Roofing is measured in 'squares' (100 sq ft). Complex rooflines with multiple valleys, hips, dormers, or skylights require more cutting and flashing work. Steep pitches add labor costs for safety equipment and slower work.",
+      },
+      { type: 'h3', text: '3. Tear-Off and Disposal' },
+      {
+        type: 'p',
+        text: "The old roof has to come off first. Tile is heavier and more labor-intensive to remove than shingles, and a roof with multiple layers takes longer to strip. Your estimate should state clearly whether tear-off and disposal are included.",
+      },
+      { type: 'h3', text: '4. Underlayment and Flashing' },
+      {
+        type: 'p',
+        text: "Underlayment sits on the deck beneath the finished roofing material. On tile roofs, it plays the central waterproofing role. Flashing around chimneys, skylights, and vents is where installation quality matters most — ask whether your estimate includes new flashing or reuses existing.",
+      },
+      { type: 'h3', text: '5. Roof Deck Condition' },
+      {
+        type: 'p',
+        text: "Once the old roof is off, the wood decking is exposed. Water-damaged or deteriorated sections need to be replaced before the new roof goes on. Deck condition often can't be fully known until tear-off — a good estimate explains how deck repairs will be priced.",
+      },
+      { type: 'h3', text: '6. Ventilation' },
+      {
+        type: 'p',
+        text: "In Sierra Vista, attic ventilation deserves attention. A balanced system of intake and exhaust vents helps reduce heat buildup, lower cooling demand, and manage moisture. Some manufacturers' warranty terms include ventilation requirements.",
+      },
+      { type: 'h3', text: '7. Permits and Warranties' },
+      {
+        type: 'p',
+        text: "Whether your project needs a permit depends on the scope of work and location — requirements differ inside Sierra Vista city limits versus elsewhere in Cochise County. Most roof replacements come with two warranties: a manufacturer's warranty on materials and a contractor's workmanship warranty on installation. Ask for both in writing.",
+      },
+      { type: 'h2', text: 'What to Look For in a Written Estimate' },
+      {
+        type: 'ul',
+        items: [
+          'Roofing material — brand and product line',
+          'Underlayment product specified',
+          'Tear-off and disposal included or not',
+          'How deck repairs will be priced if damage is found',
+          'Whether flashing is being replaced or reused',
+          'Who handles permits, where required',
+          'Manufacturer and workmanship warranty terms in writing',
+          'Estimated timeline',
+        ],
+      },
+      { type: 'h2', text: 'Frequently Asked Questions' },
+      { type: 'h3', text: 'How often should I have my roof inspected in Sierra Vista?' },
+      {
+        type: 'p',
+        text: "Older roofs should generally be inspected annually; newer roofs may only need a professional inspection every few years, provided there are no signs of damage. After any significant monsoon storm, high winds, or hail, it's worth a check regardless of age.",
+      },
+      { type: 'h3', text: 'Why do roof replacement quotes vary so much between contractors?' },
+      {
+        type: 'p',
+        text: "Quotes differ because of the materials specified, whether tear-off, disposal, and flashing are included, how deck repairs are handled, ventilation work, and each contractor's labor rates and insurance coverage. Comparing itemized estimates line by line is the most reliable way to see whether two quotes actually cover the same work.",
+      },
+      { type: 'h3', text: 'Do I need a permit to replace my roof in Sierra Vista?' },
+      {
+        type: 'p',
+        text: "It depends on the scope of the work and where the property is located. Ask your contractor whether a permit applies to your project, and confirm with your local building department if you'd like to verify.",
+      },
+      { type: 'h3', text: 'Which roofing material is most energy efficient for Sierra Vista\'s heat?' },
+      {
+        type: 'p',
+        text: "Reflective, lighter-colored surfaces generally absorb less heat. Options include metal roofing with reflective finishes, light-colored tile, and asphalt shingles made with reflective granules. Attic ventilation also affects heat buildup regardless of the roofing material.",
+      },
+      {
+        type: 'p',
+        html: "The most reliable way to know what your roof will cost is to have it inspected in person. <a href='/contact'>Request an estimate from Artistic Roofing Systems LLC</a> and we'll set up a time to take a look.",
+      },
+    ],
+  },
+
+  {
+    id: 'residential-vs-commercial-roofing-sierra-vista',
+    title: 'Residential vs. Commercial Roofing in Sierra Vista: Understanding the Differences',
+    category: 'Roofing Tips',
+    date: '2026-10-21',
+    author: 'Artistic Roofing Systems',
+    excerpt:
+      "Homes and commercial buildings use different roofing systems for good reason. Here's how slope, materials, and maintenance differ — and what Sierra Vista's climate means for each.",
+    image: '/img/blog/residential-vs-commercial-roofing.png',
+    body: [
+      {
+        type: 'p',
+        html: "From the street, a roof is a roof. But residential and commercial roofs are often built differently — in slope, materials, and how they're installed and maintained. At <a href='/'>Artistic Roofing LLC</a>, we work on both. Here's a plain-terms look at how the two compare.",
+      },
+      { type: 'h2', text: 'Slope and Structure' },
+      { type: 'h3', text: 'Residential Roofs: Usually Pitched' },
+      {
+        type: 'ul',
+        items: [
+          'Water sheds quickly — the slope helps rain run off, so water spends less time on the roof surface',
+          'Overlapping materials shed water — shingles and tile rely on the underlayment beneath as a key waterproofing layer',
+          'Framing creates an attic — typically where ventilation and insulation live',
+        ],
+      },
+      { type: 'h3', text: 'Commercial Roofs: Often Low-Slope' },
+      {
+        type: 'ul',
+        items: [
+          '"Flat" roofs still have slope — built with a slight pitch to move water toward drains, scuppers, or gutters',
+          'Suit large buildings — a steeply pitched roof over a wide building can be impractical',
+          'Use continuous waterproof surfaces — materials that form a membrane or multi-ply surface rather than overlapping pieces',
+          'Drainage is a priority — ponding water points to a drainage or structural issue that needs to be corrected',
+        ],
+      },
+      { type: 'h3', text: 'Low-Slope Roofing on Homes' },
+      {
+        type: 'p',
+        text: "Low-slope roofing isn't limited to commercial properties. Residential examples include porches, carports, patio covers, and additions.",
+      },
+      { type: 'h2', text: 'Materials: What Goes on Top' },
+      { type: 'h3', text: 'Common Residential Roofing Materials' },
+      {
+        type: 'ul',
+        items: [
+          'Asphalt shingles — widely used, variety of colors and styles, lower upfront cost; lighter colors and reflective products can reduce heat absorption',
+          'Clay or concrete tile — long-standing choice in the Southwest; the underlayment beneath does much of the waterproofing, so tile maintenance looks at both',
+          'Metal roofing — panels or shingle-style products, many with reflective finishes',
+        ],
+      },
+      { type: 'h3', text: 'Common Commercial Roofing Materials' },
+      {
+        type: 'ul',
+        items: [
+          'Modified bitumen — asphalt-based, installed in layers; granule-surfaced cap sheet protects lower layers from UV; reflective coating sometimes added',
+          'Built-up roofing (BUR) — alternating layers of felt and asphalt, finished with gravel or coated surface; waterproofing doesn\'t depend on a single layer',
+        ],
+      },
+      {
+        type: 'tip',
+        text: "A roof coating protects the roofing material underneath from UV exposure and weathering. It isn't a replacement for the roofing system and doesn't correct ponding or drainage problems.",
+      },
+      { type: 'h2', text: "How Sierra Vista's Climate Affects Both" },
+      {
+        type: 'ul',
+        items: [
+          'Strong UV exposure — contributes to fading and surface wear on any roof type',
+          'High summer temperatures — put heat stress on roofing materials',
+          'Day-to-night temperature swings — cause materials to expand and contract repeatedly',
+          'Heavy monsoon rain — tests flashing, underlayment, and drainage',
+        ],
+      },
+      { type: 'h2', text: 'Hiring a Contractor: Verification Checklist' },
+      {
+        type: 'ol',
+        items: [
+          'Check the contractor\'s license with the Arizona Registrar of Contractors — a license alone doesn\'t mean the contractor carries insurance',
+          'Ask for proof of general liability insurance — request a current certificate',
+          'Ask about workers\' compensation coverage separately — it\'s a different type of coverage',
+          'Confirm who the coverage includes — ask whether subcontractors are covered',
+          'Confirm permit requirements for your project — requirements depend on scope and location',
+        ],
+      },
+      { type: 'h2', text: 'Frequently Asked Questions' },
+      { type: 'h3', text: 'How often should I have my residential roof inspected in Sierra Vista?' },
+      {
+        type: 'p',
+        text: "Many roofing professionals recommend an inspection about once a year, plus a check after major storms. Scheduling before or after monsoon season makes sense, since that's when roofs face heavy rain and wind.",
+      },
+      { type: 'h3', text: 'Can a residential roofer work on a commercial property, or vice versa?' },
+      {
+        type: 'p',
+        text: "Some contractors do both, and others focus on one. What matters most is experience with the specific roofing system your building has. Artistic Roofing LLC works on both residential and commercial roofs.",
+      },
+      { type: 'h3', text: 'How do repairs differ between residential and commercial roofs?' },
+      {
+        type: 'p',
+        text: "On pitched residential roofs, repairs often involve replacing damaged shingles or tile, addressing flashing, or repairing underlayment. On low-slope commercial roofs, repairs commonly involve patching the membrane, resealing seams, clearing or repairing drains, or reflashing around rooftop equipment.",
+      },
+      {
+        type: 'p',
+        html: "Weighing options for a home or a commercial building? <a href='/contact'>Request an estimate from Artistic Roofing LLC</a> and we'll walk you through the next steps.",
+      },
+    ],
+  },
+
+  {
+    id: 'emergency-roof-repair-sierra-vista',
+    title: 'Emergency Roof Repair in Sierra Vista, AZ: When to Call and What to Expect',
+    category: 'Monsoon Season',
+    date: '2026-10-21',
+    author: 'Artistic Roofing Systems',
+    excerpt:
+      "How to tell if roof damage in Sierra Vista needs urgent attention, what to do while you wait, and what to expect when you call Artistic Roofing LLC.",
+    image: '/img/blog/emergency-roof-repair-sierra-vista.png',
+    body: [
+      {
+        type: 'p',
+        text: "A damaged roof rarely picks a convenient time. In Sierra Vista, it usually happens right after a monsoon cell rolls through or a windstorm kicks up. If you're looking at a stain spreading across the ceiling or shingles scattered in the yard, the question is: does this need someone today, or can it wait?",
+      },
+      { type: 'h2', text: 'Does Artistic Roofing LLC Offer Emergency Roof Repair?' },
+      {
+        type: 'p',
+        html: "Yes. When a roof is letting water in or has taken sudden storm damage, we work to get it assessed and protected as quickly as we can. We handle emergency calls for homes, commercial buildings, and investment properties in the Sierra Vista area. <a href='/contact'>Contact us</a> and we'll talk through what you're seeing.",
+      },
+      { type: 'h2', text: 'Is It an Emergency? Signs to Act On Now' },
+      { type: 'h3', text: '1. Active Leaks and Water Coming Inside' },
+      {
+        type: 'p',
+        text: "If water is dripping, pouring, or visibly spreading on a ceiling or wall, treat it as an emergency. Water can soak insulation and drywall, reach light fixtures and wiring, and damage flooring. The longer it continues, the more there is to dry out and repair.",
+      },
+      {
+        type: 'ul',
+        items: [
+          'Ceiling or wall stains that are growing',
+          'Drips from the ceiling or around light fixtures',
+          'Ceiling drywall or plaster that is bulging or sagging',
+        ],
+      },
+      { type: 'h3', text: '2. Storm Damage You Can See From the Ground' },
+      {
+        type: 'ul',
+        items: [
+          'Shingle roofs: Large sections of missing or torn shingles expose the underlayment to sun and weather',
+          'Tile roofs: Cracked, slipped, or missing tiles can expose the underlayment — the primary waterproofing layer — to UV and weather',
+          'Low-slope roofs: Punctures, tears, or lifted seams in the membrane can allow water through',
+          'Flashing: Lifted, bent, or missing flashing at chimneys, skylights, and wall transitions leaves joints unprotected',
+        ],
+      },
+      { type: 'h3', text: '3. Signs of Structural Damage' },
+      {
+        type: 'ul',
+        items: [
+          'A new dip, sag, or curve in the roofline',
+          'Daylight visible through the roof deck from the attic',
+          'A ceiling that is sagging or bowing',
+        ],
+      },
+      {
+        type: 'tip',
+        text: "If you see structural signs, keep people and pets out of the area below and call right away. Do not investigate from the attic or roof yourself.",
+      },
+      { type: 'h3', text: '4. Exposed Underlayment' },
+      {
+        type: 'p',
+        text: "If shingles or tiles have been stripped away and you can see the underlayment, call promptly. Most underlayment products aren't designed for extended exposure to direct sun and weather, and Sierra Vista's UV conditions can speed up that wear.",
+      },
+      { type: 'h2', text: 'What to Do While You Wait' },
+      {
+        type: 'ol',
+        items: [
+          'Stay off the roof — wet, damaged roofs are slippery and may not support your weight',
+          'Protect what\'s inside — move furniture and valuables away from the leak; catch drips with buckets',
+          'Keep clear of electrical hazards — if water is near fixtures or your electrical panel, stay away and contact a licensed electrician',
+          'Keep people out from under a sagging ceiling — don\'t try to drain or poke it',
+          'Document the damage — take dated photos inside and out before anything is moved or repaired',
+          'Call your insurance company — talk with your insurer before contracting for repairs to understand what\'s covered',
+        ],
+      },
+      { type: 'h2', text: 'Why Acting Quickly Matters' },
+      {
+        type: 'ul',
+        items: [
+          'Limits interior damage — the sooner water stops coming in, the less insulation and drywall may need replacing',
+          'Reduces moisture risk — moisture sitting in attics or walls can lead to mold growth',
+          'Protects the roof structure — repeated water exposure can weaken decking and framing',
+          'Addresses safety concerns early — structural damage should be assessed quickly',
+        ],
+      },
+      { type: 'h2', text: 'What to Expect When You Call Us' },
+      {
+        type: 'ol',
+        items: [
+          'The phone call — we\'ll ask what you\'re seeing, where the water or damage is, and whether anyone is at risk',
+          'On-site assessment — our crew inspects safely, identifies the source, and checks how far damage extends',
+          'Temporary protection — tarping, patching, or securing loose materials to stop further water intrusion (temporary measures are not a long-term fix)',
+          'A clear repair plan — we explain what we found, what we recommend, and why; written estimate provided',
+          'The permanent repair — we follow manufacturer installation specifications and local code requirements',
+        ],
+      },
+      { type: 'h2', text: 'How to Be Ready Before the Next Monsoon' },
+      {
+        type: 'ul',
+        items: [
+          'Schedule routine inspections — especially before and after monsoon season',
+          'Keep gutters and downspouts clear — clogged gutters can overflow and send water back toward the roof edge',
+          'Trim overhanging branches — reduces the risk of limbs damaging the roof in high winds',
+          'Know who you\'d call before you need them — vet contractors on a calm day',
+        ],
+      },
+      { type: 'h2', text: 'Frequently Asked Questions' },
+      { type: 'h3', text: 'How quickly can Artistic Roofing LLC respond to an emergency call?' },
+      {
+        type: 'p',
+        text: "We treat active leaks and storm damage as priority calls and work to get someone out as quickly as conditions and crew availability allow. During widespread storm events, many properties may need help at once — when you call, we'll give you a realistic idea of timing.",
+      },
+      { type: 'h3', text: 'Should I try to fix the roof myself before calling a professional?' },
+      {
+        type: 'p',
+        text: "We strongly recommend against it, especially during or right after a storm. Damaged roofs can be slippery and structurally unsound. Focus on what you can safely do inside: move belongings, catch drips, keep people out of affected areas, and document the damage.",
+      },
+      { type: 'h3', text: 'Will my insurance cover emergency roof repairs?' },
+      {
+        type: 'p',
+        text: "It depends on your policy. Many homeowner policies include coverage for sudden damage from wind or hail, but coverage and exclusions vary. Damage from gradual wear is often treated differently. Contact your insurance provider as soon as possible after you discover the damage.",
+      },
+      {
+        type: 'p',
+        html: "If water is coming in or your roof took damage in the last storm, don't wait for it to get worse. <a href='/contact'>Contact Artistic Roofing LLC</a> and we'll talk through what you're seeing and get you on the schedule.",
+      },
+    ],
+  },
+
+  {
+    id: 'best-roofing-material-arizona-climate',
+    title: "What Is the Best Roofing Material for Arizona's Climate?",
+    category: 'Roofing Tips',
+    date: '2026-10-21',
+    author: 'Artistic Roofing Systems',
+    excerpt:
+      "Tile, shingles, metal, or a low-slope system? A Sierra Vista roofer explains how each material handles Arizona sun, heat swings, and monsoon storms.",
+    image: '/img/blog/best-roofing-material-arizona.png',
+    body: [
+      {
+        type: 'p',
+        text: "There's no single best roofing material for every Arizona home. The right choice depends on your roof's slope and structure, HOA requirements, budget, and how long you plan to stay. In Sierra Vista's high-desert climate, the deciding factors are how a material handles strong UV exposure, daily temperature swings, and monsoon wind and rain.",
+      },
+      { type: 'h2', text: "What Southern Arizona's Climate Asks of a Roof" },
+      {
+        type: 'ul',
+        items: [
+          'UV exposure — strong, year-round sun breaks down roofing materials over time, making asphalt shingles and some underlayments more brittle',
+          'Heat cycling — roofs heat up during the day and cool at night; repeated expansion and contraction contributes to cracking and loosened fasteners',
+          'Monsoon wind and rain — tests how well a roof was installed; strong gusts can lift shingles or tiles, and heavy rain finds weak points in flashing and aging underlayment',
+        ],
+      },
+      { type: 'h2', text: 'Comparing Common Roofing Materials' },
+      { type: 'h3', text: '1. Concrete and Clay Tile' },
+      {
+        type: 'ul',
+        items: [
+          'Durable tile with underlayment that needs attention — tile can last decades; the underlayment beneath it does the waterproofing and typically wears out first',
+          'Heat buffering — dense tile slows heat transfer into the attic',
+          'Airflow — depending on the profile and installation, there\'s often space between tile and deck that allows air movement',
+          'Things to weigh: tile is heavy; a home not framed for tile may need structural evaluation before switching; higher upfront cost than shingles',
+        ],
+      },
+      { type: 'h3', text: '2. Asphalt Shingles' },
+      {
+        type: 'ul',
+        items: [
+          'Lower upfront cost — one of the more budget-friendly options for a full replacement',
+          'Simpler repairs — damaged shingles can usually be replaced without major work',
+          'Versatile — wide range of colors, suits most pitched roofs',
+          'Things to weigh: heat and UV exposure can shorten service life; ask about reflective or "cool roof" shingles and review manufacturer warranty terms for your area',
+        ],
+      },
+      { type: 'h3', text: '3. Metal Roofing' },
+      {
+        type: 'p',
+        text: "Metal is noncombustible, lightweight compared to tile, and many finishes are designed to reflect sunlight. Upfront cost is typically higher than asphalt shingles, and standing seam can be comparable to tile or higher depending on the product. Actual service life depends on the specific product, installation, and ongoing maintenance.",
+      },
+      { type: 'h3', text: '4. Flat and Low-Slope Roofing Systems' },
+      {
+        type: 'p',
+        text: "Tile and standard shingles aren't designed for flat or very low-slope surfaces. Low-slope roofs — including flat residential sections, porches, additions, carports, and commercial buildings — need systems built for those conditions:",
+      },
+      {
+        type: 'ul',
+        items: [
+          'Spray polyurethane foam (SPF) — sprayed on as liquid, expands into a continuous layer; adds insulation value; must be protected by a UV-resistant coating with periodic recoating',
+          'Modified bitumen — asphalt-based membrane in layers; typically finished with a granulated cap sheet or coating to protect from UV',
+          'Single-ply membranes (EPDM, TPO, PVC) — synthetic sheets with sealed seams',
+          'Roof coatings — a protective layer or maintenance treatment, not a replacement system; doesn\'t correct ponding water or structural issues',
+        ],
+      },
+      { type: 'h2', text: "The Part You Can't See: Underlayment" },
+      {
+        type: 'p',
+        text: "On a tile roof, the tile mainly sheds water and shields what's beneath from sun and weather. The underlayment is the primary waterproofing layer. It can deteriorate with age and heat exposure — older felt-based products in particular may become brittle. A cracked or displaced tile may expose the underlayment, speeding up that wear. When we evaluate a tile roof, we look at underlayment condition, not just the tiles.",
+      },
+      { type: 'h2', text: 'What to Consider Before You Decide' },
+      {
+        type: 'ol',
+        items: [
+          'How long do you plan to stay? A material with a longer expected service life may make sense for a long-term home even with a higher upfront cost',
+          'What does your HOA require? Many Arizona communities have rules about roofing materials and colors — check your CC&Rs first',
+          'How\'s your attic ventilation? Poor ventilation adds heat load on roofing materials and underlayment regardless of what material you choose',
+          'Will the change affect the structure? Moving to a heavier material may require a structural evaluation and possibly a permit',
+        ],
+      },
+      { type: 'h2', text: 'Frequently Asked Questions' },
+      { type: 'h3', text: 'Does the color of my roof affect my energy bill?' },
+      {
+        type: 'p',
+        text: "It can. Lighter and more reflective roof surfaces generally reflect more sunlight, which can help keep the attic cooler. How much difference it makes depends on your home's insulation, ventilation, and design — and your HOA may limit color choices.",
+      },
+      { type: 'h3', text: 'Can I switch from shingles to tile?' },
+      {
+        type: 'p',
+        text: "Possibly. Tile is significantly heavier than shingles, so a structural engineer or qualified contractor should confirm your home's framing can support the added weight. A permit may also be required depending on the scope and local requirements.",
+      },
+      { type: 'h3', text: 'How often should I have my Arizona roof inspected?' },
+      {
+        type: 'p',
+        text: "We recommend an inspection at least once a year, ideally before monsoon season — that's when wind and heavy rain put the most stress on weak spots. Also worth a check after any major storm.",
+      },
+      { type: 'h3', text: 'Why did my tile roof start leaking if the tiles aren\'t broken?' },
+      {
+        type: 'p',
+        text: "Underlayment wear is a common cause. In our climate, underlayment can deteriorate with age and heat exposure. Other possible causes include worn flashing around vents or chimneys and displaced tiles. An inspection is the most reliable way to find the source.",
+      },
+      {
+        type: 'p',
+        html: "Not sure which roofing material fits your home? <a href='/contact'>Contact Artistic Roofing LLC</a> to schedule a roof evaluation — we'll walk you through the options that fit your roof, your budget, and how long you plan to stay.",
+      },
+    ],
+  },
+
+  {
+    id: 'understanding-your-roof-warranty',
+    title: "Understanding Your Roof Warranty: A Homeowner's Guide",
+    category: 'Roofing Tips',
+    date: '2026-10-21',
+    author: 'Artistic Roofing Systems',
+    excerpt:
+      "Learn the difference between manufacturer and workmanship roof warranties, what's typically covered, what can void your coverage, and how to file a claim.",
+    image: '/img/blog/understanding-roof-warranty.png',
+    body: [
+      {
+        type: 'p',
+        text: "A new roof comes with paperwork, and the warranty is the part most homeowners don't read until they need it — usually after a monsoon storm, when there's a stain on the ceiling and a real question about who's responsible for the fix. We'd rather you know where you stand before work starts.",
+      },
+      { type: 'h2', text: 'The Two Parts of a Roof Warranty' },
+      { type: 'h3', text: '1. The Manufacturer Warranty (the Materials)' },
+      {
+        type: 'ul',
+        items: [
+          'What it generally covers: manufacturing defects that cause the material to fail before it should',
+          'What it generally doesn\'t cover: installation errors, storm or impact damage, and normal weathering',
+          'How long it lasts: varies widely by product; "lifetime" warranties are often narrower than they sound',
+        ],
+      },
+      { type: 'h3', text: '2. The Workmanship Warranty (the Installation)' },
+      {
+        type: 'ul',
+        items: [
+          'What it generally covers: problems traced back to installation — flashing not sealed correctly, tile or shingles not set properly',
+          'What it generally doesn\'t cover: normal wear, storm damage, or impact damage from falling branches or debris',
+          'How long it lasts: no industry standard; each contractor sets their own terms — ask to see it in writing before you sign',
+        ],
+      },
+      {
+        type: 'tip',
+        text: "If Artistic Roofing LLC is installing your roof, we'll go over the warranty terms that apply to your project before work begins, so you know what's covered and who to call.",
+      },
+      { type: 'h2', text: "What Does My Roof Warranty Cover? (And What It Doesn't)" },
+      { type: 'h3', text: 'Commonly Covered' },
+      {
+        type: 'ul',
+        items: [
+          'Material defects — shingles losing granules much faster than they should is typically a manufacturer issue',
+          'Installation errors — a leak traced to a valley or flashing not installed correctly is typically a workmanship issue',
+          'Penetration details — seals around vents and pipes may fall under workmanship coverage when a failure is installation-related',
+        ],
+      },
+      { type: 'h3', text: 'Commonly Excluded' },
+      {
+        type: 'ul',
+        items: [
+          'Storm and weather events — most warranties exclude hail, high winds, and lightning; homeowner\'s insurance determines whether that damage is covered',
+          'Lack of maintenance — clogged gutters and deferred upkeep can contribute to damage a manufacturer won\'t treat as a defect',
+          'Repairs or alterations by others — work done by a different contractor can affect coverage on that area of the roof',
+        ],
+      },
+      { type: 'h2', text: "How Southern Arizona's Climate Factors In" },
+      {
+        type: 'p',
+        text: "Intense UV exposure and wide temperature swings are hard on roofing materials. Most warranties treat gradual weathering as normal wear, not a defect. So before you choose a roof, read the warranty for exclusions tied to heat or UV, and ask your contractor why they're recommending a specific product for your roof.",
+      },
+      { type: 'h2', text: '5 Common Ways Homeowners Lose Warranty Coverage' },
+      {
+        type: 'ol',
+        items: [
+          'Ventilation that doesn\'t meet the manufacturer\'s requirements — poor ventilation traps heat and moisture; a manufacturer may decline a claim if ventilation doesn\'t meet their specifications',
+          'Installing new roofing over an old roof — some manufacturers limit or exclude coverage when new materials go over an existing layer',
+          'Pressure washing — high-pressure water can strip protective granules from shingles and crack or shift tile',
+          'New roof penetrations after installation — satellite dishes or antennas mounted through the roof by someone other than your installer may not be covered',
+          'Skipping maintenance and not keeping records — keep receipts for gutter cleaning, leak repairs, and roofing services in case you ever file a claim',
+        ],
+      },
+      { type: 'h2', text: 'How to File a Warranty Claim' },
+      {
+        type: 'ol',
+        items: [
+          'Call your installer first — if Artistic Roofing LLC installed your roof, contact us; we can help determine whether the issue is material-related or installation-related',
+          'Document what you see — take dated photos of any interior damage and the affected roof area; don\'t climb onto the roof yourself',
+          'Limit further damage where safe — move belongings away from the leak and catch dripping water',
+          'Gather your paperwork — original contract, warranty certificates, product registration, and maintenance receipts',
+          'Follow the manufacturer\'s process for material claims — manufacturers often have their own claim procedures and notice timelines',
+        ],
+      },
+      { type: 'h2', text: 'Homeowner Warranty Checklist' },
+      {
+        type: 'ul',
+        items: [
+          'Do I have a copy of the manufacturer\'s warranty for my roofing materials?',
+          'Do I know what my contractor\'s workmanship warranty covers and how long it lasts?',
+          'Does my warranty require registration or periodic maintenance?',
+          'Am I keeping receipts for roof maintenance and repairs?',
+          'Does my attic ventilation meet the manufacturer\'s requirements?',
+        ],
+      },
+      { type: 'h2', text: 'Frequently Asked Questions' },
+      { type: 'h3', text: 'Is a roof warranty transferable if I sell my house?' },
+      {
+        type: 'p',
+        text: "Some are and some aren't. Manufacturer warranties that allow transfers often require you to notify the manufacturer within a set window after the sale, and some charge a transfer fee. Workmanship warranty transfers are set by each contractor.",
+      },
+      { type: 'h3', text: 'Does a "lifetime warranty" really last forever?' },
+      {
+        type: 'p',
+        text: 'Usually not in the way it sounds. In roofing, "lifetime" is often tied to the original homeowner, and coverage may be reduced or limited for a later owner. Many lifetime warranties are also prorated after an initial period.',
+      },
+      { type: 'h3', text: 'Will my warranty pay for a full roof replacement?' },
+      {
+        type: 'p',
+        text: "It depends on the extent of the defect and the warranty terms. If there's a widespread material defect, the manufacturer may cover materials, but labor may not be included. Many warranties are also prorated, meaning they cover less as the roof ages.",
+      },
+      { type: 'h3', text: "What's the difference between a warranty and homeowner's insurance?" },
+      {
+        type: 'p',
+        text: "A warranty covers defects and installation errors. Homeowner's insurance generally covers sudden damage from events your policy includes, such as certain storm damage. Neither typically covers normal wear.",
+      },
+      {
+        type: 'p',
+        html: "Pull out your paperwork and give us a call. Whether you're planning a <a href='/services'>new roof installation</a> or want someone to look at the roof you already have, <a href='/contact'>contact Artistic Roofing LLC</a> to schedule a visit.",
+      },
+    ],
+  },
 ];
 
 export default blogPosts;
