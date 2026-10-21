@@ -1027,7 +1027,7 @@ const blogPosts = [
     author: 'Artistic Roofing Systems',
     excerpt:
       "Tile, shingles, metal, or a low-slope system? A Sierra Vista roofer explains how each material handles Arizona sun, heat swings, and monsoon storms.",
-    image: '/img/blog/best-roofing-material-arizona.png',
+    image: '/img/blog/best-roofing-material-arizona.jpg',
     body: [
       {
         type: 'p',
