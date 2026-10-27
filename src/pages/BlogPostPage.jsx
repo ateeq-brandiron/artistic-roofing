@@ -51,11 +51,9 @@ function BodyBlock({ block }) {
       return (
         <ul style={{ margin: '0 0 20px', paddingLeft: 24, display: 'flex', flexDirection: 'column', gap: 8 }}>
           {block.items.map((item, i) => (
-            <li key={i} style={{
-              fontFamily: 'Outfit, sans-serif', fontWeight: 400,
-              fontSize: 'clamp(16px, 1.6vw, 18px)', lineHeight: '160%',
-              color: 'var(--color-3)',
-            }}>{item}</li>
+            typeof item === 'object'
+              ? <li key={i} style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 'clamp(16px, 1.6vw, 18px)', lineHeight: '160%', color: 'var(--color-3)' }} dangerouslySetInnerHTML={{ __html: item.html }} />
+              : <li key={i} style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 'clamp(16px, 1.6vw, 18px)', lineHeight: '160%', color: 'var(--color-3)' }}>{item}</li>
           ))}
         </ul>
       );

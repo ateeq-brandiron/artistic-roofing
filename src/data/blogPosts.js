@@ -1463,7 +1463,7 @@ const blogPosts = [
       {
         type: 'ul',
         items: [
-          '5-inch gutters: A standard residential gutter size that provides effective water management while maintaining a lower-profile appearance. Artistic Roofing Systems LLC installs 5-inch gutters with 2x3-inch downspouts.',
+          { html: '5-inch gutters: A standard residential <a href="https://www.englertinc.com/articles/k-style-gutters-comparison-how-install-and-pros-and-cons">gutter size</a> that provides effective water management while maintaining a lower-profile appearance. Artistic Roofing Systems LLC installs 5-inch gutters with 2x3-inch downspouts.' },
           '6-inch gutters: Wider and deeper than 5-inch systems, providing greater water-handling capacity for roofs that require increased drainage. Artistic Roofing Systems LLC installs 6-inch gutters with 3x4-inch downspouts.',
         ],
       },
@@ -1475,8 +1475,8 @@ const blogPosts = [
       {
         type: 'ul',
         items: [
-          'Holding capacity: One gutter supplier estimates that a 5-inch gutter holds about 1.2 gallons of water per linear foot, compared with nearly 2 gallons for a 6-inch gutter.',
-          'Flow: During a storm, what matters is how quickly the system moves water out through the downspouts — by one estimate, 6-inch systems move up to 40% more water.',
+          { html: 'Holding capacity: One gutter supplier estimates that a <a href="https://www.apco.com/5-inch-vs-6-inch-gutters-why-size-actually-matters-and-how-to-know-which-one-you-need/">5-inch gutter holds about 1.2 gallons of water per linear foot, compared with nearly 2 gallons for a 6-inch gutter</a>.' },
+          { html: 'Flow: During a storm, what matters is how quickly the system moves water out through the downspouts — by one estimate, <a href="https://roofmaxx.com/learning-hub/gutter-size-5-inches-6-inches/">6-inch systems move up to 40% more water</a>.' },
         ],
       },
       {
@@ -1555,7 +1555,7 @@ const blogPosts = [
       },
       {
         type: 'p',
-        html: "Gutters are one part of the <a href=\"https://artisticroofingllc.com/services\">roofing services</a> we provide, and they're often easiest to get right when they're planned alongside the roof itself.",
+        html: "Gutters are one part of the <a href=\"https://artisticroofingllc.com/services\">roofing services</a> we provide, and they're often easiest to get right when they're planned alongside the roof itself. If you're comparing contractors for gutter or roofing work, our guide on <a href='/blog/why-choose-artistic-roofing-systems'>how to choose a roofing contractor you can trust</a> covers what to verify before you sign.",
       },
       { type: 'h2', text: 'Don\'t Forget the Downspouts' },
       {
