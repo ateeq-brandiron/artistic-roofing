@@ -107,6 +107,31 @@ function BodyBlock({ block }) {
           )}
         </figure>
       );
+    case 'table':
+      return (
+        <div style={{ overflowX: 'auto', margin: '0 0 24px' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(14px, 1.5vw, 16px)' }}>
+            {block.head && (
+              <thead>
+                <tr>
+                  {block.head.map((cell, i) => (
+                    <th key={i} style={{ background: 'var(--shape-fill)', border: '1px solid var(--shape-stroke)', padding: '10px 14px', textAlign: 'left', fontWeight: 600, color: 'var(--color-1)' }}>{cell}</th>
+                  ))}
+                </tr>
+              </thead>
+            )}
+            <tbody>
+              {block.rows.map((row, i) => (
+                <tr key={i} style={{ background: i % 2 === 0 ? 'transparent' : 'var(--shape-fill)' }}>
+                  {row.map((cell, j) => (
+                    <td key={j} style={{ border: '1px solid var(--shape-stroke)', padding: '10px 14px', color: 'var(--color-3)', verticalAlign: 'top' }} dangerouslySetInnerHTML={{ __html: cell }} />
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
     default:
       return null;
   }

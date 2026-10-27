@@ -1370,15 +1370,16 @@ const blogPosts = [
         text: "When you're reviewing estimates, the bottom-line number is only part of the picture. These questions apply to any contractor, including us:",
       },
       {
-        type: 'ul',
-        items: [
-          'Is your contractor license active? You can check license status with the Arizona Registrar of Contractors (roc.az.gov).',
-          'Can I see a current certificate of general liability insurance? A license and insurance are separate — being licensed doesn\'t mean a contractor is insured.',
-          'Do you carry workers\' compensation, and who does it cover? Workers\' comp is separate from general liability.',
-          'Is the estimate itemized and in writing? It shows what\'s included and makes it easier to compare bids line by line.',
-          'What warranty applies, and is it in writing? Manufacturer warranties and workmanship coverage are different — know which applies to what.',
-          'Does this scope of work need a permit here, and who handles it? Permit requirements vary by jurisdiction and scope.',
-          'Who do I call after the job is done? You want a clear contact for callbacks, repairs, and warranty questions.',
+        type: 'table',
+        head: ['What to ask', 'Why it matters'],
+        rows: [
+          ['Is your contractor license active?', 'You can check license status with the <a href="https://roc.az.gov/">Arizona Registrar of Contractors</a>.'],
+          ['Can I see a current certificate of general liability insurance?', 'A license and insurance are separate. Being licensed doesn\'t mean a contractor is insured.'],
+          ['Do you carry workers\' compensation, and who does it cover?', 'Workers\' comp is separate from general liability. If a worker is injured and coverage isn\'t in place, a homeowner may face financial exposure depending on the circumstances.'],
+          ['Is the estimate itemized and in writing?', 'It shows what\'s included and makes it easier to compare bids line by line.'],
+          ['What warranty applies, and is it in writing?', 'Manufacturer warranties and workmanship coverage are different. Know which applies to what.'],
+          ['Does this scope of work need a permit here, and who handles it?', 'Permit requirements vary by jurisdiction and scope. Your local building department can confirm.'],
+          ['Who do I call after the job is done?', 'You want a clear contact for callbacks, repairs, and warranty questions.'],
         ],
       },
       {
@@ -1526,6 +1527,24 @@ const blogPosts = [
       {
         type: 'p',
         text: "Tile and shingle roofs can direct water off the roof edge differently, depending on the tile profile and how the eave is finished. Rather than assume, we look at where the runoff actually lands before recommending a size.",
+      },
+      { type: 'h2', text: '5-Inch vs. 6-Inch Gutters: Side-by-Side' },
+      {
+        type: 'table',
+        head: ['Feature', '5-Inch Gutters', '6-Inch Gutters'],
+        rows: [
+          ['Typical use', 'Most common residential size', 'Larger roofs, steep pitches, high-flow areas'],
+          ['Water capacity', 'Standard; suits many smaller roofs', 'More holding and flow capacity'],
+          ['Typical downspout', '2x3-inch', '3x4-inch'],
+          ['Debris', 'Narrower opening and downspouts can clog more readily', 'Wider gutter and larger downspouts let debris pass more easily, though they still need cleaning'],
+          ['Appearance', 'Lower profile; blends into the fascia', 'Larger and more visible; color-matching helps it look finished'],
+          ['Often a fit for', 'Smaller roofs, lower pitch, simple rooflines', 'Large or steep roofs, valleys, homes with monsoon overflow'],
+        ],
+      },
+      { type: 'h3', text: 'Should You Consider Gutter Guards or Screens?' },
+      {
+        type: 'p',
+        text: "If your home has large trees or frequently collects leaves, twigs, or other debris around the roofline, gutter guards or gutter screens may be worth considering. They can help reduce the amount of debris entering the gutter system, support more consistent water flow, and reduce how often gutters need to be cleaned. The right option depends on the surrounding trees, roof layout, and gutter system.",
       },
       { type: 'h2', text: 'Making the Decision' },
       { type: 'h3', text: 'A 5-inch gutter may be enough if:' },
