@@ -1422,6 +1422,183 @@ const blogPosts = [
       },
     ],
   },
+  {
+    id: '5-inch-vs-6-inch-gutters-sierra-vista',
+    title: '5-Inch vs. 6-Inch Gutters: Which Size Fits Your Sierra Vista Home?',
+    category: 'Gutters',
+    date: '2026-10-27',
+    author: 'Artistic Roofing Systems',
+    excerpt:
+      'Choosing between 5-inch and 6-inch gutters? Learn how roof size, pitch, valleys, and monsoon rain affect which gutter size fits your Sierra Vista home.',
+    image: '/img/blog/5-inch-vs-6-inch-gutters-sierra-vista.png',
+    body: [
+      {
+        type: 'p',
+        text: "Five-inch gutters are the most common residential size and work well on many smaller, simpler roofs with a lower pitch. Six-inch gutters hold and move more water, which can make them a better fit for large or steep roofs, rooflines with valleys, and homes where water spills over the gutters during heavy rains. The right size depends on the roof's area, pitch, and layout — and on pairing the gutters with downspouts large enough to drain them.",
+      },
+      {
+        type: 'p',
+        text: "If you've been through a Sierra Vista monsoon, you know how fast it happens. A storm builds over the Huachuca Mountains, heavy rain hits the roof all at once, and within minutes water is running across the yard. At that moment, your gutters have one job: collect the runoff from the roof and carry it away from the house. Whether they can keep up depends a lot on their size.",
+      },
+      {
+        type: 'p',
+        text: "When it's time to replace your gutters, or add them to a home that doesn't have them, the choice usually comes down to 5-inch or 6-inch. One inch doesn't sound like much, but it makes a real difference in how much water the system can handle during a heavy storm.",
+      },
+      {
+        type: 'p',
+        html: 'At <a href="https://artisticroofingllc.com/">Artistic Roofing Systems LLC</a>, we help Sierra Vista homeowners sort through this decision based on how water actually moves off their roof. Here\'s how the two sizes compare and what to look at on your own home.',
+      },
+      { type: 'h2', text: 'Key Takeaways' },
+      {
+        type: 'ul',
+        items: [
+          '5-inch gutters are the most common residential size and are often enough for smaller roofs with simple layouts and a lower pitch.',
+          '6-inch gutters hold and move more water, which helps on large roofs, steep roofs, and rooflines with valleys.',
+          'Monsoon rain matters. Short, intense storms are often when undersized gutters overflow.',
+          'Downspouts matter as much as gutters. A larger gutter draining into a small downspout can still back up.',
+          "Overflow isn't always a size problem. Clogs, sagging sections, or poor slope can cause it too, and those are worth ruling out first.",
+        ],
+      },
+      { type: 'h2', text: 'The Basics: How the Two Sizes Differ' },
+      {
+        type: 'ul',
+        items: [
+          '5-inch gutters: A standard residential gutter size that provides effective water management while maintaining a lower-profile appearance. Artistic Roofing Systems LLC installs 5-inch gutters with 2x3-inch downspouts.',
+          '6-inch gutters: Wider and deeper than 5-inch systems, providing greater water-handling capacity for roofs that require increased drainage. Artistic Roofing Systems LLC installs 6-inch gutters with 3x4-inch downspouts.',
+        ],
+      },
+      { type: 'h3', text: 'How much more water does a 6-inch gutter handle?' },
+      {
+        type: 'p',
+        text: "The extra inch adds more capacity than the width alone suggests, because a 6-inch gutter is also deeper.",
+      },
+      {
+        type: 'ul',
+        items: [
+          'Holding capacity: One gutter supplier estimates that a 5-inch gutter holds about 1.2 gallons of water per linear foot, compared with nearly 2 gallons for a 6-inch gutter.',
+          'Flow: During a storm, what matters is how quickly the system moves water out through the downspouts — by one estimate, 6-inch systems move up to 40% more water.',
+        ],
+      },
+      {
+        type: 'p',
+        text: "Exact figures vary by gutter profile and manufacturer, but the takeaway is consistent: a 6-inch gutter gives you more room before water starts spilling over the edge.",
+      },
+      { type: 'h2', text: 'Why Monsoon Rain Changes the Math' },
+      {
+        type: 'p',
+        text: "In much of the country, rain tends to fall steadily over hours. Monsoon storms in Southern Arizona often work differently: a lot of rain arrives in a short, intense burst. A gutter that handles moderate rain without trouble most of the year can still overflow during the heaviest summer storms.",
+      },
+      { type: 'h3', text: 'What gutter overflow can lead to' },
+      {
+        type: 'p',
+        text: "When a gutter can't keep up, water spills over the front edge instead of draining to the downspouts. Over time, that can contribute to:",
+      },
+      {
+        type: 'ul',
+        items: [
+          'Water against your walls: Runoff splashing onto stucco, siding, and trim.',
+          'Moisture near the foundation: Water collecting at the base of the house rather than being carried away from it.',
+          'Soil and landscape erosion: Washed-out gravel beds, exposed roots, and channels cut along the drip line.',
+          'Fascia deterioration: Repeated wetting of the fascia boards behind the gutter, which can lead to peeling paint and wood damage.',
+        ],
+      },
+      {
+        type: 'tip',
+        text: "One important caveat: gutter overflow does not always mean your gutters are too small. Clogged gutters or downspouts, sagging sections, improper slope, or too few downspouts can also contribute to overflow. Before recommending larger gutters, the system should be evaluated to determine whether the issue is rainfall volume, maintenance, drainage, or gutter sizing.",
+      },
+      { type: 'h2', text: 'What on Your Roof Decides the Size' },
+      { type: 'h3', text: '1. Roof area' },
+      {
+        type: 'p',
+        text: "The larger the roof, the more water it collects, and all of it has to go through your gutters. A 5-inch gutter may handle a small patio cover without trouble, while a large single-story home with long, uninterrupted roof planes sends much more water to each gutter run.",
+      },
+      { type: 'h3', text: '2. Roof pitch' },
+      {
+        type: 'p',
+        text: "Steeper roofs move water faster. When fast-moving runoff reaches the roof edge, it can shoot past the front of a narrower gutter instead of dropping into it. A 6-inch gutter is wider front to back, which gives that runoff a larger opening to land in.",
+      },
+      { type: 'h3', text: '3. Valleys and complex rooflines' },
+      {
+        type: 'p',
+        text: "Valleys where two roof sections meet funnel water from both slopes into one point. These spots are often where overflow shows up first, and where extra gutter capacity or an added downspout can make a noticeable difference.",
+      },
+      { type: 'h3', text: '4. Roofing material' },
+      {
+        type: 'p',
+        text: "Tile and shingle roofs can direct water off the roof edge differently, depending on the tile profile and how the eave is finished. Rather than assume, we look at where the runoff actually lands before recommending a size.",
+      },
+      { type: 'h2', text: 'Making the Decision' },
+      { type: 'h3', text: 'A 5-inch gutter may be enough if:' },
+      {
+        type: 'ul',
+        items: [
+          'Your home is on the smaller side and the roof has a lower pitch.',
+          "Your current gutters aren't overflowing during heavy storms.",
+          'Your roofline is simple, with few valleys or spots where water concentrates.',
+          'Budget is a priority and the smaller size will do the job.',
+        ],
+      },
+      { type: 'h3', text: 'A 6-inch gutter is worth considering if:' },
+      {
+        type: 'ul',
+        items: [
+          "You've seen water overshooting or spilling over your gutters during heavy rains.",
+          'Your roof is large, steep, or both.',
+          'Your roofline has valleys that send a lot of water to one spot.',
+          'You want extra capacity for debris — keeping in mind that larger gutters still need regular cleaning.',
+        ],
+      },
+      { type: 'h3', text: 'How we approach it' },
+      {
+        type: 'p',
+        html: "There isn't a single right size for every house. When <a href=\"https://artisticroofingllc.com/about\">our team</a> evaluates a home, we look at the roof area, pitch, valleys, roofing material, and where water is actually overflowing. Sometimes the best answer is a mix: 6-inch gutters on the long, steep runs and 5-inch gutters on smaller sections like porch returns. And if the problem turns out to be a clog or a missing downspout rather than gutter size, we'll tell you that instead of recommending a full replacement.",
+      },
+      {
+        type: 'p',
+        html: "Gutters are one part of the <a href=\"https://artisticroofingllc.com/services\">roofing services</a> we provide, and they're often easiest to get right when they're planned alongside the roof itself.",
+      },
+      { type: 'h2', text: 'Don\'t Forget the Downspouts' },
+      {
+        type: 'p',
+        text: "A gutter collects water; the downspout drains it. If you install 6-inch gutters but keep small downspouts, you've created a bottleneck — water backs up in the gutter and overflows anyway.",
+      },
+      {
+        type: 'p',
+        text: "That's why, when we install 6-inch gutters, we pair them with 3x4-inch downspouts. The larger opening drains water faster and gives small twigs, leaves, and wind-blown debris a better chance of passing through instead of creating a clog. Where the downspouts discharge matters too: directing that water away from the house helps keep it from pooling near the foundation.",
+      },
+      { type: 'h2', text: 'Frequently Asked Questions' },
+      { type: 'h3', text: 'Are 6-inch gutters much more expensive than 5-inch gutters?' },
+      {
+        type: 'p',
+        text: "They do cost more. A 6-inch system uses more material, the larger downspouts add cost, and labor can be higher. How much more depends on the length of the gutter runs, the number of downspouts, and the complexity of the roofline, so a site-specific estimate is the most reliable way to compare. If 5-inch gutters will handle your roof, we'll tell you that.",
+      },
+      { type: 'h3', text: 'Can I switch to 6-inch gutters if my house currently has 5-inch?' },
+      {
+        type: 'p',
+        text: "In most cases, yes. Upgrading usually means new hangers, new downspout outlets, and larger downspouts, and the fascia needs to be in good enough condition to support the new gutters. If the fascia is damaged, it's best to address that first. Many homeowners find it convenient to upgrade gutters during a roof replacement, since the roof edge is already being worked on.",
+      },
+      { type: 'h3', text: 'Do 6-inch gutters look bulky?' },
+      {
+        type: 'p',
+        text: "They're more visible than 5-inch gutters, but when they're installed level and color-matched to the fascia, they look clean and proportional — especially on larger homes, where a 5-inch gutter can look undersized.",
+      },
+      { type: 'h3', text: 'How often should I clean my gutters in Sierra Vista?' },
+      {
+        type: 'p',
+        text: "A good general habit is to check and clean them at least twice a year: once before monsoon season starts, so they're clear when the heavy rain arrives, and once after it ends. If trees overhang your roof, or after a strong windstorm, check them more often. Larger gutters give debris more room, but they still need cleaning.",
+      },
+      { type: 'h3', text: 'Will gutters keep water away from my foundation?' },
+      {
+        type: 'p',
+        text: "They can help if gutter overflow is part of the problem. Larger gutters and downspouts reduce how often water spills over the edge, and directing downspout discharge away from the house keeps more water away from the foundation. But moisture near a foundation can have other causes — grading, irrigation, or plumbing leaks. If you're seeing ongoing moisture, it's worth having the source identified rather than assuming the gutters are the cause.",
+      },
+      { type: 'h2', text: 'Is Your Gutter System Ready for the Next Heavy Rains?' },
+      {
+        type: 'p',
+        html: "The best time to find out whether your gutters can keep up is before the storms arrive, not during one. If you've noticed water spilling over your gutters, or you're planning a roof replacement and want to get the gutters right at the same time, <a href='/contact'>request a gutter evaluation and estimate</a>. We'll look at how water moves off your roof and walk you through which size makes sense for your home and budget.",
+      },
+    ],
+  },
 ];
 
 export default blogPosts;
