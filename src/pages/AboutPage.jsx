@@ -147,7 +147,7 @@ export default function AboutPage() {
           margin: '0 0 16px',
           maxWidth: 700,
         }}>
-          About Artistic Roofing – Roofing Contractors in Sierra Vista, AZ
+          About Artistic Roofing
         </h1>
       </section>
 
