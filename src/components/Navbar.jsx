@@ -63,13 +63,14 @@ export default function Navbar() {
           <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto', display: 'block' }} />
           <span style={{
             position: 'absolute',
-            top: 4,
-            left: 46,
+            top: 2,
+            left: 65,
             fontFamily: 'Outfit, sans-serif',
             fontWeight: 600,
-            fontSize: 11,
-            lineHeight: '1.4',
+            fontSize: 10,
+            lineHeight: '1.5',
             color: 'var(--color-3)',
+            whiteSpace: 'nowrap',
           }}>
             We're on top of<br />what matters most.
           </span>
