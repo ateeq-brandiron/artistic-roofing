@@ -109,7 +109,7 @@ export default function Certifications() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: 24, width: '100%', maxWidth: 700 }}>
         {certList.map((c, i) => (
           <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-            <img src="/img/certs/Vector-2.svg" alt="" style={{ width: 26, height: 26, flexShrink: 0, marginTop: 2 }} />
+            <img src="/img/certs-section/Vector.svg" alt="" style={{ width: 26, height: 26, flexShrink: 0, marginTop: 2 }} />
             <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
               <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 20, lineHeight: '120%', color: '#000' }}>{c.text}</div>
               <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 15, lineHeight: '140%', color: 'var(--color-3)' }}>{c.sub}</div>
