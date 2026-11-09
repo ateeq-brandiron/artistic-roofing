@@ -15,7 +15,7 @@ const coreValues = [
 
 const certifications = [
   { text: 'TRI Certified Tile Installer', sub: 'Trained in proper tile installation techniques for long-term roof performance' },
-  { text: 'Polyglass Roof Coating Certified', sub: 'Trained in advanced coating applications for low-slope and flat roofs' },
+  { text: 'Polyglass Roof Certified Installers', sub: 'Trained in advanced torch and coating applications for low-slope and flat roofs' },
   { text: 'Tamko Preferred Contractor', sub: 'Recognized for quality installation and product expertise' },
   { text: 'Better Business Bureau (BBB) Accredited', sub: 'Demonstrating a commitment to trusted service and customer satisfaction' },
   { text: 'Chamber of Commerce Member', sub: 'Proud to be part of the local Sierra Vista business community' },
@@ -375,19 +375,6 @@ export default function AboutPage() {
                 }}>
                   We partner with industry leaders to bring you the best materials and practices.
                 </p>
-                {/* Pills */}
-                <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
-                  {['Tamko', 'Owens Corning', 'GAF'].map(brand => (
-                    <span key={brand} style={{
-                      background: '#fff',
-                      border: '1.5px solid var(--shape-stroke)',
-                      borderRadius: 8,
-                      padding: '8px 20px',
-                      fontFamily: 'Outfit', fontWeight: 500, fontSize: 15,
-                      color: 'var(--blue)',
-                    }}>{brand}</span>
-                  ))}
-                </div>
               </div>
             </div>
 
