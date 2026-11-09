@@ -42,6 +42,7 @@ const steps = [
     items: [
       'Final inspection to ensure all standards are met',
       'Complete cleanup so your property is left better than we found it',
+      'Thorough cleanup on every job, leaving your property clean, safe, and free of work related debris.',
     ],
   },
 ];
