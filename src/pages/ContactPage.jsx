@@ -335,16 +335,6 @@ export default function ContactPage() {
             display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
             gap: 30, flex: '1 0 0',
           }}>
-            {/* TIMINGS pill */}
-            <div style={{
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-              padding: '7px 16px', background: '#fff', borderRadius: 100,
-              boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
-            }}>
-              <img src="/img/contact/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
-              <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>TIMINGS</span>
-            </div>
-
             <h2 style={{
               alignSelf: 'stretch',
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
@@ -439,15 +429,6 @@ export default function ContactPage() {
 
           {/* Right – address */}
           <div style={{ display: 'flex', flex: '1 1 280px', maxWidth: 622, flexDirection: 'column', alignItems: 'flex-start', gap: 30 }}>
-            {/* LOCATION pill */}
-            <div style={{
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-              padding: '7px 16px', background: '#fff', borderRadius: 100,
-              boxShadow: '0 2px 6px rgba(0,0,0,0.06)', alignSelf: 'flex-start',
-            }}>
-              <img src="/img/contact/location-icon.svg" alt="" style={{ width: 15, height: 15 }} />
-              <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>LOCATION</span>
-            </div>
 
             <h2 style={{
               fontFamily: 'Playfair Display, serif', fontWeight: 900,
@@ -731,15 +712,6 @@ export default function ContactPage() {
         boxSizing: 'border-box',
         background: '#fff',
       }}>
-        {/* LOCATIONS pill */}
-        <div style={{
-          display: 'inline-flex', alignItems: 'center', gap: 8,
-          padding: '7px 16px', background: '#fff', borderRadius: 100,
-          boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
-        }}>
-          <img src="/img/contact/location-icon.svg" alt="" style={{ width: 15, height: 15 }} />
-          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>LOCATIONS</span>
-        </div>
 
         <h2 style={{
           width: 608,

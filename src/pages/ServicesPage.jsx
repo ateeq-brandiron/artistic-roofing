@@ -3,15 +3,6 @@ import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 
-/* ── Standard white label pill ── */
-function Pill({ text }) {
-  return (
-    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px', background: '#fff', borderRadius: 100, boxShadow: '0 2px 6px rgba(0,0,0,0.06)' }}>
-      <img src="/img/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
-      <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)', whiteSpace: 'nowrap' }}>{text}</span>
-    </div>
-  );
-}
 
 const commercial = [
   {
@@ -369,7 +360,6 @@ export default function ServicesPage() {
         width: '100%',
       }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
-          <Pill text="SERVICES" />
           <h2 style={{
             fontFamily: 'Playfair Display, serif', fontWeight: 900,
             fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
@@ -394,7 +384,6 @@ export default function ServicesPage() {
         width: '100%',
       }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
-          <Pill text="SERVICES" />
           <h2 style={{
             fontFamily: 'Playfair Display, serif', fontWeight: 900,
             fontSize: 'clamp(28px, 4vw, 48px)', lineHeight: '120%', color: '#000', margin: 0, textAlign: 'center',
@@ -426,7 +415,6 @@ export default function ServicesPage() {
         }}>
           {/* Left */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 30, maxWidth: 560, flex: '1 1 280px' }}>
-            <Pill text="SERVICES" />
             <h2 style={{
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
@@ -489,7 +477,6 @@ export default function ServicesPage() {
           gap: 30,
           boxSizing: 'border-box',
         }}>
-          <Pill text="TRUST" />
           <h2 style={{
             maxWidth: 608,
             fontFamily: 'Playfair Display, serif',
@@ -572,7 +559,6 @@ export default function ServicesPage() {
         <div className="faq-wrap" style={{ maxWidth: 1290, margin: '0 auto', display: 'flex', gap: 'clamp(32px,5vw,80px)', alignItems: 'flex-start', flexWrap: 'wrap' }}>
           {/* Left */}
           <div className="faq-heading" style={{ flex: '1 1 280px', maxWidth: 340, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 20 }}>
-            <Pill text="FAQ" />
             <h2 style={{ fontFamily: 'Playfair Display, serif', fontWeight: 900, fontSize: 40, lineHeight: '120%', color: '#000', margin: 0 }}>
               Frequently Asked Questions About Roofing and Gutters
             </h2>

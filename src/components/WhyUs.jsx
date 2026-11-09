@@ -29,19 +29,6 @@ export default function WhyUs() {
       {/* Left */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 28, flex: '1 1 280px', maxWidth: 480 }}>
 
-        {/* Label */}
-        <div style={{
-          display: 'inline-flex', alignItems: 'center', gap: 8,
-          padding: '7px 16px',
-          background: '#fff',
-          borderRadius: 100,
-          boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
-          alignSelf: 'flex-start',
-        }}>
-          <img src="/img/why-us/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
-          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>WHY US?</span>
-        </div>
-
         {/* Heading */}
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
@@ -54,20 +41,6 @@ export default function WhyUs() {
         }}>
           Why Homeowners Choose Artistic Roofing
         </h2>
-
-        {/* Body */}
-        <p style={{
-          fontFamily: 'Outfit, sans-serif',
-          fontWeight: 300,
-          fontSize: 'clamp(16px, 2vw, 20px)',
-          lineHeight: '120%',
-          color: '#fff',
-          margin: 0,
-          alignSelf: 'stretch',
-        }}>
-          We're on top of what matters most.<br />
-          It is our promise to every customer to deliver dependable roofing and gutter solutions with honesty and precision.
-        </p>
       </div>
 
       {/* Right — 2×3 feature grid */}
@@ -80,7 +53,7 @@ export default function WhyUs() {
       }}>
         {features.map((f, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 14 }}>
-            <img src="/img/why-us/Vector.svg" alt="" style={{ width: 22, height: 22, flexShrink: 0, marginTop: 2 }} />
+            <img src="/img/why-us/Vector.svg" alt="" style={{ width: 22, height: 22, flexShrink: 0, marginTop: 2, filter: 'brightness(0) saturate(100%) invert(37%) sepia(93%) saturate(1113%) hue-rotate(177deg) brightness(97%) contrast(103%)' }} />
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 20, color: '#fff', lineHeight: 1.2 }}>
                 {f.title}

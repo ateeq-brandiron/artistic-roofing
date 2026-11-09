@@ -65,16 +65,6 @@ export default function Testimonials() {
 
       {/* Header */}
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
-        <div style={{
-          display: 'inline-flex', alignItems: 'center', gap: 8,
-          padding: '7px 16px',
-          background: '#fff',
-          borderRadius: 100,
-          boxShadow: '0 2px 6px rgba(0,0,0,0.06)',
-        }}>
-          <img src="/img/testimonials/vector-stroke.svg" alt="" style={{ width: 15, height: 15 }} />
-          <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 12, letterSpacing: '0.08em', color: 'var(--blue)' }}>TESTIMONIALS</span>
-        </div>
         <h2 style={{
           fontFamily: 'Playfair Display, serif',
           fontWeight: 900,
