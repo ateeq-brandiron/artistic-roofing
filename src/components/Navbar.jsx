@@ -59,21 +59,22 @@ export default function Navbar() {
         gap: 24,
       }}>
         {/* Logo + Slogan */}
-        <Link to="/" className="logo-hover" style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', flexShrink: 0 }}>
-          <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto' }} />
-          <span style={{
-            position: 'absolute',
-            top: -18,
-            left: 44,
-            fontFamily: 'Outfit, sans-serif',
-            fontWeight: 600,
-            fontSize: 11,
-            lineHeight: '1',
-            color: 'var(--color-3)',
-            whiteSpace: 'nowrap',
-          }}>
-            We're on top of what matters most.
-          </span>
+        <Link to="/" className="logo-hover" style={{ display: 'flex', alignItems: 'center', flexShrink: 0, gap: 0 }}>
+          {/* A icon placeholder width — matches the house icon in the logo image */}
+          <div style={{ width: 44, flexShrink: 0 }} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+            <span style={{
+              fontFamily: 'Outfit, sans-serif',
+              fontWeight: 600,
+              fontSize: 11,
+              lineHeight: '1',
+              color: 'var(--color-3)',
+              whiteSpace: 'nowrap',
+            }}>
+              We're on top of what matters most.
+            </span>
+            <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto', marginLeft: -44 }} />
+          </div>
         </Link>
 
         {/* Desktop nav */}
