@@ -304,13 +304,6 @@ export default function TestimonialsPage() {
           }}>
             Why Homeowners Trust Artistic Roofing Systems
           </h2>
-          <p style={{
-            fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
-            lineHeight: '160%', color: 'rgba(255,255,255,0.9)',
-            maxWidth: 740, margin: 0,
-          }}>
-            These roofing company reviews in Sierra Vista, AZ highlight the dedication, expertise, and customer-first approach that define Artistic Roofing Systems. From dependable roof installations to custom gutters and patio covers, our team is proud to deliver solutions that protect and enhance your property.
-          </p>
           <Link to="/contact" className="btn-blue" style={{
             display: 'inline-flex', alignItems: 'center', gap: 12,
             padding: '16px 32px',
