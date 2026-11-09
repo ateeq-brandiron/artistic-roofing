@@ -31,22 +31,12 @@ export default function About() {
 
         {/* Para 1 */}
         <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0, alignSelf: 'stretch' }}>
-          For more than a decade,{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Artistic Roofing</span>
-          {' '}has served Sierra Vista and Cochise County with dependable roofing and gutter services. We are licensed, bonded, and insured, and our long-term team members complete every job with precision and care.
+          For more than a decade, Artistic Roofing Systems LLC has proudly served Sierra Vista and Cochise County with dependable roofing and gutter services. Licensed, bonded, and insured, we're backed by an experienced team, including employees who have been with us since the beginning. We take pride in our workmanship, our lasting relationships, and the quality and care we bring to every project.
         </p>
 
         {/* Para 2 */}
         <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0, alignSelf: 'stretch' }}>
-          As{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>TRI Certified tile installers</span>
-          , we work with concrete tile from leading manufacturers such as{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Westlake</span>
-          {' '}and{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Eagle Roofing Products.</span>
-          {' '}For asphalt shingle systems, we install materials from{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Tamko, Owens Corning, and GAF</span>
-          , trusted names known for quality and weather resistance suited to Arizona's climate.
+          As TRI-Certified installers, we specialize in high-performance roofing systems tailored to Arizona's extreme climate. For tile roofs, we partner with leading concrete tile manufacturers like Westlake and Eagle Roofing Products. For asphalt shingle systems, we install top-rated materials from Tamko, Owens Corning, and GAF—delivering maximum durability, weather resistance, and long-lasting curb appeal.
         </p>
 
         {/* Blue info box */}
@@ -64,9 +54,8 @@ export default function About() {
           boxSizing: 'border-box',
         }}>
           <p style={{ width: '100%', maxWidth: 560, fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: '120%', color: 'var(--color-3)', margin: 0 }}>
-            Our commitment to safety includes{' '}
-            <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Polyglass roof coating training,</span>
-            {' '}giving customers confidence that every project follows established standards for quality, safety, and long-term performance.
+            <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Our commitment to safety:</span>
+            {' '}We prioritize employee safety at every stage of the project while executing every job with meticulous care to safeguard the structural integrity of your roof.
           </p>
         </div>
       </div>
@@ -94,7 +83,8 @@ export default function About() {
         <div style={{ display: 'flex', gap: 12, width: '100%' }}>
           {[
             { icon: '/img/Vector.svg', title: 'TRI CERTIFIED', sub: 'Tile Installer' },
-            { icon: '/img/Vector-1.svg', title: 'POLYGLASS', sub: 'Trained Pros' },
+            { icon: '/img/Vector-1.svg', title: 'POLYGLASS', sub: 'Trained Installers' },
+            { icon: '/img/Vector.svg', title: 'TAMKO', sub: 'Preferred Installers' },
           ].map((b, i) => (
             <div key={i} style={{
               flex: 1,
