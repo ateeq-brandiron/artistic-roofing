@@ -58,9 +58,19 @@ export default function Navbar() {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         gap: 24,
       }}>
-        {/* Logo */}
-        <Link to="/" className="logo-hover" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+        {/* Logo + Slogan */}
+        <Link to="/" className="logo-hover" style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
           <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto' }} />
+          <span style={{
+            fontFamily: 'Outfit, sans-serif',
+            fontWeight: 600,
+            fontSize: 13,
+            lineHeight: '140%',
+            color: 'var(--color-3)',
+            maxWidth: 140,
+          }}>
+            We're on top of what matters most.
+          </span>
         </Link>
 
         {/* Desktop nav */}
