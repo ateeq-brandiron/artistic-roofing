@@ -8,7 +8,7 @@ const certs = [
 
 const certList = [
   { text: 'TRI Certified Tile Installer', sub: 'Trained in proper tile installation techniques for long-term roof performance' },
-  { text: 'Polyglass Roof Coating Certified', sub: 'Trained in advanced coating applications for low-slope and flat roofs' },
+  { text: 'Polyglass Roof Certified Installers', sub: 'Trained in advanced torch and coating applications for low-slope and flat roofs' },
   { text: 'Tamko Preferred Contractor', sub: 'Recognized for quality installation and product expertise' },
   { text: 'Better Business Bureau (BBB) Accredited', sub: 'Demonstrating a commitment to trusted service and customer satisfaction' },
   { text: 'Chamber of Commerce Member', sub: 'Proud to be part of the local Sierra Vista business community' },
