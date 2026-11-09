@@ -1,10 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const certs = [
   { icon: '/img/certs/Vector-2.svg', name: 'TRI Certified' },
   { icon: '/img/certs/Vector-1.svg', name: 'BBB Accredited' },
   { icon: '/img/certs/Vector.svg',   name: 'Polyglass\nTrained' },
+];
+
+const certList = [
+  { text: 'TRI Certified Tile Installer', sub: 'Trained in proper tile installation techniques for long-term roof performance' },
+  { text: 'Polyglass Roof Coating Certified', sub: 'Trained in advanced coating applications for low-slope and flat roofs' },
+  { text: 'Tamko Preferred Contractor', sub: 'Recognized for quality installation and product expertise' },
+  { text: 'Better Business Bureau (BBB) Accredited', sub: 'Demonstrating a commitment to trusted service and customer satisfaction' },
+  { text: 'Chamber of Commerce Member', sub: 'Proud to be part of the local Sierra Vista business community' },
 ];
 
 function CertCircle({ icon, name }) {
@@ -98,18 +105,18 @@ export default function Certifications() {
         {certs.map((c, i) => <CertCircle key={i} icon={c.icon} name={c.name} />)}
       </div>
 
-      {/* CTA */}
-      <Link to="/about#certifications" className="btn-blue" style={{
-        display: 'inline-flex', alignItems: 'center', gap: 12,
-        padding: '16px 32px',
-        background: 'var(--blue)',
-        borderRadius: 10,
-        fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: 17,
-        color: '#fff', letterSpacing: '0.02em',
-      }}>
-        View All Certifications
-        <img src="/img/call-made-3.svg" alt="" style={{ width: 14, height: 14 }} />
-      </Link>
+      {/* Cert list */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 24, width: '100%', maxWidth: 700 }}>
+        {certList.map((c, i) => (
+          <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+            <img src="/img/certs/Vector-2.svg" alt="" style={{ width: 26, height: 26, flexShrink: 0, marginTop: 2 }} />
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+              <div style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700, fontSize: 20, lineHeight: '120%', color: '#000' }}>{c.text}</div>
+              <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 15, lineHeight: '140%', color: 'var(--color-3)' }}>{c.sub}</div>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
