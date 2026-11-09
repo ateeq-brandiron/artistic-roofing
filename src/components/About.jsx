@@ -31,12 +31,22 @@ export default function About() {
 
         {/* Para 1 */}
         <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0, alignSelf: 'stretch' }}>
-          For more than a decade, Artistic Roofing Systems LLC has proudly served Sierra Vista and Cochise County with dependable roofing and gutter services. Licensed, bonded, and insured, we're backed by an experienced team, including employees who have been with us since the beginning. We take pride in our workmanship, our lasting relationships, and the quality and care we bring to every project.
+          For more than a decade,{' '}
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Artistic Roofing</span>
+          {' '}Systems LLC has proudly served Sierra Vista and Cochise County with dependable roofing and gutter services. Licensed, bonded, and insured, we're backed by an experienced team, including employees who have been with us since the beginning. We take pride in our workmanship, our lasting relationships, and the quality and care we bring to every project.
         </p>
 
         {/* Para 2 */}
         <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 20, lineHeight: '120%', color: 'var(--color-3)', margin: 0, alignSelf: 'stretch' }}>
-          As TRI-Certified installers, we specialize in high-performance roofing systems tailored to Arizona's extreme climate. For tile roofs, we partner with leading concrete tile manufacturers like Westlake and Eagle Roofing Products. For asphalt shingle systems, we install top-rated materials from Tamko, Owens Corning, and GAF—delivering maximum durability, weather resistance, and long-lasting curb appeal.
+          As{' '}
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>TRI Certified tile installers</span>
+          , we specialize in high-performance roofing systems tailored to Arizona's extreme climate. For tile roofs, we partner with leading concrete tile manufacturers like{' '}
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Westlake</span>
+          {' '}and{' '}
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Eagle Roofing Products</span>
+          . For asphalt shingle systems, we install top-rated materials from{' '}
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Tamko, Owens Corning, and GAF</span>
+          —delivering maximum durability, weather resistance, and long-lasting curb appeal.
         </p>
 
         {/* Blue info box */}
