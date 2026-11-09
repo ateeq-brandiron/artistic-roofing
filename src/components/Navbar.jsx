@@ -66,6 +66,7 @@ export default function Navbar() {
             fontSize: 12,
             lineHeight: '140%',
             color: 'var(--color-3)',
+            paddingLeft: 44,
           }}>
             We're on top of what matters most.
           </span>
