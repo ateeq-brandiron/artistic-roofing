@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import SEO from '../components/SEO';
 import ScrollBar from '../components/ScrollBar';
+import CertScrollBar from '../components/CertScrollBar';
 import VideoSection from '../components/VideoSection';
 import About from '../components/About';
 import Services from '../components/Services';
@@ -25,6 +26,7 @@ export default function HomePage() {
       <Services />
       <WhyUs />
       <Certifications />
+      <CertScrollBar />
       <Testimonials />
       <CallToAction />
       <FAQ />
