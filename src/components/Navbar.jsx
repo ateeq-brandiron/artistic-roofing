@@ -68,11 +68,10 @@ export default function Navbar() {
             fontFamily: 'Outfit, sans-serif',
             fontWeight: 600,
             fontSize: 11,
-            lineHeight: '1',
+            lineHeight: '1.4',
             color: 'var(--color-3)',
-            whiteSpace: 'nowrap',
           }}>
-            We're on top of what matters most.
+            We're on top of<br />what matters most.
           </span>
         </Link>
 
