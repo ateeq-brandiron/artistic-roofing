@@ -59,18 +59,21 @@ export default function Navbar() {
         gap: 24,
       }}>
         {/* Logo + Slogan */}
-        <Link to="/" className="logo-hover" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 2, flexShrink: 0 }}>
+        <Link to="/" className="logo-hover" style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', flexShrink: 0 }}>
+          <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto' }} />
           <span style={{
+            position: 'absolute',
+            top: -18,
+            left: 44,
             fontFamily: 'Outfit, sans-serif',
             fontWeight: 600,
-            fontSize: 12,
-            lineHeight: '140%',
+            fontSize: 11,
+            lineHeight: '1',
             color: 'var(--color-3)',
-            paddingLeft: 44,
+            whiteSpace: 'nowrap',
           }}>
             We're on top of what matters most.
           </span>
-          <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto' }} />
         </Link>
 
         {/* Desktop nav */}
