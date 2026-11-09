@@ -8,7 +8,7 @@ import ScrollBar from '../components/ScrollBar';
 const coreValues = [
   { icon: '/img/core-values/Vector-4.svg', title: 'Integrity', desc: 'We believe in doing the right thing, even when no one is watching.' },
   { icon: '/img/core-values/Vector-3.svg', title: 'Craftsmanship', desc: 'Every project is completed with precision, pride, and attention to detail.' },
-  { icon: '/img/core-values/Vector-2.svg', title: 'Safety', desc: 'We follow OSHA-certified standards and ongoing training to keep every jobsite safe.' },
+  { icon: '/img/core-values/Vector-2.svg', title: 'Safety', desc: 'We prioritize jobsite safety through ongoing crew training and adherence to OSHA safety standards, helping protect our team, our customers, and every property we work on.' },
   { icon: '/img/core-values/Vector-1.svg', title: 'Community', desc: 'We live and work in Cochise County and take pride in serving our neighbors.' },
   { icon: '/img/core-values/Vector.svg',   title: 'Accountability', desc: 'We stand behind our work and treat every home as if it were our own.' },
 ];
