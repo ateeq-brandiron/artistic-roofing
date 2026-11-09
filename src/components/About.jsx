@@ -54,7 +54,7 @@ export default function About() {
           display: 'flex',
           width: '100%',
           maxWidth: 623,
-          padding: '11px 0',
+          padding: '20px 24px',
           justifyContent: 'center',
           alignItems: 'center',
           gap: 10,
@@ -63,7 +63,7 @@ export default function About() {
           background: 'var(--shape-fill)',
           boxSizing: 'border-box',
         }}>
-          <p style={{ width: '100%', maxWidth: 560, fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: '120%', color: 'var(--color-3)', margin: 0 }}>
+          <p style={{ width: '100%', fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 'clamp(16px, 2vw, 20px)', lineHeight: '150%', color: 'var(--color-3)', margin: 0 }}>
             <span style={{ fontWeight: 600, color: 'var(--blue)' }}>Our commitment to safety:</span>
             {' '}We prioritize employee safety at every stage of the project while executing every job with meticulous care to safeguard the structural integrity of your roof.
           </p>
