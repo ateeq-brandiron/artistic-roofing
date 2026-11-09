@@ -26,7 +26,7 @@ export default function Footer() {
             <Link to="/" className="logo-hover">
               <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 90, width: 'auto', objectFit: 'contain' }} />
             </Link>
-            <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 16, letterSpacing: '0.06em', color: 'var(--color-3)', margin: 0 }}>
+            <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 16, letterSpacing: '0.06em', color: 'var(--blue)', margin: 0 }}>
               We're on top of what matters most.
             </p>
           </div>
