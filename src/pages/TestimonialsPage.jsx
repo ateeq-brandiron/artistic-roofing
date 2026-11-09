@@ -304,6 +304,13 @@ export default function TestimonialsPage() {
           }}>
             Why Homeowners Trust Artistic Roofing Systems
           </h2>
+          <p style={{
+            fontFamily: 'Outfit', fontWeight: 400, fontSize: 18,
+            lineHeight: '160%', color: 'rgba(255,255,255,0.9)',
+            maxWidth: 740, margin: 0,
+          }}>
+            At Artistic Roofing Systems, we take pride in delivering quality workmanship, dependable service, and customer care you can count on. From professional roof installations to custom gutters and patio covers, we're committed to protecting and enhancing properties throughout Sierra Vista and Cochise County. Our customers' feedback reflects the experience, integrity, and attention to detail we bring to every project.
+          </p>
           <Link to="/contact" className="btn-blue" style={{
             display: 'inline-flex', alignItems: 'center', gap: 12,
             padding: '16px 32px',
