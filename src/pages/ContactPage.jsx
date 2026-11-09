@@ -9,7 +9,7 @@ const hours = [
   { day: 'Sunday', time: 'Closed', highlight: false },
 ];
 
-const cities = ['Sierra Vista', 'Hereford', 'Huachuca City', 'Benson', 'Sonoita', 'Patagonia', 'Tombstone'];
+const cities = ['Sierra Vista', 'Hereford', 'Huachuca City', 'Benson', 'Sonoita', 'Patagonia', 'Tombstone', 'select areas of Bisbee'];
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xzezyjvo';
 
