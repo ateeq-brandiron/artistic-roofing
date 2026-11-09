@@ -59,9 +59,12 @@ export default function Navbar() {
         gap: 24,
       }}>
         {/* Logo + Slogan */}
-        <Link to="/" className="logo-hover" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flexShrink: 0, gap: 2 }}>
-          <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto' }} />
+        <Link to="/" className="logo-hover" style={{ position: 'relative', display: 'inline-block', flexShrink: 0 }}>
+          <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 54, width: 'auto', display: 'block' }} />
           <span style={{
+            position: 'absolute',
+            top: 4,
+            left: 46,
             fontFamily: 'Outfit, sans-serif',
             fontWeight: 600,
             fontSize: 11,
