@@ -27,7 +27,6 @@
   "reactSnap": {
     "inlineCss": true,
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
-    "puppeteerExecutablePath": "/opt/pw-browsers/chromium",
     "skipThirdPartyRequests": true,
     "headless": true
   },
