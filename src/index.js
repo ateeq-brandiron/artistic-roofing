@@ -4,12 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const rootEl = document.getElementById('root');
+// If react-snap pre-rendered this page, hydrate; otherwise render fresh.
+if (rootEl.hasChildNodes()) {
+  ReactDOM.hydrateRoot(
+    rootEl,
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+} else {
+  ReactDOM.createRoot(rootEl).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

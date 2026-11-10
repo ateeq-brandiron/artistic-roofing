@@ -20,8 +20,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "reactSnap": {
+    "inlineCss": true,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "puppeteerExecutablePath": "/opt/pw-browsers/chromium",
+    "skipThirdPartyRequests": true,
+    "headless": true
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +50,8 @@
     ]
   },
   "devDependencies": {
-    "playwright": "^1.61.1"
+    "playwright": "^1.61.1",
+    "react-snap": "^1.23.0"
   },
   "overrides": {
     "shell-quote": "1.12.0",
