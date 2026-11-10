@@ -1,5 +1,6 @@
 {
   "trailingSlash": false,
+  "buildCommand": "react-scripts build",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
