@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Roofing Contractor in Sierra Vista, AZ | Artistic Roofing"
+        title="Roofing Contractor in Sierra Vista, AZ"
         description="Tile, shingle, metal & flat roof installation, repair and replacement in Sierra Vista, AZ. TRI-certified tile installers. Free estimates: (520) 458-6781."
         canonical="/"
       />
