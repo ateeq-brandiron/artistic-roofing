@@ -27,6 +27,16 @@
 const blogPosts = [
   {
     id: 'roofing-buying-guide-sierra-vista-az',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What should I consider before buying a new roof in Sierra Vista?', acceptedAnswer: { '@type': 'Answer', text: 'Consider how well the material handles heat, UV, and monsoon storms, your budget versus the roof\'s expected lifespan, energy efficiency, HOA rules, the contractor\'s license and insurance, and the warranty offered.' } },
+        { '@type': 'Question', name: 'How do I compare roofing quotes?', acceptedAnswer: { '@type': 'Answer', text: 'Compare quotes by scope, not just price. Check that each one covers the same materials, underlayment, tear-off, decking repairs, flashing, ventilation, cleanup, permits, and warranty.' } },
+        { '@type': 'Question', name: 'Do I need a permit to replace my roof?', acceptedAnswer: { '@type': 'Answer', text: 'Roof replacements generally require a building permit from the local jurisdiction. A licensed contractor typically handles the permit, so confirm it is included in your quote.' } },
+        { '@type': 'Question', name: 'When is the best time to replace a roof in Sierra Vista?', acceptedAnswer: { '@type': 'Answer', text: 'Spring and fall usually offer milder temperatures and fewer storms. Scheduling a replacement before the summer monsoon season helps protect your home from storm damage.' } },
+      ],
+    },
     title: 'Roofing Buying Guide for Sierra Vista, AZ: What to Know',
     category: 'Roofing Tips',
     date: '2026-09-17',
@@ -181,6 +191,16 @@ const blogPosts = [
   },
   {
     id: 'what-to-look-for-in-sierra-vista-roofing-company',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What should I look for in a Sierra Vista roofing company?', acceptedAnswer: { '@type': 'Answer', text: 'Look for an active Arizona contractor license, proper insurance, local experience with Sierra Vista weather, detailed written estimates, a clear workmanship warranty, and strong reviews or references.' } },
+        { '@type': 'Question', name: 'How do I verify a roofing contractor\'s license in Arizona?', acceptedAnswer: { '@type': 'Answer', text: 'Use the Arizona Registrar of Contractors (ROC) online license search to confirm the contractor\'s license is active and check for complaints.' } },
+        { '@type': 'Question', name: 'What questions should I ask a roofing contractor?', acceptedAnswer: { '@type': 'Answer', text: 'Ask who will do the work, how long the project will take, how cleanup is handled, what the warranty covers, whether permits are included, and how unexpected damage found during the job is priced.' } },
+        { '@type': 'Question', name: 'What are red flags when hiring a roofer?', acceptedAnswer: { '@type': 'Answer', text: 'Watch for door-to-door storm chasers, demands for large cash payments upfront, no written contract, high-pressure sales tactics, and contractors without a local address or verifiable license.' } },
+      ],
+    },
     title: 'What to Look for in a Sierra Vista Roofing Company',
     category: 'Roofing Tips',
     date: '2026-09-17',
@@ -287,6 +307,16 @@ const blogPosts = [
   },
   {
     id: 'why-choose-insured-contractor-roofing-repair',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'Why should I hire an insured roofing contractor?', acceptedAnswer: { '@type': 'Answer', text: 'If a worker is injured or your property is damaged during a job and the contractor has no insurance, you as the property owner could be held financially responsible. An insured contractor protects you from those costs.' } },
+        { '@type': 'Question', name: 'What insurance should a roofing contractor carry?', acceptedAnswer: { '@type': 'Answer', text: 'A roofing contractor should carry general liability insurance to cover property damage and workers\' compensation insurance to cover injuries to workers on the job.' } },
+        { '@type': 'Question', name: 'How can I verify a contractor\'s insurance?', acceptedAnswer: { '@type': 'Answer', text: 'Ask the contractor for a certificate of insurance, then call the insurance provider listed to confirm the policy is active and the coverage is current.' } },
+        { '@type': 'Question', name: 'What is the difference between licensed, bonded, and insured?', acceptedAnswer: { '@type': 'Answer', text: 'Licensed means the contractor is legally authorized to work, such as through the Arizona Registrar of Contractors. Bonded means there is financial protection if the contractor fails to meet its obligations. Insured means injuries and property damage are covered.' } },
+      ],
+    },
     title: 'Why Choose an Insured Contractor for Roofing Repair?',
     category: 'Roofing Tips',
     date: '2026-09-17',
@@ -420,6 +450,16 @@ const blogPosts = [
   },
   {
     id: 'choose-a-roofing-contractor-you-can-trust',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'How do I choose a roofing contractor I can trust?', acceptedAnswer: { '@type': 'Answer', text: 'Choose a contractor with a verified license and insurance, a strong local reputation, detailed written estimates, a clear warranty, and no high-pressure sales tactics.' } },
+        { '@type': 'Question', name: 'Should I get more than one roofing estimate?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Getting two or three estimates helps you compare scope, materials, warranty, and price, and makes it easier to spot quotes that leave out important work.' } },
+        { '@type': 'Question', name: 'Why is a written roofing contract important?', acceptedAnswer: { '@type': 'Answer', text: 'A written contract documents the scope of work, materials, timeline, payment schedule, and warranty, which protects both you and the contractor if questions come up later.' } },
+        { '@type': 'Question', name: 'Why hire a local roofing contractor in Sierra Vista?', acceptedAnswer: { '@type': 'Answer', text: 'A local roofer understands Sierra Vista\'s heat, UV exposure, and monsoon storms, knows local building requirements, and is nearby for follow-up service and warranty work.' } },
+      ],
+    },
     title: 'Choose a Roofing Contractor You Can Trust',
     category: 'Roofing Tips',
     date: '2026-09-17',
@@ -548,6 +588,16 @@ const blogPosts = [
 
   {
     id: 'signs-you-need-a-new-roof-sierra-vista',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What are the signs you need a new roof?', acceptedAnswer: { '@type': 'Answer', text: 'Common signs include cracked, curling, or missing shingles; cracked or slipped tiles; granules collecting in gutters; water stains on ceilings; daylight showing in the attic; sagging roof sections; and leaks that keep returning after repairs. When several of these appear together, replacement is often more cost-effective than ongoing repairs.' } },
+        { '@type': 'Question', name: 'How does the Arizona climate affect a roof?', acceptedAnswer: { '@type': 'Answer', text: 'Intense sun, UV exposure, and large daily temperature swings break down shingles and underlayment faster, while monsoon wind and hail can loosen or crack roofing materials. On tile roofs, the underlayment often wears out before the tiles, so a roof can look fine on top while the layer beneath has failed.' } },
+        { '@type': 'Question', name: 'Should I repair or replace my roof?', acceptedAnswer: { '@type': 'Answer', text: 'Repair makes sense for isolated damage on a roof with plenty of remaining life. Replacement is usually the better choice when damage is widespread, leaks keep returning, the underlayment has failed, or the roof is near the end of its expected lifespan.' } },
+        { '@type': 'Question', name: 'How often should a roof be inspected in Sierra Vista?', acceptedAnswer: { '@type': 'Answer', text: 'Have your roof inspected at least once a year, ideally before the summer monsoon season, and again after any major wind or hail storm.' } },
+      ],
+    },
     title: 'Signs You Need a New Roof in Sierra Vista: What to Look For and What It Means',
     category: 'Roofing Tips',
     date: '2026-10-21',
@@ -678,6 +728,16 @@ const blogPosts = [
 
   {
     id: 'sierra-vista-roof-replacement-cost',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'How much does a roof replacement cost in Sierra Vista?', acceptedAnswer: { '@type': 'Answer', text: 'The cost depends mainly on roof size, roofing material, pitch and complexity, how many old layers must be removed, and any decking or underlayment repairs. A free on-site estimate from a local roofing contractor gives the most accurate price for your home.' } },
+        { '@type': 'Question', name: 'Which roofing material is the most affordable?', acceptedAnswer: { '@type': 'Answer', text: 'Asphalt shingles generally have the lowest upfront cost. Metal and tile cost more to install but last longer and handle Arizona\'s heat and UV better, which can lower the total cost of ownership over time.' } },
+        { '@type': 'Question', name: 'Does homeowners insurance pay for a roof replacement?', acceptedAnswer: { '@type': 'Answer', text: 'Insurance may cover a replacement when damage comes from a sudden covered event such as hail or wind, but it usually does not cover normal wear and age. Coverage depends on your policy, so check with your insurer and document the damage before repairs begin.' } },
+        { '@type': 'Question', name: 'How long does a roof replacement take?', acceptedAnswer: { '@type': 'Answer', text: 'Many residential roof replacements are completed within a few days to about a week. Tile, metal, and larger or more complex roofs take longer, and monsoon weather can affect scheduling.' } },
+      ],
+    },
     title: 'How Much Does a New Roof Cost in Sierra Vista, AZ?',
     category: 'Roofing Tips',
     date: '2026-10-21',
@@ -789,6 +849,16 @@ const blogPosts = [
 
   {
     id: 'residential-vs-commercial-roofing-sierra-vista',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What is the difference between residential and commercial roofing?', acceptedAnswer: { '@type': 'Answer', text: 'Residential roofs are usually steep-sloped and covered with shingles, tile, or metal. Commercial roofs are often low-slope or flat and use membrane or metal systems, with more focus on drainage, rooftop equipment, and code requirements for larger buildings.' } },
+        { '@type': 'Question', name: 'What roofing materials are used on commercial buildings?', acceptedAnswer: { '@type': 'Answer', text: 'Common commercial roofing systems include TPO, EPDM, and modified bitumen membranes, built-up roofing, and metal panels. Roof coatings are also used to reflect heat and extend the life of an existing commercial roof.' } },
+        { '@type': 'Question', name: 'Does Artistic Roofing Systems work on both residential and commercial roofs?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Artistic Roofing Systems handles both residential and commercial roofing in Sierra Vista and throughout Cochise County.' } },
+        { '@type': 'Question', name: 'How often should a commercial roof be inspected?', acceptedAnswer: { '@type': 'Answer', text: 'Commercial roofs should be inspected at least twice a year, typically in spring and fall, and after major storms. Flat and low-slope roofs need regular checks for ponding water, clogged drains, and damaged seams.' } },
+      ],
+    },
     title: 'Residential vs. Commercial Roofing in Sierra Vista: Understanding the Differences',
     category: 'Roofing Tips',
     date: '2026-10-21',
@@ -894,6 +964,16 @@ const blogPosts = [
 
   {
     id: 'emergency-roof-repair-sierra-vista',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What counts as a roofing emergency?', acceptedAnswer: { '@type': 'Answer', text: 'A roofing emergency includes an active leak entering your home, sections of roofing torn off by wind, a fallen tree limb on the roof, exposed roof decking, or sagging that may signal structural damage.' } },
+        { '@type': 'Question', name: 'What should I do if my roof leaks during a storm?', acceptedAnswer: { '@type': 'Answer', text: 'Move belongings away from the leak, catch water with buckets or tarps, and turn off power to affected areas if water is near light fixtures or outlets. Photograph the damage and call a roofing contractor. Do not climb onto the roof during a storm.' } },
+        { '@type': 'Question', name: 'Can a damaged roof be temporarily repaired?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. A roofer can tarp or seal the damaged area to stop water from getting in until a permanent repair can be made. Quick temporary repairs help prevent interior and structural damage.' } },
+        { '@type': 'Question', name: 'Does insurance cover emergency roof repairs?', acceptedAnswer: { '@type': 'Answer', text: 'Damage from sudden covered events such as wind or hail is often covered, depending on your policy. Document the damage, contact your insurer promptly, and keep receipts for any temporary repairs.' } },
+      ],
+    },
     title: 'Emergency Roof Repair in Sierra Vista, AZ: When to Call and What to Expect',
     category: 'Monsoon Season',
     date: '2026-10-21',
@@ -1021,6 +1101,16 @@ const blogPosts = [
 
   {
     id: 'best-roofing-material-arizona-climate',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What is the best roofing material for Arizona\'s climate?', acceptedAnswer: { '@type': 'Answer', text: 'Tile and metal are among the best choices for Arizona. Concrete and clay tile handle heat and UV exposure well and last for decades, while metal reflects sunlight and resists wind. Asphalt shingles are more affordable but age faster under intense sun.' } },
+        { '@type': 'Question', name: 'Are tile roofs a good choice in Sierra Vista?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Tile is durable and well suited to the Arizona sun. The underlayment beneath the tiles usually wears out before the tiles do, so it may need replacement while the original tiles are reinstalled.' } },
+        { '@type': 'Question', name: 'Is metal roofing good for Arizona heat?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Metal roofing with reflective coatings reflects sunlight, which can reduce heat absorbed into the home and lower cooling costs. It also holds up well against monsoon wind.' } },
+        { '@type': 'Question', name: 'How long do roofs last in Arizona?', acceptedAnswer: { '@type': 'Answer', text: 'Asphalt shingles have the shortest lifespan of the common options, and Arizona\'s sun can shorten it further. Metal and tile roofs commonly last several decades with proper installation and maintenance.' } },
+      ],
+    },
     title: "What Is the Best Roofing Material for Arizona's Climate?",
     category: 'Roofing Tips',
     date: '2026-10-21',
@@ -1127,6 +1217,16 @@ const blogPosts = [
 
   {
     id: 'understanding-your-roof-warranty',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What types of roof warranties are there?', acceptedAnswer: { '@type': 'Answer', text: 'There are two main types. A manufacturer warranty covers defects in roofing materials, and a workmanship warranty from the contractor covers problems caused by installation errors.' } },
+        { '@type': 'Question', name: 'What can void a roof warranty?', acceptedAnswer: { '@type': 'Answer', text: 'Common causes include installation by an unqualified contractor, lack of regular maintenance, unapproved modifications or roof penetrations such as solar or satellite mounts that are not properly sealed, and failing to register the warranty when required.' } },
+        { '@type': 'Question', name: 'Is a roof warranty transferable to a new owner?', acceptedAnswer: { '@type': 'Answer', text: 'Some manufacturer warranties can be transferred to a new homeowner, sometimes only once and with notice or a fee. Check the warranty terms before selling or buying a home.' } },
+        { '@type': 'Question', name: 'Does a roof warranty cover storm damage?', acceptedAnswer: { '@type': 'Answer', text: 'Generally no. Roof warranties cover material defects and installation errors, while damage from storms, hail, or wind is typically handled through homeowners insurance.' } },
+      ],
+    },
     title: "Understanding Your Roof Warranty: A Homeowner's Guide",
     category: 'Roofing Tips',
     date: '2026-10-21',
@@ -1248,6 +1348,16 @@ const blogPosts = [
   },
   {
     id: 'why-choose-artistic-roofing-systems',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What services does Artistic Roofing Systems offer?', acceptedAnswer: { '@type': 'Answer', text: 'Artistic Roofing Systems provides residential and commercial roofing in Sierra Vista and Cochise County, Arizona, including tile, shingle, and metal roofing, plus gutters and patio covers.' } },
+        { '@type': 'Question', name: 'Is Artistic Roofing Systems licensed, bonded, and insured?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Artistic Roofing Systems is licensed, bonded, and insured, which protects homeowners and business owners if an accident or problem happens during a roofing project.' } },
+        { '@type': 'Question', name: 'How long has Artistic Roofing Systems been in business?', acceptedAnswer: { '@type': 'Answer', text: 'Artistic Roofing Systems has served homeowners and businesses in Southeast Arizona for over 10 years.' } },
+        { '@type': 'Question', name: 'Does Artistic Roofing Systems offer free estimates?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Artistic Roofing Systems offers free estimates for roofing, gutter, and patio cover projects in Sierra Vista and across Cochise County.' } },
+      ],
+    },
     title: 'Why Choose Artistic Roofing Systems LLC? What Sierra Vista Homeowners Can Expect',
     category: 'Company News',
     date: '2026-10-26',
@@ -1425,6 +1535,16 @@ const blogPosts = [
   },
   {
     id: '5-inch-vs-6-inch-gutters-sierra-vista',
+    faqSchema: {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What is the difference between 5-inch and 6-inch gutters?', acceptedAnswer: { '@type': 'Answer', text: 'The size refers to the width of the gutter\'s top opening. A 6-inch K-style gutter holds roughly 40 to 50 percent more water than a 5-inch gutter and is usually paired with larger 3x4-inch downspouts instead of 2x3-inch, so the whole system drains faster during heavy rain.' } },
+        { '@type': 'Question', name: 'Do homes in Sierra Vista need 6-inch gutters?', acceptedAnswer: { '@type': 'Answer', text: 'Many do. Sierra Vista gets much of its yearly rain during the summer monsoon, often in short, intense storms. Homes with large or steep roof sections, long gutter runs, or valleys that concentrate runoff benefit from 6-inch gutters, while smaller, low-slope roofs are often well served by 5-inch gutters.' } },
+        { '@type': 'Question', name: 'Are 6-inch gutters more expensive than 5-inch gutters?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. 6-inch gutters cost somewhat more per linear foot because they use more material and larger downspouts and hangers. For homes that overflow during monsoon storms, the added cost is often less than repairing fascia, landscaping, or foundation damage caused by overflowing water.' } },
+        { '@type': 'Question', name: 'Can I upgrade from 5-inch to 6-inch gutters?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Upgrading generally means replacing the gutter runs, hangers, and downspouts rather than mixing sizes on the same run. A roofing contractor can check your roof area and pitch to confirm whether the upgrade is worth it for your home.' } },
+      ],
+    },
     title: '5-Inch vs. 6-Inch Gutters: Which Size Fits Your Sierra Vista Home?',
     category: 'Gutters',
     date: '2026-10-27',

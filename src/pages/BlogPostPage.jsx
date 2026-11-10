@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import blogPosts from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 const CATEGORY_COLORS = {
   'Roofing Tips':      { bg: '#E8F8FF', color: '#0080C6' },
@@ -178,6 +179,13 @@ export default function BlogPostPage() {
 
   return (
     <>
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        canonical={`/blog/${post.id}`}
+        image={post.image ? `https://artisticroofingllc.com${post.image}` : undefined}
+        schema={post.faqSchema || undefined}
+      />
       {/* ── Hero ── */}
       <section style={{
         position: 'relative',
