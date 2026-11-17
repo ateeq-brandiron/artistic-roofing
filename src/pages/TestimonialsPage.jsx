@@ -132,7 +132,12 @@ const testimonialsSchema = {
   '@context': 'https://schema.org',
   '@type': 'RoofingContractor',
   '@id': 'https://artisticroofingllc.com/#organization',
-  'name': 'Artistic Roofing Systems',
+  'name': 'Artistic Roofing Systems, LLC',
+  'sameAs': [
+    'https://nextdoor.com/pages/artistic-roofing-systems-sierra-vista-az/',
+    'https://www.facebook.com/artisticroofingsystems',
+    'https://www.bbb.org/us/az/sierra-vista/profile/roofing-contractors/artistic-roofing-systems-llc-1126-1000134052',
+  ],
   'aggregateRating': {
     '@type': 'AggregateRating',
     'ratingValue': '5',

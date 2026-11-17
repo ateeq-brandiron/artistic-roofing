@@ -24,7 +24,7 @@ export default function Footer() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 32, marginBottom: 40 }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <Link to="/" className="logo-hover">
-              <img src="/img/vector-3.png" alt="Artistic Roofing" style={{ height: 90, width: 'auto', objectFit: 'contain' }} />
+              <img src="/img/vector-3.png" alt="Artistic Roofing Systems, LLC" style={{ height: 90, width: 'auto', objectFit: 'contain' }} />
             </Link>
             <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 400, fontSize: 16, letterSpacing: '0.06em', color: 'var(--blue)', margin: 0 }}>
               We're on top of what matters most.
@@ -65,9 +65,13 @@ export default function Footer() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 32, flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <img src="/img/footer/Vector-1.svg" alt="" style={{ width: 20, height: 16 }} />
-              <span style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', color: 'var(--blue)' }}>
-                SIERRA VISTA, AZ
-              </span>
+              <div style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', color: 'var(--blue)', lineHeight: 1.4 }}>
+                <div>1 GENERAL ALEXANDER DR STE 1</div>
+                <div>SIERRA VISTA, AZ 85635</div>
+                <a href="tel:+15204586781" className="footer-link" style={{ fontWeight: 400, fontSize: 13, color: 'var(--blue)', textDecoration: 'none', letterSpacing: '0.08em' }}>
+                  (520) 458-6781
+                </a>
+              </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <img src="/img/footer/Vector.svg" alt="" style={{ width: 14, height: 14 }} />
@@ -81,7 +85,7 @@ export default function Footer() {
         <div style={{ height: 1, background: '#e5e5e5', margin: '24px 0 20px' }} />
 
         <p style={{ fontFamily: 'Outfit', fontWeight: 400, fontSize: 15, color: 'var(--color-2)', textAlign: 'center', margin: 0 }}>
-          © 2026 Artistic Roofing. All Rights Reserved.
+          © 2026 Artistic Roofing Systems, LLC. All Rights Reserved.
         </p>
 
       </div>

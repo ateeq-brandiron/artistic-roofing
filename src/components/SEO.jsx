@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 
 const BASE_URL = 'https://artisticroofingllc.com';
 const DEFAULT_IMAGE = `${BASE_URL}/img/homepage/home-hero.png`;
-const SITE_NAME = 'Artistic Roofing Systems';
+const SITE_NAME = 'Artistic Roofing Systems, LLC';
 
 export default function SEO({ title, description, canonical, image, schema }) {
   const fullTitle = title
