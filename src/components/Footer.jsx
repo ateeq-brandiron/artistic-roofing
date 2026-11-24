@@ -66,8 +66,8 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <img src="/img/footer/Vector-1.svg" alt="" style={{ width: 20, height: 16 }} />
               <div style={{ fontFamily: 'Outfit', fontWeight: 600, fontSize: 13, letterSpacing: '0.08em', color: 'var(--blue)', lineHeight: 1.4 }}>
-                <div>1 GENERAL ALEXANDER DR STE 1</div>
-                <div>SIERRA VISTA, AZ 85635</div>
+                <div>5362 S SANTA ELENA AVE</div>
+                <div>SIERRA VISTA, AZ 85650</div>
                 <a href="tel:+15204586781" className="footer-link" style={{ fontWeight: 400, fontSize: 13, color: 'var(--blue)', textDecoration: 'none', letterSpacing: '0.08em' }}>
                   (520) 458-6781
                 </a>
