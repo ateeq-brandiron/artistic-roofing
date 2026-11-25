@@ -14,8 +14,8 @@ const faqs = [
     a: 'Signs that a roof may need replacement include curling or wind-blown shingles, visible granule loss, cracked or slipped tiles, and water spots in your attic. For tile roofs, underlayment deterioration can occur even when tiles appear intact. Our team performs thorough evaluations to determine whether targeted repairs or a full replacement will provide the most dependable long-term solution for your home or business.',
   },
   {
-    q: 'Do you install gutters along with roofing?',
-    a: 'Yes. Artistic Roofing installs seamless aluminum gutters as part of our complete roofing solutions. Properly installed gutters help manage rainwater and reduce runoff issues around your property. We design each system to complement your roofline and assist with efficient water control without overpromising results. Gutters can be customized by size and color to match your home or business.',
+    q: 'Do you install gutters, patio covers, and pergolas in addition to roofing?',
+    a: 'Yes. Artistic Roofing installs seamless aluminum gutters as part of our complete roofing solutions. Properly installed gutters help manage rainwater and reduce runoff issues around your property. We design each system to complement your roofline and assist with efficient water control. Gutters can be customized by size and color to match your home or business.\nWe also design and install custom patio covers and pergolas to add shade and style to your outdoor living space. Whether you want a covered patio to extend your indoor living area or a freestanding pergola to make the most of your backyard, our team can build a structure that complements your home and withstands Arizona\'s climate.',
   },
   {
     q: 'Do you work on all types of flat roofs?',
@@ -50,7 +50,7 @@ export default function FAQ() {
           color: '#000',
           margin: 0,
         }}>
-          Frequently Asked Questions About Roofing and Gutters
+          Frequently Asked Questions About Roofing, Gutters & Patio Covers
         </h2>
       </div>
 
