@@ -41,11 +41,13 @@ export default function About() {
           As{' '}
           <span style={{ fontWeight: 700, color: 'var(--blue)' }}>TRI Certified tile installers</span>
           , we specialize in high-performance roofing systems tailored to Arizona's extreme climate. For tile roofs, we partner with leading concrete tile manufacturers like{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Westlake</span>
-          {' '}and{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Eagle Roofing Products</span>
+          <a href="https://issuu.com/eagleroofingproducts/docs/eagle-sw-2023-051023-singles-reduced" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 700, color: 'var(--blue)', textDecoration: 'none' }}>Eagle Roofing Products</a>
           . For asphalt shingle systems, we install top-rated materials from{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>Tamko, Owens Corning, and GAF</span>
+          <a href="https://www.tamko.com/zip-code?re=styles/titan-xt" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 700, color: 'var(--blue)', textDecoration: 'none' }}>Tamko</a>
+          ,{' '}
+          <a href="https://www.owenscorning.com/en-us/roofing/shingles" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 700, color: 'var(--blue)', textDecoration: 'none' }}>Owens Corning</a>
+          , and{' '}
+          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>GAF</span>
           —delivering maximum durability, weather resistance, and long-lasting curb appeal.
         </p>
 
