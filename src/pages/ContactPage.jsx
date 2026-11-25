@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import ScrollBar from '../components/ScrollBar';
 import SEO from '../components/SEO';
 
@@ -133,6 +133,14 @@ function SuccessModal({ onClose }) {
 export default function ContactPage() {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
   const [comments, setComments] = useState('');
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash === '#estimate-form') {
+      const el = document.getElementById('estimate-form');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [hash]);
 
   const fieldStyle = {
     width: '100%', padding: '18px 20px',

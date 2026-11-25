@@ -101,7 +101,7 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
-        <Link to="/contact" className="nav-cta desktop-nav" style={{
+        <Link to="/contact#estimate-form" className="nav-cta desktop-nav" style={{
           display: 'inline-flex', alignItems: 'center', gap: 10,
           padding: '10px 20px',
           background: 'transparent',
@@ -167,7 +167,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link to="/contact" className="btn-blue" style={{
+          <Link to="/contact#estimate-form" className="btn-blue" style={{
             display: 'block', marginTop: '1rem', padding: '0.875rem',
             background: 'var(--blue)', borderRadius: 8,
             color: '#fff', fontFamily: 'Outfit', fontWeight: 600,
