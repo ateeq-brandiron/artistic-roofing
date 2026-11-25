@@ -137,8 +137,11 @@ export default function ContactPage() {
 
   useEffect(() => {
     if (hash === '#estimate-form') {
-      const el = document.getElementById('estimate-form');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      const timer = setTimeout(() => {
+        const el = document.getElementById('estimate-form');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+      return () => clearTimeout(timer);
     }
   }, [hash]);
 
