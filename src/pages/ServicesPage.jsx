@@ -448,6 +448,30 @@ export default function ServicesPage() {
             }}>
               Available in multiple colors and styles, our gutters are both functional and visually complementary to your roofline.
             </p>
+            <a
+              href="/gutter-color-guide.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 10,
+                marginTop: 24,
+                padding: '12px 24px',
+                background: '#fff',
+                border: '2px solid #fff',
+                borderRadius: 8,
+                fontFamily: 'Outfit, sans-serif',
+                fontWeight: 600,
+                fontSize: 15,
+                color: '#000',
+                textDecoration: 'none',
+                whiteSpace: 'nowrap',
+                alignSelf: 'flex-start',
+              }}
+            >
+              View Gutter Color Guide (PDF)
+            </a>
           </div>
 
           {/* Right — 2×2 cards */}
