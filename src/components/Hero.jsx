@@ -19,7 +19,7 @@ export default function Hero() {
         {/* Row: left col + right col */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
           {/* Left – Headline + tagline */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: '100%', flex: '1 1 320px', alignSelf: 'stretch', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: '100%', flex: '1 1 320px', alignSelf: 'stretch', justifyContent: 'center', paddingBottom: 'clamp(25px, 4vw, 56px)' }}>
             <h1 style={{
               fontFamily: 'Playfair Display, serif',
               fontWeight: 900,
