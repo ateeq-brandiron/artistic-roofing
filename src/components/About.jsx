@@ -47,7 +47,7 @@ export default function About() {
           ,{' '}
           <a href="https://www.owenscorning.com/en-us/roofing/shingles" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 700, color: 'var(--blue)', textDecoration: 'none' }}>Owens Corning</a>
           , and{' '}
-          <span style={{ fontWeight: 700, color: 'var(--blue)' }}>GAF</span>
+          <a href="https://www.gaf.com/en-us/document-library/documents/brochures-&-literature/timberline-hdz-brochure-restz145.pdf" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 700, color: 'var(--blue)', textDecoration: 'none' }}>GAF</a>
           —delivering maximum durability, weather resistance, and long-lasting curb appeal.
         </p>
 
